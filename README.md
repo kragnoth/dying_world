@@ -31,9 +31,15 @@ New structures and placement changes only show in newly generated chunks.
 | `docs/` | Audits, inventories, design notes, walkthrough |
 | `reference/` | Small indexes (blocks, block-state props, NBT index) |
 | `reference_custom/` | The user's own source NBTs (Create mills) |
+| `modpack/` | Snapshot of the CurseForge export (manifest, modlist, overrides: config, defaultconfigs, kubejs scripts/assets, options, resource packs). `overrides/kubejs/data` is NOT stored here: it is exactly what `tools/build.py` produces |
 
 Not in git: `dist/` (build output) and the large reference extractions (`reference/*.zip`: vanilla + mod data pulled
 from the jars by `tools/make_reference.py`). The generators that read those zips need them locally; `build.py` does not.
+
+## Modpack snapshot
+
+To rebuild the full `overrides/` for an export: copy `modpack/overrides/` and put the `data/` folder from `dist/kubejs_data.zip`
+at `overrides/kubejs/data/`. Update the snapshot by sending Claude a new CurseForge export (`usernamecache.json` is left out on purpose).
 
 ## Rules
 

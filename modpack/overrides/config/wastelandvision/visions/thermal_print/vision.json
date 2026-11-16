@@ -1,0 +1,9 @@
+{
+  "_readme": "Thermal Print - the whole frame remapped to a two-colour thermal/badge printer: paper white, red ink and black ink, ordered-dithered. No block changes, tints or fog: the world, lighting and other mods render untouched; this is purely an output-stage remap (vanilla post chain, applied after the world and hand, before the HUD). Colour you 'see' is your brain filling it in (memory colour, simultaneous contrast, Land/retinex). All tunables are uniforms in assets/thermal/shaders/post/thermal.json - edit and press F3+T.",
+  "name": "Thermal Print",
+  "description": "Two-colour thermal printer: paper white, red and black ink only. Your brain supplies the rest.",
+  "atmosphere": {
+    "post_shader": "thermal:shaders/post/thermal.json"
+  },
+  "rules": []
+}

@@ -1,0 +1,148 @@
+[growth]
+	#Global multiplier on the growth stat's contribution to growth chance.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	growthMultiplier = 1.0
+	#Whether blight/weeds can spawn on crops.
+	weedsEnabled = false
+	#Water beside a soil block makes it one humidity step wetter, and a lit heat source beside or under it
+	#(#cultivar:soil_heaters) one step drier; a Bell Cloche adds one more wet step. Steps add up.
+	#With no water or heat, dry farmland reads one step drier.
+	waterShiftsHumidity = true
+
+[genetics]
+	#How an allele pair is expressed as one stat value: MAX (dominant), MIN, or MEAN.
+	#Allowed Values: MAX, MIN, MEAN
+	statExpression = "MAX"
+	#Whether a single-parent clone can still drift stats.
+	cloneMutations = false
+	#Seed item tooltips hide stats until the seed is assayed (Assaying Engine).
+	#Goggles always read crops in the field.
+	requireAssay = true
+	#Harvesting a mature plant with the Seed Satchel (hand or Deployer): base chance of a seed.
+	#Chance = base + perVigour * Vigour. Harvesters, hands and shears never give seeds.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	satchelSeedBase = 0.25
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	satchelSeedPerVigour = 0.05
+	#Show every cross in JEI and the Ledger, known or not (creative or guide-style packs).
+	#Off: a cross appears once its child is in the player's knowledge (read from a Botanical Ledger).
+	revealAllMutations = false
+
+[influence]
+	#Whether nearby sources (beehives, sprinklers, heaters...) modify crops.
+	influenceEnabled = true
+	#Cap on the combined mutation multiplier from all sources affecting one crop.
+	# Default: 1.5
+	# Range: 1.0 ~ 4.0
+	maxMutationMultiplier = 1.5
+	#Floor on the combined weed multiplier (lower = stronger suppression).
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	minWeedMultiplier = 0.5
+
+[trial_bed]
+	#Minutes between a trial plot's discovery rolls.
+	# Default: 5
+	# Range: 1 ~ 1440
+	intervalMinutes = 5
+	#Bonus: chance per roll to discover an untested mutation outright, for a full-size plot.
+	#Trial plots also discover mutations for real by growing and crossing their seeds.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	chance = 0.05
+	#Beds for the full chance (81 = a 9x9). Smaller plots scale the chance down.
+	# Default: 81
+	# Range: 1 ~ 128
+	fullSize = 81
+	#Whether a bonus-roll discovery spends one seed of each parent.
+	consumesSeeds = true
+	#Half-second cycles a mature producer stays (to parent crosses) before rotating to another species.
+	# Default: 120
+	# Range: 1 ~ 100000
+	holdCycles = 120
+
+[sprinkler]
+	#Horizontal reach (blocks each way). 4 = a 9x9 area.
+	# Default: 4
+	# Range: 1 ~ 8
+	radius = 4
+	#Ticks between sprays.
+	# Default: 5
+	# Range: 1 ~ 200
+	interval = 5
+	#Random positions watered per spray. Defaults give crops in range roughly 4-5x vanilla growth.
+	# Default: 4
+	# Range: 1 ~ 64
+	attempts = 4
+	#Ticks a sprinkler runs per mB of water. It holds 1000 mB and only runs while it has water.
+	#Default 4: a full tank lasts 4000 ticks (200 s); a slow Create pump keeps it topped up.
+	# Default: 4
+	# Range: 1 ~ 1200
+	ticksPerMillibucket = 4
+	#Chance per watered position to also apply a bone-meal effect (moss spreads, crops jump).
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	bonemealChance = 0.05
+
+[planter_bed]
+	#Ticks between a Planter Bed's work cycles (plant, harvest, water, fertilize).
+	# Default: 10
+	# Range: 1 ~ 200
+	cycle = 10
+	#Ticks a bed runs per mB of water (4000 mB tank). Water gives extra growth and +1 humidity.
+	# Default: 8
+	# Range: 1 ~ 1200
+	ticksPerMillibucket = 8
+	#With water, each cycle gives the crop an extra growth tick with chance 1 in N (default ~4x vanilla).
+	# Default: 40
+	# Range: 1 ~ 10000
+	growthOdds = 40
+	#Each cycle, chance 1 in N to spend one fertilizer on a growing crop.
+	# Default: 12
+	# Range: 1 ~ 10000
+	fertilizerOdds = 12
+	#Cycles a mature crop next to a breeding bed waits before harvest, so the grafting frame can use it as a parent.
+	# Default: 40
+	# Range: 0 ~ 10000
+	breedHoldCycles = 40
+	#Seed ranking weights: beds plant, keep and upgrade to the highest weighted stat total.
+	#Defaults favour output: Gain 3, Growth 2, Strength 1, Vigour 1.
+	# Default: 3.0
+	# Range: 0.0 ~ 100.0
+	qualityGain = 3.0
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	qualityGrowth = 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	qualityStrength = 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	qualityVigour = 1.0
+
+[performance]
+	#Max units of deferred work (structure scans, network rebuilds) per dimension per tick.
+	#Lower it if the mod shows up in tick profiling; large builds just take longer to update.
+	# Default: 256
+	# Range: 1 ~ 100000
+	workBudgetPerTick = 256
+
+[soil]
+	#How far soil conditioners (lime, sulfur dust, compost...) can shift each soil property, in steps either way.
+	#0 disables conditioners.
+	# Default: 2
+	# Range: 0 ~ 6
+	conditionerMaxSteps = 2
+
+[cloche]
+	#A crop under a Shade Cloche reads light no brighter than this.
+	# Default: 3
+	# Range: 0 ~ 15
+	shadeMaxLight = 3
+	#A crop under a Lamp Cloche reads light at least this bright. Neither cloche changes real light.
+	# Default: 14
+	# Range: 0 ~ 15
+	lampMinLight = 14

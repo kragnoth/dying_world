@@ -1,0 +1,4 @@
+#Edge length in pixels of each panorama face (vanilla's own title panorama is 1024).
+# Default: 1024
+# Range: 256 ~ 8192
+size = 1024

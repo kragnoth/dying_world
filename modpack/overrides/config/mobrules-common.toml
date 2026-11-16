@@ -1,0 +1,13 @@
+#Log every rule applied to a mob.
+debug = false
+#Apply rules to mobs saved before Mob Rules was installed (they have never been checked).
+#If false, those mobs are left alone and only new spawns are affected.
+processExisting = true
+#Most mobs processed per server tick (big chunk loads are spread out).
+# Default: 200
+# Range: 1 ~ 10000
+maxPerTick = 200
+#Safety cap: custom spawners stop adding mobs while this many spawner-made mobs are within 128 blocks of a player (all rules together).
+# Default: 12
+# Range: 0 ~ 500
+spawnerCapPerPlayer = 12

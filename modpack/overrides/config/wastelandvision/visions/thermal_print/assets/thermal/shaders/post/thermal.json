@@ -1,0 +1,130 @@
+{
+    "_comment": "Thermal Print tunables. Every value here is a uniform: edit, then F3+T to reload. Colours are 0..1 RGB.",
+    "targets": [
+        "swap"
+    ],
+    "passes": [
+        {
+            "name": "thermal:thermal",
+            "intarget": "minecraft:main",
+            "outtarget": "swap",
+            "uniforms": [
+                {
+                    "name": "Enabled",
+                    "values": [
+                        1.0
+                    ]
+                },
+                {
+                    "name": "PaperWhite",
+                    "values": [
+                        0.95,
+                        0.93,
+                        0.88
+                    ]
+                },
+                {
+                    "name": "InkRed",
+                    "values": [
+                        0.8,
+                        0.1,
+                        0.1
+                    ]
+                },
+                {
+                    "name": "InkBlack",
+                    "values": [
+                        0.08,
+                        0.06,
+                        0.06
+                    ]
+                },
+                {
+                    "name": "LumaWeights",
+                    "values": [
+                        0.2,
+                        0.55,
+                        0.25
+                    ]
+                },
+                {
+                    "name": "Contrast",
+                    "values": [
+                        1.35
+                    ]
+                },
+                {
+                    "name": "Gamma",
+                    "values": [
+                        0.7
+                    ]
+                },
+                {
+                    "name": "Brightness",
+                    "values": [
+                        0.14
+                    ]
+                },
+                {
+                    "name": "WarmStrength",
+                    "values": [
+                        3.0
+                    ]
+                },
+                {
+                    "name": "SkinStrength",
+                    "values": [
+                        4.0
+                    ]
+                },
+                {
+                    "name": "RedLightness",
+                    "values": [
+                        0.35
+                    ]
+                },
+                {
+                    "name": "BayerSize",
+                    "values": [
+                        4.0
+                    ]
+                },
+                {
+                    "name": "DotScale",
+                    "values": [
+                        2.0
+                    ]
+                },
+                {
+                    "name": "Sharpen",
+                    "values": [
+                        1.5
+                    ]
+                },
+                {
+                    "name": "Mode",
+                    "values": [
+                        1.0
+                    ]
+                },
+                {
+                    "name": "Chroma",
+                    "values": [
+                        1.6
+                    ]
+                },
+                {
+                    "name": "Surround",
+                    "values": [
+                        0.6
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "swap",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}

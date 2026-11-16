@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "occult:block/tar_soil",
+    "top": "occult:block/tar_pool",
+    "side": "occult:block/tar_soil"
+  }
+}

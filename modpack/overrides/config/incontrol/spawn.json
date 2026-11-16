@@ -1,0 +1,32 @@
+[
+  {
+    "when": "ONJOIN",
+    "mob": "minecraft:skeleton",
+    "random": 0.75,
+    "helditem": [
+      { "item": "minecraft:wooden_sword" },
+      { "item": "minecraft:stone_sword" }
+    ]
+  },
+  {
+    "mob": [
+      "minecraft:pillager",
+      "minecraft:enderman"
+    ],
+    "minheight": 57,
+    "result": "default"
+  },
+  {
+    "when": "POSITION",
+    "mob": "minecraft:creeper",
+    "random": 0.90,
+    "result": "deny"
+  },
+  {
+    "when": "POSITION",
+    "hostile": true,
+    "spawntype": ["NATURAL","REINFORCEMENT"],
+    "minheight": 57,
+    "result": "deny"
+  }
+]

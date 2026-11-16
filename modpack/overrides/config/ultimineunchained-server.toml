@@ -1,0 +1,21 @@
+[ultimine_unchained]
+	#Fraction of blocks broken that counts toward tool durability (0.0 to 1.0).
+	#Example: 0.5 with 64 blocks broken = 32 blocks worth of durability damage.
+	#Set to 0.0 to use durability_flat_blocks instead.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	durability_percentage = 0.0
+	#Flat durability cost per ultimine operation, in block-break equivalents.
+	#Used only when durability_percentage is 0.0.
+	#Default of 1 means the entire operation costs the same as breaking a single block.
+	# Default: 1
+	# Range: 0 ~ 32768
+	durability_flat_blocks = 1
+	#When true, suppresses the check that skips blocks harder than the first targeted block.
+	#Indestructible blocks (destroy speed < 0) are still always skipped.
+	allow_harder_blocks = true
+	#Maximum percentage of max durability that can be consumed per ultimine operation (0 to 100).
+	#Example: 25 with a tool of max durability 2000 caps consumption at 500 damage per operation.
+	# Default: 25
+	# Range: 0 ~ 100
+	durability_cap_percent = 25

@@ -1156,3 +1156,10 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - 9_35 no longer touches sculk. REGEN ORDER: ... 9_12, 9_34, 9_35, 9_36, ..., 9_16, 9_33, 8_9, build.
 - Deleted from the build: data/dying_world/structure/station/sculk/ + worldgen/template_pool/station/sculk/ (user should delete them too; harmless if left).
 - UNVERIFIED in game: cavern size from beard_box (carves ~12 above each floor), walkway/building fit, dead caged lamps (lit=false) look.
+
+## Pass 9-37 (2026-11-15) - repo: modpack snapshot (RC 3)
+- USER: moved the project to git (github.com/kragnoth/dying_world, main) and asked for the kubejs + config folders in it too, to retrieve major stuff.
+- NEW `modpack/` = the CurseForge export 'Gearwright's Hollow RC 3' 1.0.0 (252 mods, NeoForge 21.1.262): manifest.json, modlist.html, overrides/
+  (config, defaultconfigs, options.txt, icon.png, resourcepacks/HollowDead.zip, kubejs client/server/startup scripts, kubejs assets + config).
+  overrides/kubejs/data is NOT stored: RC 3's kubejs/data was byte-identical to our build (diff -rq clean). usernamecache.json left out.
+- The RC 3 export already contains everything up to pass 9-36 (quest structure fix, lore, sculk camp ...).

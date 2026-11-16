@@ -1,0 +1,34 @@
+{
+  // Global rarity multiplier. 1.5 = moderately more spread out than vanilla defaults.
+  spreadFactor: 1.5,
+
+  // Fixes structures clustering because mods leave salt at 0.
+  idBasedSalt: true,
+
+  // Per-structure overrides. Matches either a structure_set id or an individual structure id.
+  customSpreadFactors: [
+    // Alex's Caves: keep at factor 1 per the mod's own compatibility note (issue #47).
+    { name: "alexscaves:underground_cabin", spreadFactor: 1 },
+    { name: "alexscaves:ocean_trench", spreadFactor: 1 },
+    { name: "alexscaves:gingerbread_town", spreadFactor: 1 },
+    { name: "alexscaves:dino_bowl", spreadFactor: 1 },
+    { name: "alexscaves:soda_bottle", spreadFactor: 1 },
+    { name: "alexscaves:forlorn_canyon", spreadFactor: 1 },
+    { name: "alexscaves:forlorn_bridge", spreadFactor: 1 },
+    { name: "alexscaves:volcano", spreadFactor: 1 },
+    { name: "alexscaves:donut_arch", spreadFactor: 1 },
+    { name: "alexscaves:abyssal_ruins", spreadFactor: 1 },
+    { name: "alexscaves:cake_cave", spreadFactor: 1 },
+    { name: "alexscaves:ferrocave", spreadFactor: 1 },
+    { name: "alexscaves:licowitch_tower", spreadFactor: 1 },
+    { name: "alexscaves:acid_pit", spreadFactor: 1 },
+
+    // Villages are the "always-should-generate" anchor points — keep them at normal spacing
+    // rather than spread further, since your last ask was to stop them getting crowded out.
+    { name: "minecraft:village_plains", spreadFactor: 1 },
+    { name: "minecraft:village_desert", spreadFactor: 1 },
+    { name: "minecraft:village_savanna", spreadFactor: 1 },
+    { name: "minecraft:village_snowy", spreadFactor: 1 },
+    { name: "minecraft:village_taiga", spreadFactor: 1 }
+  ]
+}

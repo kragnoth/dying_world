@@ -1,0 +1,3 @@
+[updates]
+	#Once per game start, check https://alkeari.com/updates/ultimine-unchained.json and say so only when a newer version is out.
+	check_for_updates = true

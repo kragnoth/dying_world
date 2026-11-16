@@ -1,0 +1,207 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "629bfe84ad23c816"
+	group: "1C6C41D6798C3267"
+	icon: {
+		id: "tarbound:spirit_board"
+	}
+	id: "629BFE84AD23C816"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0BCCE13FE16F5EFD"]
+			icon: {
+				id: "tarbound:tar_bucket"
+			}
+			id: "1C4C5E5A4D91FB07"
+			rewards: [{
+				id: "4A08510C8FBD86A7"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "59C8107AAC6DF8D5"
+				item: { count: 1, id: "tarbound:tar_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C4C5E5A4D91FB07"]
+			icon: {
+				id: "tarbound:spirit_board"
+			}
+			id: "3CA4380C39607708"
+			rewards: [{
+				id: "3FB8237222C4496A"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				id: "166A6DC46583AAF4"
+				item: { count: 1, id: "tarbound:spirit_board" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CA4380C39607708"]
+			icon: {
+				id: "tarbound:scrying_font"
+			}
+			id: "05C1A55100CFBB38"
+			rewards: [{
+				id: "140A281060CB7E8B"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "1DD4CF0909873713"
+				item: { count: 1, id: "tarbound:scrying_font" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["3CA4380C39607708"]
+			icon: {
+				id: "tarbound:spirit_board"
+			}
+			id: "3E961021C0E5BA63"
+			rewards: [{
+				id: "18F8509F3C8D158D"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				entity: "tarbound:weakened_blaze"
+				id: "5F2D0C48B6C977CE"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 0.875d
+		}
+		{
+			dependencies: ["05C1A55100CFBB38"]
+			icon: {
+				id: "tarbound:blank_contract"
+			}
+			id: "0D546E2ACE78BCE6"
+			rewards: [{
+				id: "0BF224BD4BA7F588"
+				table_id: 7620387735345317284L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1F652839C85E9B4A"
+				item: { count: 1, id: "tarbound:blank_contract" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D546E2ACE78BCE6"]
+			icon: {
+				id: "tarbound:reliquary"
+			}
+			id: "59CF596AC2C13B60"
+			rewards: [{
+				id: "5AE72238EE97F195"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "19C5AD8B4E116D5C"
+				item: { count: 1, id: "tarbound:reliquary" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"59CF596AC2C13B60"
+				"3D4A1BEBF9C314F1"
+			]
+			icon: {
+				id: "tarbound:steward"
+			}
+			id: "111DF059A82E0716"
+			rewards: [{
+				id: "64D88E7F9AF8068B"
+				type: "xp"
+				xp: 120
+			}]
+			tasks: [{
+				id: "1770DCC423182D4E"
+				item: { count: 1, id: "tarbound:steward" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.875d
+		}
+		{
+			dependencies: ["111DF059A82E0716"]
+			icon: {
+				id: "tarbound:tar_antenna"
+			}
+			id: "679E22B36236EB13"
+			rewards: [{
+				id: "7F7524092D06D613"
+				type: "xp"
+				xp: 120
+			}]
+			tasks: [{
+				id: "1D4FD872356E5427"
+				item: { count: 1, id: "tarbound:tar_antenna" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"59CF596AC2C13B60"
+				"4A437BA327C9FF46"
+				"3D4A1BEBF9C314F1"
+			]
+			icon: {
+				id: "tarbound:votive_skull"
+			}
+			id: "1EB49F9792831E37"
+			rewards: [
+				{
+					command: "/puffish_skills points add {p} kskills:skill_tree 1"
+					id: "16D66105CDD3FFB9"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					id: "1ACBC0C6DBEAAE11"
+					table_id: 7620387735345317284L
+					type: "random"
+				}
+			]
+			shape: "octagon"
+			size: 1.4d
+			tasks: [{
+				id: "13306A71CC8EFE72"
+				item: { count: 1, id: "tarbound:votive_skull" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.875d
+		}
+	]
+}

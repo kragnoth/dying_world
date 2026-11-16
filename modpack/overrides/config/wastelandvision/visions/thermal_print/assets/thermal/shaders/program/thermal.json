@@ -1,0 +1,195 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "one",
+    "dstrgb": "zero"
+  },
+  "vertex": "blit",
+  "fragment": "thermal:thermal",
+  "attributes": [
+    "Position"
+  ],
+  "samplers": [
+    {
+      "name": "DiffuseSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "OutSize",
+      "type": "float",
+      "count": 2,
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Enabled",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "name": "PaperWhite",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.95,
+        0.93,
+        0.88
+      ]
+    },
+    {
+      "name": "InkRed",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.8,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "name": "InkBlack",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.08,
+        0.06,
+        0.06
+      ]
+    },
+    {
+      "name": "LumaWeights",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.2,
+        0.55,
+        0.25
+      ]
+    },
+    {
+      "name": "Contrast",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.35
+      ]
+    },
+    {
+      "name": "Gamma",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.7
+      ]
+    },
+    {
+      "name": "Brightness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.14
+      ]
+    },
+    {
+      "name": "WarmStrength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        3.0
+      ]
+    },
+    {
+      "name": "SkinStrength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        4.0
+      ]
+    },
+    {
+      "name": "RedLightness",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.35
+      ]
+    },
+    {
+      "name": "BayerSize",
+      "type": "float",
+      "count": 1,
+      "values": [
+        4.0
+      ]
+    },
+    {
+      "name": "DotScale",
+      "type": "float",
+      "count": 1,
+      "values": [
+        2.0
+      ]
+    },
+    {
+      "name": "Sharpen",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "name": "Chroma",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.6
+      ]
+    },
+    {
+      "name": "Surround",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.6
+      ]
+    }
+  ]
+}
