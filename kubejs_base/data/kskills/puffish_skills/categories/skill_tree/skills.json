@@ -2264,5 +2264,10 @@
 		"x": -372,
 		"y": -584,
 		"definition": "i_workaholic"
+	},
+	"hollowed_1": {
+		"x": -800,
+		"y": 228,
+		"definition": "x_hollowed"
 	}
 }

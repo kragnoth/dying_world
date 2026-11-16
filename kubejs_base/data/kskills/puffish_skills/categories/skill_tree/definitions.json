@@ -12308,5 +12308,139 @@
 				"color": "dark_aqua"
 			}
 		]
+	},
+	"x_hollowed": {
+		"title": {
+			"text": "Hollowed",
+			"color": "dark_purple",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "✦ Soul Siphon, Arcane Ward and Hex, wherever your path ran\n",
+				"color": "light_purple"
+			},
+			{
+				"text": "+4 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+10% Magic Protection\n",
+				"color": "green"
+			},
+			{
+				"text": "+2 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Cooldown Reduction",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:reinforced_deepslate"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.5,
+		"cost": 0,
+		"rewards": [
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "soul_siphon",
+					"level": 1
+				}
+			},
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "arcane_ward",
+					"level": 1
+				}
+			},
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "hex",
+					"level": 1
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:magic_protection",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "It wore your face. Now you wear what it kept.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Capstone • Cannot be learned\n",
+				"color": "dark_aqua"
+			},
+			{
+				"text": "Earned by putting down what waits in the Hollow",
+				"color": "dark_purple"
+			}
+		],
+		"required_mods": [
+			"kskills_perks",
+			"neovitae",
+			"caverns_and_chasms",
+			"lodestone",
+			"apothic_attributes"
+		]
 	}
 }

@@ -47,11 +47,24 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
   server.runCommandSilent(`title ${player.username} subtitle {"text":"It has been waiting in your shape","color":"gray","italic":true}`)
 })
 
+// pass 9-45: the reward is the 'Hollowed' capstone node (no connections, cost 0; only this unlocks it)
+function grantCapstone(server, player) {
+  server.runCommandSilent(`puffish_skills skills unlock ${player.username} kskills:skill_tree hollowed_1`)
+}
+
 function markDefeated(player) {
   if (!player) return
+  const first = !player.tags.contains(HOLLOW_STAGE)
   player.addTag(HOLLOW_STAGE)          // FTB Library's default stage provider reads entity tags
   player.stages.add(HOLLOW_STAGE)      // KubeJS stages, if FTB uses those instead
+  grantCapstone(player.server, player)
+  if (first) player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
 }
+
+// a respec locks every node; give it back to anyone who has earned it
+PlayerEvents.loggedIn(event => {
+  if (event.player.tags.contains(HOLLOW_STAGE)) grantCapstone(event.server, event.player)
+})
 
 EntityEvents.death('mobrules:doppelganger', event => {
   const entity = event.entity

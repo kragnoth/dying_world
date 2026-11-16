@@ -1245,3 +1245,14 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - `tools/quests/add_hollow_quests.py` (idempotent): Seal quest also gives the map (`/loot give`); What They Opened: checkmark -> gamestage task.
 - No deletions. UNVERIFIED in game: everything (skin render, bow pose, ring placement, structure check from KubeJS, stage task).
 - REGEN: gen_pass9_44 after 9_12 (and 9_34); quests: add_hollow_quests after add_unique_rewards.
+
+## Pass 9-45 (2026-11-16) - 'Hollowed': the endgame perk node
+- USER: the end game should feel like unlocking a max-tier perk.
+- `tools/gen_pass9_45.py` edits the skill tree in kubejs_base/data/kskills (the user's tree; identical to his 2026-11-16 upload):
+  definition x_hollowed + skill hollowed_1 at (-800, 228), off the Occult rim. No connections, cost 0: it can't be bought and costs no points.
+  Grants all three Occult keystone perks (soul_siphon, arcane_ward, hex) whatever path was taken, +4 max health, +1 luck, +10% magic
+  protection, +2 lodestone magic damage, +5% cooldown reduction. required_mods as the occult keystones.
+- kubejs 60_the_hollow.js: the doppelganger's death runs `/puffish_skills skills unlock <player> kskills:skill_tree hollowed_1` for owner +
+  killer; on login it re-unlocks it for anyone tagged gh_hollow_defeated (a respec locks every node).
+- Not done (offered): a 'Hollow Mark' item for a multi-stage creative recipe.
+- No deletions. UNVERIFIED in game.
