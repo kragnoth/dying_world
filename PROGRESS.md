@@ -1198,3 +1198,5 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   (item application on brass casing). Recipe ids gearwrights:incursion/*.
 - NEW client_scripts/incursion_alloys_tooltips.js: one lore line each (ItemEvents.modifyTooltips).
 - Not used (no way to get it): tarbound:essence_of_the_void. UNVERIFIED in game: all recipes (JEI), tooltip event name on KubeJS 2101.7.2.
+- 9-41 follow-up (USER): worldshaper recipe DROPPED - Create's Handheld Worldshaper doesn't consume blocks, so a survival recipe = infinite
+  blocks. Uses left: Gearwrights' Seal + the two casings (+ Encased sheets). User will pick more uses later.
