@@ -1,0 +1,185 @@
+{
+ "fallback": "gearwrights:landmarks/tower/caps",
+ "elements": [
+  {
+   "weight": 10,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/corridor_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 10,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/corridor_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 7,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/turn_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 7,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/turn_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/tee_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/tee_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 4,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/junction_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 4,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/junction_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/storage_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/storage_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/crypt_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/crypt_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/prison_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/prison_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/rubble_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/rubble_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/study_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/study_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/collapsed_0",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/tower/cells/collapsed_1",
+    "processors": "gearwrights:landmarks/tower_weathering"
+   }
+  }
+ ]
+}

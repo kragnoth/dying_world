@@ -1,0 +1,77 @@
+# Theme audit (pass 9-26)
+
+| structure | pieces | blocks | R&R | white | lights | flags |
+|---|---|---|---|---|---|---|
+| abandoned_cabin | 1 | 402 | 0% | 0% | 1 | ok |
+| abandoned_cabin_dark_oak | 1 | 387 | 0% | 0% | 1 | ok |
+| abandoned_cabin_oak | 1 | 397 | 0% | 0% | 1 | ok |
+| abandoned_hamlet_desert | 40 | 15710 | 0% | 3% | 0 | ok |
+| abandoned_hamlet_plains | 49 | 23180 | 0% | 1% | 0 | ok |
+| abandoned_hamlet_savanna | 46 | 20672 | 0% | 1% | 0 | ok |
+| abandoned_hamlet_snowy | 49 | 30839 | 0% | 1% | 0 | ok |
+| abandoned_hamlet_swamp | 23 | 8036 | 0% | 0% | 0 | ok |
+| abandoned_hamlet_taiga | 52 | 31726 | 0% | 0% | 0 | ok |
+| abandoned_ruin_desert | 31 | 15088 | 0% | 3% | 0 | ok |
+| abandoned_ruin_plains | 40 | 22558 | 0% | 2% | 0 | ok |
+| abandoned_ruin_savanna | 37 | 20050 | 0% | 1% | 0 | ok |
+| abandoned_ruin_snowy | 40 | 30217 | 0% | 1% | 0 | ok |
+| abandoned_ruin_swamp | 14 | 7414 | 0% | 0% | 0 | ok |
+| abandoned_ruin_taiga | 43 | 31104 | 0% | 0% | 0 | ok |
+| abandoned_smithy | 2 | 649 | 0% | 0% | 3 | ok |
+| abandoned_smithy_arid | 2 | 643 | 0% | 0% | 3 | ok |
+| abandoned_village_desert | 40 | 15710 | 0% | 3% | 0 | ok |
+| abandoned_village_plains | 49 | 23180 | 0% | 1% | 0 | ok |
+| abandoned_village_savanna | 46 | 20672 | 0% | 1% | 0 | ok |
+| abandoned_village_snowy | 49 | 30839 | 0% | 1% | 0 | ok |
+| abandoned_village_swamp | 23 | 8036 | 0% | 0% | 0 | ok |
+| abandoned_village_taiga | 52 | 31726 | 0% | 0% | 0 | ok |
+| charnel_crypt | 1 | 375 | 0% | 0% | 0 | ok |
+| collapsed_minehead | 1 | 482 | 1% | 0% | 0 | ok |
+| concrete_pad_arid | 3 | 418 | 76% | 0% | 0 | ok |
+| concrete_pad_cold | 3 | 416 | 77% | 0% | 0 | ok |
+| concrete_pad_temperate | 5 | 680 | 77% | 1% | 0 | ok |
+| concrete_pad_wild | 3 | 405 | 77% | 0% | 0 | ok |
+| dig_site_arid | 1 | 792 | 0% | 0% | 3 | ok |
+| dig_site_temp | 1 | 792 | 0% | 0% | 3 | ok |
+| drowned_radio | 1 | 166 | 0% | 0% | 1 | ok |
+| hermit_cottage | 1 | 321 | 0% | 0% | 1 | ok |
+| industrial_mineshaft | 48 | 31109 | 96% | 0% | 119 | ok |
+| lighthouse | 2 | 2253 | 0% | 17% | 6 | ok |
+| nether_foundry | 9 | 2326 | 6% | 0% | 7 | ok |
+| nether_foundry_derelict | 9 | 2330 | 6% | 0% | 3 | ok |
+| plague_house | 1 | 438 | 0% | 0% | 0 | ok |
+| proving_grounds | 24 | 10290 | 27% | 0% | 21 | ok |
+| research_end | 16 | 4646 | 1% | 0% | 24 | ok |
+| research_end_derelict | 16 | 4634 | 1% | 0% | 15 | ok |
+| research_gate_end | 16 | 4523 | 2% | 0% | 24 | ok |
+| research_gate_end_derelict | 16 | 4509 | 2% | 0% | 13 | ok |
+| research_gate_nether | 16 | 4535 | 1% | 0% | 24 | ok |
+| research_gate_nether_derelict | 16 | 4522 | 1% | 0% | 14 | ok |
+| research_nether | 17 | 5051 | 1% | 0% | 24 | ok |
+| research_nether_derelict | 17 | 5039 | 1% | 0% | 15 | ok |
+| researcher_cabin | 3 | 634 | 0% | 0% | 2 | ok |
+| road_sign | (supplementaries:road_sign) | | | | | vanilla/mod code structure |
+| ruined_chapel | 1 | 1207 | 0% | 0% | 3 | ok |
+| scavenger_outpost_abandoned | 3 | 1298 | 87% | 0% | 0 | ok |
+| scavenger_outpost_arid | 3 | 1298 | 87% | 0% | 0 | ok |
+| scavenger_outpost_cold | 3 | 1298 | 87% | 0% | 0 | ok |
+| scavenger_outpost_raiders | 3 | 1298 | 87% | 0% | 0 | ok |
+| scavenger_outpost_temperate | 3 | 1298 | 87% | 0% | 0 | ok |
+| scavenger_outpost_wild | 3 | 1298 | 87% | 0% | 0 | ok |
+| scavenger_stronghold | 102 | 46901 | 3% | 1% | 14 | ok |
+| scavenger_stronghold_desert | 84 | 32388 | 2% | 3% | 14 | ok |
+| scavenger_stronghold_plains | 102 | 46901 | 3% | 1% | 14 | ok |
+| scavenger_stronghold_savanna | 96 | 41776 | 3% | 1% | 14 | ok |
+| scavenger_stronghold_snowy | 102 | 62284 | 2% | 1% | 14 | ok |
+| scavenger_stronghold_taiga | 108 | 64179 | 2% | 0% | 14 | ok |
+| sculk_research_site | 22 | 7332 | 8% | 0% | 24 | ok |
+| shipwreck | (minecraft:shipwreck) | | | | | vanilla/mod code structure |
+| shipwreck_beached | (minecraft:shipwreck) | | | | | vanilla/mod code structure |
+| sunken_research_lab | 14 | 14766 | 8% | 0% | 26 | ok |
+| tinker_workshop | 1 | 400 | 0% | 0% | 1 | ok |
+| village_desert | 80 | 30584 | 0% | 4% | 75 | ok |
+| village_plains | 98 | 45388 | 0% | 2% | 92 | ok |
+| village_savanna | 92 | 40320 | 0% | 2% | 83 | ok |
+| village_snowy | 98 | 60659 | 0% | 1% | 96 | ok |
+| village_taiga | 104 | 62426 | 0% | 0% | 95 | ok |
+| wayside_shrine | 1 | 72 | 0% | 0% | 0 | ok |

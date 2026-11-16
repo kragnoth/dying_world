@@ -1,0 +1,20 @@
+{
+  "name": "quality_equipment.quality.blessed",
+  "color_code": "§d",
+  "bauble": {
+    "modifiers": [
+      {
+        "name": "blessed_luck",
+        "attribute": "minecraft:generic.luck",
+        "operation": "addition",
+        "value": 0.4
+      },
+      {
+        "name": "blessed_max_health",
+        "attribute": "generic.max_health",
+        "operation": "addition",
+        "value": 2
+      }
+    ]
+  }
+}

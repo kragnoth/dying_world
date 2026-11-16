@@ -1,0 +1,149 @@
+{
+ "fallback": "gearwrights:landmarks/mine/caps",
+ "elements": [
+  {
+   "weight": 10,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/corridor_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 10,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/corridor_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 7,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/turn_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 7,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/turn_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/tee_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/tee_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 4,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/junction_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 4,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/junction_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/storage_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/storage_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/crypt_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/crypt_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/rubble_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/rubble_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/collapsed_0",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/cells/collapsed_1",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  }
+ ]
+}

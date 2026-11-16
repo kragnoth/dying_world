@@ -1,0 +1,31 @@
+{
+  "type": "agritechevolved:tree",
+  "sapling": {
+    "item": "minecraft:pale_oak_sapling"
+  },
+  "soils": [
+    {
+      "tag": "agritechevolved:tree_soils"
+    }
+  ],
+  "drops": [
+    {
+      "item": "minecraft:pale_oak_log",
+      "min": 2,
+      "max": 6,
+      "chance": 1.0
+    },
+    {
+      "item": "minecraft:pale_oak_sapling",
+      "min": 1,
+      "max": 2,
+      "chance": 0.5
+    },
+    {
+      "item": "minecraft:stick",
+      "min": 1,
+      "max": 2,
+      "chance": 0.5
+    }
+  ]
+}

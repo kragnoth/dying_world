@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "rusticdelight"
+    }
+  ],
+  "type": "agritechevolved:crop",
+  "seed": {
+    "item": "rusticdelight:dark_bell_pepper_seeds"
+  },
+  "soils": [
+    {
+      "tag": "agritechevolved:farmland_soils"
+    }
+  ],
+  "drops": [
+    {
+      "item": "rusticdelight:bell_pepper_black",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0
+    },
+    {
+      "item": "rusticdelight:bell_pepper_blue",
+      "min": 1,
+      "max": 1,
+      "chance": 0.14
+    },
+    {
+      "item": "rusticdelight:bell_pepper_purple",
+      "min": 1,
+      "max": 1,
+      "chance": 0.14
+    }
+  ]
+}

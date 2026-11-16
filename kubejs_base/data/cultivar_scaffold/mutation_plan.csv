@@ -1,0 +1,24 @@
+child,parent_a,parent_b,chance,light_min,light_max,humidity,comparison,acidity,nutrients,notes
+immersiveengineering:hemp,cultivar:silkweed,minecraft:sugar_cane,0.25,,,,,,,tall fibre: silk x cane
+minersdelight:cave_carrot,minecraft:carrot,minecraft:brown_mushroom,0.25,9,11,,,,,twilight cross
+neovitae:weak_tau,minecraft:beetroot,cultivar:madder_root,0.2,,,,,,,blood-red roots
+neovitae:strong_tau,neovitae:weak_tau,minecraft:nether_wart,0.15,13,15,,,,,bright cross
+supplementaries:flax,minecraft:wheat,cultivar:silkweed,0.25,,,,,,,linen fibre
+windswept:ginger,minecraft:carrot,cultivar:madder_root,0.25,,,,,,,spice root
+atmospheric:aloe,minecraft:cactus,cultivar:silkweed,0.2,,,,,,,soft succulent
+autumnity:foul_berries,minecraft:sweet_berries,cultivar:inkcap,0.2,,,,,,,berries gone foul
+environmental:cattail,minecraft:sugar_cane,cultivar:clayreed,0.25,,,,,,,marsh reeds
+minecraft:kelp,cultivar:slimecap,minecraft:sugar_cane,0.25,,,flooded,,,,needs flooded soil
+minecraft:twisting_vines,minecraft:nether_wart,minecraft:glow_berries,0.2,,,,,,,teal nether vine
+minecraft:weeping_vines,minecraft:nether_wart,minecraft:sweet_berries,0.2,,,,,,,red nether vine
+mynethersdelight:crimson_fungus,minecraft:red_mushroom,minecraft:nether_wart,0.2,,,,,,,
+mynethersdelight:warped_fungus,minecraft:brown_mushroom,minecraft:nether_wart,0.2,,,,,,,
+regions_unexplored:dropleaf,minecraft:glow_berries,minecraft:sugar_cane,0.2,,,,,,,cave leaf
+regions_unexplored:duskmelon,minecraft:melon,cultivar:inkcap,0.2,9,11,,,,,twilight melon
+regions_unexplored:glistering_ivy,minecraft:glow_berries,cultivar:shardbloom,0.15,,,,,,,crystal ivy
+regions_unexplored:hanging_earlight,minecraft:glow_berries,minecraft:beetroot,0.2,,,,,,,
+regions_unexplored:salmonberry,minecraft:sweet_berries,cultivar:madder_root,0.25,10,15,,,,,
+windswept:lavender,cultivar:woad,cultivar:madder_root,0.2,12,15,,,,,blue + red = purple
+windswept:wild_berries,minecraft:sweet_berries,minecraft:beetroot,0.25,,,,,,,wild cousin
+regions_unexplored:kapok_vines,minecraft:cocoa,cultivar:silkweed,0.2,,,,,,,kapok fibre
+regions_unexplored:spanish_moss,regions_unexplored:kapok_vines,cultivar:inkcap,0.2,,,,,,,damp hanging moss

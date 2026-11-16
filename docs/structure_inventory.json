@@ -1,0 +1,2512 @@
+[
+ {
+  "id": "abandoned_cabins:abandoned_cabin",
+  "provider": "abandoned_cabins-1.3.1-neoforge-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 25,
+   "salt": 1113151588
+  },
+  "structures": [
+   {
+    "id": "abandoned_cabins:abandoned_cabin",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "[5 biomes]",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "abandoned_cabins:regular_cabin",
+  "provider": "abandoned_cabins-1.3.1-neoforge-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 67,
+   "separation": 38,
+   "salt": 737847245
+  },
+  "structures": [
+   {
+    "id": "abandoned_cabins:regular_cabin",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "[5 biomes]",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "atmospheric:arid_gardens",
+  "provider": "atmospheric-1.21.1-7.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 24,
+   "separation": 6,
+   "salt": 304972539
+  },
+  "structures": [
+   {
+    "id": "atmospheric:arid_garden",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#atmospheric:has_structure/arid_garden",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "atmospheric:kousa_sanctums",
+  "provider": "atmospheric-1.21.1-7.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 502973253
+  },
+  "structures": [
+   {
+    "id": "atmospheric:kousa_sanctum",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#atmospheric:has_structure/kousa_sanctum",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "autumnity:maple_huts",
+  "provider": "autumnity-1.21.1-6.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 56181419
+  },
+  "structures": [
+   {
+    "id": "autumnity:maple_hut",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#autumnity:has_structure/maple_hut",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "caverns_and_chasms:forges",
+  "provider": "caverns_and_chasms-1.21.1-3.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 16,
+   "separation": 6,
+   "salt": 294502589
+  },
+  "structures": [
+   {
+    "id": "caverns_and_chasms:forge",
+    "type": "jigsaw",
+    "step": "underground_structures",
+    "biomes": "#caverns_and_chasms:has_structure/forge",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "caverns_and_chasms:tin_monoliths",
+  "provider": "caverns_and_chasms-1.21.1-3.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 96,
+   "separation": 32,
+   "salt": 47621501
+  },
+  "structures": [
+   {
+    "id": "caverns_and_chasms:tin_monolith",
+    "type": "tin_monolith",
+    "step": "raw_generation",
+    "biomes": "#caverns_and_chasms:has_structure/tin_monolith",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "caverns_and_chasms:vaults",
+  "provider": "caverns_and_chasms-1.21.1-3.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 12,
+   "salt": 5123513
+  },
+  "structures": [
+   {
+    "id": "caverns_and_chasms:vault",
+    "type": "jigsaw",
+    "step": "underground_structures",
+    "biomes": "#caverns_and_chasms:has_structure/vault",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "createnewbeg:abandoned_smithy",
+  "provider": "createnewbeg-0.1.0-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 100,
+   "separation": 50,
+   "salt": 1694767080
+  },
+  "structures": [
+   {
+    "id": "createnewbeg:abandoned_smithy",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#createnewbeg:has_structure/abandoned_smithy",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "createnewbeg:lighthouse",
+  "provider": "createnewbeg-0.1.0-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 100,
+   "separation": 50,
+   "salt": 5746523485
+  },
+  "structures": [
+   {
+    "id": "createnewbeg:lighthouse",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#createnewbeg:has_structure/lighthouse",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "cultivar:derelict_conservatories",
+  "provider": "cultivar-0.2.0",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 40,
+   "separation": 14,
+   "salt": 91847215
+  },
+  "structures": [
+   {
+    "id": "cultivar:derelict_conservatory",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#cultivar:has_structure/derelict_conservatory",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "environmental:log_cabins",
+  "provider": "environmental-1.21.1-5.0.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 60277924
+  },
+  "structures": [
+   {
+    "id": "environmental:log_cabin",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#environmental:has_structure/log_cabin",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "formationsnether:common",
+  "provider": "formationsnether-1.0.5b-mc1.21+",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 5,
+   "separation": 2,
+   "salt": 1359801681
+  },
+  "structures": [
+   {
+    "id": "formationsnether:basalt_hut",
+    "type": "simple",
+    "step": "underground_structures",
+    "biomes": "#formationsnether:has_structure/basalt_hut",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:blackstone_remnant",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/blackstone_remnant",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:campsite",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/campsite",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:flaming_pillar",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/flaming_pillar",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:large_house",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/large_house",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:large_pedestal",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/large_pedestal",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:large_tree",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/large_tree",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:nether_wart_field",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/nether_wart_field",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:obsidian_pillar",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/obsidian_pillar",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:parkour_challenge",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/parkour_challenge",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:quartz_spikes",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/quartz_spikes",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:respawn_anchor_altar",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/respawn_anchor_altar",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:rib_cage",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/rib_cage",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:small_fire_arena",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/small_fire_arena",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:small_lava_arena",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/small_lava_arena",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:small_lava_shrine",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/small_lava_shrine",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:small_pedestal",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/small_pedestal",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:sphere_cage",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/sphere_cage",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "formationsnether:ore_shards",
+  "provider": "formationsnether-1.0.5b-mc1.21+",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 4,
+   "separation": 1,
+   "salt": 1483793176
+  },
+  "structures": [
+   {
+    "id": "formationsnether:ore_shard",
+    "type": "simple",
+    "step": "underground_structures",
+    "biomes": "#formationsnether:has_structure/ore_shard",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "formationsnether:rare",
+  "provider": "formationsnether-1.0.5b-mc1.21+",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 15,
+   "separation": 10,
+   "salt": 33126376
+  },
+  "structures": [
+   {
+    "id": "formationsnether:blackstone_castle",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/blackstone_castle",
+    "weight": 1
+   },
+   {
+    "id": "formationsnether:checkerboard_temple",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsnether:has_structure/checkerboard_temple",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "formationsoverworld:rafts",
+  "provider": "formationsoverworld-1.0.5c-mc1.21+",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 25,
+   "separation": 15,
+   "salt": 995602250
+  },
+  "structures": [
+   {
+    "id": "formationsoverworld:raft",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/raft",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "formationsoverworld:rare",
+  "provider": "formationsoverworld-1.0.5c-mc1.21+",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 50,
+   "separation": 40,
+   "salt": 1024917310
+  },
+  "structures": [
+   {
+    "id": "formationsoverworld:large_temple",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/large_temple",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:witch_tower",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/witch_tower",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "formationsoverworld:uncommon",
+  "provider": "formationsoverworld-1.0.5c-mc1.21+",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 15,
+   "separation": 8,
+   "salt": 650800552
+  },
+  "structures": [
+   {
+    "id": "formationsoverworld:bamboo_hut",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/bamboo_hut",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:campsite",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/campsite",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:cobble_hole",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/cobble_hole",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:copper_spire",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/copper_spire",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:desert_houses",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/desert_houses",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:farmland_field",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/farmland_field",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:fountain",
+    "type": "pieced",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/fountain",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:graveyard",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/graveyard",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:hobbit_hole",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/hobbit_hole",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:ice_castle",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/ice_castle",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:ice_spire",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/ice_spire",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:igloo",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/igloo",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:log_shelter",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/log_shelter",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:log_spikes",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/log_spikes",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:mesoamerican_temple",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/mesoamerican_temple",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:meteor",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/meteor",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:mushroom_hut",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/mushroom_hut",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:offering",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/offering",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:small_house",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/small_house",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:small_statue",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/small_statue",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:small_temple",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/small_temple",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:stone_ore_spikes",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/stone_ore_spikes",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:stone_tower",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/stone_tower",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:tiny_house",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/tiny_house",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:tower_remnant",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/tower_remnant",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:wagon",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/wagon",
+    "weight": 1
+   },
+   {
+    "id": "formationsoverworld:well",
+    "type": "simple",
+    "step": "surface_structures",
+    "biomes": "#formationsoverworld:has_structure/well",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "forsaken:homes",
+  "provider": "strayed-fates-forsaken-v2.0.0.2",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 30,
+   "separation": 2,
+   "salt": 1325748965,
+   "frequency": 0.0045
+  },
+  "structures": [
+   {
+    "id": "forsaken:homes/bricks",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/bricks",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/desert",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/desert",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/mud",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/mud",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/oak",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/oak",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/oriental",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/oriental",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/snowy",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/snowy",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/spruce",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/spruce",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/turf",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/turf",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:homes/western",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/homes/western",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "forsaken:wells",
+  "provider": "strayed-fates-forsaken-v2.0.0.2",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 20,
+   "separation": 10,
+   "salt": 5346557894,
+   "frequency": 0.0025
+  },
+  "structures": [
+   {
+    "id": "forsaken:wells/rustic/spruce",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/rustic/spruce",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/rustic/oak",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/rustic/oak",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/rustic/dark_oak",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/rustic/dark_oak",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/rustic/birch",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/rustic/birch",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/pit/cobble",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/pit/cobble",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:wells/pit/mud",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/pit/mud",
+    "weight": 1
+   },
+   {
+    "id": "forsaken:wells/oriental",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/oriental",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/mud",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/oriental",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/pump/cobble",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/pump/cobble",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/pump/mud",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/pump/mud",
+    "weight": 2
+   },
+   {
+    "id": "forsaken:wells/washhouse",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#forsaken:has_structure/wells/washhouse",
+    "weight": 2
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:abandoned_hamlets",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 30,
+   "separation": 12,
+   "salt": 852041177,
+   "frequency": 0.85
+  },
+  "structures": [
+   {
+    "id": "gearwrights:abandoned_hamlet_plains",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_plains",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_hamlet_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_taiga",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_hamlet_savanna",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_savanna",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_hamlet_desert",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_desert",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_hamlet_snowy",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_snowy",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_hamlet_cherry",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_cherry",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_hamlet_swamp",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_swamp",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:abandoned_ruins",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 13,
+   "separation": 5,
+   "salt": 377211903,
+   "frequency": 0.55
+  },
+  "structures": [
+   {
+    "id": "gearwrights:abandoned_ruin_plains",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_plains",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_ruin_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_taiga",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_ruin_savanna",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_savanna",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_ruin_desert",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_desert",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_ruin_snowy",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_snowy",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_ruin_cherry",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_cherry",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_ruin_swamp",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_ruin_swamp",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:abandoned_villages",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 52,
+   "separation": 20,
+   "salt": 1590236471
+  },
+  "structures": [
+   {
+    "id": "gearwrights:abandoned_village_plains",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_plains",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_village_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_taiga",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_village_savanna",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_savanna",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_village_desert",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_desert",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_village_snowy",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_snowy",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_village_cherry",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_cherry",
+    "weight": 1
+   },
+   {
+    "id": "gearwrights:abandoned_village_swamp",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/abandoned_village_swamp",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:burnt_homestead",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 34,
+   "separation": 14,
+   "salt": 77435
+  },
+  "structures": [
+   {
+    "id": "gearwrights:burnt_homestead",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/burnt_homestead",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:burnt_manor",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 58,
+   "separation": 24,
+   "salt": 77434
+  },
+  "structures": [
+   {
+    "id": "gearwrights:burnt_manor",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/burnt_manor",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:burnt_watchtower",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 46,
+   "separation": 20,
+   "salt": 77431
+  },
+  "structures": [
+   {
+    "id": "gearwrights:burnt_watchtower",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/burnt_watchtower",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:collapsed_minehead",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 40,
+   "separation": 18,
+   "salt": 77433
+  },
+  "structures": [
+   {
+    "id": "gearwrights:collapsed_minehead",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/collapsed_minehead",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "gearwrights:ruined_chapel",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 52,
+   "separation": 22,
+   "salt": 77432
+  },
+  "structures": [
+   {
+    "id": "gearwrights:ruined_chapel",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#gearwrights:has_structure/ruined_chapel",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "hearths:netherrack_spirals",
+  "provider": "Hearths v1.0.5.mod",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 6,
+   "separation": 4,
+   "salt": 814798319
+  },
+  "structures": [
+   {
+    "id": "hearths:netherrack_spiral",
+    "type": "jigsaw",
+    "step": "local_modifications",
+    "biomes": "minecraft:nether_wastes",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "hearths:towers",
+  "provider": "Hearths v1.0.5.mod",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 16,
+   "separation": 12,
+   "salt": 214798319
+  },
+  "structures": [
+   {
+    "id": "hearths:crimson_tower",
+    "type": "jigsaw",
+    "step": "local_modifications",
+    "biomes": "minecraft:crimson_forest",
+    "weight": 1
+   },
+   {
+    "id": "hearths:warped_tower",
+    "type": "jigsaw",
+    "step": "local_modifications",
+    "biomes": "minecraft:warped_forest",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:abandoned_camp",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 37,
+   "separation": 8,
+   "salt": 91231127
+  },
+  "structures": [
+   {
+    "id": "minecraft:abandoned_camp_bamboo_jungle",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_bamboo_jungle",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_birch_forest",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_birch_forest",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_cherry_grove",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_cherry_grove",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_dappled_forest",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_dappled_forest",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_flower_forest",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_flower_forest",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_forest",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_forest",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_meadow",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_meadow",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_old_growth_pine_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_old_growth_pine_taiga",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_old_growth_birch_forest",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_old_growth_birch_forest",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_old_growth_spruce_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_old_growth_spruce_taiga",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_pale_garden",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_pale_garden",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_savanna",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_savanna",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_snowy_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_snowy_taiga",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_sparse_jungle",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_sparse_jungle",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_swamp",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_swamp",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_taiga",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_windswept_forest",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_windswept_forest",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:abandoned_camp_wooded_badlands",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/abandoned_camp_wooded_badlands",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:ancient_cities",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 24,
+   "separation": 8,
+   "salt": 20083232
+  },
+  "structures": [
+   {
+    "id": "minecraft:ancient_city",
+    "type": "jigsaw",
+    "step": "underground_decoration",
+    "biomes": "#minecraft:has_structure/ancient_city",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:buried_treasures",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 1,
+   "separation": 0,
+   "salt": 0,
+   "frequency": 0.01
+  },
+  "structures": [
+   {
+    "id": "minecraft:buried_treasure",
+    "type": "buried_treasure",
+    "step": "underground_structures",
+    "biomes": "#minecraft:has_structure/buried_treasure",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:desert_pyramids",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 14357617
+  },
+  "structures": [
+   {
+    "id": "minecraft:desert_pyramid",
+    "type": "desert_pyramid",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/desert_pyramid",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:end_cities",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 20,
+   "separation": 11,
+   "salt": 10387313
+  },
+  "structures": [
+   {
+    "id": "minecraft:end_city",
+    "type": "end_city",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/end_city",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:igloos",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 14357618
+  },
+  "structures": [
+   {
+    "id": "minecraft:igloo",
+    "type": "igloo",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/igloo",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:jungle_temples",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 14357619
+  },
+  "structures": [
+   {
+    "id": "minecraft:jungle_pyramid",
+    "type": "jungle_temple",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/jungle_temple",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:mineshafts",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 1,
+   "separation": 0,
+   "salt": 0,
+   "frequency": 0.004
+  },
+  "structures": [
+   {
+    "id": "minecraft:mineshaft",
+    "type": "mineshaft",
+    "step": "underground_structures",
+    "biomes": "#minecraft:has_structure/mineshaft",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:mineshaft_mesa",
+    "type": "mineshaft",
+    "step": "underground_structures",
+    "biomes": "#minecraft:has_structure/mineshaft_mesa",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:nether_complexes",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 27,
+   "separation": 4,
+   "salt": 30084232
+  },
+  "structures": [
+   {
+    "id": "minecraft:fortress",
+    "type": "fortress",
+    "step": "underground_decoration",
+    "biomes": "#minecraft:has_structure/nether_fortress",
+    "weight": 2
+   },
+   {
+    "id": "minecraft:bastion_remnant",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/bastion_remnant",
+    "weight": 3
+   }
+  ]
+ },
+ {
+  "id": "minecraft:nether_fossils",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 2,
+   "separation": 1,
+   "salt": 14357921
+  },
+  "structures": [
+   {
+    "id": "minecraft:nether_fossil",
+    "type": "nether_fossil",
+    "step": "underground_decoration",
+    "biomes": "#minecraft:has_structure/nether_fossil",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:ocean_monuments",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 5,
+   "salt": 10387313
+  },
+  "structures": [
+   {
+    "id": "minecraft:monument",
+    "type": "ocean_monument",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ocean_monument",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:ocean_ruins",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 20,
+   "separation": 8,
+   "salt": 14357621
+  },
+  "structures": [
+   {
+    "id": "minecraft:ocean_ruin_cold",
+    "type": "ocean_ruin",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ocean_ruin_cold",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ocean_ruin_warm",
+    "type": "ocean_ruin",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ocean_ruin_warm",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:pillager_outposts",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 165745296,
+   "frequency": 0.2
+  },
+  "structures": [
+   {
+    "id": "minecraft:pillager_outpost",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/pillager_outpost",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:ruined_portals",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 40,
+   "separation": 15,
+   "salt": 34222645
+  },
+  "structures": [
+   {
+    "id": "minecraft:ruined_portal",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_standard",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ruined_portal_desert",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_desert",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ruined_portal_jungle",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_jungle",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ruined_portal_swamp",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_swamp",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ruined_portal_mountain",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_mountain",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ruined_portal_ocean",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_ocean",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:ruined_portal_nether",
+    "type": "ruined_portal",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/ruined_portal_nether",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:shipwrecks",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 24,
+   "separation": 4,
+   "salt": 165745295
+  },
+  "structures": [
+   {
+    "id": "minecraft:shipwreck",
+    "type": "shipwreck",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/shipwreck",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:shipwreck_beached",
+    "type": "shipwreck",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/shipwreck_beached",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:strongholds",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:concentric_rings",
+   "salt": 0,
+   "distance": 32,
+   "count": 128,
+   "spread": 3
+  },
+  "structures": [
+   {
+    "id": "minecraft:stronghold",
+    "type": "stronghold",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/stronghold",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:swamp_huts",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 8,
+   "salt": 14357620
+  },
+  "structures": [
+   {
+    "id": "minecraft:swamp_hut",
+    "type": "swamp_hut",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/swamp_hut",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:trail_ruins",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 34,
+   "separation": 8,
+   "salt": 83469867
+  },
+  "structures": [
+   {
+    "id": "minecraft:trail_ruins",
+    "type": "jigsaw",
+    "step": "underground_structures",
+    "biomes": "#minecraft:has_structure/trail_ruins",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:trial_chambers",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 34,
+   "separation": 12,
+   "salt": 94251327
+  },
+  "structures": [
+   {
+    "id": "minecraft:trial_chambers",
+    "type": "jigsaw",
+    "step": "underground_structures",
+    "biomes": "#minecraft:has_structure/trial_chambers",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:villages",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 34,
+   "separation": 8,
+   "salt": 10387312
+  },
+  "structures": [
+   {
+    "id": "minecraft:village_plains",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_plains",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:village_desert",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_desert",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:village_savanna",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_savanna",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:village_snowy",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_snowy",
+    "weight": 1
+   },
+   {
+    "id": "minecraft:village_taiga",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_taiga",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "minecraft:woodland_mansions",
+  "provider": "minecraft-1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 80,
+   "separation": 20,
+   "salt": 10387319
+  },
+  "structures": [
+   {
+    "id": "minecraft:mansion",
+    "type": "woodland_mansion",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/woodland_mansion",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "supplementaries:galleons",
+  "provider": "supplementaries-1.21.1-4.1.1-neoforge",
+  "placement": {
+   "type": "supplementaries:random_spread_with_exclusion",
+   "spacing": 31,
+   "separation": 19,
+   "salt": 121047156
+  },
+  "structures": [
+   {
+    "id": "supplementaries:galleon",
+    "type": "galleon",
+    "step": "surface_structures",
+    "biomes": "#supplementaries:has_galleons",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "supplementaries:road_signs",
+  "provider": "supplementaries-1.21.1-4.1.1-neoforge",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 19,
+   "separation": 10,
+   "salt": 431041526
+  },
+  "structures": [
+   {
+    "id": "supplementaries:road_sign",
+    "type": "road_sign",
+    "step": "strongholds",
+    "biomes": "#supplementaries:has_road_signs",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "tarbound:charnel_crypt",
+  "provider": "tarbound-0.67.0-alpha",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 56,
+   "separation": 20,
+   "salt": 139846627
+  },
+  "structures": [
+   {
+    "id": "tarbound:charnel_crypt",
+    "type": "dry_land",
+    "step": "surface_structures",
+    "biomes": "#tarbound:has_charnel_crypt",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "tarbound:drowned_radio",
+  "provider": "tarbound-0.67.0-alpha",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 30,
+   "separation": 10,
+   "salt": 655930281
+  },
+  "structures": [
+   {
+    "id": "tarbound:drowned_radio",
+    "type": "dry_land",
+    "step": "surface_structures",
+    "biomes": "#tarbound:has_drowned_radio",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "tarbound:researcher_cabin",
+  "provider": "tarbound-0.67.0-alpha",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 48,
+   "separation": 16,
+   "salt": 817342611
+  },
+  "structures": [
+   {
+    "id": "tarbound:researcher_cabin",
+    "type": "dry_land",
+    "step": "surface_structures",
+    "biomes": "#tarbound:has_researcher_cabin",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "tarbound:wayside_shrine",
+  "provider": "tarbound-0.67.0-alpha",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 36,
+   "separation": 12,
+   "salt": 402117583
+  },
+  "structures": [
+   {
+    "id": "tarbound:wayside_shrine",
+    "type": "dry_land",
+    "step": "surface_structures",
+    "biomes": "#tarbound:has_wayside_shrine",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "towns_and_towers:other",
+  "provider": "t_and_t-fabric-neoforge-1.13.11",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 32,
+   "separation": 16,
+   "salt": 213742069
+  },
+  "structures": [
+   {
+    "id": "towns_and_towers:mimic_desert",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#minecraft:has_structure/desert_pyramid",
+    "weight": 1
+   },
+   {
+    "id": "towns_and_towers:wreckage_ocean",
+    "type": "jigsaw",
+    "step": "underground_decoration",
+    "biomes": "#towns_and_towers:has_structure/shallow_oceans_wreckage",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "towns_and_towers:towers",
+  "provider": "t_and_t-fabric-neoforge-1.13.11",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 48,
+   "separation": 12,
+   "salt": 213742069,
+   "frequency": 0.2
+  },
+  "structures": [
+   {
+    "id": "towns_and_towers:pillager_outpost_badlands",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_badlands",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_beach",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_beach",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_birch_forest",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_birch_forest",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_desert",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_desert",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_flower_forest",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_flower_forest",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_forest",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_forest",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_grove",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_grove",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_jungle",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_jungle",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_meadow",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_meadow",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_mushroom_fields",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_mushroom_fields",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_ocean",
+    "type": "jigsaw",
+    "step": "underground_decoration",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_deep_oceans",
+    "weight": 2
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_old_growth_taiga",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_old_growth_taiga",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_savanna",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_savanna",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_savanna_plateau",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_savanna_plateau",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_snowy_beach",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_snowy_beach",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_snowy_plains",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_snowy_plains",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_snowy_slopes",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_snowy_slopes",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_sparse_jungle",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_sparse_jungle",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_sunflower_plains",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_sunflower_plains",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_swamp",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_swamp",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_taiga",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_taiga",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_snowy_taiga",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_snowy_taiga",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:pillager_outpost_wooded_badlands",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/pillager_outpost_wooded_badlands",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_mediterranean",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_mediterranean",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_tudor",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_tudor",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_classic",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_classic",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_oriental",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_oriental",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_swedish",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_swedish",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_iberian",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_iberian",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_rustic",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_rustic",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/pillager_outpost_nilotic",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/pillager_outpost_nilotic",
+    "weight": 5
+   }
+  ]
+ },
+ {
+  "id": "towns_and_towers:towns",
+  "provider": "t_and_t-fabric-neoforge-1.13.11",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 51,
+   "separation": 12,
+   "salt": 213742069
+  },
+  "structures": [
+   {
+    "id": "towns_and_towers:village_badlands",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_badlands_pueblo",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_beach",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_beach_lighthouse",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_birch_forest",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_birch_forest_romanian",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_flower_forest",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_flower_forest_japanese",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_forest",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_forest_ruins",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_snowy_slopes",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_snowy_slopes_inn",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_jungle",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_jungle_tribal",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_meadow",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_meadow_swiss",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_mushroom_fields",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_mushroom_fields_fantasy",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_ocean",
+    "type": "jigsaw",
+    "step": "underground_decoration",
+    "biomes": "#towns_and_towers:has_structure/village_deep_oceans_ships",
+    "weight": 2
+   },
+   {
+    "id": "towns_and_towers:village_old_growth_taiga",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_old_growth_taiga_polish",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_grove",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_grove_villager_outpost",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_savanna_plateau",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_savanna_plateau_ramshackled",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_sunflower_plains",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_sunflower_plains_farm",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_snowy_taiga",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_snowy_taiga_viking",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_sparse_jungle",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_sparse_jungle_polynesian",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_swamp",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_swamp_boat",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:village_wooded_badlands",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/village_wooded_badlands_tipi",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_mediterranean",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_mediterranean",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_swedish",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_swedish",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_tudor",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_tudor",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_wandering_trader_camp",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_oriental",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_classic",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_classic",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_rustic",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_rustic",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_iberian",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_iberian",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_nilotic",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_nilotic",
+    "weight": 5
+   },
+   {
+    "id": "towns_and_towers:exclusives/village_piglin",
+    "type": "jigsaw",
+    "step": "fluid_springs",
+    "biomes": "#towns_and_towers:has_structure/exclusives/village_piglin",
+    "weight": 5
+   }
+  ]
+ },
+ {
+  "id": "vsrevamped:village_cherry",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 34,
+   "separation": 18,
+   "salt": 1218123376
+  },
+  "structures": [
+   {
+    "id": "vsrevamped:village_cherry",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_cherry",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "vsrevamped:village_swamp",
+  "provider": "kubejs",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 38,
+   "separation": 20,
+   "salt": 1739572224
+  },
+  "structures": [
+   {
+    "id": "vsrevamped:village_swamp",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#minecraft:has_structure/village_swamp",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "watchtower_building:abandoned_watchtower",
+  "provider": "Abandoned Watchtowers 7.0.1 NeoForge 1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 48,
+   "separation": 24,
+   "salt": 1416445091
+  },
+  "structures": [
+   {
+    "id": "watchtower_building:abandoned_watchtower",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "[5 biomes]",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "watchtower_building:fresh_watchtower",
+  "provider": "Abandoned Watchtowers 7.0.1 NeoForge 1.21.1",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 67,
+   "separation": 48,
+   "salt": 200561070
+  },
+  "structures": [
+   {
+    "id": "watchtower_building:fresh_watchtower",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "[5 biomes]",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "windswept:chestnut_weathered_house",
+  "provider": "windswept-1.21.1-4.0.4",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 28,
+   "separation": 8,
+   "salt": 1691337232
+  },
+  "structures": [
+   {
+    "id": "windswept:chestnut_weathered_house",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#windswept:has_structure/chestnut_weathered_house",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "windswept:frozen_villages",
+  "provider": "windswept-1.21.1-4.0.4",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 28,
+   "separation": 8,
+   "salt": 10387370
+  },
+  "structures": [
+   {
+    "id": "windswept:village_frozen",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#windswept:has_structure/frozen_village",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "windswept:grove_weathered_house",
+  "provider": "windswept-1.21.1-4.0.4",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 24,
+   "separation": 6,
+   "salt": 1691237232
+  },
+  "structures": [
+   {
+    "id": "windswept:grove_weathered_house",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#windswept:has_structure/grove_weathered_house",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "windswept:pine_totem",
+  "provider": "windswept-1.21.1-4.0.4",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 10,
+   "separation": 1,
+   "salt": 1631237826
+  },
+  "structures": [
+   {
+    "id": "windswept:pine_totem",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#windswept:has_structure/pine_totem",
+    "weight": 1
+   }
+  ]
+ },
+ {
+  "id": "windswept:snowy_pine_totem",
+  "provider": "windswept-1.21.1-4.0.4",
+  "placement": {
+   "type": "minecraft:random_spread",
+   "spacing": 10,
+   "separation": 1,
+   "salt": 1631637836
+  },
+  "structures": [
+   {
+    "id": "windswept:snowy_pine_totem",
+    "type": "jigsaw",
+    "step": "surface_structures",
+    "biomes": "#windswept:has_structure/snowy_pine_totem",
+    "weight": 1
+   }
+  ]
+ }
+]

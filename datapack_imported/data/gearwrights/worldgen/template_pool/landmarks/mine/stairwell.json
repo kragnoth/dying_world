@@ -1,0 +1,14 @@
+{
+ "fallback": "minecraft:empty",
+ "elements": [
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/mine/stairwell",
+    "processors": "gearwrights:landmarks/mine_weathering"
+   }
+  }
+ ]
+}

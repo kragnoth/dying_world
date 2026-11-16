@@ -1,0 +1,185 @@
+{
+ "fallback": "gearwrights:landmarks/chapel/caps",
+ "elements": [
+  {
+   "weight": 10,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/corridor_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 10,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/corridor_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 7,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/turn_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 7,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/turn_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/tee_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/tee_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 4,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/junction_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 4,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/junction_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/storage_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/storage_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/crypt_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 1,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/crypt_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/prison_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/prison_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/rubble_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 5,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/rubble_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/study_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 2,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/study_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/collapsed_0",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  },
+  {
+   "weight": 3,
+   "element": {
+    "element_type": "minecraft:single_pool_element",
+    "projection": "rigid",
+    "location": "gearwrights:landmarks/chapel/cells/collapsed_1",
+    "processors": "gearwrights:landmarks/chapel_weathering"
+   }
+  }
+ ]
+}

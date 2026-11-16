@@ -1,0 +1,6 @@
+{
+  "fluid": "createaddition:seed_oil",
+  "burnTime": 3,
+  "superHeat": false,
+  "amountConsumedPerTick" : 1
+}

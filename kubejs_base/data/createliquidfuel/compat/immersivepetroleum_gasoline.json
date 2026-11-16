@@ -1,0 +1,6 @@
+{
+  "fluid": "immersivepetroleum:gasoline",
+  "burnTime": 56,
+  "superHeat": true,
+  "amountConsumedPerTick": 10
+}

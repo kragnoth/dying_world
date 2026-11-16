@@ -1,0 +1,9 @@
+{
+  "_help": "Controls tools/build_release.py (CurseForge-safe build). A piece/pool/structure type is 'third-party' unless it is OWN (script-built), VANILLA, or confirmed here.",
+  "confirmed_mine": [],
+  "_confirmed_mine_help": "tokens: 'gearwrights', 'village_houses' (the custom kubejs village house sets), 'brutos', 'vsrevamped', or 'kubejs' (= every kubejs-provided namespace). Only add what YOU made or have written permission for.",
+  "permission_granted": [],
+  "_permission_granted_help": "substrings of mod jar names whose author gave permission, e.g. 'tarbound', 'windswept'. Matches the provider shown in docs/provenance_audit.md.",
+  "force_drop_sets": [],
+  "force_keep_sets": []
+}
