@@ -475,6 +475,13 @@
 			id: "525BBB1B92B4A239"
 			rewards: [
 				{
+					command: "/loot give {p} loot dying_world:map/the_hollow"
+					id: "550F32369548722F"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
 					id: "60D9896EA22764EB"
 					type: "xp"
 					xp: 250
@@ -542,7 +549,8 @@
 			tasks: [
 				{
 					id: "07E86BA017B85A28"
-					type: "checkmark"
+					stage: "gh_hollow_defeated"
+					type: "gamestage"
 				}
 			]
 			x: 16.0d

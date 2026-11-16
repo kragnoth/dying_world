@@ -622,10 +622,11 @@
 	quest.0E6E2FD709279ED7.quest_desc: ["Superheat the compound with two glowstone and a weakened soul, a spark of what the foundry burned out of its blazes.", "Brighter than it has any right to be."]
 	quest.525BBB1B92B4A239.title: "The Guild's Own Mark"
 	quest.525BBB1B92B4A239.quest_subtitle: "Gearwright's Seal"
-	quest.525BBB1B92B4A239.quest_desc: ["A smith's stamp, shadow steel and refined radiance make the Guild's seal without a nether star or a dragon egg.", "The Gearwrights marked their best work with it. Now you can mark yours."]
+	quest.525BBB1B92B4A239.quest_desc: ["A smith's stamp, shadow steel and refined radiance make the Guild's seal without a nether star or a dragon egg.", "The Gearwrights marked their best work with it. Now you can mark yours.", "The seal fits one lock the Guild never sold. The register with it marks the way to the Hollow."]
 	quest.54A48D92052194BA.title: "What They Opened"
+	task.07E86BA017B85A28.title: "Put down what waits in the Hollow"
 	quest.54A48D92052194BA.quest_subtitle: "Every register ends the same way"
-	quest.54A48D92052194BA.quest_desc: ["Gatehouses, a station Below, a station Beyond, a foundry to feed them, a post to listen and a well to cool them. Each one built to fix the last.", "Every record points back to the Hollow, where the first gate was cut. Whatever is still open there, the Gearwrights never closed it.", "The hermit's lamp is yours now. Strike it at an assay anvil to read it."]
+	quest.54A48D92052194BA.quest_desc: ["Gatehouses, a station Below, a station Beyond, a foundry to feed them, a post to listen and a well to cool them. Each one built to fix the last.", "Every record points back to the Hollow, where the first gate was cut. Whatever is still open there, the Gearwrights never closed it.", "The hermit's lamp is yours now. Strike it at an assay anvil to read it.", "Take a seal down to the dais in the Hollow and set it on the altar. What comes up is wearing your face, and your gear."]
 	quest.4DD6EF4C9ACAD67F.title: "A Weakened Soul"
 	quest.4DD6EF4C9ACAD67F.quest_subtitle: "Scraped out of soul sand"
 	quest.4DD6EF4C9ACAD67F.quest_desc: ["Strike flint and steel against soul sand and a dim spark of soul comes loose. A bucket and a soul make a bucket of tar.", "The Guild called it the black. It leaked through their gates long before anyone thought to bottle it."]

@@ -1229,3 +1229,19 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - `tarbound:candle_wax` += `incision:tallow` (optional).
 - No deletions. Unverified in game.
 - REGEN: after gen_occult_quests: gen_pass9_43, add_unique_rewards.
+
+## Pass 9-44 (2026-11-16) - The Hollow: finale arena + doppelganger boss
+- USER: endgame = feels like unlocking a max-tier perk, not creative items (a multi-stage creative recipe ingredient is OK). Finale may be a
+  boss only if it's a clone of the player (skin + Hallmarked gear that doesn't drop) with Mob Rules bonuses, from a building + spawn point + trigger.
+- Mob Rules 0.7.0 (kragnoth/mobrules): NEW `mobrules:doppelganger` (player skin incl. slim arms, copies of the player's equipped gear at drop
+  chance 0, melee or bow) + `/mobrules doppelganger <player> [pos] [tag]`. The pack needs Mob Rules 0.7.0.
+- `tools/gen_pass9_44.py`: structure `dying_world:the_hollow` (marker hut + mast -> 2 scaffold shafts -> 33x18x33 arena: pillar ring,
+  tinted-glass mirrors, candlelit dais, ALTAR = reinforced deepslate). Set the_hollow: concentric rings distance 40 / spread 3 / count 6.
+  Tag + loot table `dying_world:map/the_hollow`. Mob Rules rule `data/dying_world/mobrules/the_hollow.json` (gh_hollow tag: 300 hp, x1.5 damage,
+  regen, blink/leap/pull/shield, summons 2 skeleton cultists under 30%, purple boss bar).
+- modpack kubejs `server_scripts/progression/60_the_hollow.js`: Seal on the altar inside the_hollow -> doppelganger tagged gh_hollow on the
+  far side of the dais (seal spent; one at a time within 64). Death -> owner + killer get stage `gh_hollow_defeated` (entity tag + KubeJS stage).
+  `kubejs/assets/mobrules/lang`: "<player>'s Hollow".
+- `tools/quests/add_hollow_quests.py` (idempotent): Seal quest also gives the map (`/loot give`); What They Opened: checkmark -> gamestage task.
+- No deletions. UNVERIFIED in game: everything (skin render, bow pose, ring placement, structure check from KubeJS, stage task).
+- REGEN: gen_pass9_44 after 9_12 (and 9_34); quests: add_hollow_quests after add_unique_rewards.
