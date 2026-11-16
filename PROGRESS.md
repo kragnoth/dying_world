@@ -1312,3 +1312,16 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   summoner a Hollowed set piece. 75_foundry_residue.js: locked tier-5 players killing Foundry Revenants: 4% set piece, 2% one of the
   three uniques (via /hallmarked sets give + generate unique=).
 - No deletions. UNVERIFIED in game.
+
+## Pass 9-50 (2026-11-16) - locked vs released balanced (no Hallmarked changes)
+- USER: do all three (gear tied to being locked, rising Escapement cost, reversible release) without touching Hallmarked; the Hollowed set
+  should only come from the first doppelganger kill, which is what locks you.
+- kubejs 60_the_hollow.js: the first kill gives the whole Hollowed set (its only source; 9-49's revenant set drops removed from
+  75_foundry_residue.js - revenants still give the 3 uniques, 2%, locked players only). Escapement n made after release costs
+  min(32, 4n) Distilled Residue (count in player persistent data gh_escapements_made). Offering an Escapement at the altar re-locks
+  you (relockFoundry); releasing again costs a Wound Movement and gives no Escapement (only the first release does: tag gh_first_escape),
+  so cycling can't dodge the Distilled cost. The lens is only given if you don't already carry one.
+- NEW kubejs 80_hollowed_gear.js: for released players, Hollowed set armor + Revenant's Shroud move from armor slots to the inventory,
+  Hollowed Censer / Hollow Bell out of Curios slots, and holding the Kiln Hook gives Weakness II (Hallmarked components hallmarked:set_piece
+  / hallmarked:unique read via the registry; Curios via CuriosApi, guarded).
+- No deletions. UNVERIFIED in game.

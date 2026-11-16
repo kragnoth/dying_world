@@ -20,7 +20,9 @@ function insideHollow(level, pos) {
 // pass 9-48: the altar also takes a Wound Movement (-> Escapement) and, for released players looking through the lens,
 // a Seal calls an ECHO: a stronger copy (Mob Rules rule the_hollow_echo) that drops more residue and Hallmarked gear.
 const ECHO_TAG = 'gh_hollow_echo'
-const ALTAR_DISTILLED = 4
+const DISTILLED_STEP = 4, DISTILLED_CAP = 32        // pass 9-50: Escapement n after release costs min(32, 4n) Distilled Residue
+const ESCAPEMENTS_MADE = 'gh_escapements_made'      // player persistent data
+const FIRST_ESCAPE = 'gh_first_escape'
 
 function altarBusy(server, dim, ax, ay, az) {
   for (let t of [HOLLOW_TAG, ECHO_TAG]) {
@@ -33,31 +35,54 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
   const { player, block, level, server } = event
   if (String(event.hand) != 'MAIN_HAND') return
   const held = String(event.item.id)
-  if (held != 'hallmarked:gearwrights_seal' && held != 'gearwrights:wound_movement') return
+  if (held != 'hallmarked:gearwrights_seal' && held != 'gearwrights:wound_movement' && held != 'gearwrights:escapement') return
   if (!insideHollow(level, block.pos)) return
   event.cancel()
 
   const ax = block.x + 0.5, ay = block.y + 1, az = block.z + 0.5
   const dim = String(level.dimension)
 
+  // pass 9-50: release is reversible - offer an Escapement back to be held again (full Hollow Sight, locked-only drops,
+  // the Hollowed gear works again). Releasing again later costs a Wound Movement but gives no Escapement (only the first does).
+  if (held == 'gearwrights:escapement') {
+    if (!player.tags.contains(ESCAPED)) {
+      player.tell(Text.of('The Foundry already holds you.').darkPurple().italic())
+      return
+    }
+    if (!player.isCreative()) event.item.shrink(1)
+    relockFoundry(player)
+    server.runCommandSilent(`execute in ${dim} run playsound minecraft:block.end_portal.spawn hostile @a[distance=..32] ${ax} ${ay} ${az} 0.6 0.4`)
+    return
+  }
+
   if (held == 'gearwrights:wound_movement') {
     if (!player.tags.contains(HOLLOW_STAGE)) {
       player.tell(Text.of('The altar is cold. Something here has to be put down first.').darkPurple().italic())
       return
     }
-    const released = player.tags.contains(ESCAPED)
-    if (released) {
+    if (player.tags.contains(ESCAPED)) {
+      // pass 9-50: each Escapement made after release costs more Distilled Residue (4, 8, 12 ... capped)
+      const made = player.persistentData.getInt(ESCAPEMENTS_MADE)
+      const cost = Math.min(DISTILLED_CAP, DISTILLED_STEP * (made + 1))
       const have = server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue 0`)
-      if (have < ALTAR_DISTILLED) {
-        player.tell(Text.of(`It needs ${ALTAR_DISTILLED} Distilled Residue as well. Gather it through the lens.`).darkPurple().italic())
+      if (have < cost) {
+        player.tell(Text.of(`It wants ${cost} Distilled Residue as well. Gather it through the lens.`).darkPurple().italic())
         return
       }
-      server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue ${ALTAR_DISTILLED}`)
+      server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue ${cost}`)
+      if (!player.isCreative()) event.item.shrink(1)
+      player.give('gearwrights:escapement')
+      player.persistentData.putInt(ESCAPEMENTS_MADE, made + 1)
+      player.tell(Text.of(`The next one will want ${Math.min(DISTILLED_CAP, DISTILLED_STEP * (made + 2))}.`).gray().italic())
+    } else {
+      if (!player.isCreative()) event.item.shrink(1)
+      if (!player.tags.contains(FIRST_ESCAPE)) {
+        player.addTag(FIRST_ESCAPE)
+        player.give('gearwrights:escapement')
+      }
+      escapeFoundry(player)
     }
-    if (!player.isCreative()) event.item.shrink(1)
-    player.give('gearwrights:escapement')
     server.runCommandSilent(`execute in ${dim} run playsound minecraft:block.bell.resonate block @a[distance=..32] ${ax} ${ay} ${az} 1 0.5`)
-    if (!released) escapeFoundry(player)
     return
   }
 
@@ -105,7 +130,8 @@ function markDefeated(player) {
   grantCapstone(player.server, player)
   if (first && !player.tags.contains(ESCAPED)) {
     player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
-    player.server.runCommandSilent(`execute as ${player.username} run hallmarked sets give hollowed`)   // pass 9-49
+    for (let piece of ['cowl', 'vestment', 'greaves', 'treads', 'censer'])   // pass 9-50: the set's only source
+      player.server.runCommandSilent(`execute as ${player.username} run hallmarked sets give hollowed ${piece}`)
     player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
     player.tell(Text.of('The Foundry has your shape now. It will not let you look away.').gray().italic())
   }
@@ -115,8 +141,16 @@ function escapeFoundry(player) {
   if (player.tags.contains(ESCAPED)) return
   player.addTag(ESCAPED)
   player.server.runCommandSilent(`wastelandvision release ${player.username}`)
-  player.give('wastelandvision:occult_foundry/foundry_lens')
-  player.tell(Text.of('The world goes quiet. Through the lens, the Foundry is still there.').gray().italic())
+  if (player.server.runCommandSilent(`clear ${player.username} wastelandvision:occult_foundry/foundry_lens 0`) == 0)
+    player.give('wastelandvision:occult_foundry/foundry_lens')
+  player.tell(Text.of('The world goes quiet. Through the lens the Foundry is still there, but it gives you less, and what it gave you goes cold.').gray().italic())
+}
+
+// pass 9-50: back into the Foundry's hold (offering an Escapement at the altar)
+function relockFoundry(player) {
+  player.removeTag(ESCAPED)
+  player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
+  player.tell(Text.of('You give it back. The Foundry takes you in again.').darkPurple().italic())
 }
 
 // Hollow Sight / Lens Sight (pass 9-49: release costs power). Wasteland Vision tags players wv_<vision> while it's on.
