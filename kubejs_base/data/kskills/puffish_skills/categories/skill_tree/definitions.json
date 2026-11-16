@@ -12435,7 +12435,19 @@
 				"color": "light_purple"
 			},
 			{
-				"text": "Only while you see the Occult Foundry",
+				"text": "+2 Armor\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+4 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "Only while the Foundry holds you (locked in its vision)",
 				"color": "gray"
 			}
 		],
@@ -12474,6 +12486,30 @@
 					"perk": "hex",
 					"level": 1
 				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add"
+				}
 			}
 		],
 		"extra_description": [
@@ -12491,6 +12527,71 @@
 		"required_mods": [
 			"kskills_perks",
 			"neovitae",
+			"caverns_and_chasms",
+			"lodestone"
+		]
+	},
+	"x_lens_sight": {
+		"title": {
+			"text": "Lens Sight",
+			"color": "dark_purple",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "✦ Arcane Ward and Hex\n",
+				"color": "light_purple"
+			},
+			{
+				"text": "Only while you look through the Foundry Lens",
+				"color": "gray"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:spyglass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 0,
+		"rewards": [
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "arcane_ward",
+					"level": 1
+				}
+			},
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "hex",
+					"level": 1
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "What you let go of, you only borrow back.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Capstone • Released players, lens on",
+				"color": "dark_aqua"
+			}
+		],
+		"required_mods": [
+			"kskills_perks",
 			"caverns_and_chasms",
 			"lodestone"
 		]

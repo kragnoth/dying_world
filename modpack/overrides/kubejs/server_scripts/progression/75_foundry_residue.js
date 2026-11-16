@@ -9,6 +9,9 @@ const RESIDUE_TIERS = {           // [deepslate mined, undead killed]
   5: [0.03, 0.08]                 // Hollowed (plus Foundry Revenants: 1-2 each)
 }
 const DISTILLED_CHANCE = { undead: 0.02, revenant: 0.25, deepslate: 0.004 }
+// pass 9-49: only LOCKED players (Hollowed, not released) find the Hollowed set and its uniques - on Foundry Revenants
+const LOCKED_DROPS = { setPiece: 0.04, unique: 0.02 }
+const LOCKED_UNIQUES = ['revenants_shroud', 'kiln_hook', 'hollow_bell']
 const RESIDUE_ID = 'gearwrights:foundry_residue', DISTILLED_ID = 'gearwrights:distilled_residue'
 const RESIDUE_BLOCKS = ['minecraft:deepslate', 'minecraft:cobbled_deepslate']
 
@@ -37,6 +40,13 @@ EntityEvents.death(event => {
   const revenant = String(e.type) == 'incision:skeletoncultist' && String(e.level.dimension) == 'minecraft:overworld'
   if (t >= 5 && revenant) e.block.popItem(Item.of(RESIDUE_ID, 1 + Math.floor(Math.random() * 2)))
   else if (t > 0 && e.isInvertedHealAndHarm() && Math.random() < RESIDUE_TIERS[t][1]) e.block.popItem(Item.of(RESIDUE_ID))
+  if (revenant && t >= 5 && !p.tags.contains('gh_escaped')) {
+    if (Math.random() < LOCKED_DROPS.setPiece) p.server.runCommandSilent(`execute as ${p.username} run hallmarked sets give hollowed`)
+    if (Math.random() < LOCKED_DROPS.unique) {
+      const u = LOCKED_UNIQUES[Math.floor(Math.random() * LOCKED_UNIQUES.length)]
+      p.server.runCommandSilent(`hallmarked generate for ${p.username} 1 unique=${u}`)
+    }
+  }
   if (p.tags.contains('gh_escaped') && (revenant ? Math.random() < DISTILLED_CHANCE.revenant
                                                  : e.isInvertedHealAndHarm() && Math.random() < DISTILLED_CHANCE.undead)) {
     e.block.popItem(Item.of(DISTILLED_ID))

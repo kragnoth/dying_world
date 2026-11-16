@@ -1301,3 +1301,14 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - `tools/quests/add_escapement_quests.py`: residue tier tag rewards on 7 Incursion quests; NEW quests 'What the Foundry Leaves' and
   'The Escapement' (item tasks, consume_items false).
 - No deletions. UNVERIFIED in game: everything; esp. Neo Vitae ara_vitae_recipe via event.custom, KubeJS popItem / clear-count, ids.
+
+## Pass 9-49 (2026-11-16) - staying locked is a real choice
+- USER: release should cost some power; a Hallmarked 'Hollowed' set and uniques that drop while locked.
+- `tools/gen_pass9_49.py`: datapack sets/hollowed.json ('Vestments of the Hollowed': cowl, vestment, greaves, treads, censer; netherite-grade,
+  2/3/4/5-piece bonuses incl. leech, night vision, reaper + bleed; chance {} and no tables = never natural) + uniques revenants_shroud,
+  kiln_hook, hollow_bell (chance {}); names/lore in kubejs/assets/dying_world/lang. Skill tree: Hollow Sight (locked) = 3 perks + 2 armor,
+  1 attack damage, 4 max health; NEW Lens Sight / lens_sight_1 (released, lens on) = Arcane Ward + Hex only.
+- kubejs 60_the_hollow.js: sight switching (locked -> Hollow Sight, released + lens -> Lens Sight, else none); the first kill gives the
+  summoner a Hollowed set piece. 75_foundry_residue.js: locked tier-5 players killing Foundry Revenants: 4% set piece, 2% one of the
+  three uniques (via /hallmarked sets give + generate unique=).
+- No deletions. UNVERIFIED in game.

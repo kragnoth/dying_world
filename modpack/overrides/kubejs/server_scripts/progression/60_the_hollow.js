@@ -105,6 +105,7 @@ function markDefeated(player) {
   grantCapstone(player.server, player)
   if (first && !player.tags.contains(ESCAPED)) {
     player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
+    player.server.runCommandSilent(`execute as ${player.username} run hallmarked sets give hollowed`)   // pass 9-49
     player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
     player.tell(Text.of('The Foundry has your shape now. It will not let you look away.').gray().italic())
   }
@@ -118,21 +119,28 @@ function escapeFoundry(player) {
   player.tell(Text.of('The world goes quiet. Through the lens, the Foundry is still there.').gray().italic())
 }
 
-// Hollow Sight (the three Occult keystone perks) is unlocked only while the player is in the Foundry vision.
-// Wasteland Vision tags players wv_<vision> while it's on; checked once a second per player, commands only on change.
-const SIGHT_ON = 'gh_hollow_sight'
+// Hollow Sight / Lens Sight (pass 9-49: release costs power). Wasteland Vision tags players wv_<vision> while it's on.
+//  locked in the Foundry (Hollowed, not released): Hollow Sight - all three Occult keystone perks + a stat line
+//  released, looking through the lens:            Lens Sight - Arcane Ward + Hex only
+//  out of the vision:                             neither
+// Checked once a second per player; commands only when the state changes.
+const SIGHT_NODES = { full: ['gh_hollow_sight', 'hollow_sight_1'], lens: ['gh_lens_sight', 'lens_sight_1'] }
 PlayerEvents.tick(event => {
   const p = event.player
   if (p.age % 20 != 0 || !p.tags.contains(HOLLOW_STAGE)) return
-  const want = p.tags.contains('wv_' + FOUNDRY)
-  const has = p.tags.contains(SIGHT_ON)
-  if (want == has) return
-  if (want) {
-    p.addTag(SIGHT_ON)
-    p.server.runCommandSilent(`puffish_skills skills unlock ${p.username} kskills:skill_tree hollow_sight_1`)
-  } else {
-    p.removeTag(SIGHT_ON)
-    p.server.runCommandSilent(`puffish_skills skills lock ${p.username} kskills:skill_tree hollow_sight_1`)
+  const seeing = p.tags.contains('wv_' + FOUNDRY)
+  const want = !seeing ? null : p.tags.contains(ESCAPED) ? 'lens' : 'full'
+  for (let kind in SIGHT_NODES) {
+    const tag = SIGHT_NODES[kind][0], node = SIGHT_NODES[kind][1]
+    const on = p.tags.contains(tag)
+    if ((kind == want) == on) continue
+    if (kind == want) {
+      p.addTag(tag)
+      p.server.runCommandSilent(`puffish_skills skills unlock ${p.username} kskills:skill_tree ${node}`)
+    } else {
+      p.removeTag(tag)
+      p.server.runCommandSilent(`puffish_skills skills lock ${p.username} kskills:skill_tree ${node}`)
+    }
   }
 })
 

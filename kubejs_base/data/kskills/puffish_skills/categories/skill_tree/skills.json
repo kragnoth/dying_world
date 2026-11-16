@@ -2274,5 +2274,10 @@
 		"x": -800,
 		"y": 296,
 		"definition": "x_hollow_sight"
+	},
+	"lens_sight_1": {
+		"x": -800,
+		"y": 356,
+		"definition": "x_lens_sight"
 	}
 }
