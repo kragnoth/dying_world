@@ -1163,3 +1163,13 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   (config, defaultconfigs, options.txt, icon.png, resourcepacks/HollowDead.zip, kubejs client/server/startup scripts, kubejs assets + config).
   overrides/kubejs/data is NOT stored: RC 3's kubejs/data was byte-identical to our build (diff -rq clean). usernamecache.json left out.
 - The RC 3 export already contains everything up to pass 9-36 (quest structure fix, lore, sculk camp ...).
+
+## Pass 9-38 (2026-11-15) - metal item textures brought in line (modpack assets, not the datapack)
+- USER: ingots -> Excalibur style; dusts -> match Neo Vitae's flat piles; nuggets -> Excalibur nugget style (experience nuggets excluded).
+- Audit (tools/textures/collect.py + analyze.py) over the textures that actually win in game: 51 ingots / 49 nuggets / 35 dusts.
+- tools/textures/restyle.py recoloured the style template onto 70 textures, written to modpack/overrides/kubejs/assets/ (kubejs File Resource Pack
+  sits above every resource pack, so these win): 25 ingots (IE 11, Ender IO Evolution 9, createdeco, createcasing chorium, createpropulsion platinum,
+  enderio combustive metal, neovitae hellforged + demonite trim), 23 nuggets (IE 12, Ender IO Evolution 9, createdeco 2, propulsion platinum),
+  22 dusts (IE 16, immersivepetroleum petcoke, arkaneworx zinc, glowstone, waystones warp dust, neovitae corrupted dust).
+- Skipped: titanium:* (library textures, no items), create:copper_ingot (no such item), experience nuggets, neovitae corrupted_tiny_dust (tiny on
+  purpose), cultivar:sulfur_dust (cultivar's excalibur_style pack loads ABOVE kubejs assets - change it in Cog & Cultivar itself).
