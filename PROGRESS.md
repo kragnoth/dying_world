@@ -1273,3 +1273,11 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   is ready for the Escapement pass; Hollow Sight is unlocked/locked once a second when the wv_occult_foundry tag changes.
 - EXISTING WORLDS: edit <world>/serverconfig/wastelandvision-server.toml (forceVision = false) by hand.
 - No deletions. UNVERIFIED in game.
+
+## Pass 9-47 (2026-11-16) - the vision path, final
+- USER: start in the vision (locked on until the Hollow); killing the doppelganger keeps it always on; the Escapement (creative-recipe
+  item) turns it off and gives the lens to see into it again (for more crafting items).
+- `tools/gen_pass9_47.py`: forceVision = true / forcedVision = occult_foundry (config + defaultconfigs), startActive = true (reverses 9-46).
+- Wasteland Vision 0.24.3: `/wastelandvision release <players>` frees a player even under forceVision (0.24.2 dropped the built-in lens:
+  the mod hardcodes no items). kubejs escapeFoundry() now uses release (+ gh_escaped tag + Foundry Lens).
+- No deletions. Existing worlds: <world>/serverconfig/wastelandvision-server.toml keeps whatever it had (forceVision = true is right).

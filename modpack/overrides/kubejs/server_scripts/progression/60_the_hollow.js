@@ -52,8 +52,9 @@ function grantCapstone(server, player) {
   server.runCommandSilent(`puffish_skills skills unlock ${player.username} kskills:skill_tree hollowed_1`)
 }
 
-// pass 9-46: Hollowed players are locked into the Occult Foundry vision (Wasteland Vision 0.24+) until they escape
-// (tag gh_escaped, set by the Escapement - a later pass). The lock is saved on the player by Wasteland Vision itself.
+// pass 9-46/9-47: everyone starts locked in the Occult Foundry vision (server forceVision). Killing your copy also locks you per
+// player (kept even if the server config changes). The Escapement (a later pass) calls escapeFoundry: Wasteland Vision 0.24.3's
+// 'release' frees the player from both locks, and the Foundry Lens (the vision's key item) is then needed to see it again.
 const FOUNDRY = 'occult_foundry'
 const ESCAPED = 'gh_escaped'
 
@@ -66,16 +67,16 @@ function markDefeated(player) {
   if (first && !player.tags.contains(ESCAPED)) {
     player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
     player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
-    player.tell(Text.of('The world does not settle back. You see the Foundry now, and it sees you.').gray().italic())
+    player.tell(Text.of('The Foundry has your shape now. It will not let you look away.').gray().italic())
   }
 }
 
-// Called by the Escapement (later pass): ends the lock; from then on the vision is a toggle that needs the Foundry Lens.
 function escapeFoundry(player) {
   if (player.tags.contains(ESCAPED)) return
   player.addTag(ESCAPED)
-  player.server.runCommandSilent(`wastelandvision unlock ${player.username}`)
+  player.server.runCommandSilent(`wastelandvision release ${player.username}`)
   player.give('wastelandvision:occult_foundry/foundry_lens')
+  player.tell(Text.of('The world goes quiet. Through the lens, the Foundry is still there.').gray().italic())
 }
 
 // Hollow Sight (the three Occult keystone perks) is unlocked only while the player is in the Foundry vision.
