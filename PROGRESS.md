@@ -1183,3 +1183,18 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 ## Pass 9-40 (2026-11-15) - four dusts fixed after the v1/v2 review
 - USER: keep v2 (rich dusts), fix the four weak ones. rich_dust.py FIX table: zinc trim=.25 (outline pixels dropped from the source colours, no black
   rim), wood + sulfur mono (speckles = darker shade of their own colour, no green cast), glowstone mono + contrast .75 (calmer, keeps its highlights).
+
+## Pass 9-41 (2026-11-15) - Create's discontinued alloys get recipes + uses (modpack kubejs, not the datapack)
+- USER: give the discontinued Create ingots still in game recipes and uses that fit the lore and progression.
+- Found: create:chromatic_compound, create:shadow_steel, create:refined_radiance (+ create:shadow_steel_casing / refined_radiance_casing) are
+  registered but have NO recipe; they only drop as rare loot (create_drops.js / loot bridge), and their only use was Create Encased's cosmetic
+  sheets (#c:ingots/shadow_steel, #c:ingots/refined_radiance -> sheets -> encased machine variants).
+- NEW modpack/overrides/kubejs/server_scripts/progression/50_incursion_alloys.js (switch incursionAlloys in gh_progression_config.js):
+  chromatic compound = superheated mixing 3 powdered obsidian + polished rose quartz + glowstone + 250 mB tarbound:tar ('draught condensate');
+  shadow steel = mixing compound + echo shard + 2 popped chorus fruit (the Beyond: End + deep dark / sculk camp);
+  refined radiance = superheated mixing compound + 2 glowstone + tarbound:weakened_soul (the Below).
+  Uses: hallmarked:gearwrights_seal (smith's stamp + shadow steel + refined radiance, beside nether star / dragon egg), Create's creative-only
+  handheld worldshaper (mechanical crafting: 2 radiance, precision mechanism, brass, brass casing, 2 shadow steel), Create's two casings
+  (item application on brass casing). Recipe ids gearwrights:incursion/*.
+- NEW client_scripts/incursion_alloys_tooltips.js: one lore line each (ItemEvents.modifyTooltips).
+- Not used (no way to get it): tarbound:essence_of_the_void. UNVERIFIED in game: all recipes (JEI), tooltip event name on KubeJS 2101.7.2.

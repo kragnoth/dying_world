@@ -23,4 +23,7 @@ global.GH_PROGRESSION = {
 
     // --- Brass ------------------------------------------------------------------------------------------------
     removeKilnBrass:         false,   // IE alloy kiln brass skips Create's heated mixer. Set true to force the blaze burner
+
+    // --- Incursion alloys: Create's discontinued chromatic compound / shadow steel / refined radiance ----------
+    incursionAlloys:         true,    // craftable (tar + superheated mixing, End and Nether steps) and used (seal, worldshaper, casings)
 }
