@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             { item: 'create:powdered_obsidian' }, { item: 'create:powdered_obsidian' }, { item: 'create:powdered_obsidian' },
             { item: 'create:polished_rose_quartz' }, { item: 'minecraft:glowstone_dust' },
-            { type: 'fluid_stack', amount: 250, fluid: 'tarbound:tar' }
+            { type: 'neoforge:single', amount: 250, fluid: 'tarbound:tar' }
         ],
         results: [{ id: 'create:chromatic_compound' }],
         heat_requirement: 'superheated'

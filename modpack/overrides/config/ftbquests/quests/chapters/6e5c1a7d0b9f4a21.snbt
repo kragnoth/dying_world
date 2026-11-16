@@ -66,6 +66,13 @@
 			id: "4304179F7BF9D77A"
 			rewards: [
 				{
+					command: "/tag {p} add gh_residue_2"
+					id: "3D978561F0AE258D"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
 					id: "7CCEB986173CE4AD"
 					type: "xp"
 					xp: 120
@@ -117,6 +124,13 @@
 			id: "1F60B04AB8499F43"
 			rewards: [
 				{
+					command: "/tag {p} add gh_residue_1"
+					id: "5971F2124AE74F0D"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
 					id: "625F511F7F5DF6D8"
 					type: "xp"
 					xp: 80
@@ -140,6 +154,13 @@
 			id: "1846668C3317855B"
 			rewards: [
 				{
+					command: "/tag {p} add gh_residue_3"
+					id: "182EFE13D578E81C"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
 					id: "2BC8B30C4709F5C0"
 					type: "xp"
 					xp: 120
@@ -162,6 +183,13 @@
 			}
 			id: "21F2227B14BC1310"
 			rewards: [
+				{
+					command: "/tag {p} add gh_residue_3"
+					id: "7D9B6604012A9588"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 				{
 					id: "7E19033754174F4F"
 					type: "xp"
@@ -190,6 +218,13 @@
 			}
 			id: "0E0F7020DA98D7FA"
 			rewards: [
+				{
+					command: "/tag {p} add gh_residue_3"
+					id: "23C80EBAC0BC26FB"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 				{
 					command: "/hallmarked generate for {p} 1 unique=brandts_waxed_hood"
 					id: "6C0A22CA7D0D6DCE"
@@ -225,6 +260,13 @@
 			}
 			id: "4D0B9594321F0785"
 			rewards: [
+				{
+					command: "/tag {p} add gh_residue_4"
+					id: "04BCAE5F0A1E734E"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 				{
 					id: "474CD693E28E08D9"
 					type: "xp"
@@ -283,6 +325,13 @@
 			}
 			id: "7229A829F49344D4"
 			rewards: [
+				{
+					command: "/tag {p} add gh_residue_4"
+					id: "6A9D8948C7D5C319"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 				{
 					command: "/hallmarked generate for {p} 1 unique=marshs_field_boots"
 					id: "19D85A37678279B3"
@@ -554,6 +603,65 @@
 				}
 			]
 			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F60B04AB8499F43"]
+			icon: {
+				id: "gearwrights:foundry_residue"
+			}
+			id: "2818380DD10682E5"
+			rewards: [
+				{
+					id: "48F5F4374303103A"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "2088BC68A2BEB5F9"
+					item: {
+						count: 1
+						id: "gearwrights:foundry_residue"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.75d
+		}
+		{
+			dependencies: ["54A48D92052194BA"]
+			icon: {
+				id: "gearwrights:escapement"
+			}
+			id: "7EC8AFFE4D90AD2F"
+			rewards: [
+				{
+					id: "49558698ECBAAF41"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "4A1440684DACC211"
+					table_id: 3225327707034082220L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "4D7D2D4910944881"
+					item: {
+						count: 1
+						id: "gearwrights:escapement"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
 			y: 0.0d
 		}
 	]

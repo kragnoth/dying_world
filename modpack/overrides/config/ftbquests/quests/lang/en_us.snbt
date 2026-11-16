@@ -711,4 +711,10 @@
 	quest.36C14B7B7950F73C.title: "Aspectum Omnia"
 	quest.36C14B7B7950F73C.quest_subtitle: "Four aspects of spiritus"
 	quest.36C14B7B7950F73C.quest_desc: ["Transmute a raw cluster into each of the four aspects: invictus, nihilum, ruina and vindicta."]
+	quest.2818380DD10682E5.title: "What the Foundry Leaves"
+	quest.2818380DD10682E5.quest_subtitle: "Foundry Residue"
+	quest.2818380DD10682E5.quest_desc: ["Grit that should not be there: in the deepslate, in the ash of things that should have stayed dead. Only those who see the Foundry find it.", "Keep it. The Guild's ledgers count it by the ounce, and the further down their trail you go, the more of it you will find."]
+	quest.7EC8AFFE4D90AD2F.title: "The Escapement"
+	quest.7EC8AFFE4D90AD2F.quest_subtitle: "The world runs on without asking"
+	quest.7EC8AFFE4D90AD2F.quest_desc: ["Build a movement from residue, shadow steel and refined radiance; bleed it on an altar; wind it with the void; set it on the Hollow's altar.", "The first one lets you go. After that the Foundry is behind a lens, and every Escapement it gives you costs Distilled Residue gathered through it.", "An Escapement sits at the heart of every creative machine the Guild ever built."]
 }

@@ -1281,3 +1281,23 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - Wasteland Vision 0.24.3: `/wastelandvision release <players>` frees a player even under forceVision (0.24.2 dropped the built-in lens:
   the mod hardcodes no items). kubejs escapeFoundry() now uses release (+ gh_escaped tag + Foundry Lens).
 - No deletions. Existing worlds: <world>/serverconfig/wastelandvision-server.toml keeps whatever it had (forceVision = true is right).
+
+## Pass 9-48 (2026-11-16) - Foundry Residue, the Escapement chain, creative items
+- USER decisions: residue starts at the tinker's workshop / research gate and ramps with progress; creative items tier 1 = creative motor
+  (+ gear motor swap), creative fluid tank (+ fluid vessel swap), creative blaze cake, creative physics staff, Eternal Creative Power,
+  IE Creative Accumulator; tier 2 = creative crate, creative bookshelf, Neo Vitae creative activation crystal, Ender IO creative
+  batch/stack upgrades; thrusters left out; Create Encased's creative casing gets a cheap railway-casing-level recipe (cosmetic only);
+  released players get Distilled Residue + repeat Hollow fights (Echo).
+- modpack kubejs: startup hollow_items.js (gearwrights: foundry_residue, distilled_residue, incomplete/unwound/bled/wound_movement,
+  escapement; placeholder textures from tools/textures/hollow_items.py - redo in Excalibur style), gh_progression_config hollowEndgame;
+  client hollow_items_tooltips.js; server 70_escapement.js (sequenced assembly -> Neo Vitae altar T4 50k LP -> spout 500 mB essence of the
+  void; creative recipes = mechanical crafting with one Escapement; creative activation crystal = altar T5 100k LP from an Escapement;
+  swaps; creative casing = brass casing + amethyst shard, replaces createcasing's chorium recipe); 75_foundry_residue.js (tiers from
+  gh_residue_<n> tags, only while tagged wv_occult_foundry; deepslate + undead; revenants 1-2 at tier 5; distilled for gh_escaped);
+  60_the_hollow.js: altar takes a Wound Movement -> Escapement (first: releases you; after: also costs 4 Distilled Residue), a released
+  player with the lens on calls an Echo (gh_hollow_echo: 12 residue, 4-6 distilled, /hallmarked generate 2); first copy drops 8 residue;
+  Hollowed adds gh_residue_5. FIX: 50_incursion_alloys.js tar ingredient type fluid_stack -> neoforge:single (Create 6 format).
+- `tools/gen_pass9_48.py`: datapack mobrules/the_hollow_echo.json (500 hp, x2 damage, wither on hit, tighter abilities, 3 cultists).
+- `tools/quests/add_escapement_quests.py`: residue tier tag rewards on 7 Incursion quests; NEW quests 'What the Foundry Leaves' and
+  'The Escapement' (item tasks, consume_items false).
+- No deletions. UNVERIFIED in game: everything; esp. Neo Vitae ara_vitae_recipe via event.custom, KubeJS popItem / clear-count, ids.

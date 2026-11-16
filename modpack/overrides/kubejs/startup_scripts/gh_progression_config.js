@@ -26,4 +26,7 @@ global.GH_PROGRESSION = {
 
     // --- Incursion alloys: Create's discontinued chromatic compound / shadow steel / refined radiance ----------
     incursionAlloys:         true,    // craftable (tar + superheated mixing, End and Nether steps) and used (seal, casings)
+
+    // --- The Hollow endgame: Foundry Residue -> Escapement -> creative items (pass 9-48) ------------------------
+    hollowEndgame:           true,    // residue drops, the Escapement chain and the creative-item recipes
 }
