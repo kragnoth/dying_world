@@ -191,6 +191,13 @@
 			id: "0E0F7020DA98D7FA"
 			rewards: [
 				{
+					command: "/hallmarked generate for {p} 1 unique=brandts_waxed_hood"
+					id: "6C0A22CA7D0D6DCE"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
 					id: "0D66CCF15FC0C6AA"
 					type: "xp"
 					xp: 150
@@ -242,6 +249,13 @@
 			id: "111B2C7B9D27BC0F"
 			rewards: [
 				{
+					command: "/hallmarked generate for {p} 1 unique=gales_bank_shovel"
+					id: "6AB2990670A3961B"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
 					id: "64925E2735B5DA4E"
 					type: "xp"
 					xp: 150
@@ -269,6 +283,13 @@
 			}
 			id: "7229A829F49344D4"
 			rewards: [
+				{
+					command: "/hallmarked generate for {p} 1 unique=marshs_field_boots"
+					id: "19D85A37678279B3"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 				{
 					id: "22714F8D85078893"
 					type: "xp"
@@ -484,6 +505,13 @@
 			}
 			id: "54A48D92052194BA"
 			rewards: [
+				{
+					command: "/hallmarked generate for {p} 1 unique=penitents_lamp"
+					id: "075F5C17B43DEC89"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 				{
 					id: "0CFDA155E739BCE4"
 					type: "xp"

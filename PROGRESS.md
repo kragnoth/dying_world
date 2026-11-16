@@ -1222,3 +1222,10 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   knife). Its jokey names were re-voiced in modpack/overrides/kubejs/assets/incision/lang/en_us.json (advancements, whoopie cushion -> Gas Bladder,
   voomoo doll -> Effigy).
 - UNVERIFIED in game: quest book loads the new chapter; advancement/biome/kill tasks tick.
+
+## Pass 9-43 - Guild uniques + tallow candles
+- `tools/gen_pass9_43.py`: four Hallmarked uniques in `data/dying_world/uniques/` (`chance {}` = never roll naturally): Gale's Banking Shovel, Brandt's Waxed Hood, Marsh's Field Boots, The Penitent's Lamp (emerald amulet). Names/lore in `kubejs/assets/dying_world/lang/en_us.json`.
+- `tools/quests/add_unique_rewards.py`: Incursion quests foundry/listening/far/opened give them via `/hallmarked generate for {p} 1 unique=<id>` (arrive Unappraised). Idempotent.
+- `tarbound:candle_wax` += `incision:tallow` (optional).
+- No deletions. Unverified in game.
+- REGEN: after gen_occult_quests: gen_pass9_43, add_unique_rewards.

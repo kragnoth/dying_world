@@ -592,16 +592,16 @@
 	quest.21F2227B14BC1310.quest_desc: ["The sea cooled the draught lines from the gatehouses. Then the water in the halls went dark, and the keeper flooded them herself.", "Mind the great one. It woke for a reason."]
 	quest.0E0F7020DA98D7FA.title: "The Listening Post"
 	quest.0E0F7020DA98D7FA.quest_subtitle: "Wear wax. Do not drop tools."
-	quest.0E0F7020DA98D7FA.quest_desc: ["Deep in the dark the Guild dug down to an older gate, and set the growth to listen to their own.", "The growth hums at the frames' pitch even with every gate shut. Read the transcript in the survey desk, and do not ring the bell."]
+	quest.0E0F7020DA98D7FA.quest_desc: ["Deep in the dark the Guild dug down to an older gate, and set the growth to listen to their own.", "The growth hums at the frames' pitch even with every gate shut. Read the transcript in the survey desk, and do not ring the bell.", "Brandt's waxed hood is yours now. Strike it at an assay anvil to read it."]
 	quest.4D0B9594321F0785.title: "Station Below"
 	quest.4D0B9594321F0785.quest_subtitle: "Harrow's day book"
 	quest.4D0B9594321F0785.quest_desc: ["The draught Below is not heat, though it comes with heat. It is closer to will.", "Master Harrow went through to find out why the gates would not close. Her day book is in the station's archive, with a route to the foundry."]
 	quest.111B2C7B9D27BC0F.title: "The Foundry"
 	quest.111B2C7B9D27BC0F.quest_subtitle: "It is not our smoke"
-	quest.111B2C7B9D27BC0F.quest_desc: ["Every measure of draught was fired here before it went up. The caged blazes went dim feeding it.", "Foreman Gale banked the kilns rather than double the draught. Find his orders; one line explains the smoke you keep seeing."]
+	quest.111B2C7B9D27BC0F.quest_desc: ["Every measure of draught was fired here before it went up. The caged blazes went dim feeding it.", "Foreman Gale banked the kilns rather than double the draught. Find his orders; one line explains the smoke you keep seeing.", "Gale's banking shovel is yours now. Strike it at an assay anvil to read it."]
 	quest.7229A829F49344D4.title: "Far Station"
 	quest.7229A829F49344D4.quest_subtitle: "We are being drawn on"
-	quest.7229A829F49344D4.quest_desc: ["Doctor Marsh watched the void under the islands and wrote to the Guild four times.", "Each measure of draught sent home carried passengers. The clerks called them lodgers. They are still riding the cold back into the world."]
+	quest.7229A829F49344D4.quest_desc: ["Doctor Marsh watched the void under the islands and wrote to the Guild four times.", "Each measure of draught sent home carried passengers. The clerks called them lodgers. They are still riding the cold back into the world.", "Marsh's field boots are yours now. Strike them at an assay anvil to read them."]
 	quest.1A3E1F30A5BA9297.title: "The Wound Below"
 	quest.1A3E1F30A5BA9297.quest_subtitle: "The Eroded Yard"
 	quest.1A3E1F30A5BA9297.quest_desc: ["In places the Nether has grown flesh: carrion, clotted stone, eyes in the walls. As if the draught tore a wound Below and it healed wrong.", "Harrow's day book stops short of saying where her crew went."]
@@ -625,7 +625,7 @@
 	quest.525BBB1B92B4A239.quest_desc: ["A smith's stamp, shadow steel and refined radiance make the Guild's seal without a nether star or a dragon egg.", "The Gearwrights marked their best work with it. Now you can mark yours."]
 	quest.54A48D92052194BA.title: "What They Opened"
 	quest.54A48D92052194BA.quest_subtitle: "Every register ends the same way"
-	quest.54A48D92052194BA.quest_desc: ["Gatehouses, a station Below, a station Beyond, a foundry to feed them, a post to listen and a well to cool them. Each one built to fix the last.", "Every record points back to the Hollow, where the first gate was cut. Whatever is still open there, the Gearwrights never closed it."]
+	quest.54A48D92052194BA.quest_desc: ["Gatehouses, a station Below, a station Beyond, a foundry to feed them, a post to listen and a well to cool them. Each one built to fix the last.", "Every record points back to the Hollow, where the first gate was cut. Whatever is still open there, the Gearwrights never closed it.", "The hermit's lamp is yours now. Strike it at an assay anvil to read it."]
 	quest.4DD6EF4C9ACAD67F.title: "A Weakened Soul"
 	quest.4DD6EF4C9ACAD67F.quest_subtitle: "Scraped out of soul sand"
 	quest.4DD6EF4C9ACAD67F.quest_desc: ["Strike flint and steel against soul sand and a dim spark of soul comes loose. A bucket and a soul make a bucket of tar.", "The Guild called it the black. It leaked through their gates long before anyone thought to bottle it."]
