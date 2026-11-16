@@ -94,6 +94,8 @@ def main():
         "scavenger_strongholds": [n for n, _ in SETTLE if n.startswith("scavenger_stronghold")],
         "nether_foundries": ["nether_foundry", "nether_foundry_derelict"],
         "research_gates": [n for n, _ in GATES],
+        "nether_stations": ["research_nether", "research_nether_derelict"],   # 9-42: Incursion quest chapter
+        "end_stations": ["research_end", "research_end_derelict"],
     }
     for name, ids in tags.items():
         for n in ids: assert (OUT / f"worldgen/structure/{n}.json").exists(), n

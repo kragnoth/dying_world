@@ -1200,3 +1200,25 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - Not used (no way to get it): tarbound:essence_of_the_void. UNVERIFIED in game: all recipes (JEI), tooltip event name on KubeJS 2101.7.2.
 - 9-41 follow-up (USER): worldshaper recipe DROPPED - Create's Handheld Worldshaper doesn't consume blocks, so a survival recipe = infinite
   blocks. Uses left: Gearwrights' Seal + the two casings (+ Encased sheets). User will pick more uses later.
+
+## Pass 9-42 (2026-11-16) - Arcana questlines fleshed out on the world's lore (modpack quests)
+- USER: read FTB Quests (1.21.1/main), Neo Vitae (1.21.1), NeoForge + MC sources; build on the existing questlines to flesh out the arcane/occult side
+  using the lore built into the world. Mid-task: look at the Incision nether mod (flesh biome) and work it in if it fits.
+- NEW tools/quests/gen_occult_quests.py (+ snbt.py): one-shot editor for modpack/overrides/config/ftbquests/quests (refuses a second run; ids are
+  deterministic sha1 'gh-occult/<key>' with the top bit cleared). Text-level inserts keep the existing files' formatting.
+  * NEW chapter 'The Incursion' (Arcana, order 2, 19 quests): Smoke on the Horizon -> The Penitent (hermit), Quarantine, The Apprentice ->
+    The Gatehouse (#research_gates) -> Requisitions (proving) -> The Tidewell / The Listening Post; Station Below (#nether_stations) -> The Foundry
+    (#nether_foundries) / The Wound Below (biome incision:eroded_yard) -> Those Who Stayed (3 skeleton cultists), Burial Knife; Far Station
+    (#end_stations); Draught Condensate -> Steeped in the Beyond / Fired from Below -> The Guild's Own Mark (Gearwright's Seal) -> What They Opened
+    (capstone: skill point, title, big table).
+  * Tar and Spirits +14: weakened soul (Black Tar now also depends on it), scorched spawner, feeding the lodgers, work order, shade, ossuary, broadcast
+    mast, transient antenna, sixteen candles, bottled void, and Tarbound's 4 landmarks (its own advancements).
+  * Blood and Ritual +14: Scriptura Vitae, throwing dagger, blood lantern, Sigil of Holding, Green Grove, first ritual, A Crack in the Veil
+    (Breaching the Edge = 'you are cutting a gate'), demonite, bloodstone x4, Magus / Dominus / Divinus orbs, crystal cluster (sculk from the dig camp),
+    Aspectum Omnia. Advancement tasks use Neo Vitae's / Tarbound's own advancements (ritual activation has no item).
+  * 'Beyond the Veil' description now names the third thread (The Incursion).
+- Datapack: gen_pass9_16 adds structure tags dying_world:nether_stations / end_stations (live + derelict) for the quests.
+- Incision: fits as 'the wound Below' (MCreator mod, injects its Eroded Yard biome into the Nether noise itself; skeleton cultists, seers, burial
+  knife). Its jokey names were re-voiced in modpack/overrides/kubejs/assets/incision/lang/en_us.json (advancements, whoopie cushion -> Gas Bladder,
+  voomoo doll -> Effigy).
+- UNVERIFIED in game: quest book loads the new chapter; advancement/biome/kill tasks tick.

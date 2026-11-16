@@ -434,7 +434,7 @@
 	chapter.003226919CF36109.chapter_subtitle: ["Neo Vitae"]
 	quest.0BCCE13FE16F5EFD.title: "Beyond the Veil"
 	quest.0BCCE13FE16F5EFD.quest_subtitle: "Blood and old contracts"
-	quest.0BCCE13FE16F5EFD.quest_desc: ["&5Some power isn't forged. It's bargained for.&r", "Two arts wait in this group: &4blood&r and ritual here, and &8tar&r and spirits in &8Tar and Spirits&r."]
+	quest.0BCCE13FE16F5EFD.quest_desc: ["&5Some power isn't forged. It's bargained for.&r", "Three threads wait in this group: &4blood&r and ritual here, &8tar&r and spirits in &8Tar and Spirits&r, and the Guild's own records in &5The Incursion&r: what the Gearwrights opened, and what came through."]
 	quest.676BFBF2B0FA5E96.title: "Ara Vitae"
 	quest.676BFBF2B0FA5E96.quest_subtitle: "Neo Vitae"
 	quest.676BFBF2B0FA5E96.quest_desc: ["&4Blood is currency.&r The Ara Vitae is a furnace, gold and deepslate. Stand near it with something to transmute and it draws &4Essentia Vitae (EV)&r from you.", "Don't let it take too much."]
@@ -567,4 +567,147 @@
 	quest.173CBECFD212577A.quest_desc: ["Gears, current, blood, the maker's mark and void. You came out of an old, hungry world and built all of it.", "&6Thank you for playing Gearwright's Hollow."]
 	reward_table.1E1E5E7EE1000001.title: "Engineer's Crate"
 	reward_table.1E1E5E7EE1000002.title: "Ender Cache"
+	chapter.6E5C1A7D0B9F4A21.title: "The Incursion"
+	chapter.6E5C1A7D0B9F4A21.chapter_subtitle: ["The Gearwrights records"]
+	quest.1B305531C9754245.title: "Smoke on the Horizon"
+	quest.1B305531C9754245.quest_subtitle: "What the Gearwrights opened"
+	quest.1B305531C9754245.quest_desc: ["Columns of smoke rise beyond the hills and are gone by the time you get there. A bell tolls at midnight with no one to ring it. The groves grow pale.", "None of it is natural. Somebody kept records of what they did here, and the records are still lying in the ruins."]
+	quest.0367FB39849A0B1B.title: "The Penitent"
+	quest.0367FB39849A0B1B.quest_subtitle: "A light left on"
+	quest.0367FB39849A0B1B.quest_desc: ["An old man keeps a lamp burning in a cottage far from any road. He was chaplain to the Gearwrights, and he blessed the first gate when they cut it.", "His account is in the chest, and so is a map to the nearest gatehouse. He trades, if you are polite."]
+	quest.4304179F7BF9D77A.title: "The Gatehouse"
+	quest.4304179F7BF9D77A.quest_subtitle: "Registers, Below and Beyond"
+	quest.4304179F7BF9D77A.quest_desc: ["The Guild built gatehouses in the wilds: a hall, a sanctum, and a frame that opens onto the Nether or the End.", "Read the register in the archive. Every one of them ends the same way: the gate does not close as fast as it opens."]
+	quest.67FF97C261DB7159.title: "Quarantine"
+	quest.67FF97C261DB7159.quest_subtitle: "Nailed shut"
+	quest.67FF97C261DB7159.quest_desc: ["The Guild's archivist copied every register that came off the gatehouses. The black got into the ink, then into him.", "He is still lucid most days. A weakness potion and a golden apple would cure him, and he kept what he could of the archive."]
+	quest.1F60B04AB8499F43.title: "The Apprentice"
+	quest.1F60B04AB8499F43.quest_subtitle: "Mends anything but frames"
+	quest.1F60B04AB8499F43.quest_desc: ["A tinker poured rebar for three gatehouses and saw one whole frame drawn up by the masters at the Hollow.", "He will fix your tools. He will not build a gate, for any price."]
+	quest.1846668C3317855B.title: "Requisitions"
+	quest.1846668C3317855B.quest_subtitle: "The proving grounds"
+	quest.1846668C3317855B.quest_desc: ["Every suit, hood and wind-engine bound for the far stations was tested under a Guild hut first. Follow the mast.", "The sergeant there is still holding his post. His ledger has the supply routes to the far laboratories."]
+	quest.21F2227B14BC1310.title: "The Tidewell"
+	quest.21F2227B14BC1310.quest_subtitle: "Cooling halls under the sea"
+	quest.21F2227B14BC1310.quest_desc: ["The sea cooled the draught lines from the gatehouses. Then the water in the halls went dark, and the keeper flooded them herself.", "Mind the great one. It woke for a reason."]
+	quest.0E0F7020DA98D7FA.title: "The Listening Post"
+	quest.0E0F7020DA98D7FA.quest_subtitle: "Wear wax. Do not drop tools."
+	quest.0E0F7020DA98D7FA.quest_desc: ["Deep in the dark the Guild dug down to an older gate, and set the growth to listen to their own.", "The growth hums at the frames' pitch even with every gate shut. Read the transcript in the survey desk, and do not ring the bell."]
+	quest.4D0B9594321F0785.title: "Station Below"
+	quest.4D0B9594321F0785.quest_subtitle: "Harrow's day book"
+	quest.4D0B9594321F0785.quest_desc: ["The draught Below is not heat, though it comes with heat. It is closer to will.", "Master Harrow went through to find out why the gates would not close. Her day book is in the station's archive, with a route to the foundry."]
+	quest.111B2C7B9D27BC0F.title: "The Foundry"
+	quest.111B2C7B9D27BC0F.quest_subtitle: "It is not our smoke"
+	quest.111B2C7B9D27BC0F.quest_desc: ["Every measure of draught was fired here before it went up. The caged blazes went dim feeding it.", "Foreman Gale banked the kilns rather than double the draught. Find his orders; one line explains the smoke you keep seeing."]
+	quest.7229A829F49344D4.title: "Far Station"
+	quest.7229A829F49344D4.quest_subtitle: "We are being drawn on"
+	quest.7229A829F49344D4.quest_desc: ["Doctor Marsh watched the void under the islands and wrote to the Guild four times.", "Each measure of draught sent home carried passengers. The clerks called them lodgers. They are still riding the cold back into the world."]
+	quest.1A3E1F30A5BA9297.title: "The Wound Below"
+	quest.1A3E1F30A5BA9297.quest_subtitle: "The Eroded Yard"
+	quest.1A3E1F30A5BA9297.quest_desc: ["In places the Nether has grown flesh: carrion, clotted stone, eyes in the walls. As if the draught tore a wound Below and it healed wrong.", "Harrow's day book stops short of saying where her crew went."]
+	quest.71AE846C5B761176.title: "Those Who Stayed"
+	quest.71AE846C5B761176.quest_subtitle: "Skeleton cultists"
+	quest.71AE846C5B761176.quest_desc: ["Skeletons keep vigil in the yard with candles in their hands. They tend the wound like something sacred.", "Some of the Guild's crews never came back up. Put three of the vigil to rest."]
+	quest.145E2E5CADBEDC99.title: "Burial Knife"
+	quest.145E2E5CADBEDC99.quest_subtitle: "Seer fangs on a stick"
+	quest.145E2E5CADBEDC99.quest_desc: ["The seers that drift through the yard leave vile fangs behind. Two on a stick make a knife for cutting away what the yard grows."]
+	quest.422704930DFDEDE0.title: "Draught Condensate"
+	quest.422704930DFDEDE0.quest_subtitle: "Chromatic Compound"
+	quest.422704930DFDEDE0.quest_desc: ["The Guild bottled what came through. Superheat three powdered obsidian, a polished rose quartz and glowstone with a measure of tar in a mixer.", "It is the closest thing to the draught you can hold in your hand."]
+	quest.7C7AF263DF9FAD3D.title: "Steeped in the Beyond"
+	quest.7C7AF263DF9FAD3D.quest_subtitle: "Shadow Steel"
+	quest.7C7AF263DF9FAD3D.quest_desc: ["Mix the compound with an echo shard and two popped chorus fruit. The listening post and the far station each gave you half of it.", "It never quite warms in the hand."]
+	quest.0E6E2FD709279ED7.title: "Fired from Below"
+	quest.0E6E2FD709279ED7.quest_subtitle: "Refined Radiance"
+	quest.0E6E2FD709279ED7.quest_desc: ["Superheat the compound with two glowstone and a weakened soul, a spark of what the foundry burned out of its blazes.", "Brighter than it has any right to be."]
+	quest.525BBB1B92B4A239.title: "The Guild's Own Mark"
+	quest.525BBB1B92B4A239.quest_subtitle: "Gearwright's Seal"
+	quest.525BBB1B92B4A239.quest_desc: ["A smith's stamp, shadow steel and refined radiance make the Guild's seal without a nether star or a dragon egg.", "The Gearwrights marked their best work with it. Now you can mark yours."]
+	quest.54A48D92052194BA.title: "What They Opened"
+	quest.54A48D92052194BA.quest_subtitle: "Every register ends the same way"
+	quest.54A48D92052194BA.quest_desc: ["Gatehouses, a station Below, a station Beyond, a foundry to feed them, a post to listen and a well to cool them. Each one built to fix the last.", "Every record points back to the Hollow, where the first gate was cut. Whatever is still open there, the Gearwrights never closed it."]
+	quest.4DD6EF4C9ACAD67F.title: "A Weakened Soul"
+	quest.4DD6EF4C9ACAD67F.quest_subtitle: "Scraped out of soul sand"
+	quest.4DD6EF4C9ACAD67F.quest_desc: ["Strike flint and steel against soul sand and a dim spark of soul comes loose. A bucket and a soul make a bucket of tar.", "The Guild called it the black. It leaked through their gates long before anyone thought to bottle it."]
+	quest.04678A5E0FD64487.title: "Scorched Earth"
+	quest.04678A5E0FD64487.quest_subtitle: "Dimmed on purpose"
+	quest.04678A5E0FD64487.quest_desc: ["Scorch a blaze spawner with flint and steel and it only gives up weakened blazes.", "The foundry did this to its caged stock for years. Foreman Gale's orders say it plainly."]
+	quest.63443DC43CBDEA67.title: "Feeding Time"
+	quest.63443DC43CBDEA67.quest_subtitle: "Lodgers are hungry"
+	quest.63443DC43CBDEA67.quest_desc: ["The spirits in your tar are the same lodgers that rode the draught home. Feed them a candle or a soul and they work for you.", "Keep them fed. The registers do not say what they do when they are not."]
+	quest.468B1993B7E5B2D2.title: "Work Order"
+	quest.468B1993B7E5B2D2.quest_subtitle: "Something to make"
+	quest.468B1993B7E5B2D2.quest_desc: ["Order an item from the radio and let a bound spirit make it.", "The Guild ran whole workshops this way, near the end."]
+	quest.2604B72385407A09.title: "Someone's Watching"
+	quest.2604B72385407A09.quest_subtitle: "A shade over your orders"
+	quest.2604B72385407A09.quest_desc: ["A shade holds the parts of a long order so nothing else takes them. Feed it votive skulls to raise its rank.", "It watches the work. Try not to wonder what else it watches."]
+	quest.6CE83700F1014A22.title: "Bone Library"
+	quest.6CE83700F1014A22.quest_subtitle: "Every contract in one place"
+	quest.6CE83700F1014A22.quest_desc: ["An ossuary keeps every reliquary's contracts on one radio, to hand out and take back.", "The archivist kept the Guild's contracts like this, until the ink went dark."]
+	quest.05AFF3BA28CE976A.title: "Can You Hear Me Now?"
+	quest.05AFF3BA28CE976A.quest_subtitle: "A broadcast mast"
+	quest.05AFF3BA28CE976A.quest_desc: ["Stack an antenna three pieces tall. The tar carries further than it should.", "The drowned radio sets along the coast were the Guild's. Some of them are still listening."]
+	quest.33C617431F051EB9.title: "Here and Not"
+	quest.33C617431F051EB9.quest_subtitle: "Transient Antenna"
+	quest.33C617431F051EB9.quest_desc: ["An antenna that is only partly in the world. The lodgers find it comfortable."]
+	quest.0EC548C0E8795C69.title: "Sixteen Candles"
+	quest.0EC548C0E8795C69.quest_subtitle: "A well-kept reliquary"
+	quest.0EC548C0E8795C69.quest_desc: ["Light sixteen candles around one reliquary. The wayside shrines did this for spirits nobody remembered binding."]
+	quest.485C09286B93C404.title: "Bottled Void"
+	quest.485C09286B93C404.quest_subtitle: "Essence of the Void"
+	quest.485C09286B93C404.quest_desc: ["Fill a bucket with essence of the void.", "Doctor Marsh wrote that the void beneath the islands is not empty. This is what she meant."]
+	quest.6DC75C3C4F11BF6F.title: "Someone Was Here"
+	quest.6DC75C3C4F11BF6F.quest_subtitle: "A researcher's cabin"
+	quest.6DC75C3C4F11BF6F.quest_desc: ["A cabin in the woods, left in a hurry. Whoever lived here was studying the tar before the Guild was."]
+	quest.068325E50C620419.title: "A Coin for the Box"
+	quest.068325E50C620419.quest_subtitle: "A wayside shrine"
+	quest.068325E50C620419.quest_desc: ["A reliquary still minds a dead furnace by the road. Leave it something."]
+	quest.43C410D1E680B619.title: "Dead Air"
+	quest.43C410D1E680B619.quest_subtitle: "A drowned radio"
+	quest.43C410D1E680B619.quest_desc: ["A radio set the tar swallowed. It was tuned to a Guild frequency."]
+	quest.23C03FFD02803CD3.title: "The Sexton's Count"
+	quest.23C03FFD02803CD3.quest_subtitle: "A charnel crypt"
+	quest.23C03FFD02803CD3.quest_desc: ["Climb down into a charnel crypt. The sexton counted every bone. The count is off by one."]
+	quest.05618F9306EA04D2.title: "Scriptura Vitae"
+	quest.05618F9306EA04D2.quest_subtitle: "Read first"
+	quest.05618F9306EA04D2.quest_desc: ["The guidebook to everything below. Keep it on you; this chapter only marks the road."]
+	quest.686BBB6FCE3719DC.title: "Throwing Daggers"
+	quest.686BBB6FCE3719DC.quest_subtitle: "Soul snare"
+	quest.686BBB6FCE3719DC.quest_desc: ["A dagger that marks what it hits. Kill a marked creature and it gives up raw spiritus, before you ever hold a sentient sword."]
+	quest.6D9C3E6DBF8F2976.title: "Blood Lantern"
+	quest.6D9C3E6DBF8F2976.quest_subtitle: "A light left on"
+	quest.6D9C3E6DBF8F2976.quest_desc: ["A soul lantern reforged in the altar. It wards sixteen blocks against wandering spawns.", "The hermit keeps one burning. Now you know why nothing troubles him."]
+	quest.679FB6B2F879995D.title: "Sigil of Holding"
+	quest.679FB6B2F879995D.quest_subtitle: "Nine sigils in one hand"
+	quest.679FB6B2F879995D.quest_desc: ["Carries up to nine other sigils. Cycle them with a hotkey."]
+	quest.1350FB05A3F1E8AC.title: "Sigil of the Green Grove"
+	quest.1350FB05A3F1E8AC.quest_subtitle: "Life, paid in blood"
+	quest.1350FB05A3F1E8AC.quest_desc: ["The pale groves are what the draught does to growing things. This sigil is what blood does instead."]
+	quest.12566167BEFCCF0A.title: "Ritual Awakening"
+	quest.12566167BEFCCF0A.quest_subtitle: "Your first rite"
+	quest.12566167BEFCCF0A.quest_desc: ["Inscribe the stones, set a crystal to the master stone, and pay the cost. The Ritual Diviner shows each layout."]
+	quest.4060040CD98A95BE.title: "A Crack in the Veil"
+	quest.4060040CD98A95BE.quest_subtitle: "Breaching the Edge of Demon Realm"
+	quest.4060040CD98A95BE.quest_desc: ["A Tier II rite that opens a way into the Demon Realm, once.", "Understand what you are doing. You are cutting a gate, the way the Gearwrights did. Every one of their registers ends with the gate not closing as fast as it opened. Yours, at least, is paid for in your own blood."]
+	quest.60DBF1D87DA15350.title: "Forged in the Pit"
+	quest.60DBF1D87DA15350.quest_subtitle: "Raw demonite"
+	quest.60DBF1D87DA15350.quest_desc: ["Dig a sliver of demonite out of the Endless Realm. It smelts into hellforged metal."]
+	quest.494EEC611CFA869C.title: "Bloodstone"
+	quest.494EEC611CFA869C.quest_subtitle: "Tier III capstones"
+	quest.494EEC611CFA869C.quest_desc: ["Tau grows in the Demon Realm. Saturated tau and the sanguine reverter in an athanor give weak blood shards, and shards make bloodstone.", "Four bricks cap the corners of a Tier III altar: 28 more runes, a ring lower, at radius five."]
+	quest.0DB354D68F862E86.title: "Magus Orb"
+	quest.0DB354D68F862E86.quest_subtitle: "Tier Three"
+	quest.0DB354D68F862E86.quest_desc: ["A weak blood shard in a Tier III altar. Your network deepens again."]
+	quest.600D5D480975FE2D.title: "Dominus Orb"
+	quest.600D5D480975FE2D.quest_subtitle: "Tier Four"
+	quest.600D5D480975FE2D.quest_desc: ["Hellforged blocks cap a Tier IV altar, 48 runes further out at radius eight. A hellforged block in the basin becomes the Dominus orb."]
+	quest.273598A81C9EC9AA.title: "Crystal Cluster"
+	quest.273598A81C9EC9AA.quest_subtitle: "Sculk and a star"
+	quest.273598A81C9EC9AA.quest_desc: ["Forged from sculk, a Tabula Aetherea, a weak blood shard and a nether star. Four crown a Tier V altar.", "The sculk is easiest got from the Guild's dig in the deep dark. They were listening to it; you are going to build on it."]
+	quest.0C4D9A5C8A9B4AB0.title: "Divinus Orb"
+	quest.0C4D9A5C8A9B4AB0.quest_subtitle: "Tier Five"
+	quest.0C4D9A5C8A9B4AB0.quest_desc: ["A crystal cluster in a Tier V altar: 172 runes in five rings.", "The Guild drew its power through a gate and never paid for it. You have paid for every drop of yours."]
+	quest.36C14B7B7950F73C.title: "Aspectum Omnia"
+	quest.36C14B7B7950F73C.quest_subtitle: "Four aspects of spiritus"
+	quest.36C14B7B7950F73C.quest_desc: ["Transmute a raw cluster into each of the four aspects: invictus, nihilum, ruina and vindicta."]
 }
