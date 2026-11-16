@@ -7,3 +7,6 @@
    luminance rank) to the source texture's own colour at the same rank, so the material colour is kept and the shape/shading is the template's.
    Templates: Excalibur iron_ingot / iron_nugget, Neo Vitae iron_dust. Animated sources keep their frames.
 Run with `python3 -I`.
+4. `rich_dust.py <outdir> <assets_out>` (pass 9-39) - dusts v2: Neo Vitae copper_dust as the template (main ramp + accent speckles, 12 shades).
+   Template and source colours are each split into a primary and an accent hue group; every template shade gets its own colour by continuous
+   interpolation along the source's ramp (accent derived by a hue shift when the source has only one hue). Run after restyle.py.

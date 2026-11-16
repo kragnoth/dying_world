@@ -1173,3 +1173,9 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   22 dusts (IE 16, immersivepetroleum petcoke, arkaneworx zinc, glowstone, waystones warp dust, neovitae corrupted dust).
 - Skipped: titanium:* (library textures, no items), create:copper_ingot (no such item), experience nuggets, neovitae corrupted_tiny_dust (tiny on
   purpose), cultivar:sulfur_dust (cultivar's excalibur_style pack loads ABOVE kubejs assets - change it in Cog & Cultivar itself).
+
+## Pass 9-39 (2026-11-15) - dusts re-done richer
+- USER: some restyled dusts lost a lot vs the original Neo Vitae look (straight colour transfer).
+- Cause: the 9-38 template (neovitae iron_dust) has only 7 shades and rank-mapping collapsed sources to them; Neo Vitae's richest dust (copper) has 12
+  shades in two hue groups (body + speckles). tools/textures/rich_dust.py redoes the 22 dusts on that template with continuous ramp interpolation:
+  every output now has 12 distinct colours with accent speckles. Ingots/nuggets unchanged.
