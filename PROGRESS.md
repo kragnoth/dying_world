@@ -1256,3 +1256,20 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   killer; on login it re-unlocks it for anyone tagged gh_hollow_defeated (a respec locks every node).
 - Not done (offered): a 'Hollow Mark' item for a multi-stage creative recipe.
 - No deletions. UNVERIFIED in game.
+
+## Pass 9-46 (2026-11-16) - the Occult Foundry vision becomes the Hollow's mark
+- USER decisions: before the Hollow the world is normal; killing your copy locks you into occult_foundry; the Escapement (later) frees you;
+  after that the vision is a toggle that needs an item (Foundry Lens); harsher spawns while locked; Hollowed's perks only work in the vision;
+  repeatable Escapements; late journals scrambled, revealed in the vision (book-screen/lang approach); vision items must be data-driven
+  (the mod is for any pack).
+- NEW Wasteland Vision 0.24.0/0.24.1 (kragnoth/Wasteland-Vision): clients report their vision, players carry tag wv_<vision>;
+  /wastelandvision lock|unlock|status (saved per player); vision.json "key_item" + "items" (JSON-declared items, "key": true);
+  reveal/<lang>.json = keys that read differently while the vision is on. NEW Mob Rules 0.7.1: spawner "players" has_tags/lacks_tags.
+- `tools/gen_pass9_46.py`: wastelandvision-server.toml forceVision=false (config/ + NEW defaultconfigs/ copy, so new worlds get it);
+  client startActive=false; occult_foundry/vision.json "items": foundry_lens (head, key, rare) + texture in the vision folder's assets;
+  datapack mobrules/foundry_haunting.json (skeleton cultist spawner, dark overworld spots, only around players tagged wv_occult_foundry +
+  gh_hollow_defeated and not gh_escaped); skill tree: x_hollowed keeps the stats, the 3 perks move to x_hollow_sight / hollow_sight_1.
+- kubejs 60_the_hollow.js: the kill locks owner + killer into occult_foundry; escapeFoundry(player) (tag gh_escaped, unlock, give the lens)
+  is ready for the Escapement pass; Hollow Sight is unlocked/locked once a second when the wv_occult_foundry tag changes.
+- EXISTING WORLDS: edit <world>/serverconfig/wastelandvision-server.toml (forceVision = false) by hand.
+- No deletions. UNVERIFIED in game.

@@ -52,14 +52,49 @@ function grantCapstone(server, player) {
   server.runCommandSilent(`puffish_skills skills unlock ${player.username} kskills:skill_tree hollowed_1`)
 }
 
+// pass 9-46: Hollowed players are locked into the Occult Foundry vision (Wasteland Vision 0.24+) until they escape
+// (tag gh_escaped, set by the Escapement - a later pass). The lock is saved on the player by Wasteland Vision itself.
+const FOUNDRY = 'occult_foundry'
+const ESCAPED = 'gh_escaped'
+
 function markDefeated(player) {
   if (!player) return
   const first = !player.tags.contains(HOLLOW_STAGE)
   player.addTag(HOLLOW_STAGE)          // FTB Library's default stage provider reads entity tags
   player.stages.add(HOLLOW_STAGE)      // KubeJS stages, if FTB uses those instead
   grantCapstone(player.server, player)
-  if (first) player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
+  if (first && !player.tags.contains(ESCAPED)) {
+    player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
+    player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
+    player.tell(Text.of('The world does not settle back. You see the Foundry now, and it sees you.').gray().italic())
+  }
 }
+
+// Called by the Escapement (later pass): ends the lock; from then on the vision is a toggle that needs the Foundry Lens.
+function escapeFoundry(player) {
+  if (player.tags.contains(ESCAPED)) return
+  player.addTag(ESCAPED)
+  player.server.runCommandSilent(`wastelandvision unlock ${player.username}`)
+  player.give('wastelandvision:occult_foundry/foundry_lens')
+}
+
+// Hollow Sight (the three Occult keystone perks) is unlocked only while the player is in the Foundry vision.
+// Wasteland Vision tags players wv_<vision> while it's on; checked once a second per player, commands only on change.
+const SIGHT_ON = 'gh_hollow_sight'
+PlayerEvents.tick(event => {
+  const p = event.player
+  if (p.age % 20 != 0 || !p.tags.contains(HOLLOW_STAGE)) return
+  const want = p.tags.contains('wv_' + FOUNDRY)
+  const has = p.tags.contains(SIGHT_ON)
+  if (want == has) return
+  if (want) {
+    p.addTag(SIGHT_ON)
+    p.server.runCommandSilent(`puffish_skills skills unlock ${p.username} kskills:skill_tree hollow_sight_1`)
+  } else {
+    p.removeTag(SIGHT_ON)
+    p.server.runCommandSilent(`puffish_skills skills lock ${p.username} kskills:skill_tree hollow_sight_1`)
+  }
+})
 
 // a respec locks every node; give it back to anyone who has earned it
 PlayerEvents.loggedIn(event => {

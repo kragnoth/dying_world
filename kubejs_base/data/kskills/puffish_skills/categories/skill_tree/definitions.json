@@ -12318,7 +12318,7 @@
 		"description": [
 			"",
 			{
-				"text": "✦ Soul Siphon, Arcane Ward and Hex, wherever your path ran\n",
+				"text": "✦ In the Foundry: Soul Siphon, Arcane Ward and Hex (see Hollow Sight)\n",
 				"color": "light_purple"
 			},
 			{
@@ -12357,27 +12357,6 @@
 		"size": 1.5,
 		"cost": 0,
 		"rewards": [
-			{
-				"type": "kskills_perks:perk",
-				"data": {
-					"perk": "soul_siphon",
-					"level": 1
-				}
-			},
-			{
-				"type": "kskills_perks:perk",
-				"data": {
-					"perk": "arcane_ward",
-					"level": 1
-				}
-			},
-			{
-				"type": "kskills_perks:perk",
-				"data": {
-					"perk": "hex",
-					"level": 1
-				}
-			},
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
@@ -12441,6 +12420,79 @@
 			"caverns_and_chasms",
 			"lodestone",
 			"apothic_attributes"
+		]
+	},
+	"x_hollow_sight": {
+		"title": {
+			"text": "Hollow Sight",
+			"color": "dark_purple",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "✦ Soul Siphon, Arcane Ward and Hex, wherever your path ran\n",
+				"color": "light_purple"
+			},
+			{
+				"text": "Only while you see the Occult Foundry",
+				"color": "gray"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ender_eye"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 0,
+		"rewards": [
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "soul_siphon",
+					"level": 1
+				}
+			},
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "arcane_ward",
+					"level": 1
+				}
+			},
+			{
+				"type": "kskills_perks:perk",
+				"data": {
+					"perk": "hex",
+					"level": 1
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The Foundry lends you what it took from them.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Capstone • Opens and closes with the vision",
+				"color": "dark_aqua"
+			}
+		],
+		"required_mods": [
+			"kskills_perks",
+			"neovitae",
+			"caverns_and_chasms",
+			"lodestone"
 		]
 	}
 }

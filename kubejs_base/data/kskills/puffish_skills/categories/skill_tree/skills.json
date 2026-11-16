@@ -2269,5 +2269,10 @@
 		"x": -800,
 		"y": 228,
 		"definition": "x_hollowed"
+	},
+	"hollow_sight_1": {
+		"x": -800,
+		"y": 296,
+		"definition": "x_hollow_sight"
 	}
 }

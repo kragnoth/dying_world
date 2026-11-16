@@ -1206,5 +1206,14 @@
       "then": "retexture",
       "recolor": "lacquered_wood"
     }
-  ]
+  ],
+  "items": {
+    "foundry_lens": {
+      "name": "Foundry Lens",
+      "slot": "head",
+      "key": true,
+      "rarity": "rare",
+      "texture": "wastelandvision:item/occult_foundry/foundry_lens"
+    }
+  }
 }
