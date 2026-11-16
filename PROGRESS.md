@@ -1179,3 +1179,7 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - Cause: the 9-38 template (neovitae iron_dust) has only 7 shades and rank-mapping collapsed sources to them; Neo Vitae's richest dust (copper) has 12
   shades in two hue groups (body + speckles). tools/textures/rich_dust.py redoes the 22 dusts on that template with continuous ramp interpolation:
   every output now has 12 distinct colours with accent speckles. Ingots/nuggets unchanged.
+
+## Pass 9-40 (2026-11-15) - four dusts fixed after the v1/v2 review
+- USER: keep v2 (rich dusts), fix the four weak ones. rich_dust.py FIX table: zinc trim=.25 (outline pixels dropped from the source colours, no black
+  rim), wood + sulfur mono (speckles = darker shade of their own colour, no green cast), glowstone mono + contrast .75 (calmer, keeps its highlights).
