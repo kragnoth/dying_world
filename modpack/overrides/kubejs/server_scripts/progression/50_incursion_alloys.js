@@ -6,8 +6,9 @@
 //                        (blaze cake + Tarbound tar: late Create, after the Nether)
 //    Shadow Steel        mixing: compound + echo shard + 2 popped chorus fruit         (the Beyond: End + deep dark)
 //    Refined Radiance    superheated mixing: compound + 2 glowstone + weakened soul    (the Below: Nether heat)
-//  Uses: a third way to make the Gearwrights' Seal (Hallmarked), a recipe for Create's creative-only Handheld
-//  Worldshaper, Create's shadow steel / refined radiance casings, plus Create Encased's sheets as before.
+//  Uses: a third way to make the Gearwrights' Seal (Hallmarked), Create's shadow steel / refined radiance casings,
+//  plus Create Encased's sheets as before. (A worldshaper recipe was tried and dropped: Create's worldshaper places blocks
+//  without consuming them, so in survival it duplicates anything.)
 //  The rare loot drops (create_drops.js, dying_world_loot_bridge.js) stay as a second source.
 ServerEvents.recipes(event => {
     if (!global.GH_PROGRESSION.incursionAlloys) return
@@ -45,25 +46,6 @@ ServerEvents.recipes(event => {
     // the Guild's own mark: a third route to the Gearwrights' Seal (also nether star / dragon egg)
     event.shapeless('hallmarked:gearwrights_seal', ['hallmarked:smiths_stamp', 'create:shadow_steel', 'create:refined_radiance'])
         .id('gearwrights:incursion/gearwrights_seal')
-
-    // the Gearwrights' survey tool: Create's creative-only worldshaper gets a late recipe
-    event.custom({
-        type: 'create:mechanical_crafting',
-        accept_mirrored: false,
-        category: 'misc',
-        key: {
-            R: { item: 'create:refined_radiance' }, S: { item: 'create:shadow_steel' },
-            P: { item: 'create:precision_mechanism' }, B: { tag: 'c:ingots/brass' }, C: { item: 'create:brass_casing' }
-        },
-        pattern: [
-            ' RPR ',
-            'BBCBB',
-            '  S  ',
-            '  S  '
-        ],
-        result: { count: 1, id: 'create:handheld_worldshaper' },
-        show_notification: true
-    }).id('gearwrights:incursion/handheld_worldshaper')
 
     // Create's own casings for the two alloys (Create has the blocks but no recipe)
     event.custom({ type: 'create:item_application', ingredients: [{ item: 'create:brass_casing' }, { item: 'create:shadow_steel' }],
