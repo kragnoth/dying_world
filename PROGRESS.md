@@ -1497,3 +1497,10 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   (mods/.server-mods-installed) and remove recorded jars no longer listed, so unzipping newer server files over an old
   server swaps versions cleanly; jars the owner added are untouched. Tested on Linux: RC 5 -> 1.0.0 Alpha removed 19,
   downloaded 19, booted.
+
+## Pass 9-73 (2026-11-17) - CurseForge exporter drops .installed_examples
+- The CurseForge app's export skips dotfiles, so the 1.0.0 Alpha export (and the server built from it) had no
+  config/wastelandvision/.installed_examples: Wasteland Vision then installs soot_and_tar + thermal_print on first launch,
+  and a server/client that differ on visions have different registries. Re-sent: client zip with the file added, server
+  zip with it, and a fix zip for servers already started (also delete their visions/soot_and_tar and thermal_print).
+- Rule: upload zips built by tools/export.py (keeps the file), or add the file back to a CurseForge-app export.
