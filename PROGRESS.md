@@ -1471,3 +1471,6 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   (fog #5c6270, soul glow, pines and foundry stacks), cobblestone pixel title, deepslate bar, gold subtitle
   "THE WORLD ENDED SLOWLY", bevelled frame. Source: tools/logo/ (README lists the textures to extract).
 - DELETED tools/logo_wheel.py (9-67 pixel-art version).
+
+## Pass 9-69 (2026-11-17) - plainer CurseForge page
+- modpack/CURSEFORGE_PAGE.md rewritten short and plain at Kragnoth's request (no hype, no spoilers).
