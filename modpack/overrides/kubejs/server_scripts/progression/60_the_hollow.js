@@ -128,7 +128,8 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
 
 // pass 9-45: the reward is the 'Hollowed' capstone node (no connections, cost 0; only this unlocks it)
 function grantCapstone(server, player) {
-  server.runCommandSilent(`puffish_skills skills unlock ${player.username} kskills:skill_tree hollowed_1`)
+  for (let node of ['hollowed_1', 'hollow_sight_1', 'lens_sight_1'])
+    server.runCommandSilent(`puffish_skills skills unlock ${player.username} kskills:skill_tree ${node}`)
 }
 
 // pass 9-46/9-47: everyone starts locked in the Occult Foundry vision (server forceVision). Killing your copy also locks you per
@@ -172,31 +173,8 @@ function relockFoundry(player) {
   player.tell(Text.of('You give it back. The Foundry takes you in again.').darkPurple().italic())
 }
 
-// Hollow Sight / Lens Sight (pass 9-49: release costs power). Wasteland Vision tags players wv_<vision> while it's on.
-//  locked in the Foundry (Hollowed, not released): Hollow Sight - all three Occult keystone perks + a stat line
-//  released, looking through the lens:            Lens Sight - Arcane Ward + Hex only
-//  out of the vision:                             neither
-// Checked once a second per player; commands only when the state changes.
-const SIGHT_NODES = { full: ['gh_hollow_sight', 'hollow_sight_1'], lens: ['gh_lens_sight', 'lens_sight_1'] }
-PlayerEvents.tick(event => {
-  const p = event.player
-  if (p.age % 20 != 0 || !p.tags.contains(HOLLOW_STAGE)) return
-  const seeing = p.tags.contains('wv_' + FOUNDRY)
-  const want = !seeing ? null : p.tags.contains(ESCAPED) ? 'lens' : 'full'
-  for (let kind in SIGHT_NODES) {
-    const tag = SIGHT_NODES[kind][0], node = SIGHT_NODES[kind][1]
-    const on = p.tags.contains(tag)
-    if ((kind == want) == on) continue
-    if (kind == want) {
-      p.addTag(tag)
-      p.server.runCommandSilent(`puffish_skills skills unlock ${p.username} kskills:skill_tree ${node}`)
-    } else {
-      p.removeTag(tag)
-      p.server.runCommandSilent(`puffish_skills skills lock ${p.username} kskills:skill_tree ${node}`)
-    }
-  }
-})
-
+// Hollow Sight / Lens Sight (pass 9-53): both nodes are unlocked once, with the capstone; kskills_perks 1.1.0 switches their
+// rewards on and off by tag (wv_occult_foundry from Wasteland Vision, gh_escaped from the altar). Nothing to tick here.
 // a respec locks every node; give it back to anyone who has earned it
 PlayerEvents.loggedIn(event => {
   if (event.player.tags.contains(HOLLOW_STAGE)) grantCapstone(event.server, event.player)

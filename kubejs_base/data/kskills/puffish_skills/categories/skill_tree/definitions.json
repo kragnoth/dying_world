@@ -12470,45 +12470,57 @@
 				"type": "kskills_perks:perk",
 				"data": {
 					"perk": "soul_siphon",
-					"level": 1
+					"level": 1,
+					"while_tags": "wv_occult_foundry",
+					"unless_tags": "gh_escaped"
 				}
 			},
 			{
 				"type": "kskills_perks:perk",
 				"data": {
 					"perk": "arcane_ward",
-					"level": 1
+					"level": 1,
+					"while_tags": "wv_occult_foundry",
+					"unless_tags": "gh_escaped"
 				}
 			},
 			{
 				"type": "kskills_perks:perk",
 				"data": {
 					"perk": "hex",
-					"level": 1
+					"level": 1,
+					"while_tags": "wv_occult_foundry",
+					"unless_tags": "gh_escaped"
 				}
 			},
 			{
-				"type": "puffish_skills:attribute",
+				"type": "kskills_perks:attribute",
 				"data": {
 					"attribute": "minecraft:generic.armor",
 					"value": 2,
-					"operation": "add"
+					"operation": "add",
+					"while_tags": "wv_occult_foundry",
+					"unless_tags": "gh_escaped"
 				}
 			},
 			{
-				"type": "puffish_skills:attribute",
+				"type": "kskills_perks:attribute",
 				"data": {
 					"attribute": "minecraft:generic.attack_damage",
 					"value": 1,
-					"operation": "add"
+					"operation": "add",
+					"while_tags": "wv_occult_foundry",
+					"unless_tags": "gh_escaped"
 				}
 			},
 			{
-				"type": "puffish_skills:attribute",
+				"type": "kskills_perks:attribute",
 				"data": {
 					"attribute": "minecraft:generic.max_health",
 					"value": 4,
-					"operation": "add"
+					"operation": "add",
+					"while_tags": "wv_occult_foundry",
+					"unless_tags": "gh_escaped"
 				}
 			}
 		],
@@ -12567,14 +12579,22 @@
 				"type": "kskills_perks:perk",
 				"data": {
 					"perk": "arcane_ward",
-					"level": 1
+					"level": 1,
+					"while_tags": [
+						"wv_occult_foundry",
+						"gh_escaped"
+					]
 				}
 			},
 			{
 				"type": "kskills_perks:perk",
 				"data": {
 					"perk": "hex",
-					"level": 1
+					"level": 1,
+					"while_tags": [
+						"wv_occult_foundry",
+						"gh_escaped"
+					]
 				}
 			}
 		],

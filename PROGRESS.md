@@ -1343,3 +1343,12 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - 85_hollow_taken.js: weights cached per player every 100 ticks (no command per spawn); only 'creature' mobs get the gh_hollow_seen
   tag (was every living entity).
 - NOTE: anyone who tested 9-50/9-51 keeps stale gh_escapements_made / gh_hollow_held_since in KubeJS data; harmless, unused now.
+
+## Pass 9-53 (2026-11-16) - kskills_perks takes over the sight switching
+- kskills_perks now in git (kragnoth/kskills-perks): 1.0.1 source verified identical to the pack's jar; NEW 1.1.0 adds while_tags /
+  unless_tags on kskills_perks:perk and a new kskills_perks:attribute reward (tag-conditional attribute modifiers). PACK NEEDS 1.1.0.
+- `tools/gen_pass9_53.py`: Hollow Sight rewards = 3 perks + armor/attack/health while wv_occult_foundry unless gh_escaped; Lens Sight =
+  Arcane Ward + Hex while wv_occult_foundry and gh_escaped.
+- kubejs 60_the_hollow.js: the per-second node swapping is gone; grantCapstone unlocks hollowed_1, hollow_sight_1 and lens_sight_1
+  together (and on login). Leftover tags gh_hollow_sight / gh_lens_sight from testing are harmless.
+- No deletions. UNVERIFIED in game.
