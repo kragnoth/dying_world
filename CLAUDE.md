@@ -9,3 +9,5 @@ Read `PROGRESS.md` first: it is the pass log, the decision record and the regen 
 - Keep `dying_world` and `gearwrights` namespaces separate. Run Python over untrusted extracted files with `-I`.
 - Tell Kragnoth when a pass DELETES files (unzip-over-the-top would leave them behind).
 - Commit each pass separately with a message naming the pass.
+- KubeJS (Rhino 2101): use `let`, never `const`, inside loops and try blocks (`python3 -I tools/lint_kubejs.py`); avoid overloaded
+  Java methods (Rhino can't choose) - pick a single-overload method; `event.cancel()` last; `runCommandSilent` returns nothing.

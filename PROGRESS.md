@@ -1400,3 +1400,22 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   Distilled Residue count (was free), the doppelganger summon check, and the lens check.
 - Testers: a player who already killed their copy under the bug is already 'defeated', so they never got the set; give it with
   /hallmarked sets give hollowed <cowl|vestment|greaves|treads|censer> (or /kskills hollow reset <player> and fight again).
+
+## Pass 9-61 (2026-11-17) - headless server playtest; insideHollow fixed for real
+- Booted a dedicated server (NeoForge 21.1.262) from the review instance's jars, swapped to kskills_perks 1.2.0 / mobrules 0.7.1 /
+  wastelandvision 0.24.3, RC4-dropped jars removed, client-only jars set aside, plus a fresh tools/export.py build. Not covered:
+  12 RC4 CurseForge projects absent from the review copy (no CurseForge API access to fetch them).
+- Clean: every pack loader (KubeJS 0 script errors, 39 Mob Rules rules, 7+6 uniques, 15 sets, kskills tree, FTB Quests).
+  Every quest item/fluid/entity/structure/biome/dimension/advancement reference resolves; all quest commands target valid
+  ids (uniques, map loot table, skill category). Every Escapement-chain and creative recipe loads; the only non-Escapement
+  creative producers are Create Encased's cosmetic casings (intended) and Ender IO's own Eternal Creative Power recipe, which needs
+  enderio:creative_power - nothing makes that, so the gate holds.
+- Live checks: the_hollow generates (/place and natural) with the altar on the candle diagonals; cmdResult returns real
+  Brigadier numbers (0 on failure); the altar-busy execute check is dimension-scoped.
+- BUG (mine): insideHollow never worked. (1) Rhino 2101 throws "redeclaration of var" for a `const` inside a try block on
+  EVERY call (and in a loop body on the 2nd iteration) - now `let`. (2) Behind it, getStructureWithPieceAt has 4 overloads Rhino
+  can't pick between - now getStructureAt + structureHasPieceAt (one overload each). Verified: natural Hollow inside=true.
+  In play the altar still worked because the candle-shape check passes first.
+- tools/lint_kubejs.py: flags `const` in try blocks / loop bodies; the pack is clean.
+- Harmless: "Couldn't load tag minecraft:mineable/pickaxe" (#amendments:wall_lanterns) is logged on every dedicated-server boot
+  before Moonlight generates Amendments' pack; the tags work at boot (tested from a fresh start).

@@ -14,8 +14,13 @@ const HOLLOW_STAGE = 'gh_hollow_defeated'
 function insideHollow(level, pos) {
   try {
     // getOrThrow(ResourceKey) has a single overload; Registry.get(...) is ambiguous to Rhino (ResourceKey vs ResourceLocation)
-    const structure = level.registryAccess().registryOrThrow($Registries.STRUCTURE).getOrThrow(HOLLOW_KEY)
-    return level.structureManager().getStructureWithPieceAt(pos, structure).isValid()
+    // pass 9-61: `let`, not `const` - Rhino 2101 throws "redeclaration of var" for a const inside a try block, every call
+    let structure =level.registryAccess().registryOrThrow($Registries.STRUCTURE).getOrThrow(HOLLOW_KEY)
+    // getStructureWithPieceAt has 4 overloads (Structure/TagKey/HolderSet/Predicate) that Rhino can't choose between;
+    // getStructureAt and structureHasPieceAt each have one, and together give the same piece-level check
+    let manager = level.structureManager()
+    let start = manager.getStructureAt(pos, structure)
+    return start.isValid() && manager.structureHasPieceAt(pos, start)
   } catch (e) {
     console.error(`[the_hollow] structure check failed: ${e}`)
     return false
