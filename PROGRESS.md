@@ -1454,3 +1454,7 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 ## Pass 9-65 (2026-11-17) - CurseForge logo
 - modpack/logo.svg (source) + logo.png (800x800): brass cog, the face in the violet hollow, tar off the lowest teeth.
   Re-render: rsvg-convert -w 800 -h 800 modpack/logo.svg -o modpack/logo.png
+
+## Pass 9-66 (2026-11-17) - logo = the pack icon, scaled
+- Kragnoth prefers the original pixel-art icon (overrides/icon.png) over the 9-65 vector logo and a procedural pixel redraw.
+  modpack/logo.png is now that icon scaled 16x (1024x1024, nearest neighbour). DELETED modpack/logo.svg.
