@@ -1352,3 +1352,15 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - kubejs 60_the_hollow.js: the per-second node swapping is gone; grantCapstone unlocks hollowed_1, hollow_sight_1 and lens_sight_1
   together (and on login). Leftover tags gh_hollow_sight / gh_lens_sight from testing are harmless.
 - No deletions. UNVERIFIED in game.
+
+## Pass 9-54 (2026-11-16) - the Hollow moves into kskills_perks 1.2.0
+- USER: move the rest into kskills_perks (it is a Gearwright's Hollow-only mod).
+- kskills_perks 1.2.0 (kragnoth/kskills-perks): per-player Hollow state (tier, held/released, held day, escapements) saved on the player,
+  mirrored to gh_hollow_defeated / gh_escaped / gh_residue_1..n; /kskills hollow status|defeat|hold|release|tier|escapements|reset;
+  residue + distilled drops, revenant drops, locked-only uniques, taken spawns (tags gh_hollow_taken for the Mob Rules rule), Hollowed
+  gear going cold (Curios by reflection), HUD meter; [hollow] section in kskills_perks-common.toml. Imports the 9-51/9-52 scoreboards
+  and tags on first login. PACK NEEDS kskills_perks 1.2.0.
+- DELETED kubejs server_scripts/progression/75_foundry_residue.js, 80_hollowed_gear.js, 85_hollow_taken.js (now in the mod).
+- 60_the_hollow.js keeps only the altar, the boss and pack items; state goes through /kskills hollow (defeat, hold, release,
+  escapements). Scoreboard objectives gh_held_day / gh_escapements are no longer used (left in old worlds, harmless).
+- Quests still add gh_residue_<n> tags; the mod takes them in. UNVERIFIED in game.
