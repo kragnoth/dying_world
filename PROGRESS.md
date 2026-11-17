@@ -1364,3 +1364,9 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - 60_the_hollow.js keeps only the altar, the boss and pack items; state goes through /kskills hollow (defeat, hold, release,
   escapements). Scoreboard objectives gh_held_day / gh_escapements are no longer used (left in old worlds, harmless).
 - Quests still add gh_residue_<n> tags; the mod takes them in. UNVERIFIED in game.
+
+## Pass 9-55 (2026-11-16) - one-command CurseForge export
+- NEW `tools/export.py [version]` -> dist/Gearwrights_Hollow_<version>.zip: manifest.json + modlist.html at the root (from modpack/),
+  overrides = modpack/overrides with kubejs/data from a fresh build.py run; repo notes left out. Reproduces the hand-built RC 4.2 zip.
+- modpack/ snapshot updated to RC4: manifest.json, modlist.html, options.txt and three client configs from the RC4.1 export.
+- To change mods: export from CurseForge, copy its manifest.json + modlist.html into modpack/, commit.
