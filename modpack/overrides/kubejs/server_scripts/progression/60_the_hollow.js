@@ -33,8 +33,20 @@ function altarShape(block) {
 
 // pass 9-54: the Hollow state (tier, held/released, days held, Escapements made) lives in kskills_perks 1.2.0; this script only
 // asks it, through /kskills hollow ... (each command returns a number). The mod mirrors the state to the tags used here.
+// pass 9-60: KubeJS 2101's server.runCommandSilent returns nothing (void), so commands whose RESULT we read go through
+// Brigadier directly, which returns the command's number (0 when it fails or doesn't parse).
+function cmdResult(server, command) {
+  try {
+    return server.getCommands().getDispatcher().execute(command, server.createCommandSourceStack().withSuppressedOutput())
+  } catch (e) {
+    // a failing command (e.g. "execute if" with no match) throws CommandSyntaxException: that is a 0. Anything else is a bug.
+    if (String(e).indexOf('CommandSyntaxException') < 0) console.warn(`[the_hollow] command failed: ${command}: ${e}`)
+    return 0
+  }
+}
+
 function hollowCmd(player, args) {
-  return player.server.runCommandSilent(`kskills hollow ${args.replace('%p', player.username)}`)
+  return cmdResult(player.server, `kskills hollow ${args.replace('%p', player.username)}`)
 }
 
 // pass 9-48: the altar also takes a Wound Movement (-> Escapement) and, for released players looking through the lens,
@@ -45,7 +57,7 @@ const FIRST_ESCAPE = 'gh_first_escape'
 
 function altarBusy(server, dim, ax, ay, az) {
   for (let t of [HOLLOW_TAG, ECHO_TAG]) {
-    if (server.runCommandSilent(`execute in ${dim} positioned ${ax} ${ay} ${az} if entity @e[type=mobrules:doppelganger,tag=${t},distance=..64]`) > 0) return true
+    if (cmdResult(server, `execute in ${dim} positioned ${ax} ${ay} ${az} if entity @e[type=mobrules:doppelganger,tag=${t},distance=..64]`) > 0) return true
   }
   return false
 }
@@ -91,7 +103,7 @@ function handleAltar(event) {
       // pass 9-50: each Escapement made after release costs more Distilled Residue (4, 8, 12 ... capped)
       const made = hollowCmd(player, 'escapements %p')
       const cost = Math.min(DISTILLED_CAP, DISTILLED_STEP * (made + 1))
-      const have = server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue 0`)
+      const have = cmdResult(server, `clear ${player.username} gearwrights:distilled_residue 0`)
       if (have < cost) {
         player.tell(Text.of(`It wants ${cost} Distilled Residue as well. Gather it through the lens.`).darkPurple().italic())
         return true
@@ -126,7 +138,7 @@ function handleAltar(event) {
   let dx = ax - player.x, dz = az - player.z
   const len = Math.max(0.001, Math.sqrt(dx * dx + dz * dz))
   const sx = ax + dx / len * 8, sz = az + dz / len * 8
-  const made = server.runCommandSilent(`execute in ${dim} run mobrules doppelganger ${player.username} ${sx.toFixed(2)} ${ay} ${sz.toFixed(2)} ${echo ? ECHO_TAG : HOLLOW_TAG}`)
+  const made = cmdResult(server, `execute in ${dim} run mobrules doppelganger ${player.username} ${sx.toFixed(2)} ${ay} ${sz.toFixed(2)} ${echo ? ECHO_TAG : HOLLOW_TAG}`)
   if (made <= 0) {
     player.tell(Text.of('The seal will not take. (Mob Rules 0.7 or newer is needed for the Hollow.)').red())
     return true
@@ -165,7 +177,7 @@ function markDefeated(player) {
 
 function escapeFoundry(player) {
   if (hollowCmd(player, 'release %p') == 0) return
-  if (player.server.runCommandSilent(`clear ${player.username} wastelandvision:occult_foundry/foundry_lens 0`) == 0)
+  if (cmdResult(player.server, `clear ${player.username} wastelandvision:occult_foundry/foundry_lens 0`) == 0)
     player.give('wastelandvision:occult_foundry/foundry_lens')
   player.tell(Text.of('The world goes quiet. Through the lens the Foundry is still there, but it gives you less, and what it gave you goes cold.').gray().italic())
 }

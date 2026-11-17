@@ -1391,3 +1391,12 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   60_the_hollow.js called event.cancel() before doing anything, so every valid click stopped right there (hidden until 9-58 fixed the
   crash before it). The handler is now handleAltar(event) returning whether the click was the altar's; the wrapper cancels last.
 - Rule for this repo's KubeJS: event.cancel() / event.success() etc. only as the final statement.
+
+## Pass 9-60 (2026-11-16) - command results in KubeJS 2101
+- RC test log: summoning works. Bugs: no Hollowed set / "Hollowed" message on the first kill, "The next one will want NaN", lens likely
+  not given. Cause (KubeJS 2101 source, MinecraftServerKJS): server.runCommandSilent returns void, so every result I read was undefined.
+- 60_the_hollow.js: cmdResult(server, command) runs the command through Brigadier (getCommands().getDispatcher().execute) and returns
+  its number (0 on CommandSyntaxException, other failures logged as warnings). Used for /kskills hollow, the altar-busy check, the
+  Distilled Residue count (was free), the doppelganger summon check, and the lens check.
+- Testers: a player who already killed their copy under the bug is already 'defeated', so they never got the set; give it with
+  /hallmarked sets give hollowed <cowl|vestment|greaves|treads|censer> (or /kskills hollow reset <player> and fight again).
