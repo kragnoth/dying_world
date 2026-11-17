@@ -52,8 +52,7 @@ ServerEvents.recipes(event => {
   mc('immersiveengineering:capacitor_creative', ['HSH', 'SES', 'HSH'], { H: it('immersiveengineering:capacitor_hv'), S: tg('c:plates/steel') })
   // tier 2
   mc('create:creative_crate', ['VSV', 'SES', 'VSV'], { V: it('create:item_vault'), S: it('create:sturdy_sheet') })
-  mc('create_enchantment_industry:creative_bookshelf', ['BXB', 'XEX', 'BXB'], { B: it('minecraft:chiseled_bookshelf'),
-                                                       X: it('create_enchantment_industry:super_experience_block') })
+  // (Create Enchantment Industry's creative bookshelf is a block with no item, so it can't be crafted: left out, pass 9-56)
   mc('enderio_evolution:creative_batch_upgrade', [' U ', 'UEU', ' U '], { U: it('enderio_evolution:stellar_batch_upgrade') })
   mc('enderio_evolution:creative_stack_upgrade', [' U ', 'UEU', ' U '], { U: it('enderio_evolution:stellar_stack_upgrade') })
   event.custom({

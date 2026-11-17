@@ -1370,3 +1370,8 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   overrides = modpack/overrides with kubejs/data from a fresh build.py run; repo notes left out. Reproduces the hand-built RC 4.2 zip.
 - modpack/ snapshot updated to RC4: manifest.json, modlist.html, options.txt and three client configs from the RC4.1 export.
 - To change mods: export from CurseForge, copy its manifest.json + modlist.html into modpack/, commit.
+
+## Pass 9-56 (2026-11-16) - creative bookshelf recipe removed
+- RC 4.2 log: create_enchantment_industry:creative_bookshelf is a block with no item ("Unknown registry key ... item"), so the 70_escapement.js
+  mechanical-crafting recipe failed. Removed. Otherwise the log was clean for the pack's scripts: kskills_perks 1.2.0 loaded both reward
+  types, the kskills tree loaded, Hallmarked loaded 13 uniques.
