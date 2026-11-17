@@ -1446,3 +1446,7 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
     is outside its own range >5000, so a fresh file is "corrected" with a warning every install).
 - Trimmed config boots clean on the test server (no new warnings vs the full config).
 - Existing instances keep the deleted files when a zip is unzipped over them; harmless (defaults/orphans).
+
+## Pass 9-64 (2026-11-17) - CurseForge project page
+- modpack/CURSEFORGE_PAGE.md: project description (Markdown) for the CurseForge upload. Facts from the repo: 15 chapters /
+  266 quests in four groups, structure list, mod list. Does not claim the Excalibur packs (not shipped in the export).
