@@ -1385,3 +1385,9 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 ## Pass 9-58 (2026-11-16) - the altar's real bug
 - KubeJS server.log: insideHollow threw on every click - Rhino can't choose between Registry.get(ResourceKey) and get(ResourceLocation).
   Now registryOrThrow(...).getOrThrow(HOLLOW_KEY) (single overload). The rest of the session's logs were clean for the pack's scripts.
+
+## Pass 9-59 (2026-11-16) - the altar's second bug: event.cancel() exits immediately
+- Checked against KubeJS 2101 source (kube-mods/kubejs@2101, KubeEvent.cancel: "Execution will be stopped immediately", throws EventExit).
+  60_the_hollow.js called event.cancel() before doing anything, so every valid click stopped right there (hidden until 9-58 fixed the
+  crash before it). The handler is now handleAltar(event) returning whether the click was the altar's; the wrapper cancels last.
+- Rule for this repo's KubeJS: event.cancel() / event.success() etc. only as the final statement.

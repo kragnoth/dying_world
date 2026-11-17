@@ -50,16 +50,21 @@ function altarBusy(server, dim, ax, ay, az) {
   return false
 }
 
+// KubeJS 2101: event.cancel() throws to stop the handler IMMEDIATELY, so it must be the very last thing done (pass 9-59).
+// handleAltar does the work and says whether the click was the altar's; only then is the click cancelled.
 BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
+  if (handleAltar(event)) event.cancel()
+})
+
+function handleAltar(event) {
   const { player, block, level, server } = event
-  if (String(event.hand) != 'MAIN_HAND') return
+  if (String(event.hand) != 'MAIN_HAND') return false
   const held = String(event.item.id)
-  if (held != 'hallmarked:gearwrights_seal' && held != 'gearwrights:wound_movement' && held != 'gearwrights:escapement') return
+  if (held != 'hallmarked:gearwrights_seal' && held != 'gearwrights:wound_movement' && held != 'gearwrights:escapement') return false
   if (!altarShape(block) && !insideHollow(level, block.pos)) {
     player.tell(Text.of('Nothing answers. This is not the Hollow\'s altar.').darkGray().italic())
-    return
+    return false
   }
-  event.cancel()
 
   const ax = block.x + 0.5, ay = block.y + 1, az = block.z + 0.5
   const dim = String(level.dimension)
@@ -69,18 +74,18 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
   if (held == 'gearwrights:escapement') {
     if (!player.tags.contains(ESCAPED)) {
       player.tell(Text.of('The Foundry already holds you.').darkPurple().italic())
-      return
+      return true
     }
     if (!player.isCreative()) event.item.shrink(1)
     relockFoundry(player)
     server.runCommandSilent(`execute in ${dim} run playsound minecraft:block.end_portal.spawn hostile @a[distance=..32] ${ax} ${ay} ${az} 0.6 0.4`)
-    return
+    return true
   }
 
   if (held == 'gearwrights:wound_movement') {
     if (!player.tags.contains(HOLLOW_STAGE)) {
       player.tell(Text.of('The altar is cold. Something here has to be put down first.').darkPurple().italic())
-      return
+      return true
     }
     if (player.tags.contains(ESCAPED)) {
       // pass 9-50: each Escapement made after release costs more Distilled Residue (4, 8, 12 ... capped)
@@ -89,7 +94,7 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
       const have = server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue 0`)
       if (have < cost) {
         player.tell(Text.of(`It wants ${cost} Distilled Residue as well. Gather it through the lens.`).darkPurple().italic())
-        return
+        return true
       }
       server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue ${cost}`)
       if (!player.isCreative()) event.item.shrink(1)
@@ -105,18 +110,18 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
       escapeFoundry(player)
     }
     server.runCommandSilent(`execute in ${dim} run playsound minecraft:block.bell.resonate block @a[distance=..32] ${ax} ${ay} ${az} 1 0.5`)
-    return
+    return true
   }
 
   // a seal: the copy (or, for a released player looking through the lens, its echo)
   if (altarBusy(server, dim, ax, ay, az)) {
     player.tell(Text.of('Something already wears your shape down here.').darkPurple().italic())
-    return
+    return true
   }
   const echo = player.tags.contains(ESCAPED) && player.tags.contains('wv_' + FOUNDRY)
   if (player.tags.contains(ESCAPED) && !echo) {
     player.tell(Text.of('Nothing answers. Look through the lens.').darkPurple().italic())
-    return
+    return true
   }
   let dx = ax - player.x, dz = az - player.z
   const len = Math.max(0.001, Math.sqrt(dx * dx + dz * dz))
@@ -124,13 +129,14 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
   const made = server.runCommandSilent(`execute in ${dim} run mobrules doppelganger ${player.username} ${sx.toFixed(2)} ${ay} ${sz.toFixed(2)} ${echo ? ECHO_TAG : HOLLOW_TAG}`)
   if (made <= 0) {
     player.tell(Text.of('The seal will not take. (Mob Rules 0.7 or newer is needed for the Hollow.)').red())
-    return
+    return true
   }
   if (!player.isCreative()) event.item.shrink(1)
   server.runCommandSilent(`execute in ${dim} run playsound minecraft:block.end_portal.spawn hostile @a[distance=..48] ${ax} ${ay} ${az} 0.8 0.6`)
   server.runCommandSilent(`title ${player.username} title {"text":"${echo ? 'An Echo' : 'What They Opened'}","color":"dark_purple"}`)
   server.runCommandSilent(`title ${player.username} subtitle {"text":"${echo ? 'It remembers you' : 'It has been waiting in your shape'}","color":"gray","italic":true}`)
-})
+  return true
+}
 
 // pass 9-45: the reward is the 'Hollowed' capstone node (no connections, cost 0; only this unlocks it)
 function grantCapstone(server, player) {
