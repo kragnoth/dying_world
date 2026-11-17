@@ -1488,3 +1488,12 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   Brightness, Freecam. 234 jars; tested end to end on Linux (download, verify, install, boot to Done). Windows script
   not run here.
 - Note: Rust & Rebar file 3.6.2.3 declares version 3.6.2.2-beta in its mods.toml.
+
+## Pass 9-72 (2026-11-17) - 1.0.0 Alpha: updated mods + server files
+- modpack/manifest.json + modlist.html from Kragnoth's 1.0.0 Alpha export: same 252 projects as RC 5, 19 updated files
+  (Create Encased 1.10.1-fix1, Kotlin for Forge 5.13, Ender IO 8.2.14, FTB Library/Quests, Sophisticated Core/Storage,
+  Supplementaries 4.1.2, Waystones 21.1.47, Titanium, Collective, Modonomicon, ...).
+- modpack/server/server-mods.txt regenerated (234 jars). start.sh / install.ps1 now record the jars they install
+  (mods/.server-mods-installed) and remove recorded jars no longer listed, so unzipping newer server files over an old
+  server swaps versions cleanly; jars the owner added are untouched. Tested on Linux: RC 5 -> 1.0.0 Alpha removed 19,
+  downloaded 19, booted.

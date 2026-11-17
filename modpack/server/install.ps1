@@ -4,6 +4,15 @@ $ProgressPreference = 'SilentlyContinue'
 Set-Location $PSScriptRoot
 $NF = '21.1.262'
 New-Item -ItemType Directory -Force mods | Out-Null
+$track = Join-Path 'mods' '.server-mods-installed'   # jars this script installed (so updates can remove old versions)
+$wanted = @(Get-Content server-mods.txt | Where-Object { $_ -notmatch '^\s*(#|$)' } | ForEach-Object { [uri]::UnescapeDataString((($_ -split '\s+', 2)[1] -split '/')[-1]) })
+if (Test-Path -LiteralPath $track) {
+    foreach ($old in Get-Content -LiteralPath $track) {
+        if ($old -and ($wanted -notcontains $old) -and (Test-Path -LiteralPath (Join-Path 'mods' $old))) {
+            Write-Host "Removing old $old"; Remove-Item -LiteralPath (Join-Path 'mods' $old)
+        }
+    }
+}
 $failed = $false
 foreach ($line in Get-Content server-mods.txt) {
     if ($line -match '^\s*(#|$)') { continue }
@@ -23,6 +32,7 @@ foreach ($line in Get-Content server-mods.txt) {
     }
 }
 if ($failed) { Write-Host 'Some mods failed to download. Run start.bat again to retry.'; exit 1 }
+Set-Content -LiteralPath $track -Value $wanted
 if (-not (Test-Path run.bat)) {
     Write-Host "Installing NeoForge $NF"
     Invoke-WebRequest -Uri "https://maven.neoforged.net/releases/net/neoforged/neoforge/$NF/neoforge-$NF-installer.jar" -OutFile neoforge-installer.jar -UseBasicParsing

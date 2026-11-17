@@ -1,4 +1,4 @@
-# sha1 url  (Gearwright's Hollow RC 5 server mods; filename = last part of the url)
+# sha1 url  (Gearwright's Hollow server mods; filename = last part of the url)
 c8f0fc074e780c439865094cd3f0b3c3a8243ded https://edge.forgecdn.net/files/8892/219/abnormals_delight-1.21.1-6.0.3.jar
 6a29c599ad5e0396e6109ab897d8c28385849e7d https://edge.forgecdn.net/files/8976/417/accessible-step-neoforge-1.21.1-2.4.0%2B1.21.1.jar
 b5c46d36aebc046f8f57ffef430dfe3aeb805320 https://edge.forgecdn.net/files/9415/978/almanac-neoforge-1.21.1-1.26.11.1.jar
@@ -33,7 +33,7 @@ ab0c74743a653020fe2dfc4986b43e893947f3e9 https://edge.forgecdn.net/files/6383/26
 dd0d4a630229b7744be40ac1302a37b5437a53e2 https://edge.forgecdn.net/files/7252/720/clearviews-2.0.6%2B1.21.1-neoforge.jar
 c3e5733ba4503b102589a026000fd5ce0212f6f2 https://edge.forgecdn.net/files/5729/127/cloth-config-15.0.140-neoforge.jar
 fa2576297c7bd12b28aa7070e8141792bd66da4c https://edge.forgecdn.net/files/5623/731/Clumps-neoforge-1.21.1-19.0.0.1.jar
-91f6a5c0ea671349b710a34810160abfb5dcc4c0 https://edge.forgecdn.net/files/9548/438/collective-1.21.1-8.86.jar
+c202e2894c366b8203db435acc83ea225fb20bb2 https://edge.forgecdn.net/files/9628/280/collective-1.21.1-8.87.jar
 d4d5681fb5f5b1d95a843b7e752ad746a56c4093 https://edge.forgecdn.net/files/9427/087/colorwheel-neoforge-1.3.2-mc1.21.1.jar
 0e63780e5b8af294bf58609ac866b9866ab9537b https://edge.forgecdn.net/files/7924/942/colorwheel_patcher-neoforge-1.0.5%2Bmc1.21.1.jar
 21d6bee3821d62fe3356c51fb1d697871a3087ff https://edge.forgecdn.net/files/7515/858/comforts-neoforge-9.0.5%2B1.21.1.jar
@@ -47,13 +47,13 @@ acd28b0d7147f55ec8590cef3d58add764543498 https://edge.forgecdn.net/files/8763/70
 b6252039445978a742f439fc398f2a198b86bd4e https://edge.forgecdn.net/files/8697/050/craftingtweaks-neoforge-1.21.1-21.1.11.jar
 0e97e49837bed766e6f28a4c95b04885d6acc353 https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar
 ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b https://edge.forgecdn.net/files/8763/471/create-aeronautics-bundled-1.21.1-1.3.2.jar
-a8b9d11015435bdf873decd25cee5223c1425cc8 https://edge.forgecdn.net/files/9545/555/Create-Encased-1.21.1-1.10.1.jar
+2499c4fb1c18638206f230d55b7c8335e621ee78 https://edge.forgecdn.net/files/9673/130/Create-Encased-1.21.1-1.10.1-fix1.jar
 48be078caf6be2b3e43787418625618dc39b7ae1 https://edge.forgecdn.net/files/9104/664/create-enchantment-industry-2.5.4b.jar
 849df57070ffa75c2446b9c460d03f6b49fa089e https://edge.forgecdn.net/files/8215/216/create-new-age-1.2.0%2Bneoforge-mc1.21.1.jar
 a02ce8ffc8395566c4fbe7907e721e82fd1b590b https://edge.forgecdn.net/files/8466/444/create_aquatic_ambitions-1.21.1-2.0.4.jar
 4aa94440483551781f24ddf54bb6fcee963e191c https://edge.forgecdn.net/files/9250/209/create_compatible_storage-2.14.0-mc1.21.1-neoforge.jar
 72c3653116562dbab38dac123f8effc73c747cc9 https://edge.forgecdn.net/files/8777/573/create_connected-1.3.3-mc1.21.1.jar
-e75bb52cd0e8539732d9505a5f2aff05ecce2896 https://edge.forgecdn.net/files/9553/576/create_cyber_goggles-1.21.1-8.8.0-neoforge.jar
+e12ef6f03a74fb06150b7a7e0bc7e792edb75ff3 https://edge.forgecdn.net/files/9660/524/create_cyber_goggles-1.21.1-8.8.1-neoforge.jar
 cbd949c62723d805c2ab019def6e6718c50037b8 https://edge.forgecdn.net/files/8545/274/create_jetpack-forge-5.2.1.jar
 5146fc22a9385de8103b5ca0151f80dcd0f03978 https://edge.forgecdn.net/files/6328/368/create_jetpack_curios-1.2.0-neoforge-1.21.1.jar
 9de27d604a71a3aeb4f197e725b31fe6af3202f2 https://edge.forgecdn.net/files/8418/567/create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar
@@ -69,7 +69,7 @@ ede963781ca5bf49c5117031087b8085043c7ab3 https://edge.forgecdn.net/files/8631/98
 64af034e2d9b114bd4051831e42d5b214f34336b https://edge.forgecdn.net/files/5953/630/distractingtrims-neoforge-1.21.1-21.1.1.jar
 b8afa0340180509abd7746b71e296a457bcbf25c https://edge.forgecdn.net/files/6213/612/easy-piglins-neoforge-1.21.1-1.1.0.jar
 bb021918037fb2ceba03456948eaa966c7f28d53 https://edge.forgecdn.net/files/9289/481/easy-villagers-neoforge-1.21.1-1.1.49.jar
-2a2657c7e2119a033b7a867c6ccf07425ad677df https://edge.forgecdn.net/files/9580/865/enderio-8.2.13-beta.jar
+bb72031e962402ba65dee7bf9e3083280c310b0a https://edge.forgecdn.net/files/9636/417/enderio-8.2.14-beta.jar
 332309d0089cc2e1a9aa21747f0b82d81b270c34 https://edge.forgecdn.net/files/9569/720/enderio_conduit_opt-1.1.7-1.21.1.jar
 e2daa065f4897cbdceefbc7002fdff8595a720d0 https://edge.forgecdn.net/files/9569/722/enderio_evolution-3.1.6-NeoForge-1.21.1.jar
 72d63d64ee774b89302e0d6b220757ba11b6ec4f https://edge.forgecdn.net/files/7783/144/entangled-1.3.21-neoforge-mc1.21.jar
@@ -92,8 +92,8 @@ f0d48143cc80918cf632a4c14c3ca3e974ed0457 https://edge.forgecdn.net/files/9594/47
 fa7b3d1b06c0285dcbe8e53a27d44cd7f8d15726 https://edge.forgecdn.net/files/8442/866/ftb-essentials-neoforge-2101.1.10.jar
 ff23b7d68c8ef8039d905675ef4412652750b683 https://edge.forgecdn.net/files/7565/280/ftb-ez-crystals-21.1.1.jar
 ef01126201a805991bbfe5351cff7d0a9e3a077b https://edge.forgecdn.net/files/6695/679/ftb-jei-extras-21.1.7.jar
-ff852d99ade215fb892369687d0634ecf0bca6ae https://edge.forgecdn.net/files/9350/706/ftb-library-neoforge-2101.1.39.jar
-389fb269d338ed4c7f14f945a07759b6d444af40 https://edge.forgecdn.net/files/9405/148/ftb-quests-neoforge-2101.1.38.jar
+e5f24391a447754dbc6d37d866981f47d67bb664 https://edge.forgecdn.net/files/9650/381/ftb-library-neoforge-2101.1.40.jar
+d5a0de6ad0517fd843ea830b49b06287c0686906 https://edge.forgecdn.net/files/9650/792/ftb-quests-neoforge-2101.1.39.jar
 9c831fbbbccf2178827c3ccf278b2f2a0ce57306 https://edge.forgecdn.net/files/9434/081/ftb-teams-neoforge-2101.1.12.jar
 c96a7cc0b52bf919660ea61c1536cebd9d5773b3 https://edge.forgecdn.net/files/8231/400/ftb-ultimine-neoforge-2101.1.15.jar
 aa04a2ddbce2f50b21d667d2f3e589f9e043e472 https://edge.forgecdn.net/files/9326/327/fzzy_config-0.7.7%2Bfix1%2B1.21%2Bneoforge.jar
@@ -102,7 +102,7 @@ aa04a2ddbce2f50b21d667d2f3e589f9e043e472 https://edge.forgecdn.net/files/9326/32
 4d668978e18b450c030ed4be096fce52d3a9ceca https://edge.forgecdn.net/files/8966/202/Geophilic%20v3.7.mod.jar
 7a65208e25a0f894e70a20ad675e50bf2919feab https://edge.forgecdn.net/files/8039/064/GeophilicBackported-v1.3.3%201.21.1.jar
 9f61a3162665ad0b37f6f268339ac98097af1a87 https://edge.forgecdn.net/files/5821/676/Glodium-1.21-2.2-neoforge.jar
-d017e2bb57af33bb8985e759ac929289da05ea4d https://edge.forgecdn.net/files/8312/039/gnetum-3.3.6.jar
+c71f592fc679664d497518ca6cb6762460a2426f https://edge.forgecdn.net/files/9643/902/gnetum-3.3.7.jar
 15cc60c8864ac8b5329723a55a97a548980611de https://edge.forgecdn.net/files/7449/378/GnKinetics-1.21.1-1.0m.jar
 b47712b69a9d8390dd9dfabf3c8b7005027239d8 https://edge.forgecdn.net/files/7966/182/gravelminer-neoforge-1.21.1-21.1.3.jar
 a6217a029c859f7582721dfdb26d25cd3fb60adc https://edge.forgecdn.net/files/6677/982/grind-enchantments-4.0.1%2Bneoforge-1.21.1.jar
@@ -124,7 +124,7 @@ a4e90c2df8009040f6d022433c5d76635944dd59 https://edge.forgecdn.net/files/6733/66
 9db9f80eeb27ab968b989f4b9b0f4ab88af6ec01 https://edge.forgecdn.net/files/7435/250/just-hammers-neoforge-21.1.4.jar
 f75b1bc60dcdc6045b01e1f37746320a8c8ade67 https://edge.forgecdn.net/files/9037/421/justenoughbreeding-neoforge-1.21.1-3.3.1.jar
 97771eb287d5ac7fe667d1df9493d5e54c8ca1fa https://edge.forgecdn.net/files/5453/385/konkrete_neoforge_1.9.9_MC_1.21.jar
-a2032c921e93a0ccb0db5d742167e3139c2de01b https://edge.forgecdn.net/files/8335/665/kotlinforforge-5.12.0-all.jar
+b1d5563f4e3db9ec4a4a2b371560aa171d6de237 https://edge.forgecdn.net/files/9641/139/kotlinforforge-5.13.0-all.jar
 998d455b7d8dff86276afb79ca4a4fde268d8e83 https://edge.forgecdn.net/files/9658/206/kskills_perks-1.2.0.jar
 c795402c73988ed0c03ce61767f9606aa1d606d8 https://edge.forgecdn.net/files/9396/059/kubejs-neoforge-2101.7.2-build.381.jar
 59f0390eb44ccb90a7d188143125b4d64a96b7e5 https://edge.forgecdn.net/files/9415/983/letmedespawn-neoforge-1.21.1-1.26.11.1.jar
@@ -146,7 +146,7 @@ e83052a92c4ca0016bcfe7f0207273983dc84698 https://edge.forgecdn.net/files/5453/38
 c0ac97c9ea0f9f947295776b5e7af3a56c8a2c54 https://edge.forgecdn.net/files/9655/360/mobrules-0.7.1.jar
 3f206d55dc002f217a2a4e5b1cce9327fd67bfa6 https://edge.forgecdn.net/files/6787/236/Modern-Dynamics-0.9.6.jar
 52c008540c7dc2cc451f7e939a885d7462c9ae72 https://edge.forgecdn.net/files/9309/399/modernfix-neoforge-5.27.27%2Bmc1.21.1.jar
-3971a5ade2595bfcb8a93f4baa2e6e834691e3cf https://edge.forgecdn.net/files/9384/356/modonomicon-1.21.1-neoforge-1.123.0.jar
+ae7b0b434318302d5479a9e9f9fff80477287a25 https://edge.forgecdn.net/files/9646/793/modonomicon-1.21.1-neoforge-1.123.1.jar
 046821d548a1269164c792bab46d55798085c285 https://edge.forgecdn.net/files/9519/534/moonlight-1.21.1-3.8.3-neoforge.jar
 7e8aea4f03b18076cab5555f6d30e35ff919b342 https://edge.forgecdn.net/files/7103/440/morejs-neoforge-1.21.1-0.16.0.jar
 21e8bd61c5e146a9574266015d3f64621c2d9e18 https://edge.forgecdn.net/files/6981/252/moreoverlays-1.24.2-mc1.21.1-neoforge.jar
@@ -176,13 +176,13 @@ e7439fa56036bfacf228269b8b89f10cbbba13fd https://edge.forgecdn.net/files/9101/37
 fd584167f1277aef5411a98a22390c65cabe6e07 https://edge.forgecdn.net/files/9331/322/puzzleslib-v21.1.66-mc1.21.1%2Bneoforge.jar
 769deb829b0299356d02b3c44c2bb91b3b524de7 https://edge.forgecdn.net/files/6058/914/realmrpg_skeletons-1.1.0-neoforge-1.21.1.jar
 adf717dbb032ccaf7d100c0ba71bdea0fb21755a https://edge.forgecdn.net/files/9252/522/regions-unexplored-0.6.3-neoforge-21.1.jar
-4ad3e0a4fd83f0100ead1277c3373b805bb464a9 https://edge.forgecdn.net/files/9221/080/reliable_replacer-1.8.2%2B1.21.1-neoforge.jar
+2d85a6da5e5f6f41c608f1068090bc20cc5b145b https://edge.forgecdn.net/files/9659/994/reliable_replacer-1.8.3-1.21.1-neoforge.jar
 8bee28857eef39ca7b9c101ecbe361d52c46c308 https://edge.forgecdn.net/files/8020/541/repeatable_trial_vaults-neoforge-1.21-1.0.3.jar
 6bf2b6ea9c071c00a2abcdc552667fb6f7d21031 https://edge.forgecdn.net/files/6467/772/resourcefulconfig-neoforge-1.21-3.0.11.jar
 24389c8e48ff0e8594e4686b750c494c66a5f8df https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar
 71b853a382ff2a17e91dc1db5728dd205e29cf74 https://edge.forgecdn.net/files/6879/482/RespawningAnimals-v21.1.2-1.21.1-NeoForge.jar
 56eab1d464ed0811c64040c64bd047df5cbc3aad https://edge.forgecdn.net/files/8463/898/rhino-2101.2.8-build.91.jar
-10d4c344d3f0862d802cbc358098f64fd451b95a https://edge.forgecdn.net/files/9581/730/rightclickharvest-neoforge-4.7.0-1.21.1.jar
+217830521d3086bec2ed4e420af8b17d92c7a157 https://edge.forgecdn.net/files/9633/746/rightclickharvest-neoforge-4.7.1-1.21.1.jar
 262c5e44b021b9a45178eb6812fcb636f0daca88 https://edge.forgecdn.net/files/9639/830/rustandrebar-3.6.2.3-beta.jar
 697df889af0cec1823cf5330fca62bf7f6e5037f https://edge.forgecdn.net/files/8549/320/rusticdelight-neoforge-1.21-1.7.1.jar
 cf46f7e8c1511f170abcdbee739944f0540549bf https://edge.forgecdn.net/files/9043/865/sable-neoforge-1.21.1-2.0.6.jar
@@ -193,14 +193,14 @@ dad6010590cdadf21faca9f6a97d765d0d9f8343 https://edge.forgecdn.net/files/8911/55
 3aa3283353ed04bb3b945fe67163ea3804f541f5 https://edge.forgecdn.net/files/9384/094/schematicannon_substitutes-1.2.0.jar
 5b8a0b43a474c066371b2e16f9bfb88622552a74 https://edge.forgecdn.net/files/5831/692/Searchables-neoforge-1.21.1-1.0.2.jar
 5f4e0b9269662504018a23b291ad65131213336b https://edge.forgecdn.net/files/8274/107/simple_snowy_fix-1.21.1-1.21.11-2.2.1-neoforge.jar
-5b6a85a2a833c6c6a5337e3fb720dba1a4d073aa https://edge.forgecdn.net/files/8249/253/snowundertrees-1.21.1-1.5.1.jar
+6efae152672029a2347943e7d38850b07aa0e27e https://edge.forgecdn.net/files/9635/608/snowundertrees-1.21.1-1.7.jar
 32e9bbe18ae1f2f7f672ce08af51ec1928599182 https://edge.forgecdn.net/files/7374/098/solcarrot-1.21.1-1.16.6.jar
 d8858c4135c4be4b8f9db7454bb0086b40ddae9f https://edge.forgecdn.net/files/9524/812/sophisticatedbackpacks-1.21.1-3.26.21.2249.jar
 6519e78e8aff212826d650b8d803f9a23e1dc1be https://edge.forgecdn.net/files/9151/543/sophisticatedbackpackscreateintegration-1.21.1-0.2.3.194.jar
-a881afeeadfa9f0078dad6bc77dce3f0b422b954 https://edge.forgecdn.net/files/9578/162/sophisticatedcore-1.21.1-1.5.35.2473.jar
+4df57272cd26190aede7b32da1d3f49f84e3fbdd https://edge.forgecdn.net/files/9651/537/sophisticatedcore-1.21.1-1.5.38.2484.jar
 33f0cb7782916351862eb88454011387a9a7515c https://edge.forgecdn.net/files/9374/006/sophisticateditemactions-1.21.1-0.5.19.446.jar
 63d27306481f1b50c61e71fe9371bf3df4b09ca0 https://edge.forgecdn.net/files/8879/826/SophisticatedSorter-neoforge-1.21.1-1.1.1.jar
-7b6b98482d8f1f7d1f586c601eb4eae652b63bed https://edge.forgecdn.net/files/9578/283/sophisticatedstorage-1.21.1-1.6.18.2229.jar
+93c87a68ef3550d2824baf416113c7b61406c165 https://edge.forgecdn.net/files/9651/620/sophisticatedstorage-1.21.1-1.6.19.2234.jar
 f5ecb7f95b7a915f047e10ab016edba1c1ee703c https://edge.forgecdn.net/files/9151/604/sophisticatedstoragecreateintegration-1.21.1-0.1.23.246.jar
 9430cc2ab64ff89d698be593769fb9f9ee4efae6 https://edge.forgecdn.net/files/6225/208/spark-1.10.124-neoforge.jar
 4ae6462ef07c3528175ebeb5af86fc64d390c291 https://edge.forgecdn.net/files/9278/140/stackrefill-1.21.1-6.2.jar
@@ -209,11 +209,11 @@ f5ecb7f95b7a915f047e10ab016edba1c1ee703c https://edge.forgecdn.net/files/9151/60
 1c170062c486bd25a1161571b6c3cf9e6371611b https://edge.forgecdn.net/files/8370/241/Super%20Factory%20Manager%20%28SFM%29-MC1.21.1-4.34.0.jar
 07452242e389975e8a88b97066f4bae6a4ebe574 https://edge.forgecdn.net/files/5546/996/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar
 519506ced4c9126e1fbb2c7999636eec7d417e39 https://edge.forgecdn.net/files/9447/150/supermartijn642corelib-1.1.26a-neoforge-mc1.21.jar
-b1e0c795341f98ce4980ef2d606f3b9f9ef38021 https://edge.forgecdn.net/files/9600/719/supplementaries-1.21.1-4.1.1-neoforge.jar
+3db306bd16084a6773dc921ff9baed8bbf600f34 https://edge.forgecdn.net/files/9632/829/supplementaries-1.21.1-4.1.2-neoforge.jar
 0fde75172ac84a43dc4d6f571570f1a20abb897f https://edge.forgecdn.net/files/9357/443/tarbound-0.67.0-alpha.jar
-cad7df48510d9622867131342930437c0f99af64 https://edge.forgecdn.net/files/8738/216/TaxFreeLevels-1.4.25-neoforge-1.21.1.jar
+ff0f74d50ca149d1e52f35f49575248ddaaae159 https://edge.forgecdn.net/files/9631/224/TaxFreeLevels-1.4.27-neoforge-1.21.1.jar
 34db760aa9a1a8cec512e32b93e51525dbcb3597 https://edge.forgecdn.net/files/7126/358/tipsmod-neoforge-1.21.1-21.1.3.jar
-b46f625333c9c570eed9962a355f37687d39e731 https://edge.forgecdn.net/files/9439/122/titanium-1.21-4.0.52.jar
+b7f6cb784d19ad35236b7aeba72b61d1fdab789e https://edge.forgecdn.net/files/9627/555/titanium-1.21-4.0.56.jar
 592af3bc4768c804c4929af16961ca2a1a916942 https://edge.forgecdn.net/files/8769/956/toms_storage-1.21-2.4.2.jar
 b139713195dc65bbe66dcdbde87a0d84aa407b5a https://edge.forgecdn.net/files/8949/981/torchmaster-neoforge-1.21.1-21.1.13.jar
 7be6d8b24f3120fa6a2520c32a2e6c8c4254322c https://edge.forgecdn.net/files/7625/579/trading_floor-3.0.16.jar
@@ -221,10 +221,10 @@ f165900a2a9de539da47ea0609a5c303e4625679 https://edge.forgecdn.net/files/9289/32
 b64cb3c74461b7b824b1f5cb705f349daf5515a7 https://edge.forgecdn.net/files/9533/296/UltimineUnchained-2.3.0-NEOFORGE.jar
 b7727fad292c86085b10c5fd3ef89d2d48ac9f29 https://edge.forgecdn.net/files/7973/750/utilitarian-1.21.1-0.19.2.jar
 12871e5330f8b33df7740a975047fc9a584d0387 https://edge.forgecdn.net/files/9318/571/VanillaBackport-neoforge-1.21.1-1.2.2.jar
-b5b2bf38b0cd8623246619b3d00c9c1cbfe19276 https://edge.forgecdn.net/files/9382/945/variantsandventures-neoforge-1.0.29-mc1.21.1.jar
+5cccc4eeee90a01ec090aec0c54c12b253b5a3cd https://edge.forgecdn.net/files/9647/814/variantsandventures-neoforge-1.0.30-mc1.21.1.jar
 a3a9b377ba4f8ae9cc2b46a74542258d7a328ac1 https://edge.forgecdn.net/files/9258/299/vb-compat-2.3-1.21.1.jar
 675461f17f443ae24c1e7a8d608d487d3be2dd20 https://edge.forgecdn.net/files/9655/333/wastelandvision-0.24.3.jar
-75718161662d9ec957ba22e10e497788ec1687ba https://edge.forgecdn.net/files/8969/751/waystones-neoforge-1.21.1-21.1.46.jar
+51c3390c2555416979905f9d1b05ebc1a4de29c8 https://edge.forgecdn.net/files/9626/089/waystones-neoforge-1.21.1-21.1.47.jar
 a1232c2ba255dffecfe7e24551928eaec503f472 https://edge.forgecdn.net/files/9588/137/waystonessable-2.0.0-SNAPSHOT.jar
 3a226664f365d6df686d792d2919a6343953acc0 https://edge.forgecdn.net/files/9270/661/whatdurability-1.21.1-2.1.jar
 24bc8f13c8ff8b34655f9b9bfd918291696da16a https://edge.forgecdn.net/files/9138/856/windswept-1.21.1-4.0.4.jar

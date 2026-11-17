@@ -3,7 +3,16 @@
 cd "$(dirname "$0")"
 NF=21.1.262
 mkdir -p mods
+TRACK=mods/.server-mods-installed      # jars this script installed (so updates can remove old versions)
 sha1() { if command -v sha1sum >/dev/null 2>&1; then sha1sum "$1" | cut -d' ' -f1; else shasum -a 1 "$1" | cut -d' ' -f1; fi; }
+# remove jars installed by an earlier version of these server files that are no longer listed
+wanted=$(grep -v '^#' server-mods.txt | while read -r s u; do [ -n "$u" ] && e="${u##*/}" && printf '%b\n' "${e//%/\\x}"; done)
+if [ -f "$TRACK" ]; then
+  while IFS= read -r old; do
+    [ -n "$old" ] || continue
+    if ! printf '%s\n' "$wanted" | grep -qxF -- "$old" && [ -f "mods/$old" ]; then echo "Removing old $old"; rm -f "mods/$old"; fi
+  done < "$TRACK"
+fi
 fail=0
 while read -r sum url; do
   case "$sum" in ''|\#*) continue ;; esac
@@ -17,6 +26,7 @@ while read -r sum url; do
   mv "$dst.part" "$dst"
 done < server-mods.txt
 if [ "$fail" != 0 ]; then echo "Some mods failed to download. Run start.sh again to retry."; exit 1; fi
+printf '%s\n' "$wanted" > "$TRACK"
 
 if [ ! -f run.sh ]; then
   echo "Installing NeoForge $NF"
