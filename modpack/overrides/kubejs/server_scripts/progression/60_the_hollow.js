@@ -12,9 +12,23 @@ const HOLLOW_TAG = 'gh_hollow'
 const HOLLOW_STAGE = 'gh_hollow_defeated'
 
 function insideHollow(level, pos) {
-  const structure = level.registryAccess().registryOrThrow($Registries.STRUCTURE).get(HOLLOW_KEY)
-  if (structure == null) return false
-  return level.structureManager().getStructureWithPieceAt(pos, structure).isValid()
+  try {
+    const structure = level.registryAccess().registryOrThrow($Registries.STRUCTURE).get(HOLLOW_KEY)
+    if (structure == null) return false
+    return level.structureManager().getStructureWithPieceAt(pos, structure).isValid()
+  } catch (e) {
+    console.error(`[the_hollow] structure check failed: ${e}`)
+    return false
+  }
+}
+
+// pass 9-57: the altar's own shape also counts - reinforced deepslate (unobtainable in survival) with candles on the four
+// diagonal corners two blocks out, as the Hollow builds it. Works even if the structure lookup can't see the piece.
+function altarShape(block) {
+  for (let d of [[-2, -2], [2, -2], [-2, 2], [2, 2]]) {
+    if (String(block.offset(d[0], 0, d[1]).id).indexOf('candle') < 0) return false
+  }
+  return true
 }
 
 // pass 9-54: the Hollow state (tier, held/released, days held, Escapements made) lives in kskills_perks 1.2.0; this script only
@@ -41,7 +55,10 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
   if (String(event.hand) != 'MAIN_HAND') return
   const held = String(event.item.id)
   if (held != 'hallmarked:gearwrights_seal' && held != 'gearwrights:wound_movement' && held != 'gearwrights:escapement') return
-  if (!insideHollow(level, block.pos)) return
+  if (!altarShape(block) && !insideHollow(level, block.pos)) {
+    player.tell(Text.of('Nothing answers. This is not the Hollow\'s altar.').darkGray().italic())
+    return
+  }
   event.cancel()
 
   const ax = block.x + 0.5, ay = block.y + 1, az = block.z + 0.5

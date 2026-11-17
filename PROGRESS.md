@@ -1375,3 +1375,9 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - RC 4.2 log: create_enchantment_industry:creative_bookshelf is a block with no item ("Unknown registry key ... item"), so the 70_escapement.js
   mechanical-crafting recipe failed. Removed. Otherwise the log was clean for the pack's scripts: kskills_perks 1.2.0 loaded both reward
   types, the kskills tree loaded, Hallmarked loaded 13 uniques.
+
+## Pass 9-57 (2026-11-16) - altar check made robust
+- USER: right-clicking the altar with a Seal did nothing (silent). The only silent exits were the hand/item checks and the structure lookup.
+- 60_the_hollow.js: the altar is also recognised by its shape (reinforced deepslate with candles on the four diagonals two blocks out);
+  the structure lookup is wrapped and logs to logs/kubejs/server.log if it throws; holding a Seal / Wound Movement / Escapement on reinforced
+  deepslate that isn't the altar now says so instead of doing nothing.
