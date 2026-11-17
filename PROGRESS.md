@@ -1478,3 +1478,13 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 ## Pass 9-70 (2026-11-17) - CurseForge page as HTML
 - modpack/CURSEFORGE_PAGE.html replaces the .md (DELETED): inline-styled (brass headings, soul-teal accents) so the
   formatting survives copy-paste into the WYSIWYG editor; Copy button copies it as rich text.
+
+## Pass 9-71 (2026-11-17) - self-installing server files
+- modpack/server/: start.sh / start.bat (+ install.ps1) download the server mods listed in server-mods.txt (sha1 + CurseForge
+  CDN url, edge.forgecdn.net/files/<id/1000>/<id%1000>/<file>), verify each, install NeoForge 21.1.262 on first run, then
+  check the EULA and start. Server zip = these + config/defaultconfigs/kubejs from the client export (~18 MB).
+- server-mods.txt = RC 5 manifest minus the 12 Excalibur resource packs and six client-only mods that crash a dedicated
+  server (tested by booting): Create JEI Compat, Easy Auto Cycler, Sodium, Reese's Sodium Options, Saros Boosted
+  Brightness, Freecam. 234 jars; tested end to end on Linux (download, verify, install, boot to Done). Windows script
+  not run here.
+- Note: Rust & Rebar file 3.6.2.3 declares version 3.6.2.2-beta in its mods.toml.
