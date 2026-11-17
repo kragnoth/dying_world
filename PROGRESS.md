@@ -1381,3 +1381,7 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - 60_the_hollow.js: the altar is also recognised by its shape (reinforced deepslate with candles on the four diagonals two blocks out);
   the structure lookup is wrapped and logs to logs/kubejs/server.log if it throws; holding a Seal / Wound Movement / Escapement on reinforced
   deepslate that isn't the altar now says so instead of doing nothing.
+
+## Pass 9-58 (2026-11-16) - the altar's real bug
+- KubeJS server.log: insideHollow threw on every click - Rhino can't choose between Registry.get(ResourceKey) and get(ResourceLocation).
+  Now registryOrThrow(...).getOrThrow(HOLLOW_KEY) (single overload). The rest of the session's logs were clean for the pack's scripts.

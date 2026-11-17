@@ -13,8 +13,8 @@ const HOLLOW_STAGE = 'gh_hollow_defeated'
 
 function insideHollow(level, pos) {
   try {
-    const structure = level.registryAccess().registryOrThrow($Registries.STRUCTURE).get(HOLLOW_KEY)
-    if (structure == null) return false
+    // getOrThrow(ResourceKey) has a single overload; Registry.get(...) is ambiguous to Rhino (ResourceKey vs ResourceLocation)
+    const structure = level.registryAccess().registryOrThrow($Registries.STRUCTURE).getOrThrow(HOLLOW_KEY)
     return level.structureManager().getStructureWithPieceAt(pos, structure).isValid()
   } catch (e) {
     console.error(`[the_hollow] structure check failed: ${e}`)
