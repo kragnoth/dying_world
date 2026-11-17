@@ -1428,3 +1428,21 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   was the 1.0.1 file). No pack values were reset. Quest chapters and ftbchunks-client differed only in formatting - left as is.
 - DELETED (runtime output, regenerated on launch): config/wastelandvision/.generated/ (43 files),
   config/wastelandvision/mappings-occult_foundry.txt, config/jei/world/, config/jei/*.bak.1. Gitignored.
+
+## Pass 9-63 (2026-11-17) - config trim; only the Occult Foundry vision ships
+- Wasteland Vision: ships only visions/occult_foundry. config/wastelandvision/.installed_examples lists all three bundled
+  examples, so WV's first-launch install (VisionManager.installDefaults: each example is offered once) skips soot_and_tar and
+  thermal_print. Verified on a fresh server: only occult_foundry installed. README.md dropped (WV rewrites it every launch).
+- DELETED 497 config files (730 -> 234):
+  - orphans (189): configs of mods not in the pack, e.g. AE2 + addons, Apotheosis family, Artifacts, In Control, Powah,
+    Just Dire Things, Modular Routers, Cristel Lib / Towns and Towers / vanilla_structures, Abnormals mods not shipped,
+    Petrolpark, Storage Hub, Summoning Rituals. Owner = declared [[mods]] ids of every pack jar (nested too) + files a pack
+    mod regenerates on an empty-config boot.
+  - orphan sub-files (59): attributefix/{ars_nouveau,petrolpark,runiclib}, spark/tmp*.
+  - default (225): identical (parsed TOML/JSON; normalised otherwise) to what the mod writes on an empty-config dedicated-server
+    boot. Files also in defaultconfigs/ excluded (NeoForge seeds config from there, so that comparison is invalid).
+  - client default (15): every key matches its "# Default:" comment. Client configs without Default comments were kept.
+  - Kept although "default": create_enchantment_industry-server.toml (CEI's mechanicalGrindstoneFluidCapacity default 1000
+    is outside its own range >5000, so a fresh file is "corrected" with a warning every install).
+- Trimmed config boots clean on the test server (no new warnings vs the full config).
+- Existing instances keep the deleted files when a zip is unzipped over them; harmless (defaults/orphans).
