@@ -1464,3 +1464,10 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   occult_foundry vision.json: fog #5c6270, water #24363a, soul fire), soul-light ring behind it, a blocky skull on a stone
   plinth with a soul-flame candle, fog bank in front of the wheel foot. Source: tools/logo_wheel.py
   (python3 tools/logo_wheel.py modpack/logo.png 16).
+
+## Pass 9-68 (2026-11-17) - logo rendered from in-game models
+- modpack/logo.png (1024x1024) now rendered like the Skill Perks logo: Create large water wheel from its OBJ model
+  (spruce), vanilla skull block with soul-lit eye sockets and a lit candle + soul-fire flame, blurred Occult Foundry haze
+  (fog #5c6270, soul glow, pines and foundry stacks), cobblestone pixel title, deepslate bar, gold subtitle
+  "THE WORLD ENDED SLOWLY", bevelled frame. Source: tools/logo/ (README lists the textures to extract).
+- DELETED tools/logo_wheel.py (9-67 pixel-art version).
