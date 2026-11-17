@@ -1419,3 +1419,12 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - tools/lint_kubejs.py: flags `const` in try blocks / loop bodies; the pack is clean.
 - Harmless: "Couldn't load tag minecraft:mineable/pickaxe" (#amendments:wall_lanterns) is logged on every dedicated-server boot
   before Moonlight generates Amendments' pack; the tags work at boot (tested from a fresh start).
+
+## Pass 9-62 (2026-11-17) - configs after the mod update test
+- Kragnoth updated all mods (20 patch/minor bumps) in a test instance; log clean apart from harmless warnings (Kotlin for Forge
+  5.13 vs Fragmentum's bundled copy, Snow Under Trees' compat hook for an absent mod).
+- Updated shipped configs from that instance: supplementaries-common (new [tools.orichalcum]), sophisticatedstorage-common
+  (comment), waystones-common (fixVanillaTeleportBug removed upstream), kskills_perks-common (adds the 1.2.0 [hollow] section;
+  was the 1.0.1 file). No pack values were reset. Quest chapters and ftbchunks-client differed only in formatting - left as is.
+- DELETED (runtime output, regenerated on launch): config/wastelandvision/.generated/ (43 files),
+  config/wastelandvision/mappings-occult_foundry.txt, config/jei/world/, config/jei/*.bak.1. Gitignored.

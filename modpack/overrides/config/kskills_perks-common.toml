@@ -165,3 +165,49 @@
 	# Default: 0.4
 	# Range: 0.0 ~ 1.0
 	careful_hands_save = 0.4
+
+#The Hollow (Gearwright's Hollow endgame). Residue tier 1-4 comes from quests (tags gh_residue_<n>), 5 = Hollowed.
+[hollow]
+	enabled = true
+	#Wasteland Vision vision a Hollowed player is held in
+	vision = "occult_foundry"
+	#Tag Wasteland Vision gives players who see that vision
+	vision_tag = "wv_occult_foundry"
+	#Chance a friendly/neutral spawn near the player is 'taken' (turns hostile), residue tiers 1-5
+	taken_by_tier = [0.02, 0.05, 0.08, 0.12, 0.15]
+	#Added per in-game day held after the Hollow
+	# Default: 0.03
+	# Range: 0.0 ~ 1.0
+	taken_per_day_held = 0.03
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	taken_cap = 0.5
+	# Default: 48
+	# Range: 8 ~ 256
+	taken_radius = 48
+	residue_item = "gearwrights:foundry_residue"
+	distilled_item = "gearwrights:distilled_residue"
+	residue_blocks = ["minecraft:deepslate", "minecraft:cobbled_deepslate"]
+	#Residue chance per residue block mined, tiers 1-5 (only while seeing the vision)
+	residue_block_chance = [0.005, 0.01, 0.02, 0.03, 0.03]
+	#Residue chance per undead killed, tiers 1-5
+	residue_undead_chance = [0.02, 0.04, 0.06, 0.08, 0.08]
+	#Foundry Revenant mob (overworld): 1-2 residue at tier 5
+	revenant = "incision:skeletoncultist"
+	#Released players only
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	distilled_undead = 0.02
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	distilled_revenant = 0.25
+	# Default: 0.004
+	# Range: 0.0 ~ 1.0
+	distilled_block = 0.004
+	#Held players killing a revenant: chance of one of locked_uniques (Hallmarked)
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	locked_unique_chance = 0.02
+	locked_uniques = ["revenants_shroud", "kiln_hook", "hollow_bell"]
+	#Hallmarked set whose pieces (and the locked uniques) go cold on released players
+	hollowed_set = "hallmarked.set.hollowed"

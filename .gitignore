@@ -2,3 +2,9 @@ dist/
 reference/*.zip
 __pycache__/
 *.pyc
+
+# runtime output the game regenerates (pass 9-62)
+modpack/overrides/config/wastelandvision/.generated/
+modpack/overrides/config/wastelandvision/mappings-*.txt
+modpack/overrides/config/jei/world/
+modpack/overrides/config/**/*.bak.*

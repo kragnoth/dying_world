@@ -1,2 +1,0 @@
-Regenerated every launch from config/wastelandvision/visions/*/vision.json.
-To hand-write a stand-in's blockstate/models, give it "type": "custom" and put the files in its vision folder.

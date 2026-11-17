@@ -681,6 +681,9 @@
 		#Quivers and lunch baskets cycle to the next slot
 		carousel = true
 
+	[tools.orichalcum]
+		enabled = true
+
 [general]
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
 	dynamic_assets_generation_mode = "CACHED"

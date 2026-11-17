@@ -1,7 +1,0 @@
-[
-  {"version":1},
-  {"ingredient":{"id":"minecraft:pale_oak_slab"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"rustandrebar:salvaged_steel_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"regions_unexplored:blackwood_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"rusticdelight:cotton_seeds"},"type":"item_stack","bookmarkType":"INGREDIENT"}
-]
