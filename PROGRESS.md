@@ -1450,3 +1450,7 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 ## Pass 9-64 (2026-11-17) - CurseForge project page
 - modpack/CURSEFORGE_PAGE.md: project description (Markdown) for the CurseForge upload. Facts from the repo: 15 chapters /
   266 quests in four groups, structure list, mod list. Does not claim the Excalibur packs (not shipped in the export).
+
+## Pass 9-65 (2026-11-17) - CurseForge logo
+- modpack/logo.svg (source) + logo.png (800x800): brass cog, the face in the violet hollow, tar off the lowest teeth.
+  Re-render: rsvg-convert -w 800 -h 800 modpack/logo.svg -o modpack/logo.png
