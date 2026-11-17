@@ -1325,3 +1325,13 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   Hollowed Censer / Hollow Bell out of Curios slots, and holding the Kiln Hook gives Weakness II (Hallmarked components hallmarked:set_piece
   / hallmarked:unique read via the registry; Curios via CuriosApi, guarded).
 - No deletions. UNVERIFIED in game.
+
+## Pass 9-51 (2026-11-16) - the Hollow takes the herds
+- USER: the heavier a player's Hollow, the more nearby friendly/neutral mobs spawn hostile; weight = residue tier + time held, release
+  resets it; cap 50%.
+- NEW kubejs 85_hollow_taken.js: each mob is judged once on spawn (tag gh_hollow_seen); 'creature'-category, not baby/named/tamed, within
+  48 blocks of a player -> chance = tier base (t1 2%, t2 5%, t3 8%, t4 12%, Hollowed 15%) + 3% per day held, capped 50%; released = 0.
+  60_the_hollow.js keeps the held clock (persistent gh_hollow_held_since: set when Hollowed or re-held, cleared on release).
+- `tools/gen_pass9_51.py`: datapack mobrules/hollow_taken.json (gh_hollow_taken: hostile to players, 3 damage, angry on spawn,
+  x1.25 speed, 'Taken <mob>', 15% Foundry Residue on player kills).
+- No deletions. UNVERIFIED in game.

@@ -130,6 +130,7 @@ function markDefeated(player) {
   grantCapstone(player.server, player)
   if (first && !player.tags.contains(ESCAPED)) {
     player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
+    player.persistentData.putLong('gh_hollow_held_since', player.server.overworld().gameTime)   // pass 9-51
     for (let piece of ['cowl', 'vestment', 'greaves', 'treads', 'censer'])   // pass 9-50: the set's only source
       player.server.runCommandSilent(`execute as ${player.username} run hallmarked sets give hollowed ${piece}`)
     player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
@@ -140,6 +141,7 @@ function markDefeated(player) {
 function escapeFoundry(player) {
   if (player.tags.contains(ESCAPED)) return
   player.addTag(ESCAPED)
+  player.persistentData.remove('gh_hollow_held_since')                                       // pass 9-51
   player.server.runCommandSilent(`wastelandvision release ${player.username}`)
   if (player.server.runCommandSilent(`clear ${player.username} wastelandvision:occult_foundry/foundry_lens 0`) == 0)
     player.give('wastelandvision:occult_foundry/foundry_lens')
@@ -149,6 +151,7 @@ function escapeFoundry(player) {
 // pass 9-50: back into the Foundry's hold (offering an Escapement at the altar)
 function relockFoundry(player) {
   player.removeTag(ESCAPED)
+  player.persistentData.putLong('gh_hollow_held_since', player.server.overworld().gameTime)   // pass 9-51
   player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
   player.tell(Text.of('You give it back. The Foundry takes you in again.').darkPurple().italic())
 }
