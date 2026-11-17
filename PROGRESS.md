@@ -1335,3 +1335,11 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 - `tools/gen_pass9_51.py`: datapack mobrules/hollow_taken.json (gh_hollow_taken: hostile to players, 3 damage, angry on spawn,
   x1.25 speed, 'Taken <mob>', 15% Foundry Residue on player kills).
 - No deletions. UNVERIFIED in game.
+
+## Pass 9-52 (2026-11-16) - server robustness for the Hollow scripts
+- Counters moved from KubeJS player persistentData (not certain to survive death) to vanilla scoreboard objectives, created on server
+  load: gh_held_day (overworld day held + 1, 0 = not held), gh_escapements (Escapements made after release). Tags already survive
+  death (PlayerList.respawn copies them).
+- 85_hollow_taken.js: weights cached per player every 100 ticks (no command per spawn); only 'creature' mobs get the gh_hollow_seen
+  tag (was every living entity).
+- NOTE: anyone who tested 9-50/9-51 keeps stale gh_escapements_made / gh_hollow_held_since in KubeJS data; harmless, unused now.

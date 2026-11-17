@@ -17,11 +17,27 @@ function insideHollow(level, pos) {
   return level.structureManager().getStructureWithPieceAt(pos, structure).isValid()
 }
 
+// pass 9-52: counters live in scoreboard objectives (vanilla, saved with the world, survive death and relog, visible with
+// /scoreboard players list <player>). gh_held_day = overworld day the player was held + 1 (0 = not held); gh_escapements = made.
+const HELD_DAY = 'gh_held_day'
+ServerEvents.loaded(event => {
+  for (let o of [HELD_DAY, 'gh_escapements']) event.server.runCommandSilent(`scoreboard objectives add ${o} dummy`)
+})
+function hollowScore(player, objective) {
+  return Math.max(0, player.server.runCommandSilent(`scoreboard players get ${player.username} ${objective}`))
+}
+function setHollowScore(player, objective, value) {
+  player.server.runCommandSilent(`scoreboard players set ${player.username} ${objective} ${value}`)
+}
+function startHeldClock(player) {
+  setHollowScore(player, HELD_DAY, Math.floor(player.server.overworld().gameTime / 24000) + 1)
+}
+
 // pass 9-48: the altar also takes a Wound Movement (-> Escapement) and, for released players looking through the lens,
 // a Seal calls an ECHO: a stronger copy (Mob Rules rule the_hollow_echo) that drops more residue and Hallmarked gear.
 const ECHO_TAG = 'gh_hollow_echo'
 const DISTILLED_STEP = 4, DISTILLED_CAP = 32        // pass 9-50: Escapement n after release costs min(32, 4n) Distilled Residue
-const ESCAPEMENTS_MADE = 'gh_escapements_made'      // player persistent data
+const ESCAPEMENTS_MADE = 'gh_escapements'           // scoreboard objective (pass 9-52: survives death)
 const FIRST_ESCAPE = 'gh_first_escape'
 
 function altarBusy(server, dim, ax, ay, az) {
@@ -62,7 +78,7 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
     }
     if (player.tags.contains(ESCAPED)) {
       // pass 9-50: each Escapement made after release costs more Distilled Residue (4, 8, 12 ... capped)
-      const made = player.persistentData.getInt(ESCAPEMENTS_MADE)
+      const made = hollowScore(player, ESCAPEMENTS_MADE)
       const cost = Math.min(DISTILLED_CAP, DISTILLED_STEP * (made + 1))
       const have = server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue 0`)
       if (have < cost) {
@@ -72,7 +88,7 @@ BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
       server.runCommandSilent(`clear ${player.username} gearwrights:distilled_residue ${cost}`)
       if (!player.isCreative()) event.item.shrink(1)
       player.give('gearwrights:escapement')
-      player.persistentData.putInt(ESCAPEMENTS_MADE, made + 1)
+      setHollowScore(player, ESCAPEMENTS_MADE, made + 1)
       player.tell(Text.of(`The next one will want ${Math.min(DISTILLED_CAP, DISTILLED_STEP * (made + 2))}.`).gray().italic())
     } else {
       if (!player.isCreative()) event.item.shrink(1)
@@ -130,7 +146,7 @@ function markDefeated(player) {
   grantCapstone(player.server, player)
   if (first && !player.tags.contains(ESCAPED)) {
     player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
-    player.persistentData.putLong('gh_hollow_held_since', player.server.overworld().gameTime)   // pass 9-51
+    startHeldClock(player)   // pass 9-51/9-52
     for (let piece of ['cowl', 'vestment', 'greaves', 'treads', 'censer'])   // pass 9-50: the set's only source
       player.server.runCommandSilent(`execute as ${player.username} run hallmarked sets give hollowed ${piece}`)
     player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
@@ -141,7 +157,7 @@ function markDefeated(player) {
 function escapeFoundry(player) {
   if (player.tags.contains(ESCAPED)) return
   player.addTag(ESCAPED)
-  player.persistentData.remove('gh_hollow_held_since')                                       // pass 9-51
+  setHollowScore(player, HELD_DAY, 0)   // pass 9-51/9-52: release resets the held clock
   player.server.runCommandSilent(`wastelandvision release ${player.username}`)
   if (player.server.runCommandSilent(`clear ${player.username} wastelandvision:occult_foundry/foundry_lens 0`) == 0)
     player.give('wastelandvision:occult_foundry/foundry_lens')
@@ -151,7 +167,7 @@ function escapeFoundry(player) {
 // pass 9-50: back into the Foundry's hold (offering an Escapement at the altar)
 function relockFoundry(player) {
   player.removeTag(ESCAPED)
-  player.persistentData.putLong('gh_hollow_held_since', player.server.overworld().gameTime)   // pass 9-51
+  startHeldClock(player)   // pass 9-51/9-52
   player.server.runCommandSilent(`wastelandvision lock ${player.username} ${FOUNDRY}`)
   player.tell(Text.of('You give it back. The Foundry takes you in again.').darkPurple().italic())
 }
