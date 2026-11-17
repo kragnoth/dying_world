@@ -1458,3 +1458,9 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 ## Pass 9-66 (2026-11-17) - logo = the pack icon, scaled
 - Kragnoth prefers the original pixel-art icon (overrides/icon.png) over the 9-65 vector logo and a procedural pixel redraw.
   modpack/logo.png is now that icon scaled 16x (1024x1024, nearest neighbour). DELETED modpack/logo.svg.
+
+## Pass 9-67 (2026-11-17) - new logo: water wheel and votive skull
+- modpack/logo.png (1024x1024 = 64x64 pixel art x16): wooden water wheel in the Occult Foundry haze (palette from
+  occult_foundry vision.json: fog #5c6270, water #24363a, soul fire), soul-light ring behind it, a blocky skull on a stone
+  plinth with a soul-flame candle, fog bank in front of the wheel foot. Source: tools/logo_wheel.py
+  (python3 tools/logo_wheel.py modpack/logo.png 16).
