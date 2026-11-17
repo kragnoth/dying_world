@@ -1474,3 +1474,7 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
 
 ## Pass 9-69 (2026-11-17) - plainer CurseForge page
 - modpack/CURSEFORGE_PAGE.md rewritten short and plain at Kragnoth's request (no hype, no spoilers).
+
+## Pass 9-70 (2026-11-17) - CurseForge page as HTML
+- modpack/CURSEFORGE_PAGE.html replaces the .md (DELETED): inline-styled (brass headings, soul-teal accents) so the
+  formatting survives copy-paste into the WYSIWYG editor; Copy button copies it as rich text.
