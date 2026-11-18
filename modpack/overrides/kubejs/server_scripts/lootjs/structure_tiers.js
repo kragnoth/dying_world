@@ -40,7 +40,7 @@ LootJS.modifiers(event => {
     .pool(p => {
         p.rolls([0, 1]);
         p.addEntry(LootEntry.of("immersiveengineering:nugget_lead", [2, 5]).withWeight(5));
-        p.addEntry(LootEntry.of("immersiveengineering:nugget_copper", [2, 5]).withWeight(4));
+        p.addEntry(LootEntry.of("minecraft:copper_nugget", [2, 5]).withWeight(4));
         p.addEntry(LootEntry.of("immersiveengineering:raw_lead", [1, 2]).withWeight(3));
         p.addEntry(LootEntry.of("immersiveengineering:nugget_nickel", [1, 3]).withWeight(2));
         p.addEntry(LootEntry.of("caverns_and_chasms:raw_tin", [1, 2]).withWeight(2));
@@ -71,7 +71,7 @@ LootJS.modifiers(event => {
     .pool(p => {
         p.rolls([0, 1]);
         p.addEntry(LootEntry.of("immersiveengineering:nugget_lead", [1, 4]).withWeight(4));
-        p.addEntry(LootEntry.of("immersiveengineering:nugget_copper", [1, 4]).withWeight(4));
+        p.addEntry(LootEntry.of("minecraft:copper_nugget", [1, 4]).withWeight(4));
         p.addEntry(LootEntry.of("immersiveengineering:nugget_nickel", [1, 2]).withWeight(2));
         p.addEntry(LootEntry.of("caverns_and_chasms:silver_nugget", [1, 2]).withWeight(1));
     });
