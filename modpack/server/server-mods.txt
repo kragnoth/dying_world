@@ -223,7 +223,7 @@ b7727fad292c86085b10c5fd3ef89d2d48ac9f29 https://edge.forgecdn.net/files/7973/75
 12871e5330f8b33df7740a975047fc9a584d0387 https://edge.forgecdn.net/files/9318/571/VanillaBackport-neoforge-1.21.1-1.2.2.jar
 5cccc4eeee90a01ec090aec0c54c12b253b5a3cd https://edge.forgecdn.net/files/9647/814/variantsandventures-neoforge-1.0.30-mc1.21.1.jar
 a3a9b377ba4f8ae9cc2b46a74542258d7a328ac1 https://edge.forgecdn.net/files/9258/299/vb-compat-2.3-1.21.1.jar
-675461f17f443ae24c1e7a8d608d487d3be2dd20 https://edge.forgecdn.net/files/9655/333/wastelandvision-0.24.3.jar
+e35e80828a5ce66b747131b1d6ef4957faa49784 https://edge.forgecdn.net/files/9675/196/wastelandvision-0.24.4.jar
 51c3390c2555416979905f9d1b05ebc1a4de29c8 https://edge.forgecdn.net/files/9626/089/waystones-neoforge-1.21.1-21.1.47.jar
 a1232c2ba255dffecfe7e24551928eaec503f472 https://edge.forgecdn.net/files/9588/137/waystonessable-2.0.0-SNAPSHOT.jar
 3a226664f365d6df686d792d2919a6343953acc0 https://edge.forgecdn.net/files/9270/661/whatdurability-1.21.1-2.1.jar

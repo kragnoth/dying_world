@@ -1504,3 +1504,12 @@ Needs new .nbt (script-built) or reuse + processors; check docs/user_decisions.m
   and a server/client that differ on visions have different registries. Re-sent: client zip with the file added, server
   zip with it, and a fix zip for servers already started (also delete their visions/soot_and_tar and thermal_print).
 - Rule: upload zips built by tools/export.py (keeps the file), or add the file back to a CurseForge-app export.
+
+## Pass 9-74 (2026-11-17) - 1.0.1 Alpha
+- manifest.json / modlist.html from the 1.0.1 Alpha export: only change is Wasteland Vision 0.24.4 (file 9675196,
+  identical to the local build; fixes the yucca client crash). options.txt: dropped the two removed vision packs from
+  resourcePacks (kept new-player flags off).
+- That default CurseForge-app export also swept in instance clutter (JourneyMap server map data, a client logs zip, dynamic
+  pack caches, .mixin.out, FTB Chunks data, WV .generated/mappings/README) and dropped .installed_examples, so the client
+  zip is built with tools/export.py from the repo overrides instead. Server files rebuilt from it; RC upgrade tested
+  (removed 0.24.3, downloaded 0.24.4, booted).

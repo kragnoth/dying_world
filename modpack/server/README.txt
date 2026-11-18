@@ -1,4 +1,4 @@
-Gearwright's Hollow - server files (1.0.0 Alpha)
+Gearwright's Hollow - server files (1.0.1 Alpha)
 
 Requirements: Java 21 and an internet connection on first start. 8 GB RAM for the server
 (user_jvm_args.txt).
