@@ -1,4 +1,4 @@
-// Create New Age electricity after the brass tier (switches in 00_config.js)
+// Create New Age electricity after the brass tier (switches in gh_progression_config.js)
 //  Before: basic energiser = andesite casing + lightning rod (depth 3, alongside the first cogs).
 ServerEvents.recipes(event => {
     const C = global.GH_PROGRESSION

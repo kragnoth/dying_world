@@ -1,4 +1,3 @@
-// server_scripts/create/ore_processing.js
 // Procedural ore -> raw -> dust chains for the Crushing Wheels (Create),
 // SAG Mill (Ender IO) and Grinding Wheel (Create Enchantment Industry),
 // all three keyed off whatever ore tags AlmostUnified is configured to

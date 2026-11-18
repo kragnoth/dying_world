@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     'minecraft:leather',
     '#c:leathers'
   );
-  // dev shortcut - switch in progression/00_config.js
+  // dev shortcut - switch in startup_scripts/gh_progression_config.js
   if (!global.GH_PROGRESSION.removeCrafterShortcut) event.shapeless('4x create:mechanical_crafter', ['minecraft:crafting_table', 'create:large_cogwheel', 'create:brass_casing']).id('arkaneworx:mechanical_crafter')
     event.shapeless('minecraft:bread', ['#c:crops/wheat', '#c:crops/wheat', '#c:crops/wheat']).id('arkaneworx:shapeless_bread')
   event.shapeless('create:encased_chain_drive', ['#c:chains', '#create:casing']).id('arkaneworx:shapeless_chaindrive')
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
     L: '#minecraft:logs'
   }).id("arkaneworx:fourbychest")
 
-  // stone press - switch in progression/00_config.js
+  // stone press - switch in startup_scripts/gh_progression_config.js
   if (!global.GH_PROGRESSION.removePressShortcut) {
     event.shaped('create:mechanical_press', [
       'S',

@@ -1,9 +1,9 @@
-// pass 9-48: the Escapement chain and the creative items (switch: hollowEndgame in startup_scripts/gh_progression_config.js).
+// The Escapement chain and the creative items (switch: hollowEndgame in startup_scripts/gh_progression_config.js).
 //  Unwound Movement  Create sequenced assembly: precision mechanism <- residue, shadow steel, press, refined radiance
 //  Bled Movement     Neo Vitae altar, tier 4, 50 000 LP
 //  Wound Movement    Create spout: 500 mB Essence of the Void (Tarbound)
-//  Escapement        right-click the Hollow's altar with a Wound Movement (60_the_hollow.js). After you're released it also
-//                    takes 4 Distilled Residue.
+//  Escapement        right-click the Hollow's altar with a Wound Movement (60_the_hollow.js). After release each one also
+//                    takes Distilled Residue: 4, 8, 12 ... capped at 32.
 //  Creative items    one Escapement each (mechanical crafting, or the Neo Vitae altar for the activation crystal).
 //  Equivalents       creative motor <-> creative gear motor, creative fluid tank <-> creative fluid vessel (shapeless swap).
 //  Create Encased    creative casing: brass casing + amethyst shard (cosmetic only, priced like railway casing).
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
   mc('immersiveengineering:capacitor_creative', ['HSH', 'SES', 'HSH'], { H: it('immersiveengineering:capacitor_hv'), S: tg('c:plates/steel') })
   // tier 2
   mc('create:creative_crate', ['VSV', 'SES', 'VSV'], { V: it('create:item_vault'), S: it('create:sturdy_sheet') })
-  // (Create Enchantment Industry's creative bookshelf is a block with no item, so it can't be crafted: left out, pass 9-56)
+  // (Create Enchantment Industry's creative bookshelf is a block with no item, so it can't be crafted)
   mc('enderio_evolution:creative_batch_upgrade', [' U ', 'UEU', ' U '], { U: it('enderio_evolution:stellar_batch_upgrade') })
   mc('enderio_evolution:creative_stack_upgrade', [' U ', 'UEU', ' U '], { U: it('enderio_evolution:stellar_stack_upgrade') })
   event.custom({

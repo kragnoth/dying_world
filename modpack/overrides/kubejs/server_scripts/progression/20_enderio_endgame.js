@@ -1,4 +1,4 @@
-// EnderIO as the end-game tier (switches in 00_config.js)
+// EnderIO as the end-game tier (switches in gh_progression_config.js)
 //  Before: Alloy Smelter / SAG Mill / Stirling Generator at depth 3 - same time as Create's water wheel -
 //          because the Void Chassis was 4 iron + 4 grains of infinity.
 //  After:  the chassis needs IE steel sheet and a Create brass casing, so EnderIO opens once both

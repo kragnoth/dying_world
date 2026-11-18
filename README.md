@@ -22,7 +22,7 @@ New structures and placement changes only show in newly generated chunks.
 
 | Path | What it is |
 | --- | --- |
-| `PROGRESS.md` | The pass log and source of truth: every decision, the regen order, what's unverified in game |
+| `PROGRESS.md` | Current state, open items (incl. what's unverified in game), the regen order and recent passes; older passes in `docs/progress_history.md` |
 | `datapack/data/` | Our generated datapack (`dying_world`, `gearwrights` overrides, `minecraft`/`neoforge` overrides) |
 | `user_overrides/data/` | Hand edits that always win: copied over `datapack/` by `build.py` before validation |
 | `datapack_imported/data/` | Structure files imported from the original kubejs data that are still referenced |
@@ -44,5 +44,5 @@ at `overrides/kubejs/data/`. Update the snapshot by sending Claude a new CurseFo
 ## Rules
 
 - Hand-edited files go in `user_overrides/data/` (same path as in `datapack/data/`); never edit only the generated copy.
-- Regenerating: run the generators in the REGEN ORDER written at the end of `PROGRESS.md`, then `tools/build.py`.
+- Regenerating: run the generators in the regen order in `PROGRESS.md`, then `tools/build.py`.
 - When a structure is renamed or removed, grep `config/ftbquests` in the modpack for its id/tag.

@@ -1,6 +1,5 @@
 // =====================================================================
 //  Schematicannon Substitutes — cheap bulk recipes
-//  Drop in: kubejs/server_scripts/create/schematicannon_substitutes.js
 //
 //  Removes every existing recipe that outputs a substitute material
 //  (compacting / mixing / mechanical crafting) and replaces them with

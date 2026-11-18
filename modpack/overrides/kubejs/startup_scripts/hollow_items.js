@@ -1,4 +1,4 @@
-// pass 9-48: items of the Hollow endgame (textures in kubejs/assets/gearwrights/textures/item/).
+// Items of the Hollow endgame (textures in kubejs/assets/gearwrights/textures/item/).
 //  Foundry Residue -> (Create sequenced assembly) Unwound Movement -> (Neo Vitae altar) Bled Movement
 //  -> (Create spout, Essence of the Void) Wound Movement -> (the Hollow's altar) Escapement -> creative items.
 StartupEvents.registry('item', event => {

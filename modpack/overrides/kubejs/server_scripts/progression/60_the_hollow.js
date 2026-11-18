@@ -1,4 +1,4 @@
-// pass 9-44: the Hollow (dying_world:the_hollow) - the finale.
+// The Hollow (dying_world:the_hollow) - the finale.
 // Right-click the altar (reinforced deepslate on the dais) with a Gearwright's Seal, inside the Hollow, to bring down your
 // doppelganger (Mob Rules 0.7+). The seal is spent. A second copy can't be called while one is alive within 64 blocks.
 // Its death gives its owner (and whoever landed the kill) the 'gh_hollow_defeated' stage, which completes 'What They Opened'.
@@ -14,7 +14,7 @@ const HOLLOW_STAGE = 'gh_hollow_defeated'
 function insideHollow(level, pos) {
   try {
     // getOrThrow(ResourceKey) has a single overload; Registry.get(...) is ambiguous to Rhino (ResourceKey vs ResourceLocation)
-    // pass 9-61: `let`, not `const` - Rhino 2101 throws "redeclaration of var" for a const inside a try block, every call
+    // `let`, not `const`: Rhino 2101 throws "redeclaration of var" for a const inside a try block
     let structure =level.registryAccess().registryOrThrow($Registries.STRUCTURE).getOrThrow(HOLLOW_KEY)
     // getStructureWithPieceAt has 4 overloads (Structure/TagKey/HolderSet/Predicate) that Rhino can't choose between;
     // getStructureAt and structureHasPieceAt each have one, and together give the same piece-level check
@@ -27,7 +27,7 @@ function insideHollow(level, pos) {
   }
 }
 
-// pass 9-57: the altar's own shape also counts - reinforced deepslate (unobtainable in survival) with candles on the four
+// The altar's own shape also counts - reinforced deepslate (unobtainable in survival) with candles on the four
 // diagonal corners two blocks out, as the Hollow builds it. Works even if the structure lookup can't see the piece.
 function altarShape(block) {
   for (let d of [[-2, -2], [2, -2], [-2, 2], [2, 2]]) {
@@ -36,10 +36,10 @@ function altarShape(block) {
   return true
 }
 
-// pass 9-54: the Hollow state (tier, held/released, days held, Escapements made) lives in kskills_perks 1.2.0; this script only
-// asks it, through /kskills hollow ... (each command returns a number). The mod mirrors the state to the tags used here.
-// pass 9-60: KubeJS 2101's server.runCommandSilent returns nothing (void), so commands whose RESULT we read go through
-// Brigadier directly, which returns the command's number (0 when it fails or doesn't parse).
+// The Hollow state (tier, held/released, days held, Escapements made) lives in kskills_perks; this script only asks it,
+// through /kskills hollow ... (each command returns a number). The mod mirrors the state to the tags used here.
+// server.runCommandSilent returns nothing in KubeJS 2101, so commands whose result we read go through Brigadier
+// directly, which returns the command's number (0 when it fails or doesn't parse).
 function cmdResult(server, command) {
   try {
     return server.getCommands().getDispatcher().execute(command, server.createCommandSourceStack().withSuppressedOutput())
@@ -54,10 +54,10 @@ function hollowCmd(player, args) {
   return cmdResult(player.server, `kskills hollow ${args.replace('%p', player.username)}`)
 }
 
-// pass 9-48: the altar also takes a Wound Movement (-> Escapement) and, for released players looking through the lens,
+// The altar also takes a Wound Movement (-> Escapement) and, for released players looking through the lens,
 // a Seal calls an ECHO: a stronger copy (Mob Rules rule the_hollow_echo) that drops more residue and Hallmarked gear.
 const ECHO_TAG = 'gh_hollow_echo'
-const DISTILLED_STEP = 4, DISTILLED_CAP = 32        // pass 9-50: Escapement n after release costs min(32, 4n) Distilled Residue
+const DISTILLED_STEP = 4, DISTILLED_CAP = 32        // Escapement n after release costs min(32, 4n) Distilled Residue
 const FIRST_ESCAPE = 'gh_first_escape'
 
 function altarBusy(server, dim, ax, ay, az) {
@@ -67,7 +67,7 @@ function altarBusy(server, dim, ax, ay, az) {
   return false
 }
 
-// KubeJS 2101: event.cancel() throws to stop the handler IMMEDIATELY, so it must be the very last thing done (pass 9-59).
+// KubeJS 2101: event.cancel() throws to stop the handler immediately, so it must be the very last thing done.
 // handleAltar does the work and says whether the click was the altar's; only then is the click cancelled.
 BlockEvents.rightClicked('minecraft:reinforced_deepslate', event => {
   if (handleAltar(event)) event.cancel()
@@ -86,7 +86,7 @@ function handleAltar(event) {
   const ax = block.x + 0.5, ay = block.y + 1, az = block.z + 0.5
   const dim = String(level.dimension)
 
-  // pass 9-50: release is reversible - offer an Escapement back to be held again (full Hollow Sight, locked-only drops,
+  // Release is reversible - offer an Escapement back to be held again (full Hollow Sight, locked-only drops,
   // the Hollowed gear works again). Releasing again later costs a Wound Movement but gives no Escapement (only the first does).
   if (held == 'gearwrights:escapement') {
     if (!player.tags.contains(ESCAPED)) {
@@ -105,7 +105,7 @@ function handleAltar(event) {
       return true
     }
     if (player.tags.contains(ESCAPED)) {
-      // pass 9-50: each Escapement made after release costs more Distilled Residue (4, 8, 12 ... capped)
+      // each Escapement made after release costs more Distilled Residue (4, 8, 12 ... capped)
       const made = hollowCmd(player, 'escapements %p')
       const cost = Math.min(DISTILLED_CAP, DISTILLED_STEP * (made + 1))
       const have = cmdResult(server, `clear ${player.username} gearwrights:distilled_residue 0`)
@@ -155,15 +155,15 @@ function handleAltar(event) {
   return true
 }
 
-// pass 9-45: the reward is the 'Hollowed' capstone node (no connections, cost 0; only this unlocks it)
+// The reward is the 'Hollowed' capstone node (no connections, cost 0; only this unlocks it)
 function grantCapstone(server, player) {
   for (let node of ['hollowed_1', 'hollow_sight_1', 'lens_sight_1'])
     server.runCommandSilent(`puffish_skills skills unlock ${player.username} kskills:skill_tree ${node}`)
 }
 
-// pass 9-46/9-47: everyone starts locked in the Occult Foundry vision (server forceVision). Killing your copy also locks you per
-// player (kept even if the server config changes). The Escapement (a later pass) calls escapeFoundry: Wasteland Vision 0.24.3's
-// 'release' frees the player from both locks, and the Foundry Lens (the vision's key item) is then needed to see it again.
+// Everyone starts locked in the Occult Foundry vision (server forceVision). Killing your copy also locks you per player
+// (kept even if the server config changes). The Escapement calls escapeFoundry: Wasteland Vision's 'release' frees the
+// player from both locks, and the Foundry Lens (the vision's key item) is then needed to see it again.
 const FOUNDRY = 'occult_foundry'
 const ESCAPED = 'gh_escaped'
 
@@ -173,7 +173,7 @@ function markDefeated(player) {
   player.stages.add(HOLLOW_STAGE)                     // KubeJS stages too, if FTB uses those instead of tags
   grantCapstone(player.server, player)
   if (first && !player.tags.contains(ESCAPED)) {
-    for (let piece of ['cowl', 'vestment', 'greaves', 'treads', 'censer'])   // pass 9-50: the set's only source
+    for (let piece of ['cowl', 'vestment', 'greaves', 'treads', 'censer'])   // the set's only source
       player.server.runCommandSilent(`execute as ${player.username} run hallmarked sets give hollowed ${piece}`)
     player.tell(Text.of('Hollowed: a new node has opened at the edge of your skill tree.').darkPurple())
     player.tell(Text.of('The Foundry has your shape now. It will not let you look away.').gray().italic())
@@ -187,13 +187,13 @@ function escapeFoundry(player) {
   player.tell(Text.of('The world goes quiet. Through the lens the Foundry is still there, but it gives you less, and what it gave you goes cold.').gray().italic())
 }
 
-// pass 9-50: back into the Foundry's hold (offering an Escapement at the altar)
+// Back into the Foundry's hold (offering an Escapement at the altar)
 function relockFoundry(player) {
   hollowCmd(player, 'hold %p')
   player.tell(Text.of('You give it back. The Foundry takes you in again.').darkPurple().italic())
 }
 
-// Hollow Sight / Lens Sight (pass 9-53): both nodes are unlocked once, with the capstone; kskills_perks 1.1.0 switches their
+// Hollow Sight / Lens Sight: both nodes are unlocked once, with the capstone; kskills_perks switches their
 // rewards on and off by tag (wv_occult_foundry from Wasteland Vision, gh_escaped from the altar). Nothing to tick here.
 // a respec locks every node; give it back to anyone who has earned it
 PlayerEvents.loggedIn(event => {

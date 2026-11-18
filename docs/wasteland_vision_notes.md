@@ -1,5 +1,7 @@
 # Wasteland Vision notes (from user's config/wastelandvision/ zip, mod v0.23.1)
 
+> Status (9-75): written for WV 0.23.1. Now only the Occult Foundry vision ships, forced on for everyone (9-47, 9-63); `.installed_examples` must list occult_foundry, soot_and_tar, thermal_print.
+
 Client-side "hallucination layer". Real world/server/hitboxes/drops/light are unchanged; the player only SEES
 different blocks, plants, item icons/names, sky, fog, colour grade. Installed visions (folders in
 `config/wastelandvision/visions/`): `soot_and_tar` (soot/creosote/tar mud, ash particles, smog shader),

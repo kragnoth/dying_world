@@ -1,6 +1,6 @@
 # Dying World - notes for Claude
 
-Read `PROGRESS.md` first: it is the pass log, the decision record and the regen order. Append a `## Pass X-Y` entry for every change.
+Read `PROGRESS.md` first: current state, open items, regen order. Append a `## Pass X-Y` entry there for every change and keep its open items current. Older passes and decisions: `docs/progress_history.md` (search it, don't read it whole).
 
 - Owner: Kragnoth. Prefers efficient, direct answers; shell commands for him in fish syntax; don't launch the game headless unless asked.
 - The datapack ships as the instance's `kubejs/data/` folder; `python3 tools/build.py` makes `dist/kubejs_data.zip`.

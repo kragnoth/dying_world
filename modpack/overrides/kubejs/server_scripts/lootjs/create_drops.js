@@ -1,6 +1,5 @@
 // ================================================================
-// STEAMLANDS — Create-flavored loot sprinkle
-// kubejs/server_scripts/steamlands_create_loot.js
+// Create-flavored loot sprinkle
 //
 // Adds "create:" items into vanilla chest loot tables and mob drop
 // tables, scaled by tier:

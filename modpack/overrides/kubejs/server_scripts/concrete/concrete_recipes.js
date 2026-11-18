@@ -1,4 +1,3 @@
-// kubejs/server_scripts/concrete_recipes.js
 ServerEvents.recipes(event => {
 
     // gravel + clay + hemp fiber -> hempcrete pile

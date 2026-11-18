@@ -1,4 +1,3 @@
-// arkaneworx/server_scripts/cloche_recipes.js
 
 ServerEvents.recipes(event => {
 
@@ -53,9 +52,8 @@ ServerEvents.recipes(event => {
   ]
 
   // ---------------------------------------------------------------------
-  // 1) EXISTING RECIPES (from cloche.zip). `time` is the NORMAL/1x
-  //    baseline - the other 4 tiers scale off this same number.
-  //    input/render/results are unchanged from the shipped files.
+  // 1) BASE RECIPES. `time` is the NORMAL/1x baseline - the other 4 tiers
+  //    scale off this same number.
   // ---------------------------------------------------------------------
   const EXISTING_RECIPES = [
     { id: 'allium', input: { item: 'minecraft:allium' }, render: { type: 'immersiveengineering:generic', block: 'minecraft:allium' }, results: [{ id: 'minecraft:allium' }], time: 480 },
@@ -96,7 +94,6 @@ ServerEvents.recipes(event => {
     { id: 'torchflower', input: { item: 'minecraft:torchflower_seeds' }, render: { type: 'immersiveengineering:crop', block: 'minecraft:torchflower_crop' }, results: [{ id: 'minecraft:torchflower' }], time: 1200 },
     { id: 'warped_fungus', input: { item: 'minecraft:warped_fungus' }, render: { type: 'immersiveengineering:generic', block: 'minecraft:warped_fungus' }, results: [{ id: 'minecraft:warped_fungus' }], time: 560 },
 
-    // --> Added hasStraw: true
     { id: 'wheat', input: { item: 'minecraft:wheat_seeds' }, render: { type: 'immersiveengineering:crop', block: 'minecraft:wheat' }, results: [{ count: 2, id: 'minecraft:wheat' }, { chance: 0.25, output: { id: 'minecraft:wheat_seeds' } }], time: 640, hasStraw: true },
 
     { id: 'white_tulip', input: { item: 'minecraft:white_tulip' }, render: { type: 'immersiveengineering:generic', block: 'minecraft:white_tulip' }, results: [{ id: 'minecraft:white_tulip' }], time: 480 },
@@ -138,7 +135,7 @@ ServerEvents.recipes(event => {
       render: { type: 'immersiveengineering:crop', block: 'farmersdelight:rice_panicles' },
       results: [{ count: 2, id: 'farmersdelight:rice' }],
       time: 800,
-      hasStraw: true // --> Added hasStraw: true
+      hasStraw: true
     },
     {
       id: 'farmersdelight_tomato',
@@ -156,10 +153,10 @@ ServerEvents.recipes(event => {
         { chance: 0.25, output: { id: 'supplementaries:flax_seeds' } }
       ],
       time: 640,
-      hasStraw: true // --> Added hasStraw: true
+      hasStraw: true
     },
 
-    // --> Added rusticdelight: bell pepper, cotton, coffee
+    // rusticdelight: bell pepper, cotton, coffee
     // NOTE: each bell pepper crop block yields one of its colored bell
     // peppers on harvest. Colors are weighted evenly below - adjust the
     // chances if the mod's actual loot table isn't uniform. (Separate
@@ -216,7 +213,7 @@ ServerEvents.recipes(event => {
         { chance: 0.25, output: { id: 'rusticdelight:cotton_seeds' } }
       ],
       time: 800,
-      hasStraw: true // --> Added hasStraw: true, per request
+      hasStraw: true
     },
     {
       id: 'rusticdelight_coffee',
@@ -226,7 +223,7 @@ ServerEvents.recipes(event => {
       time: 800
     },
 
-    // --> Added aloe (age 0-5, drops aloe_leaves 1-2 + always 1 kernel)
+    // aloe (age 0-5, drops aloe_leaves 1-2 + always 1 kernel)
     {
       id: 'atmospheric_aloe_vera',
       input: { item: 'atmospheric:aloe_kernels' },
@@ -238,7 +235,7 @@ ServerEvents.recipes(event => {
       time: 800
     },
 
-    // --> Added bullet pepper: places powdery_cane, grows tall like bamboo
+    // bullet pepper: places powdery_cane, grows tall like bamboo
     {
       id: 'mynethersdelight_bullet_pepper',
       input: { item: 'mynethersdelight:bullet_pepper' },
@@ -247,7 +244,7 @@ ServerEvents.recipes(event => {
       time: 560
     },
 
-    // --> Added mycotoxic mushrooms: nether-fungus style (same as crimson/warped fungus)
+    // mycotoxic mushrooms: nether-fungus style (same as crimson/warped fungus)
     {
       id: 'regions_unexplored_mycotoxic_mushrooms',
       input: { item: 'regions_unexplored:mycotoxic_mushrooms' },

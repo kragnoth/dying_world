@@ -1,4 +1,3 @@
-// kubejs/server_scripts/grow_lamp.js
 // 1. Right-click glass with glowstone dust -> Grow Lamp
 // 2. Every second, each lamp boosts crops within RADIUS (until the lamp is broken)
 

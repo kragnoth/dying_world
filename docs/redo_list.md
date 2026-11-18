@@ -1,4 +1,7 @@
 # Redo list (pass 7-0): buildings to replace with our own style
+
+> Status (9-75): done. Tipis/teepees removed (8-10), savanna rebuilt in our gradient style (7-1, 9-5), abandoned savanna = ruined variants of it (9-6). Kept for history.
+
 User decision: redo every building that uses the TEEPEE style or the other clashy, non-vanilla "Mediterranean" buildings.
 
 ## TIPI / TEEPEE REMOVAL - USER DECISION (supersedes the questions below)

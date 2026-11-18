@@ -1,13 +1,10 @@
-// server_scripts/compat/compat_gap_fill.js
-// Fills gaps from compat_report.md. Supersedes powah_mnd_compat.js.
+// Fills cross-mod recipe gaps.
 // Rhino-safe: no spread, no rest params, no destructuring.
-// JSON layouts are copied from the raw samples in tree_dump.txt.
 //
 // Every recipe is guarded: all listed items must exist (Item.exists) or it is
 // skipped with a console warning, so a wrong id never breaks the reload.
 //
-// Sawmill counts are read from the matching acacia recipe at load time, because
-// the dump only lists file names for the existing button/fence/plate recipes.
+// Sawmill counts are read from the matching acacia recipe at load time.
 // If recipe.json isn't available in your KubeJS version, a warning is logged
 // and the sawmill block skips.
 
@@ -55,7 +52,6 @@ ServerEvents.recipes(function (event) {
 
     // -------------------------------- 2. farmersdelight:cutting (stripped logs)
     // Gap: c:stripped_logs / c:stripped_woods outputs for pale oak and RU wisteria.
-    // Layout is the full raw sample from the dump (recipes/atmospheric/cutting/aspen_log.json).
     // sappy_maple is left out on purpose: it is a tapping result, not a stripping one.
     if (Platform.isLoaded('farmersdelight')) {
         var strips = [

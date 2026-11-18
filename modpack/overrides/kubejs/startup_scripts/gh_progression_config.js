@@ -4,7 +4,7 @@
 // ============================================================================================================
 //  Gearwright's Hollow - progression re-tiering                                           (server_scripts/progression)
 //  Target ladder:  Create kinetics  ->  IE steel + Create brass  ->  Create precision + electricity
-//                  ->  Embers / Neo Vitae (magic-tech side branches)  ->  EnderIO (end game)
+//                  ->  Neo Vitae / Tarbound (magic-tech side branches)  ->  EnderIO (end game)
 //  Every change below is a switch: set it to false and restart to get the old behaviour back.
 // ============================================================================================================
 global.GH_PROGRESSION = {
@@ -27,6 +27,6 @@ global.GH_PROGRESSION = {
     // --- Incursion alloys: Create's discontinued chromatic compound / shadow steel / refined radiance ----------
     incursionAlloys:         true,    // craftable (tar + superheated mixing, End and Nether steps) and used (seal, casings)
 
-    // --- The Hollow endgame: Foundry Residue -> Escapement -> creative items (pass 9-48) ------------------------
+    // --- The Hollow endgame: Foundry Residue -> Escapement -> creative items -----------------------------------
     hollowEndgame:           true,    // residue drops, the Escapement chain and the creative-item recipes
 }

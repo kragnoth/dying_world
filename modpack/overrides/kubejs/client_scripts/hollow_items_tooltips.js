@@ -1,4 +1,4 @@
-// pass 9-48: one line of lore per Escapement-chain item.
+// One line of lore per Escapement-chain item.
 ItemEvents.modifyTooltips(event => {
   const lines = {
     'gearwrights:foundry_residue': 'What the Foundry leaves behind. Only those who can see it can gather it.',

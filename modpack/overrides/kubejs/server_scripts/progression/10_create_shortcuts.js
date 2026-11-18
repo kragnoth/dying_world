@@ -1,6 +1,6 @@
-// Create dev-environment shortcuts -> back to Create's intended recipes (switches in 00_config.js)
+// Create dev-environment shortcuts -> back to Create's intended recipes (switches in gh_progression_config.js)
 // Note: KubeJS's event.remove() only sees mod/datapack recipes, not recipes other scripts add, so the shortcuts
-// themselves are switched off inside recipes.js and create/create_recipes.js (patched copies in this zip).
+// themselves are switched off inside recipes.js and create/create_recipes.js.
 ServerEvents.recipes(event => {
     const C = global.GH_PROGRESSION
 

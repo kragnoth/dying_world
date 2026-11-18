@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     C: 'minecraft:leather'
   }).id('arkaneworx:leather_belt_connector');
   // ['minecraft:iron_nugget', 'create:incomplete_precision_mechanism', 'create:precision_mechanism', 'create:cogwheel', 'create:large_cogwheel']
-  // dev shortcut - switch in progression/00_config.js
+  // dev shortcut - switch in startup_scripts/gh_progression_config.js
   if (!global.GH_PROGRESSION.removePrecisionShortcut) event.shapeless('create:precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel', 'create:large_cogwheel', 'minecraft:iron_nugget']).id('arkaneworx:precision_mechanism');
   event.shapeless('create:andesite_casing', ['create:andesite_alloy', '#minecraft:logs']).id('arkaneworx:andesite_casing');
   event.shapeless('create:copper_casing', ['#c:ingots/copper', '#minecraft:logs']).id('arkaneworx:copper_casing');
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
   event.shapeless('createcasing:zinc_casing', ['#c:ingots/zinc', '#minecraft:logs']).id('arkaneworx:zinc_casing');
 
 
-  // clock -> incomplete precision mechanism (dev shortcut) - switch in progression/00_config.js
+  // clock -> incomplete precision mechanism (dev shortcut) - switch in startup_scripts/gh_progression_config.js
   if (!global.GH_PROGRESSION.removePrecisionShortcut) {
     event.custom({
       "type": "create:pressing",

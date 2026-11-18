@@ -1,5 +1,4 @@
-// kubejs/server_scripts/compat_tags.js
-// KubeJS 1.21.1 (NeoForge) Tag Compatibility Fixes
+// KubeJS 1.21.1 (NeoForge) tag compatibility fixes
 
 ServerEvents.tags('item', event => {
     // --- Mod Integration & Crafting Basics ---
@@ -133,10 +132,6 @@ ServerEvents.tags('item', event => {
     event.add('c:chests', ['ae2:sky_stone_chest', 'ae2:smooth_sky_stone_chest', 'ars_nouveau:archwood_chest', 'minecraft:chest', 'minecraft:ender_chest', 'minecraft:trapped_chest', 'sophisticatedstorage:netherite_chest'])
     event.add('c:barrels', ['minecraft:barrel', 'sophisticatedstorage:netherite_barrel'])
 
-    // === Additions from compat_report.md analysis (kubejs_compat_analyzer.py) ===
-    // Skipped as judgment calls -- review if you want them anyway:
-    //   - minecraft:terracotta -> minecraft:terracotta (tag already contains itself; report artifact, not a real gap)
-    //   - create:crushed_raw_materials additions left alone (you already tried & commented this out above)
     // --- Flora, Wood & Building Materials ---
     event.add('minecraft:planks', [
         'alexscaves:pewen_planks', 'alexscaves:thornwood_planks', 'ars_nouveau:archwood_planks',
@@ -376,8 +371,6 @@ ServerEvents.tags('block', event => {
     event.add('farmersdelight:mushroom_colony_growable_on', ['mynethersdelight:letios_compost', 'supplementaries:planter_rich'])
     event.add('fruitsdelight:pineapple_grows_on', 'minecraft:coarse_dirt')
 
-    // === Additions from compat_report.md analysis (kubejs_compat_analyzer.py) ===
-    // Skipped: enderio:redstone_connectable -> minecraft:moving_piston (transient/technical block, not mod compat)
     // --- Flora, Wood & Terrain ---
     event.add('c:stripped_logs', 'autumnity:sappy_maple_log')
     event.add('c:stripped_woods', [
@@ -463,11 +456,7 @@ ServerEvents.tags('block', event => {
     ])
 })
 
-// === Additional registries flagged by the compat report ===
-// Registry name strings below (e.g. 'enchantment', 'entity_type', 'fluid', 'mob_effect') follow
-// KubeJS 1.21's usual shorthand -- double check them against your KubeJS version if any of these
-// blocks throw at startup. 'neovitae:sentient_upgrades' is a mod-defined custom registry, so it
-// needs its full registry id rather than a shorthand.
+// Other registries. 'neovitae:sentient_upgrades' is a mod-defined registry, so it needs its full id.
 
 ServerEvents.tags('enchantment', event => {
 
@@ -513,16 +502,13 @@ ServerEvents.tags('mob_effect', event => {
     ])
 })
 
-// waystones:has_structure/mossy_waystone is a worldgen/biome tag (structure placement, not a
-// recipe/tag compat fix per se) -- included since it was in the report, but worth a sanity check
-// that this is actually what you want (mossy waystones generating in these biomes).
+// Biomes where mossy waystones can generate.
 ServerEvents.tags('worldgen/biome', event => {
 
     event.add('waystones:has_structure/mossy_waystone', ['minecraft:mangrove_swamp', 'minecraft:mushroom_fields', 'minecraft:swamp'])
 })
 
-// neovitae:sentient_upgrades is NeoVitae's own custom registry (used for the sentient item
-// upgrade tooltip ordering) -- full registry id required, no shorthand.
+// neovitae:sentient_upgrades: Neo Vitae's sentient item upgrade order.
 ServerEvents.tags('neovitae:sentient_upgrades', event => {
 
     event.add('neovitae:tooltip_order', [

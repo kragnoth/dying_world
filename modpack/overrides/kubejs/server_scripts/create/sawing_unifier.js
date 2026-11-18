@@ -1,4 +1,3 @@
-// kubejs/server_scripts/create_cutting_bark.js
 // Create cutting: EVERY log / wood / stem / hyphae -> its stripped variant + bark.
 //
 // Create generates its own unstripped -> stripped cutting recipes at runtime, so
