@@ -50,7 +50,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 1, 3b, 3b2, 3c4, 3c5, 4_1, 4_2a, 4_2b, 9_9, 4_2c, 4_2e, 4_2s, 4_3a, 5_1, 6_1,
 8_2, 8_3, 8_4, 8_5, 8_6, 7_1, 7_2, 8_8, 8_11, 9_1, 9_2, 9_3, 9_4, 9_5, 9_6, 9_7, 9_8, 9_10,
 9_11, 9_12, 9_34, 9_35, 9_36, 9_44, 9_13, 9_15, 9_18, 9_23, 9_21, 9_24, 9_29, 9_25, 9_27, 9_26, 9_28,
-9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 8_9, build, coherence_audit, theme_audit
+9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 8_9, build, coherence_audit, theme_audit
 ```
 - Independent of the structure chain (any order after the above): 9_43, 9_45 to 9_53 (uniques, skill tree, vision config,
   mobrules, sets, Hollow Sight).
@@ -67,6 +67,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - End station over the void, foundry bridges, swamp stilt houses, density after the placement tiers.
 - Lore: book rendering, maps' red X, location checks in landmark chests. Sculk dig camp cavern size and fit.
 - Windows `start.bat` / `install.ps1` (only the Linux script has been run).
+- Footings (9-76): sculk dig camp and Nether research station buildings no longer floating; posts look right over drops.
 
 **To do**
 - Scrambled journals revealed by Wasteland Vision (designed, not built).
@@ -110,3 +111,18 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - PROGRESS.md moved verbatim to `docs/progress_history.md`; this file rewritten as current state + open items + one
   consolidated regen order. Status notes added to `docs/redo_list.md` (done) and `docs/wasteland_vision_notes.md` (stale).
 - No files deleted (one moved).
+
+## Pass 9-76 (2026-11-17) - footings: no more floating dig-camp buildings
+- Cause: for rigid jigsaw children the beard's ground reference is the START piece's bottom + 1, not the child's own
+  bottom. The dig camp's floors are 3 above the pit's bottom, so beard_box carved a 3-block band of air under every
+  walkway and building; the fill below that only reaches ~12 blocks and never undoes carver caves. (Read from the 1.21.1
+  Beardifier / JigsawPlacement bytecode.) A deeper template doesn't move the reference, so footings don't deepen the carving.
+- NEW `tools/footing.py`: shifts a piece up and fills under its footprint (log posts at corners + every 4 along the edges,
+  rubble elsewhere); marks the NBT (`DwFooting`) so re-runs skip it.
+- `gen_pass9_36.py`: every dig-camp piece but the pit gets a 10-deep footing (spruce logs + deepslate/tuff rubble).
+  Re-generated; each piece is block-for-block the same as before above the footing.
+- NEW `tools/gen_pass9_76.py` (after 9_15/9_23, before build): the Nether research station's 8 buildings (normal +
+  derelict) get the same, with stripped crimson stems (fireproof) and blackstone/basalt. Streets/causeways and the hall
+  are untouched; the nether foundry keeps terrain_adaptation none (bridges by design).
+- No files deleted. Only new chunks change. Untested in game; deeper boxes could block the odd building placement
+  where a street drops a level.
