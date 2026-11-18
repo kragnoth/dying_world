@@ -67,7 +67,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - End station over the void, foundry bridges, swamp stilt houses, density after the placement tiers.
 - Lore: book rendering, maps' red X, location checks in landmark chests. Sculk dig camp cavern size and fit.
 - Windows `start.bat` / `install.ps1` (only the Linux script has been run).
-- Footings (9-76): sculk dig camp and Nether research station buildings no longer floating; posts look right over drops.
+- Stilts (9-76/9-77): sculk dig camp and Nether research station buildings no longer floating; stilts look right over drops.
 
 **To do**
 - Scrambled journals revealed by Wasteland Vision (designed, not built).
@@ -126,3 +126,11 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
   are untouched; the nether foundry keeps terrain_adaptation none (bridges by design).
 - No files deleted. Only new chunks change. Untested in game; deeper boxes could block the odd building placement
   where a street drops a level.
+
+## Pass 9-77 (2026-11-17) - stilts instead of plinths
+- Kragnoth's screenshot: the 9-76 footing showed as a solid rubble storey under each building (the carved band is
+  visible). Now mineshaft-style: only the log posts (corners + every 3 along the edges, 12 deep); the rest of the space
+  under a piece is left out of the template, so rock stays rock and drops stay open under the stilts.
+- `tools/footing.py`: posts only by default (`fill` optional); re-running strips an old footing first. gen_pass9_36
+  (spruce logs) and gen_pass9_76 (stripped crimson stem) re-run.
+- No files deleted.

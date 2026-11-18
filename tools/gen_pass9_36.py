@@ -14,7 +14,7 @@ Layout (jigsaw, terrain_adaptation beard_box -> the ground is carved into a cave
        (Guild: stone brick / cobbled deepslate, copper roof), mine drift (oldest: timber portal into the rock).
   SCULK GRADIENT by ring: pit = heavy (blocks turned to sculk, veins, sensors, shriekers that CAN summon the warden, catalyst at the gate);
        inner ring = some sculk, veins, the odd sensor; outer ring = a few veins only.
-Footings (pass 9-76): walkways, drifts and buildings stand on spruce posts + rubble, 10 deep (tools/footing.py).
+Stilts (pass 9-76): walkways, drifts and buildings stand on spruce log stilts, 12 deep (tools/footing.py).
 Loot: the old research_sculk_* tables (ancient-city based; archive/store hand-tuned in user_overrides).
 """
 import json, shutil, sys
@@ -39,8 +39,7 @@ def pick(r, opts):
         if x < 0: return n
     return opts[-1][0]
 
-FOOTING = 10
-FOOT_FILL = [(M("cobbled_deepslate"), 5), (M("deepslate"), 3), (M("tuff"), 2), (M("cobblestone"), 1)]
+FOOTING = 12
 STONE = [(M("cobbled_deepslate"), 5), (M("deepslate"), 3), (M("tuff"), 1), (M("gravel"), 1)]
 BOARD = [(M("spruce_planks"), 6), (M("stripped_spruce_log"), 1), (M("dark_oak_planks"), 1)]
 MASON = [(M("stone_bricks"), 4), (M("cracked_stone_bricks"), 2), (M("cobbled_deepslate"), 3), (M("mossy_stone_bricks"), 1)]
@@ -265,10 +264,10 @@ def main():
             bl.append((save(t, f"{name}_{ring}"), wt))
         w(TP / f"bld_{ring}.json", {"fallback": "minecraft:empty", "elements": [pe(l, wt) for l, wt in bl]})
     w(TP / "drift_end.json", {"fallback": "minecraft:empty", "elements": [pe(f"{POOL}/drift_end_outer", 1)]})
-    # pass 9-76: every piece but the pit gets a 10-deep footing (spruce posts + rubble). The beard's ground reference is the pit's
+    # pass 9-76: every piece but the pit stands on 12-deep spruce stilts. The beard's ground reference is the pit's
     # bottom + 1, three below the camp floor, so without it the band under every floor is carved out (see tools/footing.py).
     for f in sorted(D.glob("*.nbt")):
-        if f.stem != "pit": add_footing(f, FOOTING, M("spruce_log"), FOOT_FILL)
+        if f.stem != "pit": add_footing(f, FOOTING, M("spruce_log"))
     sp = OUT / "worldgen/structure/sculk_research_site.json"; j = json.loads(sp.read_text())
     j.update({"start_pool": f"{POOL}/pit", "size": 7, "max_distance_from_center": 64, "terrain_adaptation": "beard_box"})
     w(sp, j)
