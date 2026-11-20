@@ -66,7 +66,7 @@
     // Automatically analyzes present biomes and adjust structure spawning to include fitting ones, Note that this may also spawn structures in undesired biomes,
     // check the logging and adjust the strictness up/down to achieve a good result. 
     // Default: false
-    "enableBiomeCompat": true,
+    "enableBiomeCompat": false,
 
     "enableLogging": true,
 

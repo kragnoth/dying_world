@@ -42,10 +42,6 @@
       "required": false
     },
     {
-      "id": "minecraft:beach",
-      "required": false
-    },
-    {
       "id": "minecraft:dark_forest",
       "required": false
     },
@@ -74,10 +70,6 @@
       "required": false
     },
     {
-      "id": "minecraft:snowy_beach",
-      "required": false
-    },
-    {
       "id": "minecraft:snowy_slopes",
       "required": false
     },
@@ -87,10 +79,6 @@
     },
     {
       "id": "minecraft:stony_peaks",
-      "required": false
-    },
-    {
-      "id": "minecraft:stony_shore",
       "required": false
     },
     {
@@ -135,14 +123,6 @@
     },
     {
       "id": "regions_unexplored:fen",
-      "required": false
-    },
-    {
-      "id": "regions_unexplored:grassy_beach",
-      "required": false
-    },
-    {
-      "id": "regions_unexplored:gravel_beach",
       "required": false
     },
     {
