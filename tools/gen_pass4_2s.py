@@ -119,13 +119,15 @@ def head(seed):
     ladder(t, 8, 4, 0, 2)
     for x, z in ((3, 3), (13, 3), (3, 13), (13, 13)):                             # headframe legs + top frame
         for y in range(1, 13): t.set(x, y, z, R("rusted_girder"), {"axis": "y"})
+    # girders are the big members (legs, top ring), beams the small ones (the cross member); pass 9-81
     for x in range(4, 13):
-        for z in (3, 13): t.set(x, 12, z, R("rusted_beam"), {"axis": "x"})
-        t.set(x, 12, 8, R("rusted_girder"), {"axis": "x"})
+        for z in (3, 13): t.set(x, 12, z, R("rusted_girder"), {"axis": "x"})
+        end = {"neg": "girder"} if x == 4 else {"pos": "girder"} if x == 12 else {}
+        t.set(x, 12, 8, R("rusted_beam"), {"axis": "x", "low": "true", **end})   # low: flush with the block's bottom
     for z in range(4, 13):
-        for x in (3, 13): t.set(x, 12, z, R("rusted_beam"), {"axis": "z"})
+        for x in (3, 13): t.set(x, 12, z, R("rusted_girder"), {"axis": "z"})
     t.set(8, 11, 8, R("pulley_block"), {"facing": "south"})
-    lamp(t, r, 8, 11, 5); lamp(t, r, 8, 11, 11)
+    lamp(t, r, 5, 11, 8); lamp(t, r, 11, 11, 8)                                    # hung from the cross beam
     for x in range(15, 22):                                                         # control shed x15..21 z4..12, h 4, roof y5
         for z in range(4, 13):
             for y in range(1, 6):

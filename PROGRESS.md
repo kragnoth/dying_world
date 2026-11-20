@@ -164,3 +164,10 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
   whole worldgen/structure registry failed to load (no world loads). gen_pass9_78 now caps it at 116. Both 1.0.3 zips rebuilt.
 - Rule: with terrain_adaptation other than none, max_distance_from_center <= 116.
 - Ocean-spawn scan started (16 ocean points, locate every overworld structure) but stopped at Kragnoth's request; he tests in game.
+
+## Pass 9-81 (2026-11-20) - mineshaft headframe: girders/beams the right way round, lamps hung
+- Kragnoth: the headframe lamps hung in mid-air and the girder/beam roles were swapped. Rust & Rebar's girder is the
+  big H-section, the beam the small I-beam. gen_pass4_2s: top ring now girders (legs already were), the centre cross
+  member a beam (`low=true`, flush with the block bottom, girder connectors at its ends), and the two lamps moved
+  under it (x 5/11, z 8) instead of hanging from nothing at z 5/11.
+- Only the two shaft_head NBTs changed (4_2s re-run, then 9_78 re-run; nothing else differs). No files deleted.
