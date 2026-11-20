@@ -6,7 +6,8 @@
 2. Industrial mineshaft: tunnels could branch ~23 blocks under the headframe, so on high ground (cliffs, mountains) the
    tunnel network and container-yard halls ran out over lower ground and hung in the air. The collar now leads into two
    plain shaft segments (pools mineshaft/shaft_upper_a, _b; no branches) before the normal shaft pool, so tunnels start at
-   least ~50 blocks under the head. size 14 -> 16 to keep the network's reach. terrain_adaptation none -> beard_thin, so
+   least ~50 blocks under the head. size 14 -> 16 to keep the network's reach; max_distance_from_center 128 -> 116 (with
+   terrain adaptation the limit is reach + 12 <= 128). terrain_adaptation none -> beard_thin, so
    ground is built up under the headframe on slopes instead of leaving the collar standing in the open.
 3. Wells: each well was one template from the shaft floor up, with beard_box, which carves the whole box above the shaft
    floor - on a slope the shaft stood in the open. Each well is now split at ground level into <style>_top (the start
@@ -68,7 +69,8 @@ def mineshaft():
         pool["elements"].append({"weight": 1, "element": dict(pool["elements"][0]["element"], location=locs[1])})
         wj(pd / f"shaft_upper_{stage}.json", pool)
     p = OUT / "worldgen/structure/industrial_mineshaft.json"; j = rj(p)
-    j["size"] = 16; j["terrain_adaptation"] = "beard_thin"; wj(p, j)
+    # any terrain adaptation adds 12 to the reach, and Minecraft refuses max_distance_from_center + 12 > 128
+    j["size"] = 16; j["terrain_adaptation"] = "beard_thin"; j["max_distance_from_center"] = min(j["max_distance_from_center"], 116); wj(p, j)
 
 # ---- 3. wells -------------------------------------------------------------------------------------------------------
 G = 6   # gen_pass8_6 DEPTH: shaft y0..5, ground/platform layer y6

@@ -157,3 +157,10 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
   `server-mods.txt` is unchanged); server README version bumped. His export's kubejs/data matched the 9-78 build; its
   scripts and quest files differed only in comments/formatting, so the repo copies were used.
 - Built `Gearwrights_Hollow_1.0.3_Alpha.zip` (tools/export.py) and `_Server.zip` (modpack/server + config, defaultconfigs, kubejs).
+
+## Pass 9-80 (2026-11-20) - fix: mineshaft reach broke the structure registry
+- Headless test of 1.0.3: "Structure size including terrain adaptation must not exceed 128" for industrial_mineshaft -
+  any terrain adaptation adds 12 to max_distance_from_center, and 9-78 gave the mineshaft beard_thin at reach 128, so the
+  whole worldgen/structure registry failed to load (no world loads). gen_pass9_78 now caps it at 116. Both 1.0.3 zips rebuilt.
+- Rule: with terrain_adaptation other than none, max_distance_from_center <= 116.
+- Ocean-spawn scan started (16 ocean points, locate every overworld structure) but stopped at Kragnoth's request; he tests in game.
