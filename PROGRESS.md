@@ -18,7 +18,7 @@ A dying world: everything should feel like it belongs. Tar, oil, spirits, biomes
 structures are disabled; ours replace them under `dying_world`. The look is Wasteland Vision's job (client-side): the
 Occult Foundry vision is forced on for everyone and is also the endgame's mark. Structures carry the real mechanics.
 
-## Current state - 1.0.1 Alpha (2026-11-17)
+## Current state - 1.0.3 Alpha (2026-11-20)
 - Minecraft 1.21.1, NeoForge 21.1.262, 252 CurseForge projects (`modpack/manifest.json`). Data pack format 48.
 - Datapack: survivor/abandoned villages in our gradient style for all five families plus rare styles, landmarks, scavenger
   strongholds, research gates and stations (Overworld/Nether/End), the Nether foundry (replaces the fortress), proving
@@ -151,3 +151,9 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
     beard_thin, start_height -1 (platform one block into the ground). The old one-piece wells/<style>.nbt are still
     written by 8_6 and read by 9_78, but no pool uses them.
 - No files deleted. Only new chunks change. Untested in game.
+
+## Pass 9-79 (2026-11-20) - 1.0.3 Alpha release files
+- `modpack/manifest.json` / `modlist.html` from Kragnoth's 1.0.3 Alpha export (same 252 files as 1.0.1, so
+  `server-mods.txt` is unchanged); server README version bumped. His export's kubejs/data matched the 9-78 build; its
+  scripts and quest files differed only in comments/formatting, so the repo copies were used.
+- Built `Gearwrights_Hollow_1.0.3_Alpha.zip` (tools/export.py) and `_Server.zip` (modpack/server + config, defaultconfigs, kubejs).
