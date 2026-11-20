@@ -34,6 +34,6 @@
   },
   "start_pool": "dying_world:lighthouse/start",
   "step": "surface_structures",
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "use_expansion_hack": false
 }

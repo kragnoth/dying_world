@@ -10,6 +10,7 @@
   },
   "start_pool": "dying_world:scavenger_stronghold/plains/keep",
   "step": "surface_structures",
-  "terrain_adaptation": "beard_box",
-  "use_expansion_hack": false
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": false,
+  "liquid_settings": "ignore_waterlogging"
 }

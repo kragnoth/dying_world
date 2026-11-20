@@ -50,7 +50,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 1, 3b, 3b2, 3c4, 3c5, 4_1, 4_2a, 4_2b, 9_9, 4_2c, 4_2e, 4_2s, 4_3a, 5_1, 6_1,
 8_2, 8_3, 8_4, 8_5, 8_6, 7_1, 7_2, 8_8, 8_11, 9_1, 9_2, 9_3, 9_4, 9_5, 9_6, 9_7, 9_8, 9_10,
 9_11, 9_12, 9_34, 9_35, 9_36, 9_44, 9_13, 9_15, 9_18, 9_23, 9_21, 9_24, 9_29, 9_25, 9_27, 9_26, 9_28,
-9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 9_78, 8_9, build, coherence_audit, theme_audit
+9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 9_78, 9_82, 8_9, build, coherence_audit, theme_audit
 ```
 - Independent of the structure chain (any order after the above): 9_43, 9_45 to 9_53 (uniques, skill tree, vision config,
   mobrules, sets, Hollow Sight).
@@ -67,11 +67,16 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - End station over the void, foundry bridges, swamp stilt houses, density after the placement tiers.
 - Lore: book rendering, maps' red X, location checks in landmark chests. Sculk dig camp cavern size and fit.
 - Windows `start.bat` / `install.ps1` (only the Linux script has been run).
+- Structure audit fixes (9-82): villages/cabins/ruins on hills without square notches cut behind them, swamp ruins,
+  proving grounds headframe and Hollow marker sitting in the ground, Hollow/proving shaft lamps on the walls.
 - Structure placement (9-78): wells set into slopes (no exposed shaft), no wells/mineshafts/outposts over the sea, mineshaft
   tunnels and container yards no longer hanging in the air under high headframes.
 - Stilts (9-76/9-77): sculk dig camp and Nether research station buildings no longer floating; stilts look right over drops.
 
 **To do**
+- Structures (from the 9-82 audit, not done): exterior air -> structure_void in the mineshaft headframe (89% air box),
+  village street pieces (~6 blocks of air over the path halves trees) and town centres; delete the unused pool
+  `dying_world:cabin/start`.
 - Scrambled journals revealed by Wasteland Vision (designed, not built).
 - Excalibur-style textures for the Hollow items (placeholders now).
 - Stale data in `kubejs_base`: quality_equipment and agritechevolved references; the skill tree's definitions.json still
@@ -171,3 +176,16 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
   member a beam (`low=true`, flush with the block bottom, girder connectors at its ends), and the two lamps moved
   under it (x 5/11, z 8) instead of hanging from nothing at z 5/11.
 - Only the two shaft_head NBTs changed (4_2s re-run, then 9_78 re-run; nothing else differs). No files deleted.
+
+## Pass 9-82 (2026-11-20) - structure audit fixes
+- Audit of all 79 structures against ATi / Integrated Villages / vanilla conventions (script: terrain adaptation, reach,
+  explicit air, footprints, hanging lights, loot, salts, jigsaw refs). Fixed the cheap, high-value ones:
+- NEW `tools/gen_pass9_82.py` (after 9_78, before 8_9/build; re-runnable):
+  - 38 overworld surface structures beard_box -> beard_thin (villages, hamlets, cabins, ruins, smithies, chapel, cottages,
+    lighthouse, scavenger strongholds, abandoned_ruin_swamp, proving_grounds, the_hollow). beard_box cleared each piece's
+    whole box above its floor = square notches in hillsides. Research gates/stations and the sunken lab stay beard_box.
+  - 62 land jigsaw structures get liquid_settings ignore_waterlogging (not swamp, sunken lab, lighthouse).
+  - 7 caged lamps saved facing down under air beside a wall turned to face away from the wall (Hollow shafts 1/2,
+    proving shafts 1/3).
+- Not done (in Open items): structure_void for exterior air in the headframe/streets/town centres; dead pool cabin/start.
+- No files deleted. Only new chunks change. Untested in game.

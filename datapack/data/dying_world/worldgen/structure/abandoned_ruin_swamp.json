@@ -33,7 +33,7 @@
       ]
     }
   },
-  "terrain_adaptation": "none",
+  "terrain_adaptation": "beard_thin",
   "start_pool": "dying_world:swamp/ruined_houses",
   "size": 1,
   "start_height": {
