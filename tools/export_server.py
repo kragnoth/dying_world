@@ -7,37 +7,45 @@ Server zip = modpack/server/* (start.sh, start.bat, install.ps1, server-mods.txt
 + config/, defaultconfigs/ and kubejs/ taken from the client export just built, so both always match.
 Mods are not in the zip: start.sh / start.bat download server-mods.txt from CurseForge and check each SHA-1.
 server-mods.txt itself is still edited by hand after a mod change (see PROGRESS "Commands"); this script checks it against
-modpack/manifest.json and stops if an entry isn't in the manifest (stale version) or a manifest file is missing from it
-without being a known client-only mod or one of the CurseForge resource packs enabled in options.txt.
+modpack/manifest.json by project/file ID and stops if an entry isn't in the manifest (stale version), a mod is missing that
+isn't in CLIENT_ONLY, or a CLIENT_ONLY mod was added (resource packs = manifest projects modlist.html doesn't list).
 """
 import json, re, subprocess, sys, zipfile
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PACK = ROOT / "modpack"
 SERVER = PACK / "server"
-CLIENT_ONLY = 6          # Create JEI Compat, Easy Auto Cycler, Sodium, Reese's Sodium Options, Saros Boosted Brightness, Freecam
+# CurseForge project IDs of the mods that crash a dedicated server (left out of server-mods.txt on purpose)
+CLIENT_ONLY = {1422344: "Create JEI Compat", 1242344: "Easy Auto Cycler", 394468: "Sodium",
+               511319: "Reese's Sodium Options", 1371053: "Saros Boosted Brightness", 557076: "Freecam"}
 FROM_CLIENT = ("config/", "defaultconfigs/", "kubejs/")
 
 
 def check_mod_list():
-    man = {f["fileID"] for f in json.loads((PACK / "manifest.json").read_text())["files"]}
+    """server-mods.txt must equal manifest.json minus CLIENT_ONLY minus resource packs. Resource packs are the manifest
+    projects that modlist.html (which lists mods only) doesn't name. Checked by project and file ID, not by count."""
+    man = {f["fileID"]: f["projectID"] for f in json.loads((PACK / "manifest.json").read_text())["files"]}
     srv = set()
     for line in (SERVER / "server-mods.txt").read_text().splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         a, b = re.search(r"/files/(\d+)/(\d+)/", line.split()[1]).groups()
         srv.add(int(a) * 1000 + int(b))
-    stale = srv - man
+    stale = srv - set(man)
     if stale:
         sys.exit(f"server-mods.txt has {len(stale)} file(s) not in manifest.json (outdated versions?): {sorted(stale)}")
-    line = next(l for l in (PACK / "overrides/options.txt").read_text().splitlines() if l.startswith("resourcePacks:"))
-    local = {f.name for f in (PACK / "overrides/resourcepacks").iterdir()}
-    packs = len({p for p in re.findall(r'"file/([^"]+)"', line) if p not in local})   # CurseForge resource packs (Excalibur etc.)
-    missing = len(man - srv)
-    if missing != CLIENT_ONLY + packs:
-        sys.exit(f"{missing} manifest file(s) are not in server-mods.txt; expected {CLIENT_ONLY} client-only mods + {packs} "
-                 f"CurseForge resource packs = {CLIENT_ONLY + packs}. A mod was added to the pack but not to the server list?")
-    print(f"server-mods.txt: {len(srv)} mods, matches manifest.json ({CLIENT_ONLY} client-only + {packs} resource packs left out)")
+    mods = {int(p) for p in re.findall(r"curseforge\.com/projects/(\d+)", (PACK / "modlist.html").read_text())}
+    missing = {man[f] for f in set(man) - srv}
+    packs = {p for p in man.values() if p not in mods}
+    unexpected = missing - set(CLIENT_ONLY) - packs
+    if unexpected:
+        sys.exit(f"{len(unexpected)} mod(s) in manifest.json are missing from server-mods.txt (projects {sorted(unexpected)}): "
+                 "add them, or to CLIENT_ONLY if they crash a dedicated server")
+    shipped = set(CLIENT_ONLY) & {man[f] for f in srv}
+    if shipped:
+        sys.exit(f"client-only mod(s) {[CLIENT_ONLY[p] for p in shipped]} are in server-mods.txt: they crash a dedicated server")
+    print(f"server-mods.txt: {len(srv)} mods, matches manifest.json ({len(missing & set(CLIENT_ONLY))} client-only + "
+          f"{len(packs)} resource packs left out)")
 
 
 def main():

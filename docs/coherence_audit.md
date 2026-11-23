@@ -16,89 +16,91 @@
 | dying_world:shipwrecks | 40/12 | 1 | -: | 2 |
 | dying_world:strongholds | None/None | 1 | -: | 1 |
 | dying_world:sunken_research_lab | 32/5 | 1 | dying_world:shipwrecks:4 | 1 |
+| dying_world:the_hollow | None/None | 1 | -: | 1 |
 
 ## Structures (ours)
 
 | structure | set | biomes | adapt | size/radius | monster spawns | start pool ok |
 |---|---|---|---|---|---|---|
-| dying_world:abandoned_cabin | dying_world:landmarks | 4 | beard_box | 1/40 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_cabin_dark_oak | dying_world:landmarks | 1 | beard_box | 1/40 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_cabin_oak | dying_world:landmarks | 3 | beard_box | 1/40 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_hamlet_desert | dying_world:settlements | 14 | beard_box | 4/80 | husk,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_hamlet_plains | dying_world:settlements | 42 | beard_box | 4/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_hamlet_savanna | dying_world:settlements | 7 | beard_box | 4/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_hamlet_snowy | dying_world:settlements | 10 | beard_box | 4/80 | stray,zombie,zombie_villager | True |
+| dying_world:abandoned_cabin | dying_world:landmarks | 4 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
+| dying_world:abandoned_cabin_dark_oak | dying_world:landmarks | 1 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
+| dying_world:abandoned_cabin_oak | dying_world:landmarks | 3 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
+| dying_world:abandoned_hamlet_desert | dying_world:settlements | 14 | beard_thin | 4/80 | husk,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_plains | dying_world:settlements | 42 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_savanna | dying_world:settlements | 7 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_snowy | dying_world:settlements | 10 | beard_thin | 4/80 | stray,zombie,zombie_villager | True |
 | dying_world:abandoned_hamlet_swamp | dying_world:settlements | 8 | none | 4/80 | zombie,drowned,zombie_villager,spider | True |
-| dying_world:abandoned_hamlet_taiga | dying_world:settlements | 23 | beard_box | 4/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_ruin_desert | dying_world:landmarks | 14 | beard_box | 1/80 | husk,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_ruin_plains | dying_world:landmarks | 50 | beard_box | 1/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_ruin_savanna | dying_world:landmarks | 7 | beard_box | 1/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_ruin_snowy | dying_world:landmarks | 12 | beard_box | 1/80 | stray,zombie,zombie_villager | True |
-| dying_world:abandoned_ruin_swamp | dying_world:landmarks | 8 | none | 1/32 | zombie,drowned,zombie_villager,spider | True |
-| dying_world:abandoned_ruin_taiga | dying_world:landmarks | 24 | beard_box | 1/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_smithy | dying_world:landmarks | 115 | beard_box | 1/30 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_smithy_arid | dying_world:landmarks | 21 | beard_box | 1/30 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_village_desert | dying_world:settlements | 14 | beard_box | 6/80 | husk,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_village_plains | dying_world:settlements | 41 | beard_box | 6/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_village_savanna | dying_world:settlements | 7 | beard_box | 6/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_village_snowy | dying_world:settlements | 10 | beard_box | 6/80 | stray,zombie,zombie_villager | True |
+| dying_world:abandoned_hamlet_taiga | dying_world:settlements | 23 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_ruin_desert | dying_world:landmarks | 14 | beard_thin | 1/80 | husk,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_ruin_plains | dying_world:landmarks | 50 | beard_thin | 1/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_ruin_savanna | dying_world:landmarks | 7 | beard_thin | 1/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_ruin_snowy | dying_world:landmarks | 12 | beard_thin | 1/80 | stray,zombie,zombie_villager | True |
+| dying_world:abandoned_ruin_swamp | dying_world:landmarks | 8 | beard_thin | 1/32 | zombie,drowned,zombie_villager,spider | True |
+| dying_world:abandoned_ruin_taiga | dying_world:landmarks | 24 | beard_thin | 1/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_smithy | dying_world:landmarks | 110 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
+| dying_world:abandoned_smithy_arid | dying_world:landmarks | 21 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
+| dying_world:abandoned_village_desert | dying_world:settlements | 14 | beard_thin | 6/80 | husk,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_plains | dying_world:settlements | 41 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_savanna | dying_world:settlements | 7 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_snowy | dying_world:settlements | 10 | beard_thin | 6/80 | stray,zombie,zombie_villager | True |
 | dying_world:abandoned_village_swamp | dying_world:settlements | 8 | none | 6/80 | zombie,drowned,zombie_villager,spider | True |
-| dying_world:abandoned_village_taiga | dying_world:settlements | 23 | beard_box | 6/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_taiga | dying_world:settlements | 23 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
 | dying_world:charnel_crypt | dying_world:landmarks | 60 | none | -/- | - | type tarbound:dry_land |
 | dying_world:collapsed_minehead | dying_world:landmarks | 38 | beard_thin | 1/40 | zombie,spider,cave_spider | True |
 | dying_world:concrete_pad_arid | dying_world:landmarks | 21 | beard_thin | 1/30 | - | True |
 | dying_world:concrete_pad_cold | dying_world:landmarks | 28 | beard_thin | 1/30 | - | True |
 | dying_world:concrete_pad_temperate | dying_world:landmarks | 37 | beard_thin | 1/30 | - | True |
-| dying_world:concrete_pad_wild | dying_world:landmarks | 50 | beard_thin | 1/30 | - | True |
+| dying_world:concrete_pad_wild | dying_world:landmarks | 45 | beard_thin | 1/30 | - | True |
 | dying_world:dig_site_arid | dying_world:landmarks | 21 | beard_thin | 1/16 | - | True |
 | dying_world:dig_site_temp | dying_world:landmarks | 37 | beard_thin | 1/16 | - | True |
 | dying_world:drowned_radio | dying_world:landmarks | 8 | none | -/- | - | type tarbound:dry_land |
-| dying_world:hermit_cottage | dying_world:landmarks | 65 | beard_box | 1/32 | - | True |
-| dying_world:industrial_mineshaft | dying_world:deep_sites | 138 | none | 14/128 | zombie,skeleton,zombie_villager,drowned | True |
-| dying_world:lighthouse | dying_world:landmarks | 5 | beard_box | 1/40 | zombie,skeleton,zombie_villager | True |
+| dying_world:hermit_cottage | dying_world:landmarks | 65 | beard_thin | 1/32 | - | True |
+| dying_world:industrial_mineshaft | dying_world:deep_sites | 133 | beard_thin | 16/116 | zombie,skeleton,zombie_villager,drowned | True |
+| dying_world:lighthouse | dying_world:landmarks | 5 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
 | dying_world:nether_foundry | dying_world:nether_foundries | 10 | none | 6/80 | blaze,zombified_piglin,wither_skeleton,skeleton,magma_cube | True |
 | dying_world:nether_foundry_derelict | dying_world:nether_foundries | 10 | none | 6/80 | wither_skeleton,skeleton,blaze,magma_cube | True |
-| dying_world:plague_house | dying_world:landmarks | 87 | beard_box | 1/32 | skeleton,zombie | True |
-| dying_world:proving_grounds | dying_world:deep_sites | 136 | none | 12/80 | - | True |
+| dying_world:plague_house | dying_world:landmarks | 82 | beard_thin | 1/32 | skeleton,zombie | True |
+| dying_world:proving_grounds | dying_world:deep_sites | 131 | beard_thin | 12/80 | - | True |
 | dying_world:research_end | dying_world:research_end_stations | 1 | beard_box | 4/56 | - | True |
 | dying_world:research_end_derelict | dying_world:research_end_stations | 1 | beard_box | 4/56 | - | True |
-| dying_world:research_gate_end | dying_world:research_gates | 136 | beard_box | 4/56 | enderman | True |
-| dying_world:research_gate_end_derelict | dying_world:research_gates | 136 | beard_box | 4/56 | zombie,skeleton,enderman | True |
-| dying_world:research_gate_nether | dying_world:research_gates | 136 | beard_box | 4/56 | zombified_piglin | True |
-| dying_world:research_gate_nether_derelict | dying_world:research_gates | 136 | beard_box | 4/56 | zombie,skeleton,zombified_piglin | True |
+| dying_world:research_gate_end | dying_world:research_gates | 131 | beard_box | 4/56 | enderman | True |
+| dying_world:research_gate_end_derelict | dying_world:research_gates | 131 | beard_box | 4/56 | zombie,skeleton,enderman | True |
+| dying_world:research_gate_nether | dying_world:research_gates | 131 | beard_box | 4/56 | zombified_piglin | True |
+| dying_world:research_gate_nether_derelict | dying_world:research_gates | 131 | beard_box | 4/56 | zombie,skeleton,zombified_piglin | True |
 | dying_world:research_nether | dying_world:research_nether_stations | 10 | beard_box | 4/56 | zombie,skeleton,wither_skeleton | True |
 | dying_world:research_nether_derelict | dying_world:research_nether_stations | 10 | beard_box | 4/56 | zombie,skeleton,wither_skeleton | True |
 | dying_world:researcher_cabin | dying_world:landmarks | 31 | beard_thin | -/- | - | type tarbound:dry_land |
 | dying_world:road_sign | dying_world:road_signs | 136 | beard_thin | -/- | - | type supplementaries:road_sign |
 | dying_world:ruined_chapel | dying_world:landmarks | 42 | beard_thin | 1/40 | skeleton,zombie | True |
-| dying_world:scavenger_outpost_abandoned | dying_world:landmarks | 136 | beard_thin | 1/30 | - | True |
+| dying_world:scavenger_outpost_abandoned | dying_world:landmarks | 131 | beard_thin | 1/30 | - | True |
 | dying_world:scavenger_outpost_arid | dying_world:landmarks | 21 | beard_thin | 1/30 | husk,skeleton | True |
 | dying_world:scavenger_outpost_cold | dying_world:landmarks | 28 | beard_thin | 1/30 | stray,zombie,skeleton | True |
-| dying_world:scavenger_outpost_raiders | dying_world:landmarks | 136 | beard_thin | 1/30 | pillager | True |
+| dying_world:scavenger_outpost_raiders | dying_world:landmarks | 131 | beard_thin | 1/30 | pillager | True |
 | dying_world:scavenger_outpost_temperate | dying_world:landmarks | 37 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
-| dying_world:scavenger_outpost_wild | dying_world:landmarks | 50 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
-| dying_world:scavenger_stronghold | dying_world:settlements | 136 | beard_box | 6/80 | - | True |
-| dying_world:scavenger_stronghold_desert | dying_world:settlements | 14 | beard_box | 6/80 | - | True |
-| dying_world:scavenger_stronghold_plains | dying_world:settlements | 41 | beard_box | 6/80 | - | True |
-| dying_world:scavenger_stronghold_savanna | dying_world:settlements | 7 | beard_box | 6/80 | - | True |
-| dying_world:scavenger_stronghold_snowy | dying_world:settlements | 10 | beard_box | 6/80 | - | True |
-| dying_world:scavenger_stronghold_taiga | dying_world:settlements | 23 | beard_box | 6/80 | - | True |
+| dying_world:scavenger_outpost_wild | dying_world:landmarks | 45 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
+| dying_world:scavenger_stronghold | dying_world:settlements | 131 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_desert | dying_world:settlements | 14 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_plains | dying_world:settlements | 41 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_savanna | dying_world:settlements | 7 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_snowy | dying_world:settlements | 10 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_taiga | dying_world:settlements | 23 | beard_thin | 6/80 | - | True |
 | dying_world:sculk_research_site | dying_world:sculk_research_site | 1 | beard_box | 7/64 | - | True |
 | dying_world:shipwreck | dying_world:shipwrecks | 11 | - | -/- | - | type minecraft:shipwreck |
 | dying_world:shipwreck_beached | dying_world:shipwrecks | 4 | - | -/- | - | type minecraft:shipwreck |
 | dying_world:sunken_research_lab | dying_world:sunken_research_lab | 5 | beard_box | 8/64 | guardian | True |
-| dying_world:tinker_workshop | dying_world:landmarks | 136 | beard_box | 1/32 | - | True |
-| dying_world:village_desert | dying_world:settlements | 14 | beard_box | 6/80 | - | True |
-| dying_world:village_plains | dying_world:settlements | 41 | beard_box | 6/80 | - | True |
-| dying_world:village_savanna | dying_world:settlements | 7 | beard_box | 6/80 | - | True |
-| dying_world:village_snowy | dying_world:settlements | 10 | beard_box | 6/80 | - | True |
-| dying_world:village_taiga | dying_world:settlements | 23 | beard_box | 6/80 | - | True |
+| dying_world:the_hollow | dying_world:the_hollow | 131 | beard_thin | 4/80 | - | True |
+| dying_world:tinker_workshop | dying_world:landmarks | 131 | beard_thin | 1/32 | - | True |
+| dying_world:village_desert | dying_world:settlements | 14 | beard_thin | 6/80 | - | True |
+| dying_world:village_plains | dying_world:settlements | 41 | beard_thin | 6/80 | - | True |
+| dying_world:village_savanna | dying_world:settlements | 7 | beard_thin | 6/80 | - | True |
+| dying_world:village_snowy | dying_world:settlements | 10 | beard_thin | 6/80 | - | True |
+| dying_world:village_taiga | dying_world:settlements | 23 | beard_thin | 6/80 | - | True |
 | dying_world:wayside_shrine | dying_world:landmarks | 60 | beard_thin | -/- | - | type tarbound:dry_land |
-| dying_world:wells/arid | dying_world:landmarks | 21 | beard_box | 1/40 | - | True |
-| dying_world:wells/cold | dying_world:landmarks | 28 | beard_box | 1/40 | - | True |
-| dying_world:wells/temperate | dying_world:landmarks | 37 | beard_box | 1/40 | - | True |
-| dying_world:wells/washhouse | dying_world:landmarks | 37 | beard_box | 1/40 | - | True |
-| dying_world:wells/wild | dying_world:landmarks | 50 | beard_box | 1/40 | - | True |
+| dying_world:wells/arid | dying_world:landmarks | 21 | beard_thin | 2/40 | - | True |
+| dying_world:wells/cold | dying_world:landmarks | 28 | beard_thin | 2/40 | - | True |
+| dying_world:wells/temperate | dying_world:landmarks | 37 | beard_thin | 2/40 | - | True |
+| dying_world:wells/washhouse | dying_world:landmarks | 37 | beard_thin | 2/40 | - | True |
+| dying_world:wells/wild | dying_world:landmarks | 45 | beard_thin | 2/40 | - | True |
 
 ## Biome coverage: 163 biomes reach at least one structure
 
@@ -108,7 +110,7 @@ Biomes in MORE than one survivor-village family (overlap): -
 
 ## Other namespaces referenced from our JSON (biome ids, blocks, types)
 
-regions_unexplored 377, atmospheric 88, environmental 55, windswept 52, autumnity 14, incision 3, supplementaries 2, realmrpg_skeletons 2
+regions_unexplored 373, atmospheric 88, environmental 55, windswept 52, autumnity 14, incision 7, hallmarked 6, lodestone 3, realmrpg_skeletons 2, supplementaries 2, mobrules 2, caverns_and_chasms 1
 
 ## Issues (0)
 

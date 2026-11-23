@@ -24,21 +24,24 @@ Occult Foundry vision is forced on for everyone and is also the endgame's mark. 
   strongholds, research gates and stations (Overworld/Nether/End), the Nether foundry (replaces the fortress), proving
   grounds, sunken lab, sculk dig camp, the lore trail (journals + maps), mineshaft kit. Endgame: the Hollow (altar, doppelganger,
   Escapement chain, creative items; state in kskills_perks 1.2.0).
-- Own mods in the pack: Wasteland Vision 0.24.4, kskills_perks 1.2.0, Mob Rules 0.7.1, Hallmarked, Tarbound, Rust & Rebar.
-- Released files: client zip from `tools/export.py`, server files from `modpack/server/` (self-installing, update-safe).
+- Own mods in the pack: Wasteland Vision 0.24.4, kskills_perks 1.2.0, Mob Rules 0.7.1, Hallmarked, Tarbound, Rust & Rebar,
+  Cog & Cultivar (its crop / mutation scaffold ships in kubejs/data since 9-85).
+- Released files: `tools/export_server.py <version>` builds both the client zip and the server zip (self-installing,
+  update-safe; mods download from `modpack/server/server-mods.txt`).
   CurseForge page: `modpack/CURSEFORGE_PAGE.html`; logo: `modpack/logo.png` (source in `tools/logo/`).
 
 ## Commands (fish)
 ```fish
 python3 tools/build.py                       # validate + dist/kubejs_data.zip (the instance's kubejs/data)
-python3 tools/export.py "1.0.1 Alpha"        # CurseForge-importable client zip in dist/
-python3 tools/export_server.py "1.0.4 Alpha" # client zip + server zip (checks server-mods.txt against manifest.json)
+python3 tools/export.py "<version>"          # client zip only (export_server.py runs this too)
+python3 tools/export_server.py "<version>"   # client + server zips; checks server-mods.txt against manifest.json
 python3 -I tools/lint_kubejs.py              # Rhino const check over modpack/overrides/kubejs
 python3 tools/coherence_audit.py; python3 tools/theme_audit.py
 python3 tools/build_release.py               # CurseForge-safe datapack (own/vanilla pieces only)
 ```
 - Server files: `tools/export_server.py` (9-86) zips `modpack/server/*` (README version stamped) + the client export's
-  `config/`, `defaultconfigs/`, `kubejs/`, and refuses if `server-mods.txt` and `manifest.json` disagree. Regenerating
+  `config/`, `defaultconfigs/`, `kubejs/`, and refuses if `server-mods.txt` and `manifest.json` disagree (by project/file
+  ID, 9-87; client-only mods are listed by project ID in its `CLIENT_ONLY`). Regenerating
   `server-mods.txt` is still manual: CurseForge export (manifest + file names) minus the Excalibur resource packs and the
   client-only mods that crash a dedicated server (Create JEI Compat, Easy Auto Cycler, Sodium, Reese's Sodium Options,
   Saros Boosted Brightness, Freecam). Line format `sha1 url`; CDN url `edge.forgecdn.net/files/<id/1000>/<id%1000>/<file>`,
@@ -247,3 +250,19 @@ Kragnoth: test the client / server release scripts; further cleanup goes on bran
   manual zip); stops if server-mods.txt has versions not in the manifest or misses a mod that isn't client-only / a pack.
 - Open: regenerating server-mods.txt itself (needs file names, which manifest.json doesn't have) stays manual.
 
+
+## Pass 9-87 (2026-11-23, branch `cleanup`) - pack builder run-through
+Ran every builder step in order: build.py, validate.py, export.py, export_server.py, lint_kubejs.py, build_release.py,
+coherence_audit.py, theme_audit.py, provenance_audit.py (the reference/*.zip extractions are present in this workspace).
+All run clean. Both 1.0.4 test zips checked: manifest 252 files / author Kragnoth, `.installed_examples` in both, no junk
+(JourneyMap, logs, caches, .bak), start.sh 0755, README version stamped.
+- `export_server.py`: the mod-list check compared COUNTS (missing == 6 + number of resource packs), so swapping one mod for
+  another with the same count passed. Now by ID: `CLIENT_ONLY` names the 6 crash-on-server mods by project ID; resource packs
+  = manifest projects modlist.html doesn't list; it stops on a stale file, an unexpected missing mod, or a client-only mod in
+  the server list. Tested with a line removed (names the missing project).
+- Stale entries for agritechevolved (removed in 9-85) dropped from `config/jade/sort-order.json` and both JEI
+  `recipe-category-sort-order.ini` files.
+- Audit reports (`docs/coherence_audit.md`, `theme_audit.md`, `provenance_audit.{md,json}`, `release_report.md`) were last
+  generated many passes ago (still showed beard_box, pre-9-19 set names); regenerated.
+- PROGRESS: commands take `<version>`; current state lists Cog & Cultivar and export_server.py.
+- Still manual: regenerating server-mods.txt (manifest.json has no file names). No files deleted.

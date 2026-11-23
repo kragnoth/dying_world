@@ -35,7 +35,7 @@
 | dig_site_temp | 1 | 792 | 0% | 0% | 3 | ok |
 | drowned_radio | 1 | 166 | 0% | 0% | 1 | ok |
 | hermit_cottage | 1 | 321 | 0% | 0% | 1 | ok |
-| industrial_mineshaft | 48 | 31109 | 96% | 0% | 119 | ok |
+| industrial_mineshaft | 52 | 34029 | 97% | 0% | 159 | ok |
 | lighthouse | 2 | 2253 | 0% | 17% | 6 | ok |
 | nether_foundry | 9 | 2326 | 6% | 0% | 7 | ok |
 | nether_foundry_derelict | 9 | 2330 | 6% | 0% | 3 | ok |
@@ -47,8 +47,8 @@
 | research_gate_end_derelict | 16 | 4509 | 2% | 0% | 13 | ok |
 | research_gate_nether | 16 | 4535 | 1% | 0% | 24 | ok |
 | research_gate_nether_derelict | 16 | 4522 | 1% | 0% | 14 | ok |
-| research_nether | 17 | 5051 | 1% | 0% | 24 | ok |
-| research_nether_derelict | 17 | 5039 | 1% | 0% | 15 | ok |
+| research_nether | 17 | 6155 | 1% | 0% | 24 | ok |
+| research_nether_derelict | 17 | 6143 | 1% | 0% | 15 | ok |
 | researcher_cabin | 3 | 634 | 0% | 0% | 2 | ok |
 | road_sign | (supplementaries:road_sign) | | | | | vanilla/mod code structure |
 | ruined_chapel | 1 | 1207 | 0% | 0% | 3 | ok |
@@ -64,10 +64,11 @@
 | scavenger_stronghold_savanna | 96 | 41776 | 3% | 1% | 14 | ok |
 | scavenger_stronghold_snowy | 102 | 62284 | 2% | 1% | 14 | ok |
 | scavenger_stronghold_taiga | 108 | 64179 | 2% | 0% | 14 | ok |
-| sculk_research_site | 22 | 7332 | 8% | 0% | 24 | ok |
+| sculk_research_site | 22 | 10068 | 6% | 0% | 24 | ok |
 | shipwreck | (minecraft:shipwreck) | | | | | vanilla/mod code structure |
 | shipwreck_beached | (minecraft:shipwreck) | | | | | vanilla/mod code structure |
 | sunken_research_lab | 14 | 14766 | 8% | 0% | 26 | ok |
+| the_hollow | 4 | 5546 | 32% | 0% | 38 | R&R 32% |
 | tinker_workshop | 1 | 400 | 0% | 0% | 1 | ok |
 | village_desert | 80 | 30584 | 0% | 4% | 75 | ok |
 | village_plains | 98 | 45388 | 0% | 2% | 92 | ok |

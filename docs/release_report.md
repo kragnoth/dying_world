@@ -2,87 +2,46 @@
 
 Policy: confirmed_mine=-; permission_granted=-
 
-Release zip: `dist/release/dying_world_release_datapack.zip` (478 KB), 269 files.
+Release zip: `dist/release/dying_world_release_datapack.zip` (4015 KB), 1806 files.
 
 ## Kept sets
 
-- **concrete_pads**: concrete_pad_temperate, concrete_pad_cold, concrete_pad_arid, concrete_pad_wild
-- **industrial_mineshafts**: industrial_mineshaft
-- **nether_fortress**: fortress
-- **scavenger_outposts**: scavenger_outpost_temperate, scavenger_outpost_cold, scavenger_outpost_arid, scavenger_outpost_wild, scavenger_outpost_abandoned, scavenger_outpost_raiders
-- **scavenger_strongholds**: scavenger_stronghold
+- **deep_sites**: industrial_mineshaft, proving_grounds
+- **landmarks**: abandoned_ruin_plains, abandoned_ruin_taiga, abandoned_ruin_savanna, abandoned_ruin_desert, abandoned_ruin_snowy, abandoned_ruin_swamp, abandoned_cabin, abandoned_cabin_oak, abandoned_cabin_dark_oak, abandoned_smithy, abandoned_smithy_arid, hermit_cottage, tinker_workshop, plague_house, ruined_chapel, collapsed_minehead, concrete_pad_temperate, concrete_pad_cold, concrete_pad_arid, concrete_pad_wild, dig_site_arid, dig_site_temp, wells/temperate, wells/cold, wells/arid, wells/wild, wells/washhouse, scavenger_outpost_temperate, scavenger_outpost_cold, scavenger_outpost_arid, scavenger_outpost_wild, scavenger_outpost_abandoned, scavenger_outpost_raiders, lighthouse
+- **nether_foundries**: nether_foundry, nether_foundry_derelict
+- **research_end_stations**: research_end, research_end_derelict
+- **research_gates**: research_gate_nether, research_gate_end, research_gate_nether_derelict, research_gate_end_derelict
+- **research_nether_stations**: research_nether, research_nether_derelict
+- **sculk_research_site**: sculk_research_site
+- **settlements**: village_plains, village_taiga, village_savanna, village_desert, village_snowy, abandoned_village_plains, abandoned_village_taiga, abandoned_village_savanna, abandoned_village_desert, abandoned_village_snowy, abandoned_village_swamp, abandoned_hamlet_plains, abandoned_hamlet_taiga, abandoned_hamlet_savanna, abandoned_hamlet_desert, abandoned_hamlet_snowy, abandoned_hamlet_swamp, scavenger_stronghold, scavenger_stronghold_plains, scavenger_stronghold_taiga, scavenger_stronghold_savanna, scavenger_stronghold_desert, scavenger_stronghold_snowy
 - **shipwrecks**: shipwreck, shipwreck_beached
 - **strongholds**: stronghold
+- **sunken_research_lab**: sunken_research_lab
+- **the_hollow**: the_hollow
 
 ## Dropped (rebuild queue: fewest third-party pieces first = easiest)
 
 | structure | third-party pieces | why |
 |---|---|---|
 | dying_world:charnel_crypt | 0 | structure type tarbound:dry_land |
-| dying_world:drowned_radio | 0 | structure type tarbound:dry_land |
 | dying_world:researcher_cabin | 0 | structure type tarbound:dry_land |
 | dying_world:wayside_shrine | 0 | structure type tarbound:dry_land |
-| dying_world:abandoned_smithy | 1 | third-party pieces MOD:createnewbeg-0.1.0-1.21.1 x1; third-party pools MOD:createnewbeg-0.1.0-1.21.1 |
+| dying_world:drowned_radio | 0 | structure type tarbound:dry_land |
 | dying_world:road_sign | 1 | structure type supplementaries:road_sign; third-party pieces MOD:supplementaries-1.21.1-4.1.1-neoforge x1; third-party pools MOD:supplementaries-1.21.1-4.1.1-neoforge |
-| dying_world:lighthouse | 6 | third-party pieces MOD:createnewbeg-0.1.0-1.21.1 x6; third-party pools MOD:createnewbeg-0.1.0-1.21.1 |
-| dying_world:wells/washhouse | 6 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x6; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:abandoned_cabin | 7 | third-party pieces MOD:abandoned_cabins-1.3.1-neoforge-1.21.1 x7; third-party pools MOD:abandoned_cabins-1.3.1-neoforge-1.21.1 |
-| dying_world:wells/pump/cobble | 9 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x9; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:wells/pump/mud | 9 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x9; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:collapsed_minehead | 19 | third-party pieces KUBEJS:gearwrights x19; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:wells/pit/cobble | 20 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x20; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:wells/pit/mud | 20 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x20; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:abandoned_watchtower | 23 | third-party pieces MOD:Abandoned Watchtowers 7.0.1 NeoForge 1.21.1 x23; third-party pools MOD:Abandoned Watchtowers 7.0.1 NeoForge 1.21.1 |
-| dying_world:burnt_homestead | 23 | third-party pieces KUBEJS:gearwrights x23; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:burnt_manor | 23 | third-party pieces KUBEJS:gearwrights x23; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:burnt_watchtower | 23 | third-party pieces KUBEJS:gearwrights x23; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:ruined_chapel | 23 | third-party pieces KUBEJS:gearwrights x23; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:wells/mud | 27 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x27; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:village_savanna | 28 | no houses left after stripping |
-| dying_world:village_desert | 29 | no houses left after stripping |
-| dying_world:village_taiga | 30 | third-party processors; no houses left after stripping |
-| dying_world:village_plains | 32 | third-party processors; no houses left after stripping |
-| dying_world:village_snowy | 33 | third-party processors; no houses left after stripping |
-| dying_world:abandoned_ruin_savanna | 72 | third-party pieces KUBEJS:gearwrights x72; third-party pools KUBEJS:gearwrights |
-| dying_world:wells/oriental | 78 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x78; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:abandoned_ruin_cherry | 80 | third-party pieces KUBEJS:gearwrights x80; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_ruin_plains | 88 | third-party pieces KUBEJS:gearwrights x88; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_ruin_swamp | 88 | third-party pieces KUBEJS:gearwrights x88; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_ruin_taiga | 92 | third-party pieces KUBEJS:gearwrights x92; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_hamlet_savanna | 94 | third-party pieces KUBEJS:gearwrights x94; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_village_savanna | 94 | third-party pieces KUBEJS:gearwrights x94; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_ruin_desert | 96 | third-party pieces KUBEJS:gearwrights x96; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_ruin_snowy | 96 | third-party pieces KUBEJS:gearwrights x96; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_hamlet_cherry | 107 | third-party pieces KUBEJS:gearwrights x107; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_village_cherry | 107 | third-party pieces KUBEJS:gearwrights x107; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_hamlet_swamp | 110 | third-party pieces KUBEJS:gearwrights x110; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_village_swamp | 110 | third-party pieces KUBEJS:gearwrights x110; third-party pools KUBEJS:gearwrights |
-| dying_world:abandoned_hamlet_plains | 113 | third-party pieces KUBEJS:gearwrights x113; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_village_plains | 113 | third-party pieces KUBEJS:gearwrights x113; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_hamlet_taiga | 114 | third-party pieces KUBEJS:gearwrights x114; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_village_taiga | 114 | third-party pieces KUBEJS:gearwrights x114; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_hamlet_desert | 118 | third-party pieces KUBEJS:gearwrights x118; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_village_desert | 118 | third-party pieces KUBEJS:gearwrights x118; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_hamlet_snowy | 121 | third-party pieces KUBEJS:gearwrights x121; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:abandoned_village_snowy | 121 | third-party pieces KUBEJS:gearwrights x121; third-party pools KUBEJS:gearwrights; third-party processors |
-| dying_world:wells/rustic/spruce | 164 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x164; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:wells/rustic/oak | 164 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x164; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:wells/rustic/dark_oak | 164 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x164; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
-| dying_world:wells/rustic/birch | 164 | third-party pieces MOD:strayed-fates-forsaken-v2.0.0.2 x164; third-party pools MOD:strayed-fates-forsaken-v2.0.0.2; third-party processors |
 
 ## Mods the RELEASE datapack needs (hard = blocks/loot/mobs placed; soft = biome ids, optional)
 
 | namespace | provider | what |
 |---|---|---|
-| atmospheric | atmospheric-1.21.1-7.0.1 | biome ids (optional): 111 |
-| autumnity | autumnity-1.21.1-6.0.1 | biome ids (optional): 14 |
+| atmospheric | atmospheric-1.21.1-7.0.1 | biome ids (optional): 341 |
+| autumnity | autumnity-1.21.1-6.0.1 | biome ids (optional): 54 |
 | create | Create-Encased-1.21.1-1.10.1 | blocks: 74 |
-| environmental | environmental-1.21.1-5.0.1 | biome ids (optional): 64 |
-| incision | incision-1.0.12-neoforge-1.21.1 | biome ids (optional): 6 |
-| regions_unexplored | regions-unexplored-0.6.3-neoforge-21.1 | biome ids (optional): 443 |
-| rustandrebar | rustandrebar-3.6.2.2-beta | blocks: 38070, loot entries: 38 |
+| environmental | environmental-1.21.1-5.0.1 | biome ids (optional): 210 |
+| incision | incision-1.0.12-neoforge-1.21.1 | biome ids (optional): 16 |
+| regions_unexplored | regions-unexplored-0.6.3-neoforge-21.1 | biome ids (optional): 1412 |
+| rustandrebar | rustandrebar-3.6.2.2-beta | blocks: 55940, loot entries: 63 |
 | tarbound | tarbound-0.67.0-alpha | blocks: 414 |
-| windswept | windswept-1.21.1-4.0.4 | biome ids (optional): 56 |
+| windswept | windswept-1.21.1-4.0.4 | biome ids (optional): 195 |
 
 ## Mods you could drop from the PACK (worldgen side only)
 

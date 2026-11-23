@@ -6,48 +6,26 @@ Classes: OWN = script-built; VANILLA = Mojang resources; KUBEJS = from kubejs/da
 
 | set | structures | OWN | VANILLA | KUBEJS | MOD | third-party pools | verdict | mod blocks used | mobs from |
 |---|---|---|---|---|---|---|---|---|---|
-| abandoned_cabin | 1 | 0 | 0 | 0 | 7 | 2 | **100% THIRD-PARTY** | - | - |
-| abandoned_hamlets | 7 | 0 | 0 | 777 | 0 | 32 | **100% THIRD-PARTY** | create | - |
-| abandoned_ruins | 7 | 0 | 0 | 612 | 0 | 7 | **100% THIRD-PARTY** | - | - |
-| abandoned_smithy | 1 | 0 | 0 | 0 | 1 | 1 | **100% THIRD-PARTY** | create | - |
-| abandoned_villages | 7 | 0 | 0 | 777 | 0 | 32 | **100% THIRD-PARTY** | create | - |
-| abandoned_watchtower | 1 | 0 | 0 | 0 | 23 | 8 | **100% THIRD-PARTY** | - | - |
-| burnt_homestead | 1 | 0 | 0 | 23 | 0 | 4 | **100% THIRD-PARTY** | regions_unexplored | - |
-| burnt_manor | 1 | 0 | 0 | 23 | 0 | 4 | **100% THIRD-PARTY** | regions_unexplored | - |
-| burnt_watchtower | 1 | 0 | 0 | 23 | 0 | 4 | **100% THIRD-PARTY** | regions_unexplored | - |
-| charnel_crypt | 1 | 0 | 0 | 0 | 1 | 0 | **100% THIRD-PARTY** | - | - |
-| collapsed_minehead | 1 | 0 | 0 | 19 | 0 | 4 | **100% THIRD-PARTY** | - | - |
-| concrete_pads | 4 | 14 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
-| drowned_radio | 1 | 0 | 0 | 0 | 1 | 0 | **100% THIRD-PARTY** | - | - |
-| industrial_mineshafts | 1 | 45 | 0 | 0 | 0 | 0 | **CLEAN** | create, rustandrebar, tarbound | - |
-| lighthouse | 1 | 0 | 0 | 0 | 6 | 6 | **100% THIRD-PARTY** | create | - |
-| nether_fortress | 1 | 0 | 0 | 0 | 0 | 0 | **CLEAN** | - | - |
-| researcher_cabin | 1 | 0 | 0 | 0 | 1 | 0 | **100% THIRD-PARTY** | - | - |
+| deep_sites | 2 | 76 | 0 | 0 | 0 | 0 | **CLEAN** | create, rustandrebar, tarbound | - |
+| landmarks | 38 | 258 | 0 | 0 | 4 | 0 | **MIXED** | rustandrebar | - |
+| nether_foundries | 2 | 18 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
+| research_end_stations | 2 | 32 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
+| research_gates | 4 | 64 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
+| research_nether_stations | 2 | 34 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
 | road_signs | 1 | 0 | 0 | 0 | 2 | 2 | **100% THIRD-PARTY** | - | - |
-| ruined_chapel | 1 | 0 | 0 | 23 | 0 | 4 | **100% THIRD-PARTY** | - | - |
-| scavenger_outposts | 6 | 18 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
-| scavenger_strongholds | 1 | 0 | 80 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
+| sculk_research_site | 1 | 22 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
+| settlements | 23 | 975 | 594 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
 | shipwrecks | 2 | 0 | 0 | 0 | 0 | 0 | **CLEAN** | - | - |
 | strongholds | 1 | 0 | 0 | 0 | 0 | 0 | **CLEAN** | - | - |
-| survivor_villages | 5 | 0 | 161 | 263 | 307 | 4 | **MIXED** | windswept | - |
-| wayside_shrine | 1 | 0 | 0 | 0 | 1 | 0 | **100% THIRD-PARTY** | - | - |
-| wells | 11 | 0 | 0 | 0 | 825 | 175 | **100% THIRD-PARTY** | - | - |
+| sunken_research_lab | 1 | 14 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
+| the_hollow | 1 | 4 | 0 | 0 | 0 | 0 | **CLEAN** | rustandrebar | - |
 
 ## 2. Third-party pieces per provider (what would have to be rebuilt or dropped)
 
 | provider | sets using it | distinct pieces |
 |---|---|---|
-| KUBEJS:gearwrights | abandoned_hamlets, abandoned_ruins, abandoned_villages, burnt_homestead, burnt_manor, burnt_watchtower, collapsed_minehead, ruined_chapel | 2277 |
-| MOD:strayed-fates-forsaken-v2.0.0.2 | wells | 792 |
-| MOD:t_and_t-fabric-neoforge-1.13.11 | survivor_villages | 252 |
-| KUBEJS:village_houses | survivor_villages | 222 |
-| MOD:windswept-1.21.1-4.0.4 | survivor_villages | 55 |
-| KUBEJS:brutos | survivor_villages | 41 |
-| MOD:Abandoned Watchtowers 7.0.1 NeoForge 1.21.1 | abandoned_watchtower | 23 |
-| MOD:abandoned_cabins-1.3.1-neoforge-1.21.1 | abandoned_cabin | 7 |
-| MOD:createnewbeg-0.1.0-1.21.1 | abandoned_smithy, lighthouse | 7 |
-| MOD:tarbound-0.67.0-alpha | charnel_crypt, drowned_radio, researcher_cabin, wayside_shrine | 4 |
 | MOD:supplementaries-1.21.1-4.1.1-neoforge | road_signs | 2 |
+| MOD:tarbound-0.67.0-alpha | landmarks | 1 |
 
 ## 3. Mod dependency matrix (namespaces our datapack touches besides vanilla)
 
@@ -57,33 +35,33 @@ Classes: OWN = script-built; VANILLA = Mojang resources; KUBEJS = from kubejs/da
 |---|---|---|---|---|---|---|
 | atmospheric | atmospheric-1.21.1-7.0.1 | 512 | 0 () | 0 | 88 | 88 biome ids (optional, lose coverage only) |
 | autumnity | autumnity-1.21.1-6.0.1 | 144 | 0 () | 0 | 14 | 14 biome ids (optional, lose coverage only) |
-| create | Create-Encased-1.21.1-1.10.1 | 922 | 701 (abandoned_hamlets, abandoned_smithy, abandoned_villages, industrial_mineshafts, lighthouse) | 0 | 0 | swap 701 blocks in 5 sets |
-| environmental | environmental-1.21.1-5.0.1 | 335 | 0 () | 0 | 48 | 48 biome ids (optional, lose coverage only) |
+| create | Create-Encased-1.21.1-1.10.1 | 922 | 74 (deep_sites) | 0 | 0 | swap 74 blocks in 1 sets |
+| environmental | environmental-1.21.1-5.0.1 | 335 | 0 () | 0 | 55 | 55 biome ids (optional, lose coverage only) |
 | incision | incision-1.0.12-neoforge-1.21.1 | 198 | 0 () | 0 | 3 | 3 biome ids (optional, lose coverage only) |
-| regions_unexplored | regions-unexplored-0.6.3-neoforge-21.1 | 734 | 108 (burnt_homestead, burnt_manor, burnt_watchtower) | 0 | 336 | swap 108 blocks in 3 sets; 336 biome ids (optional, lose coverage only) |
-| rustandrebar | rustandrebar-3.6.2.2-beta | 140 | 38070 (concrete_pads, industrial_mineshafts, scavenger_outposts, scavenger_strongholds) | 38 | 0 | swap 38070 blocks in 4 sets; drop/swap 38 loot entries |
-| tarbound | tarbound-0.67.0-alpha | 48 | 414 (industrial_mineshafts) | 0 | 0 | swap 414 blocks in 1 sets |
-| windswept | windswept-1.21.1-4.0.4 | 478 | 28352 (survivor_villages) | 0 | 48 | swap 28352 blocks in 1 sets; 48 biome ids (optional, lose coverage only) |
+| regions_unexplored | regions-unexplored-0.6.3-neoforge-21.1 | 734 | 0 () | 0 | 373 | 373 biome ids (optional, lose coverage only) |
+| rustandrebar | rustandrebar-3.6.2.2-beta | 140 | 55940 (deep_sites, landmarks, nether_foundries, research_end_stations, research_gates...) | 63 | 0 | swap 55940 blocks in 10 sets; drop/swap 63 loot entries |
+| tarbound | tarbound-0.67.0-alpha | 48 | 414 (deep_sites) | 0 | 0 | swap 414 blocks in 1 sets |
+| windswept | windswept-1.21.1-4.0.4 | 478 | 0 () | 0 | 52 | 52 biome ids (optional, lose coverage only) |
 
 ## 4. Structure-provider mods (their original sets were disabled in pass 1)
 
 | namespace | provider jar | content keys | referenced by our datapack? |
 |---|---|---|---|
-| abandoned_cabins | abandoned_cabins-1.3.1-neoforge-1.21.1 | 0 | pieces/types in: abandoned_cabin |
+| abandoned_cabins | abandoned_cabins-1.3.1-neoforge-1.21.1 | 0 | no |
 | atmospheric | atmospheric-1.21.1-7.0.1 | 512 | blocks/loot/biomes only |
 | autumnity | autumnity-1.21.1-6.0.1 | 144 | blocks/loot/biomes only |
 | caverns_and_chasms | caverns_and_chasms-1.21.1-3.0.1 | 937 | no |
-| createnewbeg | createnewbeg-0.1.0-1.21.1 | 0 | pieces/types in: abandoned_smithy, lighthouse |
+| createnewbeg | createnewbeg-0.1.0-1.21.1 | 0 | no |
 | cultivar | cultivar-0.2.0 | 135 | no |
 | environmental | environmental-1.21.1-5.0.1 | 335 | blocks/loot/biomes only |
 | formationsnether | formationsnether-1.0.5b-mc1.21+ | 0 | no |
 | formationsoverworld | formationsoverworld-1.0.5c-mc1.21+ | 0 | no |
-| forsaken | strayed-fates-forsaken-v2.0.0.2 | 0 | pieces/types in: wells |
-| gearwrights | kubejs | 0 | pieces/types in: abandoned_hamlets, abandoned_ruins, abandoned_villages, burnt_homestead, burnt_manor, burnt_watchtower, collapsed_minehead, ruined_chapel |
+| forsaken | strayed-fates-forsaken-v2.0.0.2 | 0 | no |
+| gearwrights | kubejs | 0 | no |
 | hearths | Hearths v1.0.5.mod | 0 | no |
 | supplementaries | supplementaries-1.21.1-4.1.1-neoforge | 358 | pieces/types in: road_signs |
-| tarbound | tarbound-0.67.0-alpha | 48 | pieces/types in: charnel_crypt, drowned_radio, researcher_cabin, wayside_shrine |
-| towns_and_towers | t_and_t-fabric-neoforge-1.13.11 | 0 | pieces/types in: survivor_villages |
+| tarbound | tarbound-0.67.0-alpha | 48 | pieces/types in: landmarks |
+| towns_and_towers | t_and_t-fabric-neoforge-1.13.11 | 0 | no |
 | vsrevamped | kubejs | 0 | no |
-| watchtower_building | Abandoned Watchtowers 7.0.1 NeoForge 1.21.1 | 0 | pieces/types in: abandoned_watchtower |
-| windswept | windswept-1.21.1-4.0.4 | 478 | pieces/types in: survivor_villages |
+| watchtower_building | Abandoned Watchtowers 7.0.1 NeoForge 1.21.1 | 0 | no |
+| windswept | windswept-1.21.1-4.0.4 | 478 | blocks/loot/biomes only |
