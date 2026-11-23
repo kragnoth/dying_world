@@ -25,7 +25,7 @@ def main():
         z.write(PACK / "modlist.html", "modlist.html")
         for f in sorted((PACK / "overrides").rglob("*")):
             rel = f.relative_to(PACK / "overrides").as_posix()
-            if f.is_dir() or rel in SKIP or rel.startswith("kubejs/data/"):
+            if f.is_dir() or rel in SKIP or rel.startswith("kubejs/data/") or ".bak." in f.name:   # (9-86: JEI backups)
                 continue
             z.write(f, "overrides/" + rel); n += 1
         with zipfile.ZipFile(ROOT / "dist/kubejs_data.zip") as data:

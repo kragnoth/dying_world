@@ -32,11 +32,13 @@ Occult Foundry vision is forced on for everyone and is also the endgame's mark. 
 ```fish
 python3 tools/build.py                       # validate + dist/kubejs_data.zip (the instance's kubejs/data)
 python3 tools/export.py "1.0.1 Alpha"        # CurseForge-importable client zip in dist/
+python3 tools/export_server.py "1.0.4 Alpha" # client zip + server zip (checks server-mods.txt against manifest.json)
 python3 -I tools/lint_kubejs.py              # Rhino const check over modpack/overrides/kubejs
 python3 tools/coherence_audit.py; python3 tools/theme_audit.py
 python3 tools/build_release.py               # CurseForge-safe datapack (own/vanilla pieces only)
 ```
-- Server files: zip `modpack/server/*` + the client export's `config/`, `defaultconfigs/`, `kubejs/`. Regenerating
+- Server files: `tools/export_server.py` (9-86) zips `modpack/server/*` (README version stamped) + the client export's
+  `config/`, `defaultconfigs/`, `kubejs/`, and refuses if `server-mods.txt` and `manifest.json` disagree. Regenerating
   `server-mods.txt` is still manual: CurseForge export (manifest + file names) minus the Excalibur resource packs and the
   client-only mods that crash a dedicated server (Create JEI Compat, Easy Auto Cycler, Sodium, Reese's Sodium Options,
   Saros Boosted Brightness, Freecam). Line format `sha1 url`; CDN url `edge.forgecdn.net/files/<id/1000>/<id%1000>/<file>`,
@@ -230,4 +232,18 @@ below. `kubejs_base/data` ships: build.py zips it into `dist/kubejs_data.zip`, e
   `kubejs/data/create_ultimate_factory/`. The README in kubejs_data.zip already says to replace kubejs/data rather than
   unzip over it; if unzipped over an old install, delete those four folders by hand.
 - Plants / mutations are datapack registries: rejoin the world or restart the server (`/reload` won't do it).
+
+## Pass 9-86 (2026-11-23, branch `cleanup`) - release pipeline check; server zip scripted
+Kragnoth: test the client / server release scripts; further cleanup goes on branch `cleanup`, merged to main once verified.
+- Ran: build.py, validate.py, export.py, lint_kubejs.py: OK. build_release.py, coherence_audit.py, theme_audit.py,
+  provenance_audit.py need `reference/*.zip` (not in git; `tools/make_reference.py` from an instance): not runnable here.
+- Client export checked: manifest 1.21.1 / NeoForge 21.1.262 / 252 files; overrides = config, defaultconfigs, kubejs (Cultivar
+  files in place), options.txt, resourcepacks; `config/wastelandvision/.installed_examples` present.
+- Server: server-mods.txt (234) = manifest (252) minus 6 client-only mods minus 12 CurseForge resource packs (11 Excalibur +
+  Human Era); no stale versions. All 234 CDN URLs answer 200. NeoForge 21.1.262 in start.sh, install.ps1, README, manifest.
+- **Deleted** 4 tracked JEI backups (`config/jei/client/{,default/}jei-client.ini.bak.{1,2}`; committed before .gitignore
+  covered them); export.py now skips `*.bak.*` anyway.
+- New `tools/export_server.py [version]`: runs export.py, then writes `dist/Gearwrights_Hollow_Server_<version>.zip` (was a
+  manual zip); stops if server-mods.txt has versions not in the manifest or misses a mod that isn't client-only / a pack.
+- Open: regenerating server-mods.txt itself (needs file names, which manifest.json doesn't have) stays manual.
 
