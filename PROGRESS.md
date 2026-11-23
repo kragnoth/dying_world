@@ -59,6 +59,8 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 
 ## Open items
 **Verify in game** (none of these could be checked on a headless server):
+- Cog & Cultivar scaffold now loads (9-85): a world joins cleanly (plants / mutations are datapack registries: a bad entry
+  stops world load); e.g. dropleaf, cattail, weak tau appear as Cultivar crops; mutations fire.
 - Hollow endgame: boss skin/bow pose, first-kill set, Escapement cost scaling, Foundry Lens, Hollow/Lens Sight switching,
   Neo Vitae altar recipe, quest chapter ticking.
 - WV 0.24.4 yucca fix (client crash on spruce fence posts).
@@ -78,7 +80,6 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - Delete the unused pool `dying_world:cabin/start` (9-82 audit).
 - Scrambled journals revealed by Wasteland Vision (designed, not built).
 - Excalibur-style textures for the Hollow items (placeholders now).
-- Stale data in `kubejs_base`: agritechevolved references (quality_equipment done in 9-84).
 - kskills_perks: stale javadoc in HollowCommands (mentions runCommandSilent).
 - Wasteland Vision idea: an `installExamples=false` config option, so packs don't need `.installed_examples`.
 - Server: a tool to regenerate `server-mods.txt` from an export.
@@ -208,4 +209,25 @@ Quality Equipment is gone from the pack (Kragnoth deleted the modified jar); Hal
   install leaves it behind: delete `kubejs/data/quality_equipment/` by hand (harmless if left, but it double-loads those 7
   qualities under the old names via Hallmarked's legacy mapping).
 - No `quality_equipment` references remain in kubejs_base, user_overrides, datapack or modpack overrides.
+
+## Pass 9-85 (2026-11-23) - kubejs_base cleanup; Cog & Cultivar scaffold actually loads
+Checked every script (94 in tools/, KubeJS client/server/startup scripts, server files, docs): nothing references the folders
+below. `kubejs_base/data` ships: build.py zips it into `dist/kubejs_data.zip`, export.py writes that as `overrides/kubejs/data`.
+- **Cog & Cultivar scaffold never loaded:** `kubejs_base/data/cultivar_scaffold/` was the whole scaffolded datapack (its
+  `pack.mcmeta` + `data/`) dropped into kubejs/data, so Minecraft read it as namespace `cultivar_scaffold` with paths starting
+  `data/...`; Cultivar's plant / mutation datapack registries only read `data/<ns>/cultivar/plant|mutation/`. Cog & Cultivar's
+  own PACKMAKERS.md says to copy the *contents* of `cultivar_scaffold/data/`. Moved those 46 files up into
+  `kubejs_base/data/<ns>/` (atmospheric, autumnity, environmental, immersiveengineering, minecraft, minersdelight,
+  mynethersdelight, neovitae, regions_unexplored, supplementaries, windswept): 23 plants + their mutations are new in game.
+  Checked first: valid JSON, only fields Cultivar's own 55 plants / 37 mutations use (+ `neoforge:conditions`), every
+  other-mod entry guarded by `mod_loaded` and all those mods are in the pack, no overwrites, no build conflicts.
+  `mutation_plan.csv` (the scaffold's working sheet) -> `docs/cultivar_mutation_plan.csv`; inner `pack.mcmeta` removed.
+- **Dead data removed (27 files):** `agritechevolved/` (7 planter recipes; mod not in the pack), `createliquidfuel/` (19 fuel
+  compat files; mod not in the pack), `create_ultimate_factory/` (1 recipe disabler; mod not in the pack).
+- Kept: `incontrol_port/` (3 Mob Rules rules; Mob Rules reads `mobrules/` from any namespace, so they're live).
+  `datapack/` disable overrides for 8 structure mods no longer in the pack stay (harmless, protective; generator-made).
+- **Deletes files:** `kubejs/data/cultivar_scaffold/`, `kubejs/data/agritechevolved/`, `kubejs/data/createliquidfuel/`,
+  `kubejs/data/create_ultimate_factory/`. The README in kubejs_data.zip already says to replace kubejs/data rather than
+  unzip over it; if unzipped over an old install, delete those four folders by hand.
+- Plants / mutations are datapack registries: rejoin the world or restart the server (`/reload` won't do it).
 

@@ -1,6 +1,0 @@
-{
-  "fluid": "immersiveengineering:ethanol",
-  "burnTime": 2,
-  "superHeat": false,
-  "amountConsumedPerTick": 1
-}

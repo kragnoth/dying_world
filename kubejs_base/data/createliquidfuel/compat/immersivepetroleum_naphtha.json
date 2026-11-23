@@ -1,6 +1,0 @@
-{
-  "fluid": "immersivepetroleum:naphtha",
-  "burnTime": 12,
-  "superHeat": false,
-  "amountConsumedPerTick": 1
-}

@@ -1,6 +1,0 @@
-{
-  "fluid": "immersivepetroleum:diesel",
-  "burnTime": 64,
-  "superHeat": true,
-  "amountConsumedPerTick": 10
-}
