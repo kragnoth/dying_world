@@ -230,6 +230,7 @@ a1232c2ba255dffecfe7e24551928eaec503f472 https://edge.forgecdn.net/files/9588/13
 24bc8f13c8ff8b34655f9b9bfd918291696da16a https://edge.forgecdn.net/files/9138/856/windswept-1.21.1-4.0.4.jar
 a03b6bd7d05bb1955036a9cd37e0e14121193d3e https://edge.forgecdn.net/files/8412/915/wits-neoforge-1.3.1.jar
 d0c5521b5dbf7c58eabb7fb26111ebe3b74ac8c4 https://edge.forgecdn.net/files/8085/969/woodenshears-neoforge-1.21-3.2.3.0.jar
+6281b758afe47e70f7df3aff3f77a794799d10ee https://edge.forgecdn.net/files/9737/390/workbenchwisdom-2.0.4.jar
 4696745ac06194fdbd7c0f4bfb4588f194668c15 https://edge.forgecdn.net/files/9325/339/worldstripper-1.21-6.0.0-neoforge.jar
 7132c346103d75a7c84da64b35b92e3a6f1ce3da https://edge.forgecdn.net/files/5444/189/yeetusexperimentus-neoforge-87.0.0.jar
 fe270c9f6e0a8142cf316944087f5109cef08bbb https://edge.forgecdn.net/files/7437/845/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar

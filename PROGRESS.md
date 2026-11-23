@@ -18,14 +18,15 @@ A dying world: everything should feel like it belongs. Tar, oil, spirits, biomes
 structures are disabled; ours replace them under `dying_world`. The look is Wasteland Vision's job (client-side): the
 Occult Foundry vision is forced on for everyone and is also the endgame's mark. Structures carry the real mechanics.
 
-## Current state - 1.0.3 Alpha (2026-11-20)
-- Minecraft 1.21.1, NeoForge 21.1.262, 252 CurseForge projects (`modpack/manifest.json`). Data pack format 48.
+## Current state - 2.0.0 (2026-11-23)
+- Minecraft 1.21.1, NeoForge 21.1.262, 254 CurseForge projects (`modpack/manifest.json`). Data pack format 48.
 - Datapack: survivor/abandoned villages in our gradient style for all five families plus rare styles, landmarks, scavenger
   strongholds, research gates and stations (Overworld/Nether/End), the Nether foundry (replaces the fortress), proving
   grounds, sunken lab, sculk dig camp, the lore trail (journals + maps), mineshaft kit. Endgame: the Hollow (altar, doppelganger,
   Escapement chain, creative items; state in kskills_perks 1.2.0).
 - Own mods in the pack: Wasteland Vision 0.24.4, kskills_perks 1.2.0, Mob Rules 0.7.1, Hallmarked, Tarbound, Rust & Rebar,
-  Cog & Cultivar (its crop / mutation scaffold ships in kubejs/data since 9-85).
+  Cog & Cultivar (its crop / mutation scaffold ships in kubejs/data since 9-85), Workbench Wisdom 2.0.4, and a
+  Creative Engineering playtest jar in `overrides/mods/` (not on CurseForge).
 - Released files: `tools/export_server.py <version>` builds both the client zip and the server zip (self-installing,
   update-safe; mods download from `modpack/server/server-mods.txt`).
   CurseForge page: `modpack/CURSEFORGE_PAGE.html`; logo: `modpack/logo.png` (source in `tools/logo/`).
@@ -44,7 +45,7 @@ python3 tools/build_release.py               # CurseForge-safe datapack (own/van
   ID, 9-87; client-only mods are listed by project ID in its `CLIENT_ONLY`). Regenerating
   `server-mods.txt` is still manual: CurseForge export (manifest + file names) minus the Excalibur resource packs and the
   client-only mods that crash a dedicated server (Create JEI Compat, Easy Auto Cycler, Sodium, Reese's Sodium Options,
-  Saros Boosted Brightness, Freecam). Line format `sha1 url`; CDN url `edge.forgecdn.net/files/<id/1000>/<id%1000>/<file>`,
+  Saros Boosted Brightness, Freecam) and Colorful Hearts (client-side HUD). Line format `sha1 url`; CDN url `edge.forgecdn.net/files/<id/1000>/<id%1000>/<file>`,
   check with `curl -sIL` (200 = right, 403 = wrong name).
 - Never re-zip a CurseForge-app export: it drops `config/wastelandvision/.installed_examples` and sweeps in JourneyMap data,
   logs and caches.
@@ -277,3 +278,23 @@ All run clean. Both 1.0.4 test zips checked: manifest 252 files / author Kragnot
   puffish_attributes, kskills_perks, caverns_and_chasms, lodestone, neovitae, ftbultimine, hallmarked, caelus); no
   `quality_equipment` left (9-84 holds).
 - Branch `cleanup` (9-86 .. 9-88) fast-forwarded into `main`; work continues on main. No files deleted.
+
+## Pass 9-89 (2026-11-23) - Kragnoth's 2.0.0 export merged in
+Compared his CurseForge export (Gearwrights_Hollow_2.zip, "2.0.0") with the repo build.
+- Mods: + Workbench Wisdom (project 1821722, workbenchwisdom-2.0.4.jar) and + Colorful Hearts (854213). manifest.json /
+  modlist.html copied (254 files). server-mods.txt: + workbenchwisdom-2.0.4.jar (CDN 200, sha1 6281b758...); Colorful Hearts
+  is client-side only -> `CLIENT_ONLY` in export_server.py.
+- `overrides/mods/creativeengineering-0.8.9-alpha.jar` (his CE playtest jar, not on CurseForge) now in the repo;
+  export.py ships it in the client zip and export_server.py copies `overrides/mods/*.jar` into the server zip's mods/
+  (start scripts only remove jars they installed, so it stays).
+- Configs taken: new `colorfulhearts.toml`, `workbenchwisdom-common.toml`; `amendments-client.toml` (hotbar slot animation
+  speed 0 / TURNS_OFF: the hidden held-item fix); `sophisticatedsorter-client.toml` (sort by count, crafting screen off the
+  special list). Not taken: personal/runtime files (boostedbrightness value, iris timestamp, chunky task, ftbchunks minimap
+  list order, JEI/Jade generated sort orders, servers.dat, icon.png, `workbenchwisdom-rules.txt` which the mod rewrites).
+- kubejs/assets: + 33 textures from his instance (create_new_age thorium ore, IE blocks/gui/steel tools/uranium ingot,
+  aluminium hanging sign). The repo's `enderio_evolution/.../crystalline_pink_slime_ingot.png` (9-38) kept; his instance
+  just lacks it.
+- His instance's kubejs/data predates 9-84/9-85 (still has agritechevolved, create_ultimate_factory, createliquidfuel,
+  cultivar_scaffold, quality_equipment): the repo build is newer; nothing taken. Quest chapters differ in formatting only.
+- KubeJS scripts identical; none duplicate Workbench Wisdom's bench / stonecutter / slab recipes.
+- No files deleted.

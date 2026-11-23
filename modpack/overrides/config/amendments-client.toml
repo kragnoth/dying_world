@@ -140,12 +140,12 @@
 		#Makes the selected hotbar slot slide to its new position. Higher is faster, 0 for vanilla behavior
 		# Default: 2.5
 		# Range: 0.0 ~ 5.0
-		speed = 2.5
+		speed = 0.0
 		#If the hotbar slot animation wraps around the edges
 		wrap = true
 		#What the animation does when the selection texture is opaque. NONE keeps it on top of the items, IN_BACKGROUND moves it behind them, TURNS_OFF disables the animation
 		#Allowed Values: NONE, IN_BACKGROUND, TURNS_OFF
-		opaque_behavior = "IN_BACKGROUND"
+		opaque_behavior = "TURNS_OFF"
 
 [buckets]
 	#Makes Axolotl buckets show the color of the axolotl inside

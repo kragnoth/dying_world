@@ -17,7 +17,8 @@ PACK = ROOT / "modpack"
 SERVER = PACK / "server"
 # CurseForge project IDs of the mods that crash a dedicated server (left out of server-mods.txt on purpose)
 CLIENT_ONLY = {1422344: "Create JEI Compat", 1242344: "Easy Auto Cycler", 394468: "Sodium",
-               511319: "Reese's Sodium Options", 1371053: "Saros Boosted Brightness", 557076: "Freecam"}
+               511319: "Reese's Sodium Options", 1371053: "Saros Boosted Brightness", 557076: "Freecam",
+               854213: "Colorful Hearts"}   # Colorful Hearts: client-side HUD only, nothing for a server to load
 FROM_CLIENT = ("config/", "defaultconfigs/", "kubejs/")
 
 
@@ -70,7 +71,9 @@ def main():
             n += 1
         for info in c.infolist():
             rel = info.filename[len("overrides/"):] if info.filename.startswith("overrides/") else None
-            if rel and not info.is_dir() and rel.startswith(FROM_CLIENT):
+            # mods/: jars that aren't on CurseForge ship in overrides/mods (9-89); the start scripts only remove jars they
+            # installed themselves, so these stay put
+            if rel and not info.is_dir() and (rel.startswith(FROM_CLIENT) or (rel.startswith("mods/") and rel.endswith(".jar"))):
                 z.writestr(rel, c.read(info)); n += 1
     print(f"wrote {out} ({n} files, version {version})")
 

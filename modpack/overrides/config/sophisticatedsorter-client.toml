@@ -1,8 +1,8 @@
 [Setting]
 	#Screens whose sorter buttons are hidden (toggle with the disable-buttons key). Entries are "screenId" = screen class + "@" + title translation key.
-	specialList = ["container.farmersdelight.monster_pot", "net.minecraft.client.gui.screens.inventory.CraftingScreen@container.crafting", "net.minecraft.client.gui.screens.inventory.MerchantScreen@entity.minecraft.villager.ae2.fluix_researcher"]
+	specialList = ["container.farmersdelight.monster_pot", "net.minecraft.client.gui.screens.inventory.MerchantScreen@entity.minecraft.villager.ae2.fluix_researcher"]
 	#name, mod, count, tags
-	SortBy = "name"
+	SortBy = "count"
 	#Only valid for containers with more than 10 slots if true.
 	Filter1 = true
 	#Only valid for containers without invalid slot such as recipe result slot if true.
