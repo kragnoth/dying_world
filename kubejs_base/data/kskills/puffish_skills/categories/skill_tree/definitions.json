@@ -4864,7 +4864,7 @@
 		"description": [
 			"",
 			{
-				"text": "+0.5 Projectile Damage (QE)",
+				"text": "+3% Projectile Damage",
 				"color": "green"
 			}
 		],
@@ -4887,7 +4887,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "hallmarked:projectile_damage",
-					"value": 0.5,
+					"value": 0.03,
 					"operation": "add"
 				}
 			}
@@ -4916,7 +4916,7 @@
 		"description": [
 			"",
 			{
-				"text": "+2 Projectile Damage (QE)",
+				"text": "+10% Projectile Damage",
 				"color": "green"
 			}
 		],
@@ -4939,7 +4939,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "hallmarked:projectile_damage",
-					"value": 2,
+					"value": 0.1,
 					"operation": "add"
 				}
 			}
@@ -12614,6 +12614,10601 @@
 			"kskills_perks",
 			"caverns_and_chasms",
 			"lodestone"
+		]
+	},
+	"b_vigor_m": {
+		"title": {
+			"text": "Hale and Hearty",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% Knockback Resistance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:golden_carrot"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.knockback_resistance",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Healthy as an ox, stubborn as one too.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_plate_m": {
+		"title": {
+			"text": "Hammered Plate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Armor\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Armor Toughness",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_helmet"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Every dent is a lesson.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_dodge_m": {
+		"title": {
+			"text": "Fleet Guard",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Dodge Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Movement Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:rabbit_hide"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:dodge_chance",
+					"value": 0.04,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Hard to hit, harder to pin.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_might_m": {
+		"title": {
+			"text": "Hard Hitter",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.1 Attack Knockback",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_axe"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 1.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_knockback",
+					"value": 0.1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Subtlety was never the plan.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_tempo_m": {
+		"title": {
+			"text": "Battle Rhythm",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+8% Attack Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Movement Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:note_block"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.08,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Left, right, left, dead.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_crit_m": {
+		"title": {
+			"text": "Killing Edge",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+6% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Crit Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.06,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_damage",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Find the gap and widen it.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_draw_m": {
+		"title": {
+			"text": "Practiced Draw",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Draw Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:bow"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Ten thousand arrows, one motion.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_dmg_m": {
+		"title": {
+			"text": "Honed Broadheads",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:feather"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Edge it until it sings.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_speed_m": {
+		"title": {
+			"text": "Brisk Pace",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Terrain Efficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_boots"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_efficiency",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Miles melt under steady feet.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_jump_m": {
+		"title": {
+			"text": "Springheel",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.06 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Safe Fall Distance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:slime_ball"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.06,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.safe_fall_distance",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Up is just another direction.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_break_m": {
+		"title": {
+			"text": "Callused Grip",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Mining Efficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_shovel"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.mining_efficiency",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Blisters long since turned to leather.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_vein_m": {
+		"title": {
+			"text": "Wide Veins",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+8 Ultimine Max Blocks\n",
+				"color": "green"
+			},
+			{
+				"text": "-1 Ultimine Hunger per Block",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:raw_copper"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ftbultimine:max_blocks_modifier",
+					"value": 8,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ftbultimine:exhaustion_modifier",
+					"value": -1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Follow the seam wherever it runs.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_spell_m": {
+		"title": {
+			"text": "Hexcraft",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Magic Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:amethyst_cluster"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 1.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:magic_damage",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Small words, large consequences.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_bulk_m": {
+		"title": {
+			"text": "Layered Mail",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Armor\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Max Health",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chainmail_helmet"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "One layer for each regret.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_qe_res_m": {
+		"title": {
+			"text": "Interlocked Weave",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.04 Damage Resistance\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chainmail_leggings"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "hallmarked:damage_resistance",
+					"value": 0.04,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "No gaps, no mercy.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		],
+		"required_mods": [
+			"hallmarked"
+		]
+	},
+	"b_ghost_m": {
+		"title": {
+			"text": "Echoing Flesh",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4 Ghost Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Max Health",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:soul_sand"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:ghost_health",
+					"value": 4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Something of you stays behind the blow.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_blast_m": {
+		"title": {
+			"text": "Shockproof Plating",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Explosion Knockback Resist\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:gunpowder"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.explosion_knockback_resistance",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The bang arrives. You mostly don't.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_spite_m": {
+		"title": {
+			"text": "Barbed Hide",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Slowness Retribution\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:cactus"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:slowness_retribution",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Hit me and see what sticks.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_brute_m": {
+		"title": {
+			"text": "Shoulder Charge",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.6 Attack Knockback\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Attack Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:anvil"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_knockback",
+					"value": 0.6,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Doors and skulls both give way.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_sweep_m": {
+		"title": {
+			"text": "Reaping Sweep",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Sweeping Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Attack Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_hoe"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sweeping_damage_ratio",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A harvest of one.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_pierce_m": {
+		"title": {
+			"text": "Hardened Tip",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Armor Pierce\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Attack Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:golden_pickaxe"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:armor_pierce",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Armour is a suggestion.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_cc_leech_m": {
+		"title": {
+			"text": "Open Veins",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Lifesteal\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Attack Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:spider_eye"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:lifesteal",
+					"value": 0.04,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Their loss, your gain.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_cold_m": {
+		"title": {
+			"text": "Frostbite",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Cold Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Slowness Infliction",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:packed_ice"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cold_damage",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:slowness_infliction",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "It starts in the fingers.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_shred_m": {
+		"title": {
+			"text": "Splintering Strikes",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+6% Protection Shred\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% Armor Shred",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:cracked_stone_bricks"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:prot_shred",
+					"value": 0.06,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:armor_shred",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Plate cracks before it breaks.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_rapid_m": {
+		"title": {
+			"text": "Volley Drill",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Draw Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Arrow Velocity",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:crossbow"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_velocity",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Nock, loose, nock, loose.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_qe_m": {
+		"title": {
+			"text": "Hardened Rounds",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Projectile Damage (Hallmarked)\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Projectile Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:copper_ingot"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "hallmarked:projectile_damage",
+					"value": 0.05,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:projectile_damage",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Cast, not carved.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		],
+		"required_mods": [
+			"hallmarked"
+		]
+	},
+	"d_hide_m": {
+		"title": {
+			"text": "Leaf Cloak",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+12% Stealth\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Sneaking Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:oak_leaves"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:stealth",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Just another bush.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_head_m": {
+		"title": {
+			"text": "Marksman's Eye",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Crit Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:zombie_head"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_damage",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "You pick the spot.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_sneak_m": {
+		"title": {
+			"text": "Quiet Steps",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Stealth",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:gray_carpet"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:stealth",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Even the gravel keeps your secret.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_fall_m": {
+		"title": {
+			"text": "Landing Gear",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Safe Fall Distance\n",
+				"color": "green"
+			},
+			{
+				"text": "-5% Fall Damage Taken",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:slime_block"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.safe_fall_distance",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.fall_damage_multiplier",
+					"value": -0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Bend the knees, bend the rules.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_water_m": {
+		"title": {
+			"text": "Tidal Stride",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Water Movement Efficiency\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Swim Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:prismarine_crystals"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.water_movement_efficiency",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The current is on your side.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_small_m": {
+		"title": {
+			"text": "Slip Through",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "-10% Size\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Movement Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:pufferfish_bucket"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.scale",
+					"value": -0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Gaps appear where you look.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_mspeed_m": {
+		"title": {
+			"text": "Carbide Bit",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Mining Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Block Reach",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:diamond_shovel"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_interaction_range",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Stone gives up sooner.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_tire_m": {
+		"title": {
+			"text": "Steady Breaths",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "-4 Ultimine Hunger per Block\n",
+				"color": "green"
+			},
+			{
+				"text": "-5 Ultimine Cooldown (ticks)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:cooked_chicken"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ftbultimine:exhaustion_modifier",
+					"value": -4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ftbultimine:cooldown_modifier",
+					"value": -5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Pace yourself, then don't.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_axp_m": {
+		"title": {
+			"text": "Diligent Scholar",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Experience Gained\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:writable_book"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:experience_gained",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Footnotes are underrated.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_prof_m": {
+		"title": {
+			"text": "Deeper Attunement",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Magic Proficiency\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Cooldown Reduction",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:lapis_block"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_proficiency",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The hum gets louder.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_ward2_m": {
+		"title": {
+			"text": "Bound Ward",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+10% Magic Protection\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Magic Resistance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:crying_obsidian"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:magic_protection",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Chalk, salt and stubbornness.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_cd2_m": {
+		"title": {
+			"text": "Tuned Mechanism",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Cooldown Reduction\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Magic Proficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:observer"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.04,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_proficiency",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Wound just so.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_self_m": {
+		"title": {
+			"text": "Blood Pact",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Self-Sacrifice Yield\n",
+				"color": "green"
+			},
+			{
+				"text": "+10% Sacrifice Yield",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:poppy"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_self_sacrifice",
+					"value": 20,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_sacrifice",
+					"value": 10,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Terms are non-negotiable.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_herd_m": {
+		"title": {
+			"text": "Cattle Whisperer",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Eating Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+10% Natural Regeneration",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:wheat"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:consuming_speed",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:natural_regeneration",
+					"value": 0.1,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "They follow. They always follow.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_wrench_m": {
+		"title": {
+			"text": "Journeyman's Tools",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "-10% Anvil Repair Cost\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Mining Efficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:grindstone"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:repair_cost",
+					"value": -0.1,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.mining_efficiency",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A good spanner outlasts its owner.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_roof_m": {
+		"title": {
+			"text": "Sure Grip",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Fall Damage Reduction\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Safe Fall Distance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ladder"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fall_reduction",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.safe_fall_distance",
+					"value": 1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Three points of contact, always.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_pack_m": {
+		"title": {
+			"text": "Careful Salvage",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.1 Fortune (levels)\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:barrel"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:fortune",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Nothing goes to waste.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_rest_m": {
+		"title": {
+			"text": "Deep Sleep",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+20% Natural Regeneration\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Stamina (slower hunger)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:red_bed"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:natural_regeneration",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Eight hours and a clear conscience.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_ring_b": {
+		"title": {
+			"text": "Steeled",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Every ring link counts.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_ring_c": {
+		"title": {
+			"text": "Agile Footing",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Dodge Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:feather"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:dodge_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Never quite where the blow lands.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_gate": {
+		"title": {
+			"text": "Bastion Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_door"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The wall opens for those who earn it.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_ring_b": {
+		"title": {
+			"text": "Sharpened",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:flint"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A little more edge.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_ring_c": {
+		"title": {
+			"text": "Cadence",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Attack Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:bell"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Fight to the beat.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_gate": {
+		"title": {
+			"text": "Warpath Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:red_banner"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 1.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The road to the front begins here.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_ring_b": {
+		"title": {
+			"text": "Fletcher's Eye",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:feather"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.04,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Straight shafts, straight shots.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_ring_c": {
+		"title": {
+			"text": "Steady Draw",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Draw Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:string"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": 0.04,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Breathe out, loose.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_gate": {
+		"title": {
+			"text": "Deadeye Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+12% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+4% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:target"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.04,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Aim true.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_ring_b": {
+		"title": {
+			"text": "Spring in Step",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.02 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:rabbit_foot"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Light on the way down.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_ring_c": {
+		"title": {
+			"text": "Sure Foot",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Terrain Efficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:mud"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_efficiency",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Any ground is good ground.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_gate": {
+		"title": {
+			"text": "Pathfinder Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.02 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:compass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Every road starts somewhere.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_ring_b": {
+		"title": {
+			"text": "Drillwork",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Mining Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_pickaxe"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Steady, patient, loud.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_ring_c": {
+		"title": {
+			"text": "Long Grip",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Block Reach",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:stick"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_interaction_range",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A little further each swing.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_gate": {
+		"title": {
+			"text": "Foreman Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+12% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% Mining Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:minecart"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Clock in.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_ring_b": {
+		"title": {
+			"text": "Stray Spark",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:amethyst_shard"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "It jumps when you aren't looking.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_ring_c": {
+		"title": {
+			"text": "Quiet Mind",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Cooldown Reduction",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ender_pearl"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Still water, quick hands.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_gate": {
+		"title": {
+			"text": "Occult Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:soul_torch"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Step lightly. Something is listening.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_ring_b": {
+		"title": {
+			"text": "Odd Jobs",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:bundle"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Always something that needs doing.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_ring_c": {
+		"title": {
+			"text": "Quick Rest",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Natural Regeneration",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:cauldron"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:natural_regeneration",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A bowl of something hot.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_gate": {
+		"title": {
+			"text": "Industry Gate",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+8% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:furnace"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.08,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Lights on, fires lit.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_ring_d": {
+		"title": {
+			"text": "Hearty Meal",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Healing Received",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:bread"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:healing_received",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Seconds, then thirds.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"b_ring_e": {
+		"title": {
+			"text": "Warded Cloak",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Magic Protection",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:amethyst_shard"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:magic_protection",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Stitched with something old.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_ring_d": {
+		"title": {
+			"text": "Thirst",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Life Steal",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:fermented_spider_eye"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:life_steal",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Never quite sated.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"w_ring_e": {
+		"title": {
+			"text": "Heavy Swing",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.15 Attack Knockback",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:piston"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_knockback",
+					"value": 0.15,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Follow through.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_ring_d": {
+		"title": {
+			"text": "Steady Aim",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+6% Crit Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:target"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_damage",
+					"value": 0.06,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Hold. Breathe. Loose.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"d_ring_e": {
+		"title": {
+			"text": "Taut String",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+6% Arrow Velocity",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:tripwire_hook"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_velocity",
+					"value": 0.06,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Humming with potential.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_ring_d": {
+		"title": {
+			"text": "Soft Landing",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "-3% Fall Damage Taken",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:hay_block"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.fall_damage_multiplier",
+					"value": -0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Roll with it.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"p_ring_e": {
+		"title": {
+			"text": "Strong Kick",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Swim Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:cod"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Frog-legged and proud.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_ring_d": {
+		"title": {
+			"text": "Lucky Find",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.15 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:rabbit_foot"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.15,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Right place, right swing.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"f_ring_e": {
+		"title": {
+			"text": "Quick Study",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Experience Gained",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:book"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:experience_gained",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Learn it once.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_ring_d": {
+		"title": {
+			"text": "Warded Mind",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Magic Resistance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:shield"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Closed doors stay closed.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"o_ring_e": {
+		"title": {
+			"text": "Offering",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Sacrifice Yield",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_sacrifice",
+					"value": 5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A little for the dark.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_ring_d": {
+		"title": {
+			"text": "Careful Hands",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Mining Efficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.mining_efficiency",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Measure twice.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"i_ring_e": {
+		"title": {
+			"text": "Hearty Appetite",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Eating Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:cooked_beef"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:consuming_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Fuel for the furnace.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_11": {
+		"title": {
+			"text": "Hunter's March",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.2 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+6% Sneaking Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:crossbow"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Where the front gives way to the treeline.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h11_a": {
+		"title": {
+			"text": "Hunter's Stride",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:leather_boots"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Warpath × Deadeye • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h11_n": {
+		"title": {
+			"text": "Predator's Instinct",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.75 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.3 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+9% Sneaking Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:spyglass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.75,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.09,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "It knows where you will be.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h11_k1": {
+		"title": {
+			"text": "Glass Cannon",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+25% Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+25% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "-30% Max Health",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:tnt"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.25,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": -0.3,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "All the power, none of the padding.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h11_k2": {
+		"title": {
+			"text": "Marked for Death",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+12% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+40% Crit Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "-15% Movement Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:skeleton_skull"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_damage",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": -0.15,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Whoever lands the first blow lands the last.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_16": {
+		"title": {
+			"text": "Scout's Perch",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.2 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+6% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Movement Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:spyglass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Best view on the road.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h16_a": {
+		"title": {
+			"text": "Lookout's Poise",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.01 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ender_eye"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.02,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Deadeye × Pathfinder • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h16_n": {
+		"title": {
+			"text": "Longwatch",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.3 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+9% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% Movement Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:ender_pearl"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.09,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Patience, then precision.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h16_k1": {
+		"title": {
+			"text": "Ghost Archer",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+50% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+25% Stealth\n",
+				"color": "green"
+			},
+			{
+				"text": "+20% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "-25% Draw Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:phantom_membrane"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:stealth",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": -0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Unseen, unheard, unhurried.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h16_k2": {
+		"title": {
+			"text": "Snap Shot",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+40% Draw Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+20% Arrow Velocity\n",
+				"color": "green"
+			},
+			{
+				"text": "-15% Arrow Damage",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:crossbow"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_velocity",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": -0.15,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Fast beats pretty.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_17": {
+		"title": {
+			"text": "Trailhead",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.2 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+6% Sneaking Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:oak_sign"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The path forks; the arrows don't.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h17_a": {
+		"title": {
+			"text": "Wayfinder's Patience",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.01 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:filled_map"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Pathfinder × Deadeye • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h17_n": {
+		"title": {
+			"text": "Wayfarer's Wits",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.3 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+9% Sneaking Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:compass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.09,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Every trail teaches something.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h17_k1": {
+		"title": {
+			"text": "Wanderlust",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+12% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+15% Terrain Efficiency\n",
+				"color": "green"
+			},
+			{
+				"text": "-6 Max Health",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:compass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.12,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_efficiency",
+					"value": 0.15,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": -6,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The road is the reward.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Deadeye • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h17_k2": {
+		"title": {
+			"text": "Featherfoot",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+3 Safe Fall Distance\n",
+				"color": "green"
+			},
+			{
+				"text": "-40% Fall Damage Taken\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.08 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "-20% Attack Damage",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:feather"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.safe_fall_distance",
+					"value": 3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.fall_damage_multiplier",
+					"value": -0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.08,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": -0.2,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Light feet make poor fists.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Deadeye • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_23": {
+		"title": {
+			"text": "Quarry Road",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+6% Block Break Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:rail"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Dust, gravel, and an honest day.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h23_a": {
+		"title": {
+			"text": "Prospector's Road",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.01 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+1.5% Mining Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_pickaxe"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.015,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Pathfinder × Foreman • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h23_n": {
+		"title": {
+			"text": "Surveyor's Eye",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+3% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+9% Block Break Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:lodestone"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.09,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Reads the rock like a book.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h23_k1": {
+		"title": {
+			"text": "Deepcore Drill",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+40% Mining Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+30% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "-10% Movement Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:netherite_pickaxe"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": -0.1,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Heavy tools, heavy steps.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h23_k2": {
+		"title": {
+			"text": "Surveyor's Reach",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+3 Block Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "-15% Block Break Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:spyglass"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_interaction_range",
+					"value": 3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": -0.15,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "See it from here, dig it from there.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_29": {
+		"title": {
+			"text": "Deep Delve",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+6% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.2 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:lantern"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.2,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Dig far enough and the walls whisper.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h29_a": {
+		"title": {
+			"text": "Delver's Lantern",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1.5% Mining Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.125 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:soul_lantern"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.015,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Foreman × Occult • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h29_n": {
+		"title": {
+			"text": "Fortune's Favour",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+9% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.3 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:amethyst_cluster"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.09,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.3,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The vein wants to be found.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h29_k1": {
+		"title": {
+			"text": "Gambler's Pact",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+1.5 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+30% Experience Gained\n",
+				"color": "green"
+			},
+			{
+				"text": "-4 Armor",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:emerald"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 1.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:experience_gained",
+					"value": 0.3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": -4,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "The house always collects. Eventually.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h29_k2": {
+		"title": {
+			"text": "Scholar's Burden",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+40% Experience Gained\n",
+				"color": "green"
+			},
+			{
+				"text": "+20% Experience Boost\n",
+				"color": "green"
+			},
+			{
+				"text": "-15% Mining Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:enchanted_book"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:experience_gained",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "caverns_and_chasms:experience_boost",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": -0.15,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Knowledge weighs more than it looks.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_34": {
+		"title": {
+			"text": "Tinkered Rite",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.2 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+4% Block Break Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:redstone_lamp"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.04,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Spellwork with a wrench.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h34_a": {
+		"title": {
+			"text": "Gearwright's Rite",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.125 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+1.5% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:comparator"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.125,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Occult × Industry • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h34_n": {
+		"title": {
+			"text": "Rite of Gears",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.3 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+6% Block Break Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:clock"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.3,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Wound by hand, driven by will.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h34_k1": {
+		"title": {
+			"text": "Blood Altar",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+30% Sacrifice Yield\n",
+				"color": "green"
+			},
+			{
+				"text": "+25% Spiritus Drops\n",
+				"color": "green"
+			},
+			{
+				"text": "-20% Max Health",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:redstone_block"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_sacrifice",
+					"value": 30,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_spiritus",
+					"value": 25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": -0.2,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Paid in advance.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h34_k2": {
+		"title": {
+			"text": "Overclocked Sigils",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "-30% Sigil LP Cost\n",
+				"color": "green"
+			},
+			{
+				"text": "+10% Cooldown Reduction\n",
+				"color": "green"
+			},
+			{
+				"text": "-25% Natural Regeneration",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:repeater"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:sigil_cost_reduction",
+					"value": 30,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.1,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:natural_regeneration",
+					"value": -0.25,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Past the red line, and humming.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"x_seam_35": {
+		"title": {
+			"text": "Workshop Sanctum",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.2 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:enchanting_table"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.04,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.2,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Hum of gears, hum of something else.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h35_a": {
+		"title": {
+			"text": "Workbench Whispers",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1.5% XP from Orbs\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.125 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:crafting_table"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 1.0,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Industry × Occult • Minor • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h35_n": {
+		"title": {
+			"text": "Hearth Ritual",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+6% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.3 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:soul_campfire"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.06,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.3,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Warm hands, quiet words.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h35_k1": {
+		"title": {
+			"text": "Gearwork Mind",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+15% Cooldown Reduction\n",
+				"color": "green"
+			},
+			{
+				"text": "+2 Magic Proficiency\n",
+				"color": "green"
+			},
+			{
+				"text": "-10% Block Break Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:piston"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.15,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_proficiency",
+					"value": 2,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": -0.1,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Every tooth meshes.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Occult • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"h35_k2": {
+		"title": {
+			"text": "Hearthbound",
+			"color": "gold",
+			"bold": true
+		},
+		"description": [
+			"",
+			{
+				"text": "+50% Natural Regeneration\n",
+				"color": "green"
+			},
+			{
+				"text": "+1.5 Stamina (slower hunger)\n",
+				"color": "green"
+			},
+			{
+				"text": "+20% Eating Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "-15% Movement Speed",
+				"color": "red"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:campfire"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"size": 1.25,
+		"cost": 4,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:natural_regeneration",
+					"value": 0.5,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:stamina",
+					"value": 1.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:consuming_speed",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": -0.15,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Home is where the fire is.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Occult • Keystone • Cost 4",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_b_fire_b_root_n": {
+		"title": {
+			"text": "Scorch-Hardened × Rooted",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "-5% Burning Duration\n",
+				"color": "green"
+			},
+			{
+				"text": "+2.5% Knockback Resistance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.burning_time",
+					"value": -0.05,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.knockback_resistance",
+					"value": 0.025,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_b_root_n_b_air": {
+		"title": {
+			"text": "Rooted × Iron Lungs",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2.5% Knockback Resistance\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Oxygen Bonus",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.knockback_resistance",
+					"value": 0.025,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.oxygen_bonus",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_b_air_w_might": {
+		"title": {
+			"text": "Iron Lungs × Might",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5 Oxygen Bonus\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Attack Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.oxygen_bonus",
+					"value": 0.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark × Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_w_might_w_tempo": {
+		"title": {
+			"text": "Might × Tempo",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Attack Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_w_tempo_w_crit": {
+		"title": {
+			"text": "Tempo × Keen Edge",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Attack Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+1.5% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 0.02,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.015,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_w_crit_w_leech": {
+		"title": {
+			"text": "Keen Edge × Thirst",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1.5% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5% Life Steal",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.015,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:life_steal",
+					"value": 0.005,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_w_leech_w_heat": {
+		"title": {
+			"text": "Thirst × Heated Blade",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5% Life Steal\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Fire Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:life_steal",
+					"value": 0.005,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:fire_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_w_heat_w_reach": {
+		"title": {
+			"text": "Heated Blade × Long Arm",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Fire Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.125 Entity Reach",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:fire_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_w_reach_h11_a": {
+		"title": {
+			"text": "Long Arm × Hunter's Stride",
+			"color": "#e05050",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.125 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.125,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.005,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h11_a_d_draw": {
+		"title": {
+			"text": "Hunter's Stride × Quick Nock",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+2.5% Draw Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.005,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": 0.025,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_d_draw_d_dmg": {
+		"title": {
+			"text": "Quick Nock × Broadheads",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2.5% Draw Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+2.5% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:draw_speed",
+					"value": 0.025,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.025,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_d_dmg_d_stalk": {
+		"title": {
+			"text": "Broadheads × Stalker",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2.5% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Sneaking Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.025,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_d_stalk_d_crit": {
+		"title": {
+			"text": "Stalker × Eagle Eye",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.05,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_d_crit_h16_a": {
+		"title": {
+			"text": "Eagle Eye × Lookout's Poise",
+			"color": "#7fd16b",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Crit Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.005 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.005,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h16_a_h17_a": {
+		"title": {
+			"text": "Lookout's Poise × Wayfinder's Patience",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.01 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.02,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h17_a_p_speed": {
+		"title": {
+			"text": "Wayfinder's Patience × Swift",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.005 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Arrow Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Movement Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.005,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_p_speed_p_jump": {
+		"title": {
+			"text": "Swift × Spring",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.015 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.01,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.015,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_p_jump_p_swim": {
+		"title": {
+			"text": "Spring × Strong Stroke",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.015 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Swim Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.015,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_p_swim_p_glide": {
+		"title": {
+			"text": "Strong Stroke × Updraft",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Swim Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "-2.5% Fall Damage Taken",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neoforge:swim_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.fall_damage_multiplier",
+					"value": -0.025,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_p_glide_p_scale": {
+		"title": {
+			"text": "Updraft × Proportion",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "-2.5% Fall Damage Taken\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.125 Entity Reach",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.fall_damage_multiplier",
+					"value": -0.025,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_p_scale_h23_a": {
+		"title": {
+			"text": "Proportion × Prospector's Road",
+			"color": "#5fb8e8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.125 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.005 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.75% Mining Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.125,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.005,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.0075,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h23_a_f_break": {
+		"title": {
+			"text": "Prospector's Road × Hard Graft",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.005 Jump Strength\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.75% Mining Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+2.5% Block Break Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.005,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.0075,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.025,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_f_break_f_vein": {
+		"title": {
+			"text": "Hard Graft × Seam Sense",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2.5% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+2 Ultimine Max Blocks",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.025,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ftbultimine:max_blocks_modifier",
+					"value": 2.0,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_f_vein_f_reach": {
+		"title": {
+			"text": "Seam Sense × Long Reach",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2 Ultimine Max Blocks\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Block Reach",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "ftbultimine:max_blocks_modifier",
+					"value": 2.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_interaction_range",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_f_reach_f_luck": {
+		"title": {
+			"text": "Long Reach × Prospector's Luck",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Block Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.125 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_interaction_range",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_f_luck_f_frag": {
+		"title": {
+			"text": "Prospector's Luck × Scavenger",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_f_frag_h29_a": {
+		"title": {
+			"text": "Scavenger × Delver's Lantern",
+			"color": "#e0a040",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.125 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.75% Mining Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.0625 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.125,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.0075,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.0625,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h29_a_o_spell": {
+		"title": {
+			"text": "Delver's Lantern × Hex",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.75% Mining Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.3125 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.0075,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.3125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_o_spell_o_ward": {
+		"title": {
+			"text": "Hex × Ward",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Magic Resistance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_o_ward_o_cd": {
+		"title": {
+			"text": "Ward × Clockwork Focus",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.25 Magic Resistance\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Cooldown Reduction",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_resistance",
+					"value": 0.25,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_o_cd_o_blood": {
+		"title": {
+			"text": "Clockwork Focus × Bloodletter",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Cooldown Reduction\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Sacrifice Yield",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:cooldown_reduction",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_sacrifice",
+					"value": 5.0,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_o_blood_h34_a": {
+		"title": {
+			"text": "Bloodletter × Gearwright's Rite",
+			"color": "#b070e0",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Sacrifice Yield\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.0625 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.75% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "neovitae:bonus_sacrifice",
+					"value": 5.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.0625,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.0075,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h34_a_h35_a": {
+		"title": {
+			"text": "Gearwright's Rite × Workbench Whispers",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.125 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+1.5% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.125,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.015,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_h35_a_i_till": {
+		"title": {
+			"text": "Workbench Whispers × Tilled Earth",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.75% XP from Orbs\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.0625 Magic Damage (Lodestone)\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.05 Luck",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.0075,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.0625,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_i_till_i_tinker": {
+		"title": {
+			"text": "Tilled Earth × Tinkerer",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.05 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.125 Mining Efficiency",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.05,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.mining_efficiency",
+					"value": 0.125,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_i_tinker_i_scaffold": {
+		"title": {
+			"text": "Tinkerer × Scaffolder",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.125 Mining Efficiency\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Safe Fall Distance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.mining_efficiency",
+					"value": 0.125,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.safe_fall_distance",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_i_scaffold_i_haul": {
+		"title": {
+			"text": "Scaffolder × Pack Rat",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5 Safe Fall Distance\n",
+				"color": "green"
+			},
+			{
+				"text": "+2.5% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.safe_fall_distance",
+					"value": 0.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_i_haul_i_cook": {
+		"title": {
+			"text": "Pack Rat × Home Cooking",
+			"color": "#c08a4a",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+2.5% XP from Orbs\n",
+				"color": "green"
+			},
+			{
+				"text": "+5% Eating Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.025,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:consuming_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_i_cook_b_vigor": {
+		"title": {
+			"text": "Home Cooking × Vigor",
+			"color": "white",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+5% Eating Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+1 Max Health",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:consuming_speed",
+					"value": 0.05,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1.0,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Bulwark • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_b_vigor_b_plate": {
+		"title": {
+			"text": "Vigor × Riveted Plate",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_b_plate_b_dodge": {
+		"title": {
+			"text": "Riveted Plate × Sidestep",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.5 Armor\n",
+				"color": "green"
+			},
+			{
+				"text": "+1% Dodge Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:dodge_chance",
+					"value": 0.01,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"xo_b_dodge_b_fire": {
+		"title": {
+			"text": "Sidestep × Scorch-Hardened",
+			"color": "#c8c8c8",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1% Dodge Chance\n",
+				"color": "green"
+			},
+			{
+				"text": "-5% Burning Duration",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:chain"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"size": 0.85,
+		"cost": 1,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:dodge_chance",
+					"value": 0.01,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.burning_time",
+					"value": -0.05,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "A shortcut between two ways of working.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark • Crossover • Cost 1",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_bw_a": {
+		"title": {
+			"text": "Iron Will",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:shield"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Stand, and stay standing.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark × Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_bw_b": {
+		"title": {
+			"text": "Battle-Hardened",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:iron_sword"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 1.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Scars are credentials.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Bulwark × Warpath • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_wd_a": {
+		"title": {
+			"text": "Duelist's Poise",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+1 Attack Damage\n",
+				"color": "green"
+			},
+			{
+				"text": "+4% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:golden_sword"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 1.0,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.04,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "One blade, one breath.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_wd_b": {
+		"title": {
+			"text": "Ranger's Reflex",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+12% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+2% Crit Chance",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:bow"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:crit_chance",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Draw before you think.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Warpath × Deadeye • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_dp_a": {
+		"title": {
+			"text": "Quiet Quiver",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Entity Reach\n",
+				"color": "green"
+			},
+			{
+				"text": "+12% Sneaking Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.02 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:arrow"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.entity_interaction_range",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.sneaking_speed",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Nothing rattles.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_dp_b": {
+		"title": {
+			"text": "Fleet Fletcher",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+4% Arrow Damage",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:feather"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:arrow_damage",
+					"value": 0.04,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Run, nock, loose.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Deadeye × Pathfinder • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_pf_a": {
+		"title": {
+			"text": "Pack Mule",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4% Movement Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% Mining Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:lead"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.movement_speed",
+					"value": 0.04,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Carry it all, complain later.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_pf_b": {
+		"title": {
+			"text": "Roadbuilder",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+12% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.02 Jump Strength",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:rail"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.jump_strength",
+					"value": 0.02,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Make the path you walk.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Pathfinder × Foreman • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_fo_a": {
+		"title": {
+			"text": "Seeker's Lamp",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+12% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:lantern"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.12,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Light for the lower dark.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_fo_b": {
+		"title": {
+			"text": "Gemcutter's Insight",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% Mining Speed",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:amethyst_shard"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apothic_attributes:mining_speed",
+					"value": 0.03,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Every fracture tells you something.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Foreman × Occult • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_oi_a": {
+		"title": {
+			"text": "Ritual Foundry",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+0.4 Luck\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:blast_furnace"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Burn the right things.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_oi_b": {
+		"title": {
+			"text": "Artificer's Trance",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+8% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.25 Magic Damage (Lodestone)",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:brewing_stand"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.08,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "lodestone:magic_damage",
+					"value": 0.25,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Hands move; mind drifts.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Occult × Industry • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_ib_a": {
+		"title": {
+			"text": "Forge Tempered",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+8% Block Break Speed\n",
+				"color": "green"
+			},
+			{
+				"text": "+0.5 Armor",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:anvil"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:player.block_break_speed",
+					"value": 0.08,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "add"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Beaten into shape.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
+		]
+	},
+	"arc_ib_b": {
+		"title": {
+			"text": "Sturdy Hands",
+			"color": "aqua",
+			"bold": false
+		},
+		"description": [
+			"",
+			{
+				"text": "+4 Max Health\n",
+				"color": "green"
+			},
+			{
+				"text": "+3% XP from Orbs",
+				"color": "green"
+			}
+		],
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "minecraft:leather_chestplate"
+			}
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"size": 1.0,
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 4,
+					"operation": "add"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:experience",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		],
+		"extra_description": [
+			"",
+			{
+				"text": "Reliable when it counts.\n",
+				"color": "dark_gray",
+				"italic": true
+			},
+			{
+				"text": "Industry × Bulwark • Notable • Cost 2",
+				"color": "dark_aqua"
+			}
 		]
 	}
 }

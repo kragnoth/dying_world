@@ -266,3 +266,14 @@ All run clean. Both 1.0.4 test zips checked: manifest 252 files / author Kragnot
   generated many passes ago (still showed beard_box, pre-9-19 set names); regenerated.
 - PROGRESS: commands take `<version>`; current state lists Cog & Cultivar and export_server.py.
 - Still manual: regenerating server-mods.txt (manifest.json has no file names). No files deleted.
+
+## Pass 9-88 (2026-11-23) - Kragnoth's latest skill tree; cleanup merged to main
+- `kubejs_base/data/kskills/puffish_skills/`: Kragnoth's current files dropped in. config/category/experience unchanged;
+  skills.json 456 -> 659 nodes (203 new: the inner ring, the arcs between disciplines and the seam/"h" crossings),
+  79 moved; definitions.json +170 (384 total; `d_qe`/`d_qe_k` changed); connections 764 edges.
+- Checked: valid JSON; every node's definition exists and every definition is used; every edge names real nodes; no two
+  nodes share a position; everything is reachable from `awakening_1` except `hollowed_1`, `hollow_sight_1`,
+  `lens_sight_1` (unlocked by kskills_perks, by design); every reward namespace is a mod in the pack (apothic_attributes,
+  puffish_attributes, kskills_perks, caverns_and_chasms, lodestone, neovitae, ftbultimine, hallmarked, caelus); no
+  `quality_equipment` left (9-84 holds).
+- Branch `cleanup` (9-86 .. 9-88) fast-forwarded into `main`; work continues on main. No files deleted.
