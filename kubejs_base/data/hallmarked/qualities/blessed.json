@@ -1,6 +1,6 @@
 {
-  "name": "quality_equipment.quality.blessed",
-  "color_code": "§d",
+  "name": "hallmarked.quality.blessed",
+  "color": "light_purple",
   "bauble": {
     "modifiers": [
       {

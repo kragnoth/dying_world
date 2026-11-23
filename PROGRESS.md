@@ -78,8 +78,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - Delete the unused pool `dying_world:cabin/start` (9-82 audit).
 - Scrambled journals revealed by Wasteland Vision (designed, not built).
 - Excalibur-style textures for the Hollow items (placeholders now).
-- Stale data in `kubejs_base`: quality_equipment and agritechevolved references; the skill tree's definitions.json still
-  names quality_equipment.
+- Stale data in `kubejs_base`: agritechevolved references (quality_equipment done in 9-84).
 - kskills_perks: stale javadoc in HollowCommands (mentions runCommandSilent).
 - Wasteland Vision idea: an `installExamples=false` config option, so packs don't need `.installed_examples`.
 - Server: a tool to regenerate `server-mods.txt` from an export.
@@ -195,3 +194,18 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
   its column is dropped from the template (= structure void, the world keeps what's there). The ground layer and the one
   above stay air (clears trunks/plants off paths); air under roofs, the headframe ring and beams stays.
 - 51,965 cells in 205 templates. Jigsaws untouched. No files deleted. Untested in game.
+
+## Pass 9-84 (2026-11-23) - Quality Equipment -> Hallmarked
+Quality Equipment is gone from the pack (Kragnoth deleted the modified jar); Hallmarked replaces it.
+- Skill tree (`kskills` definitions.json): 4 skills had `"required_mods": ["quality_equipment"]`, so Pufferfish skipped them
+  entirely; now `hallmarked` (and their "Requires:" line). 4 rewards used `quality_equipment:projectile_damage` /
+  `damage_resistance`; now `hallmarked:...` (both registered by Hallmarked).
+- Qualities: the 7 pack overrides (ascended, blessed, divine, exquisite, forsaken, impenetrable, mythic) moved from
+  `kubejs_base/data/quality_equipment/qualities/` to `kubejs_base/data/hallmarked/qualities/` (same file names, so they
+  override Hallmarked's own files directly): names `hallmarked.quality.*`, attributes `hallmarked:*`, `color_code` section
+  codes -> Hallmarked's `color` names. Values unchanged.
+- **Deletes files:** `kubejs/data/quality_equipment/` (the whole folder). Unzipping the new kubejs_data.zip over an old
+  install leaves it behind: delete `kubejs/data/quality_equipment/` by hand (harmless if left, but it double-loads those 7
+  qualities under the old names via Hallmarked's legacy mapping).
+- No `quality_equipment` references remain in kubejs_base, user_overrides, datapack or modpack overrides.
+

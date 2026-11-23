@@ -1,6 +1,6 @@
 {
-  "name": "quality_equipment.quality.impenetrable",
-  "color_code": "§d",
+  "name": "hallmarked.quality.impenetrable",
+  "color": "light_purple",
   "armor": {
     "modifiers": [
       {

@@ -1,97 +1,103 @@
 {
-  "name": "quality_equipment.quality.divine",
-  "color_code": "§6",
+  "name": "hallmarked.quality.ascended",
+  "color": "green",
   "tool": {
     "modifiers": [
       {
-        "name": "divine_dig_speed",
+        "name": "ascended_dig_speed",
         "attribute": "minecraft:player.block_break_speed",
-        "operation": "multiply_total",
-        "value": 0.2
-      },
-      {
-        "name": "divine_attack_speed",
-        "attribute": "minecraft:generic.attack_speed",
-        "operation": "multiply_total",
-        "value": 0.2
-      },
-      {
-        "name": "divine_attack_damage",
-        "attribute": "minecraft:generic.attack_damage",
         "operation": "multiply_total",
         "value": 0.25
       },
       {
-        "name": "divine_entity_reach",
+        "name": "ascended_attack_speed",
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "multiply_total",
+        "value": 0.25
+      },
+      {
+        "name": "ascended_attack_damage",
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": 0.3
+      },
+      {
+        "name": "ascended_entity_reach",
         "attribute": "minecraft:player.entity_interaction_range",
         "operation": "addition",
-        "value": 1.25
+        "value": 1.5
       }
     ]
   },
   "bow": {
     "modifiers": [
       {
-        "name": "divine_projectile_damage",
-        "attribute": "quality_equipment:projectile_damage",
+        "name": "ascended_projectile_damage",
+        "attribute": "hallmarked:projectile_damage",
         "operation": "multiply_total",
-        "value": 0.25
+        "value": 0.3
       }
     ]
   },
   "armor": {
     "modifiers": [
       {
-        "name": "divine_armor",
+        "name": "ascended_armor",
         "attribute": "minecraft:generic.armor",
         "operation": "addition",
-        "value": 1.25
+        "value": 1.5
       },
       {
-        "name": "divine_armor_toughness",
+        "name": "ascended_armor_toughness",
         "attribute": "minecraft:generic.armor_toughness",
         "operation": "addition",
-        "value": 2
+        "value": 2.5
       },
       {
-        "name": "divine_knockback_resistance",
+        "name": "ascended_knockback_resistance",
         "attribute": "minecraft:generic.knockback_resistance",
         "operation": "addition",
-        "value": 0.1
+        "value": 0.125
       },
       {
-        "name": "divine_movement_speed",
+        "name": "ascended_movement_speed",
         "attribute": "minecraft:generic.movement_speed",
         "operation": "multiply_total",
-        "value": 0.02
+        "value": 0.03
       }
     ]
   },
   "bauble": {
     "modifiers": [
       {
-        "name": "divine_damage_resistance",
-        "attribute": "quality_equipment:damage_resistance",
+        "name": "ascended_damage_resistance",
+        "attribute": "hallmarked:damage_resistance",
         "operation": "multiply_total",
-        "value": 0.07
+        "value": 0.08
       },
       {
-        "name": "divine_max_health",
+        "name": "ascended_max_health",
         "attribute": "generic.max_health",
         "operation": "addition",
-        "value": 4
+        "value": 5
       },
       {
-        "name": "divine_luck",
+        "name": "ascended_luck",
         "attribute": "minecraft:generic.luck",
         "operation": "addition",
-        "value": 0.65
+        "value": 0.8
       },
       {
-        "name": "divine_movement_speed",
+        "name": "ascended_movement_speed",
         "attribute": "minecraft:generic.movement_speed",
         "operation": "multiply_total",
-        "value": 0.03
+        "value": 0.04
+      },
+      {
+        "name": "ascended_jump_height",
+        "attribute": "minecraft:generic.jump_strength",
+        "operation": "multiply_total",
+        "value": 0.1
       }
     ]
   }

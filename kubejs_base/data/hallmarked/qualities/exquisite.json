@@ -1,6 +1,6 @@
 {
-  "name": "quality_equipment.quality.exquisite",
-  "color_code": "§3",
+  "name": "hallmarked.quality.exquisite",
+  "color": "dark_aqua",
   "tool": {
     "modifiers": [
       {
@@ -27,7 +27,7 @@
     "modifiers": [
       {
         "name": "exquisite_projectile_damage",
-        "attribute": "quality_equipment:projectile_damage",
+        "attribute": "hallmarked:projectile_damage",
         "operation": "multiply_total",
         "value": 0.12
       }
@@ -53,7 +53,7 @@
     "modifiers": [
       {
         "name": "exquisite_damage_resistance",
-        "attribute": "quality_equipment:damage_resistance",
+        "attribute": "hallmarked:damage_resistance",
         "operation": "multiply_total",
         "value": 0.02
       },

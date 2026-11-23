@@ -1,6 +1,6 @@
 {
-  "name": "quality_equipment.quality.forsaken",
-  "color_code": "§0",
+  "name": "hallmarked.quality.forsaken",
+  "color": "black",
   "tool": {
     "modifiers": [
       {
@@ -33,7 +33,7 @@
     "modifiers": [
       {
         "name": "forsaken_projectile_damage",
-        "attribute": "quality_equipment:projectile_damage",
+        "attribute": "hallmarked:projectile_damage",
         "operation": "multiply_total",
         "value": -0.25
       }

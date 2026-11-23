@@ -677,7 +677,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "quality_equipment:damage_resistance",
+					"attribute": "hallmarked:damage_resistance",
 					"value": 0.02,
 					"operation": "add"
 				}
@@ -690,12 +690,12 @@
 				"color": "dark_aqua"
 			},
 			{
-				"text": "Requires: quality_equipment",
+				"text": "Requires: hallmarked",
 				"color": "dark_purple"
 			}
 		],
 		"required_mods": [
-			"quality_equipment"
+			"hallmarked"
 		]
 	},
 	"b_qe_key": {
@@ -733,7 +733,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "quality_equipment:damage_resistance",
+					"attribute": "hallmarked:damage_resistance",
 					"value": 0.06,
 					"operation": "add"
 				}
@@ -759,12 +759,12 @@
 				"color": "dark_aqua"
 			},
 			{
-				"text": "Requires: quality_equipment",
+				"text": "Requires: hallmarked",
 				"color": "dark_purple"
 			}
 		],
 		"required_mods": [
-			"quality_equipment"
+			"hallmarked"
 		]
 	},
 	"b_dodge": {
@@ -4886,7 +4886,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "quality_equipment:projectile_damage",
+					"attribute": "hallmarked:projectile_damage",
 					"value": 0.5,
 					"operation": "add"
 				}
@@ -4899,12 +4899,12 @@
 				"color": "dark_aqua"
 			},
 			{
-				"text": "Requires: quality_equipment",
+				"text": "Requires: hallmarked",
 				"color": "dark_purple"
 			}
 		],
 		"required_mods": [
-			"quality_equipment"
+			"hallmarked"
 		]
 	},
 	"d_qe_k": {
@@ -4938,7 +4938,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "quality_equipment:projectile_damage",
+					"attribute": "hallmarked:projectile_damage",
 					"value": 2,
 					"operation": "add"
 				}
@@ -4956,12 +4956,12 @@
 				"color": "dark_aqua"
 			},
 			{
-				"text": "Requires: quality_equipment",
+				"text": "Requires: hallmarked",
 				"color": "dark_purple"
 			}
 		],
 		"required_mods": [
-			"quality_equipment"
+			"hallmarked"
 		]
 	},
 	"d_stalk": {

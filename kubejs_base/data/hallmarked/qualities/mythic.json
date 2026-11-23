@@ -1,6 +1,6 @@
 {
-  "name": "quality_equipment.quality.mythic",
-  "color_code": "§5",
+  "name": "hallmarked.quality.mythic",
+  "color": "dark_purple",
   "tool": {
     "modifiers": [
       {
@@ -33,7 +33,7 @@
     "modifiers": [
       {
         "name": "mythic_projectile_damage",
-        "attribute": "quality_equipment:projectile_damage",
+        "attribute": "hallmarked:projectile_damage",
         "operation": "multiply_total",
         "value": 0.2
       }
@@ -65,7 +65,7 @@
     "modifiers": [
       {
         "name": "mythic_damage_resistance",
-        "attribute": "quality_equipment:damage_resistance",
+        "attribute": "hallmarked:damage_resistance",
         "operation": "multiply_total",
         "value": 0.05
       },
