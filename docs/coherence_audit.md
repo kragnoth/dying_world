@@ -110,7 +110,7 @@ Biomes in MORE than one survivor-village family (overlap): -
 
 ## Other namespaces referenced from our JSON (biome ids, blocks, types)
 
-regions_unexplored 373, atmospheric 88, environmental 55, windswept 52, autumnity 14, incision 7, hallmarked 6, lodestone 3, realmrpg_skeletons 2, supplementaries 2, mobrules 2, caverns_and_chasms 1
+regions_unexplored 373, atmospheric 88, environmental 55, windswept 52, autumnity 14, incision 7, hallmarked 6, lodestone 3, supplementaries 2, mobrules 2, realmrpg_skeletons 2, caverns_and_chasms 1
 
 ## Issues (0)
 

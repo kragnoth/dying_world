@@ -56,7 +56,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 1, 3b, 3b2, 3c4, 3c5, 4_1, 4_2a, 4_2b, 9_9, 4_2c, 4_2e, 4_2s, 4_3a, 5_1, 6_1,
 8_2, 8_3, 8_4, 8_5, 8_6, 7_1, 7_2, 8_8, 8_11, 9_1, 9_2, 9_3, 9_4, 9_5, 9_6, 9_7, 9_8, 9_10,
 9_11, 9_12, 9_34, 9_35, 9_36, 9_44, 9_13, 9_15, 9_18, 9_23, 9_21, 9_24, 9_29, 9_25, 9_27, 9_26, 9_28,
-9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 9_78, 9_82, 9_83, 8_9, build, coherence_audit, theme_audit
+9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 9_78, 9_82, 9_83, 9_91, 8_9, build, coherence_audit, theme_audit
 ```
 - Independent of the structure chain (any order after the above): 9_43, 9_45 to 9_53 (uniques, skill tree, vision config,
   mobrules, sets, Hollow Sight).
@@ -65,6 +65,8 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 
 ## Open items
 **Verify in game** (none of these could be checked on a headless server):
+- Houses (9-91): no hillside inside rooms/attics; village/stronghold houses on slopes stand on a stone plinth, no air gaps under
+  them; windmills/watermill too. Ruined-house starts (abandoned_ruin_*) have no plinth.
 - Cog & Cultivar scaffold now loads (9-85): a world joins cleanly (plants / mutations are datapack registries: a bad entry
   stops world load); e.g. dropleaf, cattail, weak tau appear as Cultivar crops; mutations fire.
 - Hollow endgame: boss skin/bow pose, first-kill set, Escapement cost scaling, Foundry Lens, Hollow/Lens Sight switching,
@@ -312,3 +314,21 @@ Compared his CurseForge export (Gearwrights_Hollow_2.zip, "2.0.0") with the repo
   kskills experience.json without the craft_item source. New `user_overrides/removed.txt` lists generator output that
   build.py now deletes/skips, and docs/disabled_structure_sets.txt drops those sets. Build output = his kubejs/data exactly.
 - Wasteland Vision's soot_and_tar / thermal_print visions are its bundled examples (installed on first run): not shipped.
+
+## Pass 9-91 (2026-11-26) - building air + house plinths
+Kragnoth: hillside blocks inside roofed houses/attics; air gaps under village buildings (a windmill and elsewhere).
+- Cause 1: building templates kept rooms and attics as structure void, so terrain inside the box survives (beard_thin only
+  carves near the street surface). Cause 2: rigid houses on terrain-matching streets keep only the beardifier's thin fill
+  under them, which fades within a few blocks and never fills carver caves: slopes and cave mouths leave gaps.
+- NEW `tools/gen_pass9_91.py` (after 9_83, before 8_9; re-runnable):
+  1. void with a block below and above in its column (y >= 1) -> air in all building templates (not streets, mines,
+     wells, pits, stations, foundries, pads): +256,183 cells in 880 templates.
+  2. explicit air in the y = 0 ground layer -> void (20 cells: snowy burnt windmill, village decor pieces).
+  3. 4-deep foundation plinth (stone ring, soil core; sandstone in the desert) under the y = 0 footprint of the 641 house
+     templates used by village / stronghold house pools (+ the gearwrights windmills / watermill). Template shifts up with
+     its jigsaws; the beard reference (street surface) is unchanged. Root tag DwPlinth = depth; a re-run strips it first.
+     186 houses that are also start pieces (`*_ruined` in abandoned_ruin_*) get none: a start would be lifted.
+- 8_9 re-run lifted 5 hanging lanterns. Datapack +1.85 MB (6.0 -> 7.9 MB unzipped). No files deleted. Untested in game.
+- Audit, no change: all jigsaw pools exist, no out-of-bounds blocks, every rustandrebar/create/tarbound block in the
+  templates exists in the current jars. 100 byte-identical duplicate templates (348 KB, mostly scavenger_stronghold/houses
+  = plains copies) could be merged by pointing pools at one file.

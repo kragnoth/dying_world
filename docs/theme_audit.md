@@ -58,21 +58,21 @@
 | scavenger_outpost_raiders | 3 | 1298 | 87% | 0% | 0 | ok |
 | scavenger_outpost_temperate | 3 | 1298 | 87% | 0% | 0 | ok |
 | scavenger_outpost_wild | 3 | 1298 | 87% | 0% | 0 | ok |
-| scavenger_stronghold | 102 | 46901 | 3% | 1% | 14 | ok |
-| scavenger_stronghold_desert | 84 | 32388 | 2% | 3% | 14 | ok |
-| scavenger_stronghold_plains | 102 | 46901 | 3% | 1% | 14 | ok |
-| scavenger_stronghold_savanna | 96 | 41776 | 3% | 1% | 14 | ok |
-| scavenger_stronghold_snowy | 102 | 62284 | 2% | 1% | 14 | ok |
-| scavenger_stronghold_taiga | 108 | 64179 | 2% | 0% | 14 | ok |
+| scavenger_stronghold | 102 | 97421 | 1% | 1% | 14 | ok |
+| scavenger_stronghold_desert | 84 | 71220 | 1% | 1% | 14 | ok |
+| scavenger_stronghold_plains | 102 | 97421 | 1% | 1% | 14 | ok |
+| scavenger_stronghold_savanna | 96 | 86992 | 1% | 0% | 14 | ok |
+| scavenger_stronghold_snowy | 102 | 113716 | 1% | 0% | 14 | ok |
+| scavenger_stronghold_taiga | 108 | 119355 | 1% | 0% | 14 | ok |
 | sculk_research_site | 22 | 10068 | 6% | 0% | 24 | ok |
 | shipwreck | (minecraft:shipwreck) | | | | | vanilla/mod code structure |
 | shipwreck_beached | (minecraft:shipwreck) | | | | | vanilla/mod code structure |
 | sunken_research_lab | 14 | 14766 | 8% | 0% | 26 | ok |
 | the_hollow | 4 | 5546 | 32% | 0% | 38 | R&R 32% |
 | tinker_workshop | 1 | 400 | 0% | 0% | 1 | ok |
-| village_desert | 80 | 30584 | 0% | 4% | 75 | ok |
-| village_plains | 98 | 45388 | 0% | 2% | 92 | ok |
-| village_savanna | 92 | 40320 | 0% | 2% | 83 | ok |
-| village_snowy | 98 | 60659 | 0% | 1% | 96 | ok |
-| village_taiga | 104 | 62426 | 0% | 0% | 95 | ok |
+| village_desert | 80 | 50676 | 0% | 2% | 75 | ok |
+| village_plains | 98 | 71368 | 0% | 2% | 92 | ok |
+| village_savanna | 92 | 63648 | 0% | 1% | 83 | ok |
+| village_snowy | 98 | 87095 | 0% | 1% | 96 | ok |
+| village_taiga | 104 | 90734 | 0% | 0% | 95 | ok |
 | wayside_shrine | 1 | 72 | 0% | 0% | 0 | ok |
