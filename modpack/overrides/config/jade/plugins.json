@@ -6,8 +6,8 @@
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "energy_storage.style": "PROGRESS_BAR",
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -72,11 +72,11 @@
     "entity": true,
     "entity_variant": true
   },
-  "immersiveengineering": {
-    "multiblock_icon": true
-  },
   "fluidlogistics": {
     "snow_golem_freezer_icon": true
+  },
+  "immersiveengineering": {
+    "multiblock_icon": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -99,6 +99,7 @@
     "equipment_requirement": ""
   },
   "cultivar": {
+    "olla": true,
     "soil_amendment": true,
     "crop": true
   },
@@ -118,17 +119,25 @@
     "converter": true,
     "breeder": true
   },
+  "creativeengineering": {
+    "coke_oven": true,
+    "distilling_tank": true,
+    "fermenting_vat": true,
+    "diesel_engine": true,
+    "press_die": true,
+    "blast_furnace": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
   "waystones": {
     "waystone": true
   },
-  "neovitae": {
-    "block_info": true
-  },
   "corpse": {
     "corpse": true
+  },
+  "neovitae": {
+    "block_info": true
   },
   "tarbound": {
     "scrying_font": true,

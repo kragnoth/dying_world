@@ -536,7 +536,7 @@
     "percent": 18,
     "scale": 18,
     "max": 6,
-    "spawn_every": 30,
+    "spawn_every": 95,
     "radius": 48,
     "min_distance": 10,
     "view_angle": 40,

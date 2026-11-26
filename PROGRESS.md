@@ -18,15 +18,15 @@ A dying world: everything should feel like it belongs. Tar, oil, spirits, biomes
 structures are disabled; ours replace them under `dying_world`. The look is Wasteland Vision's job (client-side): the
 Occult Foundry vision is forced on for everyone and is also the endgame's mark. Structures carry the real mechanics.
 
-## Current state - 2.0.0 (2026-11-23)
+## Current state - 1.0.6 Alpha (2026-11-26)
 - Minecraft 1.21.1, NeoForge 21.1.262, 254 CurseForge projects (`modpack/manifest.json`). Data pack format 48.
 - Datapack: survivor/abandoned villages in our gradient style for all five families plus rare styles, landmarks, scavenger
   strongholds, research gates and stations (Overworld/Nether/End), the Nether foundry (replaces the fortress), proving
   grounds, sunken lab, sculk dig camp, the lore trail (journals + maps), mineshaft kit. Endgame: the Hollow (altar, doppelganger,
   Escapement chain, creative items; state in kskills_perks 1.2.0).
-- Own mods in the pack: Wasteland Vision 0.24.4, kskills_perks 1.2.0, Mob Rules 0.7.1, Hallmarked, Tarbound, Rust & Rebar,
-  Cog & Cultivar (its crop / mutation scaffold ships in kubejs/data since 9-85), Workbench Wisdom 2.0.4, and a
-  Creative Engineering playtest jar in `overrides/mods/` (not on CurseForge).
+- Own mods in the pack: Wasteland Vision 0.24.5, kskills_perks 1.2.0, Mob Rules 0.7.1, Hallmarked 1.20.3, Tarbound, Rust & Rebar,
+  Cog & Cultivar 0.2.16 (its crop / mutation scaffold ships in kubejs/data since 9-85), Workbench Wisdom 2.0.4. Creative Engineering is
+  out for now (9-90).
 - Released files: `tools/export_server.py <version>` builds both the client zip and the server zip (self-installing,
   update-safe; mods download from `modpack/server/server-mods.txt`).
   CurseForge page: `modpack/CURSEFORGE_PAGE.html`; logo: `modpack/logo.png` (source in `tools/logo/`).
@@ -70,6 +70,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - Hollow endgame: boss skin/bow pose, first-kill set, Escapement cost scaling, Foundry Lens, Hollow/Lens Sight switching,
   Neo Vitae altar recipe, quest chapter ticking.
 - WV 0.24.4 yucca fix (client crash on spruce fence posts).
+- stack_everything.js (9-90): 64-stacks without breaking durability items, armour, filled buckets.
 - Proving grounds vault config (key item + loot table), vertical jigsaw chain + surface hut on slopes.
 - 'A Terrible Fortress' advancement completing in the foundry; enchanted trade offers (hermit/tinker/plague scholar).
 - End station over the void, foundry bridges, swamp stilt houses, density after the placement tiers.
@@ -83,7 +84,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 - Stilts (9-76/9-77): sculk dig camp and Nether research station buildings no longer floating; stilts look right over drops.
 
 **To do**
-- Delete the unused pool `dying_world:cabin/start` (9-82 audit).
+- Creative Engineering is out of the pack until its authors' permission comes back; re-add the jar to modpack/overrides/mods then.
 - Scrambled journals revealed by Wasteland Vision (designed, not built).
 - Excalibur-style textures for the Hollow items (placeholders now).
 - kskills_perks: stale javadoc in HollowCommands (mentions runCommandSilent).
@@ -298,3 +299,16 @@ Compared his CurseForge export (Gearwrights_Hollow_2.zip, "2.0.0") with the repo
   cultivar_scaffold, quality_equipment): the repo build is newer; nothing taken. Quest chapters differ in formatting only.
 - KubeJS scripts identical; none duplicate Workbench Wisdom's bench / stonecutter / slab recipes.
 - No files deleted.
+
+## Pass 9-90 (2026-11-26) - Kragnoth's 1.0.6 Alpha export merged in
+- Mods: Cog & Cultivar 0.2.16, Hallmarked 1.20.3, Wasteland Visions 0.24.5 (manifest + server-mods.txt). No adds/removes.
+- **Creative Engineering removed** for this push (author permission pending): DELETED `modpack/overrides/mods/creativeengineering-0.8.9-alpha.jar`.
+- KubeJS: DELETED `startup_scripts/item_mods.js`, added Kragnoth's `stack_everything.js`.
+- Configs taken: cultivar-server.toml (weeds on, new [assayer] section), occult_foundry vision.json (spawn_every 95),
+  jade/plugins.json, 3 quest chapters (FTB re-save, content unchanged). Sorter client config kept as it was.
+- Kragnoth's kubejs/data cleanup mirrored: DELETED 27 empty structure_set disablers (abandoned_cabins, createnewbeg,
+  formations*, forsaken, hearths, towns_and_towers, watchtower_building, 8 gearwrights), pool `dying_world:cabin/start`,
+  25 unreferenced minecraft noise/density files; environmental `tags/entity_types` -> `tags/entity_type`;
+  kskills experience.json without the craft_item source. New `user_overrides/removed.txt` lists generator output that
+  build.py now deletes/skips, and docs/disabled_structure_sets.txt drops those sets. Build output = his kubejs/data exactly.
+- Wasteland Vision's soot_and_tar / thermal_print visions are its bundled examples (installed on first run): not shipped.

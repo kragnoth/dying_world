@@ -474,23 +474,16 @@
 				id: "neovitae:guide_book"
 			}
 			id: "05618F9306EA04D2"
-			rewards: [
-				{
-					id: "3D96504FEF832853"
-					type: "xp"
-					xp: 20
-				}
-			]
-			tasks: [
-				{
-					id: "60C83416166A6757"
-					item: {
-						count: 1
-						id: "neovitae:guide_book"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3D96504FEF832853"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "60C83416166A6757"
+				item: { count: 1, id: "neovitae:guide_book" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: -1.75d
 		}
@@ -500,21 +493,17 @@
 				id: "neovitae:throwing_dagger"
 			}
 			id: "686BBB6FCE3719DC"
-			rewards: [
-				{
-					id: "31D67E6F53034F9B"
-					type: "xp"
-					xp: 60
-				}
-			]
-			tasks: [
-				{
-					advancement: "neovitae:neovitae/throwing_dagger"
-					criterion: ""
-					id: "3DBDB582363C46E4"
-					type: "advancement"
-				}
-			]
+			rewards: [{
+				id: "31D67E6F53034F9B"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				advancement: "neovitae:neovitae/throwing_dagger"
+				criterion: ""
+				id: "3DBDB582363C46E4"
+				type: "advancement"
+			}]
 			x: 8.0d
 			y: 3.5d
 		}
@@ -524,23 +513,16 @@
 				id: "neovitae:blood_lantern"
 			}
 			id: "6D9C3E6DBF8F2976"
-			rewards: [
-				{
-					id: "4A728A1A3F5EF1E0"
-					type: "xp"
-					xp: 80
-				}
-			]
-			tasks: [
-				{
-					id: "5636115F593B9EC1"
-					item: {
-						count: 1
-						id: "neovitae:blood_lantern"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4A728A1A3F5EF1E0"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "5636115F593B9EC1"
+				item: { count: 1, id: "neovitae:blood_lantern" }
+				type: "item"
+			}]
 			x: 10.0d
 			y: 3.5d
 		}
@@ -550,23 +532,16 @@
 				id: "neovitae:sigil_holding"
 			}
 			id: "679FB6B2F879995D"
-			rewards: [
-				{
-					id: "6967C6D24D88B26D"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "47788C9CEE0E93B2"
-					item: {
-						count: 1
-						id: "neovitae:sigil_holding"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6967C6D24D88B26D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "47788C9CEE0E93B2"
+				item: { count: 1, id: "neovitae:sigil_holding" }
+				type: "item"
+			}]
 			x: 12.0d
 			y: -2.625d
 		}
@@ -576,23 +551,16 @@
 				id: "neovitae:sigil_green_grove"
 			}
 			id: "1350FB05A3F1E8AC"
-			rewards: [
-				{
-					id: "4DF52EB7AD179B7D"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "3F49CA3868E4EBAE"
-					item: {
-						count: 1
-						id: "neovitae:sigil_green_grove"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4DF52EB7AD179B7D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3F49CA3868E4EBAE"
+				item: { count: 1, id: "neovitae:sigil_green_grove" }
+				type: "item"
+			}]
 			x: 14.0d
 			y: -2.625d
 		}
@@ -602,26 +570,25 @@
 				id: "neovitae:master_ritual_stone"
 			}
 			id: "12566167BEFCCF0A"
-			rewards: [
-				{
-					id: "137957E344F86E88"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					advancement: "neovitae:neovitae/first_ritual"
-					criterion: ""
-					id: "5F42EC0CF0573927"
-					type: "advancement"
-				}
-			]
+			rewards: [{
+				id: "137957E344F86E88"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				advancement: "neovitae:neovitae/first_ritual"
+				criterion: ""
+				id: "5F42EC0CF0573927"
+				type: "advancement"
+			}]
 			x: 14.0d
 			y: -1.75d
 		}
 		{
-			dependencies: ["12566167BEFCCF0A", "57BA6B8AE5057DBC"]
+			dependencies: [
+				"12566167BEFCCF0A"
+				"57BA6B8AE5057DBC"
+			]
 			icon: {
 				id: "neovitae:dungeon_eye"
 			}
@@ -647,14 +614,12 @@
 			]
 			shape: "diamond"
 			size: 1.25d
-			tasks: [
-				{
-					advancement: "neovitae:neovitae/edge_of_hidden_realm"
-					criterion: ""
-					id: "2D66D2564BE679A7"
-					type: "advancement"
-				}
-			]
+			tasks: [{
+				advancement: "neovitae:neovitae/edge_of_hidden_realm"
+				criterion: ""
+				id: "2D66D2564BE679A7"
+				type: "advancement"
+			}]
 			x: 16.0d
 			y: -2.625d
 		}
@@ -664,21 +629,17 @@
 				id: "neovitae:raw_demonite"
 			}
 			id: "60DBF1D87DA15350"
-			rewards: [
-				{
-					id: "3EC52F674B8671D6"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					advancement: "neovitae:neovitae/demonite"
-					criterion: ""
-					id: "168CFDA051FCB0B6"
-					type: "advancement"
-				}
-			]
+			rewards: [{
+				id: "3EC52F674B8671D6"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				advancement: "neovitae:neovitae/demonite"
+				criterion: ""
+				id: "168CFDA051FCB0B6"
+				type: "advancement"
+			}]
 			x: 18.0d
 			y: -3.5d
 		}
@@ -688,29 +649,25 @@
 				id: "neovitae:bloodstone_brick"
 			}
 			id: "494EEC611CFA869C"
-			rewards: [
-				{
-					id: "5A5A214558F49AA8"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					count: 4L
-					id: "4A2667D506286662"
-					item: {
-						count: 1
-						id: "neovitae:bloodstone_brick"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5A5A214558F49AA8"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				count: 4L
+				id: "4A2667D506286662"
+				item: { count: 1, id: "neovitae:bloodstone_brick" }
+				type: "item"
+			}]
 			x: 18.0d
 			y: -1.75d
 		}
 		{
-			dependencies: ["494EEC611CFA869C", "57BA6B8AE5057DBC"]
+			dependencies: [
+				"494EEC611CFA869C"
+				"57BA6B8AE5057DBC"
+			]
 			icon: {
 				id: "neovitae:blood_orb_master"
 			}
@@ -729,16 +686,11 @@
 					type: "command"
 				}
 			]
-			tasks: [
-				{
-					id: "706E2DFE042A0B3F"
-					item: {
-						count: 1
-						id: "neovitae:blood_orb_master"
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "706E2DFE042A0B3F"
+				item: { count: 1, id: "neovitae:blood_orb_master" }
+				type: "item"
+			}]
 			x: 20.0d
 			y: -0.875d
 		}
@@ -764,18 +716,12 @@
 				{
 					count: 4L
 					id: "7723DD09CD6A4AE9"
-					item: {
-						count: 1
-						id: "neovitae:hellforged_block"
-					}
+					item: { count: 1, id: "neovitae:hellforged_block" }
 					type: "item"
 				}
 				{
 					id: "62A2EBD40F646429"
-					item: {
-						count: 1
-						id: "neovitae:blood_orb_archmage"
-					}
+					item: { count: 1, id: "neovitae:blood_orb_archmage" }
 					type: "item"
 				}
 			]
@@ -788,24 +734,17 @@
 				id: "neovitae:crystal_cluster"
 			}
 			id: "273598A81C9EC9AA"
-			rewards: [
-				{
-					id: "0EC497DCC7295F98"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					count: 4L
-					id: "751ADA69E7930580"
-					item: {
-						count: 1
-						id: "neovitae:crystal_cluster"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0EC497DCC7295F98"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				count: 4L
+				id: "751ADA69E7930580"
+				item: { count: 1, id: "neovitae:crystal_cluster" }
+				type: "item"
+			}]
 			x: 22.0d
 			y: -1.75d
 		}
@@ -843,16 +782,11 @@
 			]
 			shape: "octagon"
 			size: 1.4d
-			tasks: [
-				{
-					id: "73C239F276179E2E"
-					item: {
-						count: 1
-						id: "neovitae:blood_orb_transcendent"
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "73C239F276179E2E"
+				item: { count: 1, id: "neovitae:blood_orb_transcendent" }
+				type: "item"
+			}]
 			x: 24.0d
 			y: -0.875d
 		}
@@ -862,21 +796,17 @@
 				id: "neovitae:raw_spiritus_crystal"
 			}
 			id: "36C14B7B7950F73C"
-			rewards: [
-				{
-					id: "4682DA4C4718D7D8"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					advancement: "neovitae:neovitae/aspectum_omnia"
-					criterion: ""
-					id: "1A659FA54776EF82"
-					type: "advancement"
-				}
-			]
+			rewards: [{
+				id: "4682DA4C4718D7D8"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				advancement: "neovitae:neovitae/aspectum_omnia"
+				criterion: ""
+				id: "1A659FA54776EF82"
+				type: "advancement"
+			}]
 			x: 12.0d
 			y: 3.5d
 		}

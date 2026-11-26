@@ -10,6 +10,11 @@ if _uo.is_dir():
     for f in sorted(_uo.rglob("*")):
         if f.is_file():
             d = ROOT / "datapack/data" / f.relative_to(_uo); d.parent.mkdir(parents=True, exist_ok=True); shutil.copyfile(f, d)
+# 9-90: user_overrides/removed.txt = data paths (ns/...) Kragnoth deleted by hand; removed from datapack/ and skipped in kubejs_data.zip
+_rm = ROOT / "user_overrides/removed.txt"
+REMOVED = {l.strip() for l in _rm.read_text().splitlines() if l.strip() and not l.startswith("#")} if _rm.exists() else set()
+for r in REMOVED:
+    (ROOT / "datapack/data" / r).unlink(missing_ok=True)
 if subprocess.call([sys.executable, str(ROOT / "tools/validate.py")] + sys.argv[1:]):
     sys.exit("validation failed")
 out = ROOT / "dist/dying_world_datapack.zip"; out.parent.mkdir(exist_ok=True)
@@ -30,10 +35,11 @@ if base.is_dir() and sz.exists():
     out = ROOT / "dist/kubejs_data.zip"; seen = set()
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z, zipfile.ZipFile(sz) as s:
         for n in s.namelist():
-            if n.startswith("data/"): z.writestr(n, s.read(n)); seen.add(n)
+            if n.startswith("data/") and n[5:] not in REMOVED: z.writestr(n, s.read(n)); seen.add(n)
         for f in sorted(base.rglob("*")):
             if f.is_file():
                 n = "data/" + f.relative_to(base).as_posix()
+                if n[5:] in REMOVED: continue
                 if n in seen: sys.exit(f"conflict between kubejs_base and structures: {n}")
                 z.write(f, n)
         z.writestr("PROVENANCE.md", s.read("PROVENANCE.md"))

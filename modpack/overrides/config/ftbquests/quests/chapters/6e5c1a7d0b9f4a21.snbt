@@ -17,21 +17,17 @@
 				id: "minecraft:bell"
 			}
 			id: "1B305531C9754245"
-			rewards: [
-				{
-					id: "739F82B22438898E"
-					type: "xp"
-					xp: 50
-				}
-			]
+			rewards: [{
+				id: "739F82B22438898E"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "55408875CD332775"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "55408875CD332775"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
@@ -41,20 +37,16 @@
 				id: "minecraft:lantern"
 			}
 			id: "0367FB39849A0B1B"
-			rewards: [
-				{
-					id: "582F2DE5BC09F869"
-					type: "xp"
-					xp: 80
-				}
-			]
-			tasks: [
-				{
-					id: "122C7A271643B984"
-					structure: "dying_world:hermit_cottage"
-					type: "structure"
-				}
-			]
+			rewards: [{
+				id: "582F2DE5BC09F869"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "122C7A271643B984"
+				structure: "dying_world:hermit_cottage"
+				type: "structure"
+			}]
 			x: 2.0d
 			y: -0.875d
 		}
@@ -83,13 +75,11 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					id: "653397D5FF1C128C"
-					structure: "#dying_world:research_gates"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "653397D5FF1C128C"
+				structure: "#dying_world:research_gates"
+				type: "structure"
+			}]
 			x: 4.0d
 			y: 0.0d
 		}
@@ -99,20 +89,16 @@
 				id: "minecraft:golden_apple"
 			}
 			id: "67FF97C261DB7159"
-			rewards: [
-				{
-					id: "544073C8E1A36014"
-					type: "xp"
-					xp: 80
-				}
-			]
-			tasks: [
-				{
-					id: "257A7695271BBCAE"
-					structure: "dying_world:plague_house"
-					type: "structure"
-				}
-			]
+			rewards: [{
+				id: "544073C8E1A36014"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "257A7695271BBCAE"
+				structure: "dying_world:plague_house"
+				type: "structure"
+			}]
 			x: 2.0d
 			y: 0.875d
 		}
@@ -136,13 +122,11 @@
 					xp: 80
 				}
 			]
-			tasks: [
-				{
-					id: "7640346FCDD27155"
-					structure: "dying_world:tinker_workshop"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "7640346FCDD27155"
+				structure: "dying_world:tinker_workshop"
+				type: "structure"
+			}]
 			x: 2.0d
 			y: 1.75d
 		}
@@ -166,13 +150,11 @@
 					xp: 120
 				}
 			]
-			tasks: [
-				{
-					id: "072A276DDE9CE8BB"
-					structure: "dying_world:proving_grounds"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "072A276DDE9CE8BB"
+				structure: "dying_world:proving_grounds"
+				type: "structure"
+			}]
 			x: 6.0d
 			y: -1.75d
 		}
@@ -201,13 +183,11 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					id: "2521669BBD25B189"
-					structure: "dying_world:sunken_research_lab"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "2521669BBD25B189"
+				structure: "dying_world:sunken_research_lab"
+				type: "structure"
+			}]
 			x: 8.0d
 			y: -2.625d
 		}
@@ -243,13 +223,11 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					id: "44D72005CDC043CA"
-					structure: "dying_world:sculk_research_site"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "44D72005CDC043CA"
+				structure: "dying_world:sculk_research_site"
+				type: "structure"
+			}]
 			x: 8.0d
 			y: -0.875d
 		}
@@ -273,13 +251,11 @@
 					xp: 150
 				}
 			]
-			tasks: [
-				{
-					id: "7B81B08430D3B72F"
-					structure: "#dying_world:nether_stations"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "7B81B08430D3B72F"
+				structure: "#dying_world:nether_stations"
+				type: "structure"
+			}]
 			x: 6.0d
 			y: 0.875d
 		}
@@ -308,13 +284,11 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					id: "48860317BED00D43"
-					structure: "#dying_world:nether_foundries"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "48860317BED00D43"
+				structure: "#dying_world:nether_foundries"
+				type: "structure"
+			}]
 			x: 8.0d
 			y: 0.875d
 		}
@@ -350,13 +324,11 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					id: "23E5CDCBB3942133"
-					structure: "#dying_world:end_stations"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "23E5CDCBB3942133"
+				structure: "#dying_world:end_stations"
+				type: "structure"
+			}]
 			x: 8.0d
 			y: 2.625d
 		}
@@ -366,20 +338,16 @@
 				id: "incision:carrion"
 			}
 			id: "1A3E1F30A5BA9297"
-			rewards: [
-				{
-					id: "4CD18F8B47C5D829"
-					type: "xp"
-					xp: 120
-				}
-			]
-			tasks: [
-				{
-					biome: "incision:eroded_yard"
-					id: "035D4E3A6853C540"
-					type: "biome"
-				}
-			]
+			rewards: [{
+				id: "4CD18F8B47C5D829"
+				type: "xp"
+				xp: 120
+			}]
+			tasks: [{
+				biome: "incision:eroded_yard"
+				id: "035D4E3A6853C540"
+				type: "biome"
+			}]
 			x: 6.0d
 			y: 2.625d
 		}
@@ -401,14 +369,12 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					entity: "incision:skeletoncultist"
-					id: "575DBE5CA81F7238"
-					type: "kill"
-					value: 3L
-				}
-			]
+			tasks: [{
+				entity: "incision:skeletoncultist"
+				id: "575DBE5CA81F7238"
+				type: "kill"
+				value: 3L
+			}]
 			x: 5.0d
 			y: 3.5d
 		}
@@ -418,49 +384,38 @@
 				id: "incision:burial_knife"
 			}
 			id: "145E2E5CADBEDC99"
-			rewards: [
-				{
-					id: "21880F7748531F12"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "18E899A2E020F949"
-					item: {
-						count: 1
-						id: "incision:burial_knife"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "21880F7748531F12"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "18E899A2E020F949"
+				item: { count: 1, id: "incision:burial_knife" }
+				type: "item"
+			}]
 			x: 7.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["111B2C7B9D27BC0F", "1C4C5E5A4D91FB07"]
+			dependencies: [
+				"111B2C7B9D27BC0F"
+				"1C4C5E5A4D91FB07"
+			]
 			icon: {
 				id: "create:chromatic_compound"
 			}
 			id: "422704930DFDEDE0"
-			rewards: [
-				{
-					id: "669D70E9F5BB7BC5"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "7AC5E41CFA683FEB"
-					item: {
-						count: 1
-						id: "create:chromatic_compound"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "669D70E9F5BB7BC5"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "7AC5E41CFA683FEB"
+				item: { count: 1, id: "create:chromatic_compound" }
+				type: "item"
+			}]
 			x: 10.0d
 			y: 0.0d
 		}
@@ -470,23 +425,16 @@
 				id: "create:shadow_steel"
 			}
 			id: "7C7AF263DF9FAD3D"
-			rewards: [
-				{
-					id: "73354C963CE4359E"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "476117F5153A4078"
-					item: {
-						count: 1
-						id: "create:shadow_steel"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "73354C963CE4359E"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "476117F5153A4078"
+				item: { count: 1, id: "create:shadow_steel" }
+				type: "item"
+			}]
 			x: 12.0d
 			y: -0.875d
 		}
@@ -496,28 +444,24 @@
 				id: "create:refined_radiance"
 			}
 			id: "0E6E2FD709279ED7"
-			rewards: [
-				{
-					id: "2677BE9903235A00"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "608F06FC880321A6"
-					item: {
-						count: 1
-						id: "create:refined_radiance"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2677BE9903235A00"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "608F06FC880321A6"
+				item: { count: 1, id: "create:refined_radiance" }
+				type: "item"
+			}]
 			x: 12.0d
 			y: 0.875d
 		}
 		{
-			dependencies: ["7C7AF263DF9FAD3D", "0E6E2FD709279ED7"]
+			dependencies: [
+				"7C7AF263DF9FAD3D"
+				"0E6E2FD709279ED7"
+			]
 			icon: {
 				id: "hallmarked:gearwrights_seal"
 			}
@@ -541,21 +485,21 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					id: "367537DA21FCF075"
-					item: {
-						count: 1
-						id: "hallmarked:gearwrights_seal"
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "367537DA21FCF075"
+				item: { count: 1, id: "hallmarked:gearwrights_seal" }
+				type: "item"
+			}]
 			x: 14.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["21F2227B14BC1310", "0E0F7020DA98D7FA", "7229A829F49344D4", "525BBB1B92B4A239"]
+			dependencies: [
+				"21F2227B14BC1310"
+				"0E0F7020DA98D7FA"
+				"7229A829F49344D4"
+				"525BBB1B92B4A239"
+			]
 			icon: {
 				id: "minecraft:end_portal_frame"
 			}
@@ -595,13 +539,11 @@
 			]
 			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "07E86BA017B85A28"
-					stage: "gh_hollow_defeated"
-					type: "gamestage"
-				}
-			]
+			tasks: [{
+				id: "07E86BA017B85A28"
+				stage: "gh_hollow_defeated"
+				type: "gamestage"
+			}]
 			x: 16.0d
 			y: 0.0d
 		}
@@ -611,24 +553,17 @@
 				id: "gearwrights:foundry_residue"
 			}
 			id: "2818380DD10682E5"
-			rewards: [
-				{
-					id: "48F5F4374303103A"
-					type: "xp"
-					xp: 60
-				}
-			]
-			tasks: [
-				{
-					consume_items: false
-					id: "2088BC68A2BEB5F9"
-					item: {
-						count: 1
-						id: "gearwrights:foundry_residue"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "48F5F4374303103A"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				consume_items: false
+				id: "2088BC68A2BEB5F9"
+				item: { count: 1, id: "gearwrights:foundry_residue" }
+				type: "item"
+			}]
 			x: 2.5d
 			y: 2.75d
 		}
@@ -650,17 +585,12 @@
 					type: "random"
 				}
 			]
-			tasks: [
-				{
-					consume_items: false
-					id: "4D7D2D4910944881"
-					item: {
-						count: 1
-						id: "gearwrights:escapement"
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: false
+				id: "4D7D2D4910944881"
+				item: { count: 1, id: "gearwrights:escapement" }
+				type: "item"
+			}]
 			x: 18.0d
 			y: 0.0d
 		}
