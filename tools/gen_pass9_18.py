@@ -75,10 +75,7 @@ DECK = 12
 class F:
     def __init__(s, name, sx, sz, h=6):
         s.name, s.t, s.r = name, Tpl(sx, DECK + h + 1, sz), rng("foundry/" + name)
-        s.sx, s.sz = sx, sz
-        for x in range(sx):
-            for z in range(sz):
-                for y in range(DECK + h + 1): s.t.set(x, y, z, VOID)
+        s.sx, s.sz = sx, sz        # empty cells stay omitted (9-93: explicit structure_void blocks get placed in the world)
     def b(s, x, y, z, n, p=None, nbt=None): s.t.set(x, y, z, n, p, nbt)
     def deck(s, x0, x1, z0, z1, rail=True, head=3):
         for x in range(x0, x1 + 1):
