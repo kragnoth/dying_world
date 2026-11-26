@@ -56,7 +56,7 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 1, 3b, 3b2, 3c4, 3c5, 4_1, 4_2a, 4_2b, 9_9, 4_2c, 4_2e, 4_2s, 4_3a, 5_1, 6_1,
 8_2, 8_3, 8_4, 8_5, 8_6, 7_1, 7_2, 8_8, 8_11, 9_1, 9_2, 9_3, 9_4, 9_5, 9_6, 9_7, 9_8, 9_10,
 9_11, 9_12, 9_34, 9_35, 9_36, 9_44, 9_13, 9_15, 9_18, 9_23, 9_21, 9_24, 9_29, 9_25, 9_27, 9_26, 9_28,
-9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 9_78, 9_82, 9_83, 9_91, 8_9, build, coherence_audit, theme_audit
+9_14, 9_20, 9_19, 9_22, 9_16, 9_33, 9_76, 9_78, 9_82, 9_83, 9_91, 9_92, 8_9, build, coherence_audit, theme_audit
 ```
 - Independent of the structure chain (any order after the above): 9_43, 9_45 to 9_53 (uniques, skill tree, vision config,
   mobrules, sets, Hollow Sight).
@@ -65,6 +65,8 @@ Generators need `reference/*.zip` (`tools/make_reference.py`). Superseded, don't
 
 ## Open items
 **Verify in game** (none of these could be checked on a headless server):
+- Terrain (9-92): worlds load; gentler hills/mountains, no floating overhangs, swamps at sea level; oceans and caves normal.
+  Tune HEIGHT/FACTOR/JAGGED in gen_pass9_92.py if too flat or too wild.
 - Houses (9-91): no hillside inside rooms/attics; village/stronghold houses on slopes stand on a stone plinth, no air gaps under
   them; windmills/watermill too. Ruined-house starts (abandoned_ruin_*) have no plinth.
 - Cog & Cultivar scaffold now loads (9-85): a world joins cleanly (plants / mutations are datapack registries: a bad entry
@@ -332,3 +334,19 @@ Kragnoth: hillside blocks inside roofed houses/attics; air gaps under village bu
 - Audit, no change: all jigsaw pools exist, no out-of-bounds blocks, every rustandrebar/create/tarbound block in the
   templates exists in the current jars. 100 byte-identical duplicate templates (348 KB, mostly scavenger_stronghold/houses
   = plains copies) could be merged by pointing pools at one file.
+
+## Pass 9-92 (2026-11-26) - vanilla terrain, softened; villages off steep biomes
+Kragnoth: floating overhangs, a mangrove swamp at y 138 with no water, villages on cliffs.
+- Cause: kubejs_base carried leftovers of an old terrain-overhaul datapack (since the 8-1 import): overworld factor
+  (min 0.45 vs vanilla 0.625), jaggedness (max 1.1 vs 0.63), offset (min -0.825 vs -0.30), a custom erosion routing,
+  rescaled erosion/temperature/vegetation/cave/aquifer noises. **DELETED** those 15 files from kubejs_base
+  (minecraft/worldgen/density_function/overworld/{factor,offset,jaggedness,sloped_cheese,erosion,base_erosion} and
+  minecraft/worldgen/noise/{erosion,temperature,vegetation,cave_cheese,spaghetti_2d_thickness,spaghetti_3d_thickness,
+  aquifer_fluid_level_floodedness,aquifer_fluid_level_spread,aquifer_lava}).
+- NEW `tools/gen_pass9_92.py` (after 9_91; re-runnable): wraps vanilla 1.21.1 offset/factor/jaggedness (copies in
+  tools/state/vanilla_1_21_1) into datapack minecraft overrides: height above sea x0.70 (oceans untouched), factor x1.30,
+  jaggedness x0.35. Biome layout is vanilla again (the noises are vanilla), so biomes shift in new chunks.
+- Same pass drops 17 steep biomes (meadow, cherry_grove, grove, windswept_forest/savanna, savanna_plateau, eroded and
+  wooded badlands, snowy_slopes, RU mauve_hills/rocky_meadow/highland_fields/windswept_maple_forest/pine_slopes/spires,
+  Environmental pine_slopes, Atmospheric rocky_dunes) from village / abandoned village / hamlet tags and the
+  minecraft:has_structure/village_* tags (51 entries). Coherence audit: 0 issues. Untested in game.

@@ -25,12 +25,12 @@
 | dying_world:abandoned_cabin | dying_world:landmarks | 4 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
 | dying_world:abandoned_cabin_dark_oak | dying_world:landmarks | 1 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
 | dying_world:abandoned_cabin_oak | dying_world:landmarks | 3 | beard_thin | 1/40 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_hamlet_desert | dying_world:settlements | 14 | beard_thin | 4/80 | husk,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_hamlet_plains | dying_world:settlements | 42 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_hamlet_savanna | dying_world:settlements | 7 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_hamlet_snowy | dying_world:settlements | 10 | beard_thin | 4/80 | stray,zombie,zombie_villager | True |
+| dying_world:abandoned_hamlet_desert | dying_world:settlements | 11 | beard_thin | 4/80 | husk,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_plains | dying_world:settlements | 36 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_savanna | dying_world:settlements | 5 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_snowy | dying_world:settlements | 9 | beard_thin | 4/80 | stray,zombie,zombie_villager | True |
 | dying_world:abandoned_hamlet_swamp | dying_world:settlements | 8 | none | 4/80 | zombie,drowned,zombie_villager,spider | True |
-| dying_world:abandoned_hamlet_taiga | dying_world:settlements | 23 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_hamlet_taiga | dying_world:settlements | 19 | beard_thin | 4/80 | zombie,zombie_villager,skeleton,spider | True |
 | dying_world:abandoned_ruin_desert | dying_world:landmarks | 14 | beard_thin | 1/80 | husk,zombie_villager,skeleton,spider | True |
 | dying_world:abandoned_ruin_plains | dying_world:landmarks | 50 | beard_thin | 1/80 | zombie,zombie_villager,skeleton,spider | True |
 | dying_world:abandoned_ruin_savanna | dying_world:landmarks | 7 | beard_thin | 1/80 | zombie,zombie_villager,skeleton,spider | True |
@@ -39,12 +39,12 @@
 | dying_world:abandoned_ruin_taiga | dying_world:landmarks | 24 | beard_thin | 1/80 | zombie,zombie_villager,skeleton,spider | True |
 | dying_world:abandoned_smithy | dying_world:landmarks | 110 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
 | dying_world:abandoned_smithy_arid | dying_world:landmarks | 21 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
-| dying_world:abandoned_village_desert | dying_world:settlements | 14 | beard_thin | 6/80 | husk,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_village_plains | dying_world:settlements | 41 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_village_savanna | dying_world:settlements | 7 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
-| dying_world:abandoned_village_snowy | dying_world:settlements | 10 | beard_thin | 6/80 | stray,zombie,zombie_villager | True |
+| dying_world:abandoned_village_desert | dying_world:settlements | 11 | beard_thin | 6/80 | husk,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_plains | dying_world:settlements | 35 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_savanna | dying_world:settlements | 5 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_snowy | dying_world:settlements | 9 | beard_thin | 6/80 | stray,zombie,zombie_villager | True |
 | dying_world:abandoned_village_swamp | dying_world:settlements | 8 | none | 6/80 | zombie,drowned,zombie_villager,spider | True |
-| dying_world:abandoned_village_taiga | dying_world:settlements | 23 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
+| dying_world:abandoned_village_taiga | dying_world:settlements | 19 | beard_thin | 6/80 | zombie,zombie_villager,skeleton,spider | True |
 | dying_world:charnel_crypt | dying_world:landmarks | 60 | none | -/- | - | type tarbound:dry_land |
 | dying_world:collapsed_minehead | dying_world:landmarks | 38 | beard_thin | 1/40 | zombie,spider,cave_spider | True |
 | dying_world:concrete_pad_arid | dying_world:landmarks | 21 | beard_thin | 1/30 | - | True |
@@ -79,22 +79,22 @@
 | dying_world:scavenger_outpost_temperate | dying_world:landmarks | 37 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
 | dying_world:scavenger_outpost_wild | dying_world:landmarks | 45 | beard_thin | 1/30 | zombie,skeleton,zombie_villager | True |
 | dying_world:scavenger_stronghold | dying_world:settlements | 131 | beard_thin | 6/80 | - | True |
-| dying_world:scavenger_stronghold_desert | dying_world:settlements | 14 | beard_thin | 6/80 | - | True |
-| dying_world:scavenger_stronghold_plains | dying_world:settlements | 41 | beard_thin | 6/80 | - | True |
-| dying_world:scavenger_stronghold_savanna | dying_world:settlements | 7 | beard_thin | 6/80 | - | True |
-| dying_world:scavenger_stronghold_snowy | dying_world:settlements | 10 | beard_thin | 6/80 | - | True |
-| dying_world:scavenger_stronghold_taiga | dying_world:settlements | 23 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_desert | dying_world:settlements | 11 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_plains | dying_world:settlements | 35 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_savanna | dying_world:settlements | 5 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_snowy | dying_world:settlements | 9 | beard_thin | 6/80 | - | True |
+| dying_world:scavenger_stronghold_taiga | dying_world:settlements | 19 | beard_thin | 6/80 | - | True |
 | dying_world:sculk_research_site | dying_world:sculk_research_site | 1 | beard_box | 7/64 | - | True |
 | dying_world:shipwreck | dying_world:shipwrecks | 11 | - | -/- | - | type minecraft:shipwreck |
 | dying_world:shipwreck_beached | dying_world:shipwrecks | 4 | - | -/- | - | type minecraft:shipwreck |
 | dying_world:sunken_research_lab | dying_world:sunken_research_lab | 5 | beard_box | 8/64 | guardian | True |
 | dying_world:the_hollow | dying_world:the_hollow | 131 | beard_thin | 4/80 | - | True |
 | dying_world:tinker_workshop | dying_world:landmarks | 131 | beard_thin | 1/32 | - | True |
-| dying_world:village_desert | dying_world:settlements | 14 | beard_thin | 6/80 | - | True |
-| dying_world:village_plains | dying_world:settlements | 41 | beard_thin | 6/80 | - | True |
-| dying_world:village_savanna | dying_world:settlements | 7 | beard_thin | 6/80 | - | True |
-| dying_world:village_snowy | dying_world:settlements | 10 | beard_thin | 6/80 | - | True |
-| dying_world:village_taiga | dying_world:settlements | 23 | beard_thin | 6/80 | - | True |
+| dying_world:village_desert | dying_world:settlements | 11 | beard_thin | 6/80 | - | True |
+| dying_world:village_plains | dying_world:settlements | 35 | beard_thin | 6/80 | - | True |
+| dying_world:village_savanna | dying_world:settlements | 5 | beard_thin | 6/80 | - | True |
+| dying_world:village_snowy | dying_world:settlements | 9 | beard_thin | 6/80 | - | True |
+| dying_world:village_taiga | dying_world:settlements | 19 | beard_thin | 6/80 | - | True |
 | dying_world:wayside_shrine | dying_world:landmarks | 60 | beard_thin | -/- | - | type tarbound:dry_land |
 | dying_world:wells/arid | dying_world:landmarks | 21 | beard_thin | 2/40 | - | True |
 | dying_world:wells/cold | dying_world:landmarks | 28 | beard_thin | 2/40 | - | True |
@@ -104,13 +104,13 @@
 
 ## Biome coverage: 163 biomes reach at least one structure
 
-Land biomes without ANY survivor or abandoned settlement (40): atmospheric:hot_springs, atmospheric:kousa_jungle, atmospheric:rainforest, atmospheric:rainforest_basin, atmospheric:sparse_rainforest, atmospheric:sparse_rainforest_basin, incision:eroded_yard, minecraft:bamboo_jungle, minecraft:basalt_deltas, minecraft:crimson_forest, minecraft:dark_forest, minecraft:frozen_peaks, minecraft:jagged_peaks, minecraft:jungle, minecraft:mushroom_fields, minecraft:pale_garden, minecraft:snowy_slopes, minecraft:soul_sand_valley, minecraft:sparse_jungle, minecraft:stony_peaks, minecraft:stony_shore, minecraft:warped_forest, minecraft:windswept_gravelly_hills, minecraft:windswept_hills, regions_unexplored:arid_mountains, regions_unexplored:bamboo_forest, regions_unexplored:blackstone_basin, regions_unexplored:chalk_cliffs, regions_unexplored:glistering_meadow, regions_unexplored:hyacinth_deeps, regions_unexplored:icy_heights, regions_unexplored:infernal_holt, regions_unexplored:mountains, regions_unexplored:mycotoxic_undergrowth, regions_unexplored:rainforest, regions_unexplored:redstone_abyss, regions_unexplored:rocky_reef, regions_unexplored:sparse_rainforest, regions_unexplored:towering_cliffs, regions_unexplored:tropics
+Land biomes without ANY survivor or abandoned settlement (56): atmospheric:hot_springs, atmospheric:kousa_jungle, atmospheric:rainforest, atmospheric:rainforest_basin, atmospheric:rocky_dunes, atmospheric:sparse_rainforest, atmospheric:sparse_rainforest_basin, environmental:pine_slopes, incision:eroded_yard, minecraft:bamboo_jungle, minecraft:basalt_deltas, minecraft:cherry_grove, minecraft:crimson_forest, minecraft:dark_forest, minecraft:eroded_badlands, minecraft:frozen_peaks, minecraft:grove, minecraft:jagged_peaks, minecraft:jungle, minecraft:meadow, minecraft:mushroom_fields, minecraft:pale_garden, minecraft:savanna_plateau, minecraft:snowy_slopes, minecraft:soul_sand_valley, minecraft:sparse_jungle, minecraft:stony_peaks, minecraft:stony_shore, minecraft:warped_forest, minecraft:windswept_forest, minecraft:windswept_gravelly_hills, minecraft:windswept_hills, minecraft:windswept_savanna, minecraft:wooded_badlands, regions_unexplored:arid_mountains, regions_unexplored:bamboo_forest, regions_unexplored:blackstone_basin, regions_unexplored:chalk_cliffs, regions_unexplored:glistering_meadow, regions_unexplored:highland_fields, regions_unexplored:hyacinth_deeps, regions_unexplored:icy_heights, regions_unexplored:infernal_holt, regions_unexplored:mauve_hills, regions_unexplored:mountains, regions_unexplored:mycotoxic_undergrowth, regions_unexplored:pine_slopes, regions_unexplored:rainforest, regions_unexplored:redstone_abyss, regions_unexplored:rocky_meadow, regions_unexplored:rocky_reef, regions_unexplored:sparse_rainforest, regions_unexplored:spires, regions_unexplored:towering_cliffs, regions_unexplored:tropics, regions_unexplored:windswept_maple_forest
 
 Biomes in MORE than one survivor-village family (overlap): -
 
 ## Other namespaces referenced from our JSON (biome ids, blocks, types)
 
-regions_unexplored 373, atmospheric 88, environmental 55, windswept 52, autumnity 14, incision 7, hallmarked 6, lodestone 3, supplementaries 2, mobrules 2, realmrpg_skeletons 2, caverns_and_chasms 1
+regions_unexplored 355, atmospheric 85, environmental 52, windswept 52, autumnity 14, incision 7, hallmarked 6, lodestone 3, mobrules 2, realmrpg_skeletons 2, supplementaries 2, caverns_and_chasms 1
 
 ## Issues (0)
 
